@@ -1,0 +1,22 @@
+{
+  "source": "C:\\Users\\leezt\\source\\repos\\RacingVibes",
+  "files": {
+    "physics.js": "223c4a919e74b9bda557ff3c4809dd9642bf8b2f9b39a73bb432317ee7ab3317",
+    "gearbox.js": "dd92da3f82688c0aaf5a971ce2227b97c1723474bf741f27d37c67329ca7556e",
+    "trackCollision.js": "bf41efd945d1a16542685802e4b042ae80c64c98ba952a94b5f96f6f699f36d0",
+    "physics/planckWorld.js": "ee6dfb764f2ac03fe526499d17a4bc942b01329811dc1f3aa06cbfe6a383c7d2",
+    "physics/trackSurface.js": "d810e7e588e20462bfa698e225865196fc26f5bd04d77779d95184de1a787ecd",
+    "src/gearbox.js": "8ffb618607a862dfefb7d22958ea971e050b5e86c1d766093ec21f9d683d20bc",
+    "weather_conditions.js": "96a37c6cc76d971928e25e6fe354123cef3f40363fe51ad3e2f090b637ce6da1",
+    "vendor/planck/planck.min.js": "528ac930b918197222d080b02c5ad7d9c79d5cd724171bde01b0619831f3c36f",
+    "assets/vehicles/vehicle_colliders.js": "d2fd77a1fe71e0de9cb474ab6fcea2a76c2b652ff4684a614ec603ed1af102a8",
+    "assets/vehicles/ClipperGT.png": "8dd8753d7fc7c2fc087e79bfe2178592a525c05a88325b58a976dc37310e9583",
+    "assets/vehicles/Formula_1600.png": "9e07636c3c5b759a4f8b09b74a4da88d869194fce535d389d4ad85ee996e4afc",
+    "assets/vehicles/Bubble.png": "694e76384902df50ac40d1f5e1879711717158869d0d927c6c48b6297c0dd722",
+    "assets/vehicles/truck_orange.png": "960baf17235ce3ef6c323e9a32efd8f48adfd8a3a0217c6b042d66e3e4933c62",
+    "assets/textures/track_surfaces/asphalt_seamless.webp": "35682b4e94b712c829d4f4e269ed3522b3750754220a56fa2ccd6c8e247e4105",
+    "assets/textures/track_surfaces/concrete_seamless.webp": "d50237ec2b5de012941caf9e1e673da266af91183037820d2a8c6d4b36450780",
+    "assets/textures/track_surfaces/gravel_seamless.webp": "00bd1c412021811354dbe22fb1b26b1e983e84f7268a930e965377de1793b329",
+    "assets/textures/track_surfaces/dirt_seamless.webp": "1868d43d4625a072aa2e63b10560c862079d472fb76078b1e32026db116d6608"
+  }
+}

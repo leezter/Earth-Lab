@@ -1,0 +1,50 @@
+{
+  "state": {
+    "rendered": true,
+    "renderedTiles": 12,
+    "buildMs": [
+      31.5,
+      2.5,
+      2.2999999970197678,
+      2.600000001490116,
+      1.7999999970197678,
+      0.5,
+      0.5,
+      0.30000000447034836,
+      2.2999999970197678,
+      5.100000001490116,
+      0.6000000014901161,
+      1.5
+    ],
+    "origin": [
+      52.4971,
+      13.44561
+    ],
+    "roads": 189,
+    "buildings": 419,
+    "tiles": 0,
+    "ready": 0,
+    "loading": false,
+    "paused": true,
+    "surface": {
+      "onRoad": false,
+      "surfaceType": "gravel-rally"
+    },
+    "fps": 60.007742934572164,
+    "epoch": 1
+  },
+  "errors": [],
+  "photoRequests": [],
+  "movement": {
+    "start": {
+      "x": -15.794744179262848,
+      "y": 23.35724692099447
+    },
+    "end": {
+      "x": 203.7380082034937,
+      "y": 171.84841610284744
+    }
+  },
+  "pause": true,
+  "recovery": true
+}

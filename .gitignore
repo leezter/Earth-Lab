@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+cache/
+*.log
+*.pid
+server-token.txt
+*.lnk
+.env
+.env.*
+.venv/
+node_modules/

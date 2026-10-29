@@ -1,0 +1,17 @@
+{
+  "origin": [
+    52.4971,
+    13.44561
+  ],
+  "buildings": 419,
+  "trees": 326,
+  "roads": 189,
+  "road_area": 42192.57501438764,
+  "pavement_area": 25990.58324453416,
+  "road_building_overlap": 0.0,
+  "notes": [
+    "Footprints and road centre lines are mapped.",
+    "Roof fittings, roof style where missing, courtyard gardens and tree placements are procedural.",
+    "Unmapped urban pavement widths are inferred. No claim of surveyed street furniture."
+  ]
+}

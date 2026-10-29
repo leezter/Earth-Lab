@@ -1,0 +1,25 @@
+# RacingVibes rendered district study
+
+Launch **Play rendered Kreuzberg.lnk**. The new build runs at http://127.0.0.1:47841 . The original photographic prototype on port 47840 and the RacingVibes game are preserved.
+
+This is an 840 m square visual study centred on Kreuzberg. It keeps the four vehicle sprites, original vehicle/gearbox/Planck physics snapshot, driving controls and collision hulls from Earth Lab. WASD/arrows drive, S brakes then reverses, R recovers, P pauses. Touch controls are included. The study returns the vehicle to the start when it approaches its boundary; continuous city streaming is intentionally deferred until the visual approach is accepted. Other searched locations can be generated, but this revision was visually reviewed in Berlin only.
+
+## What changed
+
+- The rendered view makes **no aerial-image requests**. Sharp geometry and generated repeatable materials replace enlarged photographed ground and roofs.
+- Mapped building footprints, including courtyard holes, have roof fills, inset parapets, roof materials aligned to their longest edge, restrained roof shading, fittings and shadows. Mapped roof attributes are used where available; missing colours, roof appearance and all fittings are procedural. These are not surveyed replicas of individual roofs.
+- Roads are buffered to mapped widths where available, otherwise class estimates, and united into connected polygons before kerb edging. Pavements are clipped around carriageways and building footprints. Missing urban pavement widths are inferred. Asphalt, cobbles and paving have distinct close-up detail. Junction geometry is a prototype, not a surveyed kerb model; crossings are not invented.
+- Mapped green/water polygons and inferred enclosed courtyard gardens get generated ground materials. Trees are deterministic decorative placements in these areas, not individually mapped trees. Shared shadow direction visually ties buildings, trees and cars together.
+- Building footprint collision uses the original game's active scenery-collision system. No collisions are added for decorative trees/fittings. Existing 2D limitations remain: no terrain elevation, bridge layers, audio, traffic or night simulation in this study.
+
+## Rendering and performance
+
+128 m world tiles at 1024 square pixels; materials are composed offscreen and cached. At most one tile is constructed per animation frame, with neighbour preloading and a 20–24 tile cache. Cache misses can still cause a short construction hitch. This is desktop browser verification, not Android acceptance. The copied vehicle engine keeps its original 30-unit internal physics conversion; map/art scale is 10 drawing units per metre, as in Earth Lab. Speed is measured geographically.
+
+Map metadata is read through the existing Earth Lab backend adapters, which reuse the installed Earth data readers and shared downloaded cache. This revision has no separate aerial download cache. The shared reader bridge is included as `earth_backend.py`; the installed Earth adapters and Python environment are still required. Closing the browser leaves the local server running; **Stop rendered district.cmd** stops only this revision.
+
+## Evidence and sources
+
+**Review.html** has matching baseline and rendered screenshots. `verification.json` records real driving/pause/recovery and confirms no `/api/image` requests; `scene-summary.json` describes the geometry and accuracy boundary. No changes were made to the main RacingVibes repository or baseline source files.
+
+Map sources: Overture Maps and upstream OpenStreetMap contributors, Microsoft and TomTom. OpenStreetMap licence/attribution: https://www.openstreetmap.org/copyright . Overture attribution: https://docs.overturemaps.org/attribution/ . Geometry processing uses Shapely. Material artwork is deterministic Canvas generation; vehicle artwork and physics are copied from the user's RacingVibes project. Existing reader/source licensing remains applicable. Baseline comparison images retain their original imagery attribution.
