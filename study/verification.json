@@ -1,0 +1,41 @@
+{
+  "desktopBrowser": "Edge headless",
+  "state": {
+    "rendered": true,
+    "renderedTiles": 9,
+    "buildMs": [],
+    "origin": [
+      52.4971,
+      13.44561
+    ],
+    "roads": 189,
+    "buildings": 419,
+    "tiles": 0,
+    "ready": 0,
+    "loading": false,
+    "paused": true,
+    "surface": {
+      "onRoad": false,
+      "surfaceType": "gravel-rally"
+    },
+    "fps": 60.04261088514438,
+    "epoch": 1
+  },
+  "errors": [],
+  "bakedTileRequests": 9,
+  "aerialRequests": 0,
+  "movement": {
+    "before": {
+      "x": -15.794744179262848,
+      "y": 23.35724692099447
+    },
+    "after": {
+      "x": 202.9479566193187,
+      "y": 171.31760349096388
+    }
+  },
+  "pause": true,
+  "recovery": true,
+  "vehicleSelection": true,
+  "wallCollisionAdvance": 107.6049333448737
+}

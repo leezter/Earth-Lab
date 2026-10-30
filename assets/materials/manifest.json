@@ -1,0 +1,475 @@
+[
+  {
+    "id": "asphalt_02",
+    "files": [
+      {
+        "path": "assets/materials/asphalt_02/asphalt_02_diff_2k.jpg",
+        "md5": "336af399fd98a39ab986d8b3bf73b4ff",
+        "kind": "Diffuse",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_diff_2k.jpg"
+      },
+      {
+        "path": "assets/materials/asphalt_02/asphalt_02_nor_gl_2k.jpg",
+        "md5": "77ebd1cc0b020ccaa1c6b58f103d1f75",
+        "kind": "nor_gl",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_nor_gl_2k.jpg"
+      },
+      {
+        "path": "assets/materials/asphalt_02/asphalt_02_rough_2k.jpg",
+        "md5": "6fe669ab38640ef2009d6a28d1ad5ee9",
+        "kind": "Rough",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_rough_2k.jpg"
+      }
+    ],
+    "source": "https://polyhaven.com/a/asphalt_02",
+    "metadata": {
+      "scale": "3M x 3M",
+      "type": 1,
+      "date_published": 1596694249,
+      "name": "Asphalt 02",
+      "old_id": 274,
+      "categories": [
+        "terrain",
+        "road",
+        "man made",
+        "outdoor",
+        "floor"
+      ],
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "sponsors": [
+        "26820710"
+      ],
+      "dimensions": [
+        3000.000238418579,
+        3000
+      ],
+      "max_resolution": [
+        8192,
+        8192
+      ],
+      "files_hash": "2839a331f389f6ad1e30a78f24db58369d92f742",
+      "tags": [
+        "asphalt",
+        "cracked",
+        "flat",
+        "road",
+        "asphalt road",
+        "tarmac road",
+        "gritty",
+        "weathered",
+        "grey",
+        "cracking",
+        "tar",
+        "cracks"
+      ],
+      "description": "Free 8K texture of weathered grey asphalt: gritty coarse aggregate, subtle tar cracks, rough matte surface with uneven wear.",
+      "category_id": "ae6df066-2cbf-5772-9092-3cd86ed6394e",
+      "category": "Asphalt & Bitumen/Asphalt/Cracked Asphalt",
+      "attributes": {
+        "surface_use": "floor",
+        "condition": [
+          "weathered",
+          "cracked"
+        ],
+        "origin": "man_made",
+        "setting": "outdoor"
+      },
+      "img_version": "6af3d04c",
+      "download_count": 400142,
+      "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/asphalt_02.png?width=256&height=256&format=webp&v=6af3d04c"
+    },
+    "license": "CC0"
+  },
+  {
+    "id": "roof_slates_02",
+    "files": [
+      {
+        "path": "assets/materials/roof_slates_02/roof_slates_02_diff_2k.jpg",
+        "md5": "2bd2c8593d8cbaea04878203be4bc7ad",
+        "kind": "Diffuse",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/roof_slates_02/roof_slates_02_diff_2k.jpg"
+      },
+      {
+        "path": "assets/materials/roof_slates_02/roof_slates_02_nor_gl_2k.jpg",
+        "md5": "1256041f95f300753b867934324c7b91",
+        "kind": "nor_gl",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/roof_slates_02/roof_slates_02_nor_gl_2k.jpg"
+      },
+      {
+        "path": "assets/materials/roof_slates_02/roof_slates_02_rough_2k.jpg",
+        "md5": "925f6de5f84f351c8d061086a278c005",
+        "kind": "Rough",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/roof_slates_02/roof_slates_02_rough_2k.jpg"
+      }
+    ],
+    "source": "https://polyhaven.com/a/roof_slates_02",
+    "metadata": {
+      "scale": "3M x 3M",
+      "type": 1,
+      "date_published": 1563492542,
+      "name": "Roof Slates 02",
+      "old_id": 214,
+      "categories": [
+        "roofing",
+        "man made",
+        "outdoor"
+      ],
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "dimensions": [
+        3000,
+        3000
+      ],
+      "max_resolution": [
+        8192,
+        8192
+      ],
+      "files_hash": "747e15373011aa8372cdd7524f5da06130839f8f",
+      "tags": [
+        "slates",
+        "uneven",
+        "old",
+        "tiles",
+        "weathered",
+        "discolored",
+        "slate roofing",
+        "slate",
+        "roofing material",
+        "roof",
+        "roofing",
+        "tile roofing",
+        "housing material",
+        "flat tiles"
+      ],
+      "description": "Free 8K texture of a weathered slate roof: uneven overlapping flat tiles, rough chipped edges, subtle discoloration and moss staining across gray-brown surfaces.",
+      "category_id": "0dc6c67b-4dfa-5355-ad12-9918fc376459",
+      "category": "Stone/Slabs & Tiles/Slate",
+      "attributes": {
+        "surface_use": "roof",
+        "condition": [
+          "weathered",
+          "mossy"
+        ],
+        "origin": "man_made",
+        "setting": "outdoor"
+      },
+      "img_version": "7c21979b",
+      "download_count": 50765,
+      "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/roof_slates_02.png?width=256&height=256&format=webp&v=7c21979b"
+    },
+    "license": "CC0"
+  },
+  {
+    "id": "clay_roof_tiles_02",
+    "files": [
+      {
+        "path": "assets/materials/clay_roof_tiles_02/clay_roof_tiles_02_diff_2k.jpg",
+        "md5": "0a1350644116c58a19908b22f569bf8e",
+        "kind": "Diffuse",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clay_roof_tiles_02/clay_roof_tiles_02_diff_2k.jpg"
+      },
+      {
+        "path": "assets/materials/clay_roof_tiles_02/clay_roof_tiles_02_nor_gl_2k.jpg",
+        "md5": "1ccc234195df3d48107490a7f7f03e59",
+        "kind": "nor_gl",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clay_roof_tiles_02/clay_roof_tiles_02_nor_gl_2k.jpg"
+      },
+      {
+        "path": "assets/materials/clay_roof_tiles_02/clay_roof_tiles_02_rough_2k.jpg",
+        "md5": "a6d3dfd7f495213fa7cf6620f4982422",
+        "kind": "Rough",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clay_roof_tiles_02/clay_roof_tiles_02_rough_2k.jpg"
+      }
+    ],
+    "source": "https://polyhaven.com/a/clay_roof_tiles_02",
+    "metadata": {
+      "name": "Clay Roof Tiles 02",
+      "categories": [
+        "man made",
+        "roofing",
+        "outdoor"
+      ],
+      "type": 1,
+      "tags": [
+        "weathered",
+        "old",
+        "interlocking",
+        "roof",
+        "roofing",
+        "tile roofing",
+        "clay",
+        "clay tiles",
+        "traditional",
+        "traditional roofing ",
+        "overlapping tiles"
+      ],
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "max_resolution": [
+        8192,
+        8192
+      ],
+      "dimensions": [
+        2500,
+        2500
+      ],
+      "date_published": 1720051200,
+      "staging": null,
+      "files_hash": "a9f30dc8f73f248bfbaeed2325690422c5c8dd1d",
+      "description": "Free 8K texture of weathered interlocking clay roof tiles with overlapping terracotta shingles, rough worn surface, dirt stains and subtle moss.",
+      "category_id": "6165a492-c53c-5b5f-96df-20c96a7763df",
+      "category": "Ceramic/Terracotta",
+      "attributes": {
+        "surface_use": "roof",
+        "condition": [
+          "weathered",
+          "worn",
+          "mossy"
+        ],
+        "origin": "man_made",
+        "setting": "outdoor"
+      },
+      "img_version": "c3236d8d",
+      "download_count": 55438,
+      "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/clay_roof_tiles_02.png?width=256&height=256&format=webp&v=c3236d8d"
+    },
+    "license": "CC0"
+  },
+  {
+    "id": "concrete_pavement",
+    "files": [
+      {
+        "path": "assets/materials/concrete_pavement/concrete_pavement_diff_2k.jpg",
+        "md5": "f7cdc6f38538e2739d48fbb4f1507ddb",
+        "kind": "Diffuse",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_pavement/concrete_pavement_diff_2k.jpg"
+      },
+      {
+        "path": "assets/materials/concrete_pavement/concrete_pavement_nor_gl_2k.jpg",
+        "md5": "0b6ff8180e61242be0b89e8fe1d6fda7",
+        "kind": "nor_gl",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_pavement/concrete_pavement_nor_gl_2k.jpg"
+      },
+      {
+        "path": "assets/materials/concrete_pavement/concrete_pavement_rough_2k.jpg",
+        "md5": "670223ce80309b606ceea892f47aa766",
+        "kind": "Rough",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_pavement/concrete_pavement_rough_2k.jpg"
+      }
+    ],
+    "source": "https://polyhaven.com/a/concrete_pavement",
+    "metadata": {
+      "name": "Concrete Pavement",
+      "type": 1,
+      "tags": [
+        "rough",
+        "urban",
+        "concrete",
+        "floor",
+        "rough  ",
+        "exterior",
+        "pavers",
+        "outdoor flooring",
+        "cement",
+        "flat",
+        "coarse",
+        "pavement",
+        "sidewalk"
+      ],
+      "authors": {
+        "Charlotte Baglioni": "All"
+      },
+      "info": null,
+      "dimensions": [
+        1800.0000715255737,
+        1800.0000715255737
+      ],
+      "staging": null,
+      "date_published": 1708387200,
+      "max_resolution": [
+        8192,
+        8192
+      ],
+      "files_hash": "13659c72c1314d12b0c5cd809f89ccc9fec09cbf",
+      "description": "Free 8K concrete texture of rough, coarse rectangular pavement pavers with sandy aggregate, subtle wear and flat matte finish in warm gray-beige tones.",
+      "categories": [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ],
+      "category_id": "3d66fbeb-75a0-5a98-97b4-d2630544da3f",
+      "category": "Brick & Block/Concrete Block & Paver",
+      "attributes": {
+        "surface_use": "paving",
+        "condition": [
+          "worn"
+        ],
+        "origin": "man_made",
+        "setting": "outdoor"
+      },
+      "img_version": "5ab61f2c",
+      "download_count": 53494,
+      "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/concrete_pavement.png?width=256&height=256&format=webp&v=5ab61f2c"
+    },
+    "license": "CC0"
+  },
+  {
+    "id": "cobblestone_floor_03",
+    "files": [
+      {
+        "path": "assets/materials/cobblestone_floor_03/cobblestone_floor_03_diff_2k.jpg",
+        "md5": "6cffb23576480d8de7feccea69fdcfd8",
+        "kind": "Diffuse",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/cobblestone_floor_03/cobblestone_floor_03_diff_2k.jpg"
+      },
+      {
+        "path": "assets/materials/cobblestone_floor_03/cobblestone_floor_03_nor_gl_2k.jpg",
+        "md5": "acfe5eff7a40dc86f607c923f85126f4",
+        "kind": "nor_gl",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/cobblestone_floor_03/cobblestone_floor_03_nor_gl_2k.jpg"
+      },
+      {
+        "path": "assets/materials/cobblestone_floor_03/cobblestone_floor_03_rough_2k.jpg",
+        "md5": "34fc6df9746cc47ab533b64c2c27b974",
+        "kind": "Rough",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/cobblestone_floor_03/cobblestone_floor_03_rough_2k.jpg"
+      }
+    ],
+    "source": "https://polyhaven.com/a/cobblestone_floor_03",
+    "metadata": {
+      "scale": "1,2",
+      "type": 1,
+      "tags": [
+        "cobblestone",
+        "plastered",
+        "mud",
+        "moss",
+        "pavement"
+      ],
+      "date_published": 1529359200,
+      "name": "Cobblestone Floor 03",
+      "old_id": 86,
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "dimensions": [
+        2400.0000953674316,
+        2400.0000953674316
+      ],
+      "sponsors": [
+        "3267566"
+      ],
+      "categories": [
+        "floor",
+        "outdoor",
+        "dirty",
+        "man made",
+        "cobblestone"
+      ],
+      "max_resolution": [
+        8192,
+        8192
+      ],
+      "files_hash": "1245575829b7b814bb94635b25337ec56d3cde7b",
+      "description": "Free 8K cobblestone texture with weathered square stones, muddy recessed joints, moss-filled crevices, plaster residues and a rough, uneven, dirty surface.",
+      "category_id": "5aa99c3f-7783-51e3-90d1-2c496368ad24",
+      "attributes": {
+        "surface_use": "paving",
+        "condition": [
+          "weathered",
+          "mossy",
+          "damaged"
+        ],
+        "origin": "man_made",
+        "setting": "outdoor"
+      },
+      "category": "Stone/Cobblestone & Paving/Cut Setts & Pavers",
+      "img_version": "88f6eb6a",
+      "download_count": 24680,
+      "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/cobblestone_floor_03.png?width=256&height=256&format=webp&v=88f6eb6a"
+    },
+    "license": "CC0"
+  },
+  {
+    "id": "aerial_grass_rock",
+    "files": [
+      {
+        "path": "assets/materials/aerial_grass_rock/aerial_grass_rock_diff_2k.jpg",
+        "md5": "024018554c0002620127749d1f585f3d",
+        "kind": "Diffuse",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/aerial_grass_rock/aerial_grass_rock_diff_2k.jpg"
+      },
+      {
+        "path": "assets/materials/aerial_grass_rock/aerial_grass_rock_nor_gl_2k.jpg",
+        "md5": "0c5423ce365169df7c242933b5137696",
+        "kind": "nor_gl",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/aerial_grass_rock/aerial_grass_rock_nor_gl_2k.jpg"
+      },
+      {
+        "path": "assets/materials/aerial_grass_rock/aerial_grass_rock_rough_2k.jpg",
+        "md5": "8d181000237d420a73f99dfc260dab17",
+        "kind": "Rough",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/aerial_grass_rock/aerial_grass_rock_rough_2k.jpg"
+      }
+    ],
+    "source": "https://polyhaven.com/a/aerial_grass_rock",
+    "metadata": {
+      "scale": "15M x 15M",
+      "type": 1,
+      "tags": [
+        "moss",
+        "grass",
+        "cliff",
+        "cave",
+        "rock face"
+      ],
+      "date_published": 1582514587,
+      "name": "Aerial Grass Rock",
+      "old_id": 247,
+      "categories": [
+        "terrain",
+        "rock",
+        "outdoor",
+        "natural",
+        "aerial"
+      ],
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "dimensions": [
+        15000,
+        15000
+      ],
+      "max_resolution": [
+        8192,
+        8192
+      ],
+      "sponsors": [
+        "76058381"
+      ],
+      "files_hash": "d610669c24e20d7c2effc4c116c718176f5b044a",
+      "description": "Free 8K aerial rock texture with moss and grass, rough weathered stone with fine gravel and earthy green-brown tones.",
+      "category_id": "e8121dc9-96d3-59b8-b8ee-83104e60ba82",
+      "category": "Stone/Rock & Cliffs/Mossy & Lichened Rock",
+      "attributes": {
+        "surface_use": "ground",
+        "condition": [
+          "mossy",
+          "weathered"
+        ],
+        "origin": "natural",
+        "setting": "outdoor",
+        "aerial": true
+      },
+      "img_version": "da74fb8a",
+      "download_count": 366075,
+      "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/aerial_grass_rock.png?width=256&height=256&format=webp&v=da74fb8a"
+    },
+    "license": "CC0"
+  }
+]

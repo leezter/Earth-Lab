@@ -1,0 +1,26 @@
+{
+  "berlin": {
+    "status": "Candidate - visual style only",
+    "notes": "Mapped perimeter blocks and courtyards give a coherent urban scene at the target detail. Individual roof materials, courtyard vegetation and fittings are inferred; exact building appearance remains unverified."
+  },
+  "haworth": {
+    "status": "Limited",
+    "notes": "The village road/building layout generates, but large surrounding areas become generic paving and roofs lack local variety. Initial spawn was obstructed; a shared clearance rule now gives a driveable start without changing the bake."
+  },
+  "granada": {
+    "status": "Candidate - visual style only",
+    "notes": "The Mediterranean fallback produces a distinct tiled-roof old town with mapped narrow streets. Roof colour is overly uniform, some roof/courtyard edges need stronger geometry checks, and the hilly setting is flattened."
+  },
+  "industrial": {
+    "status": "Limited",
+    "notes": "Large warehouses receive a different roof treatment and the water boundary is present. Yard surfaces and water are visibly plain; loading equipment, quay detail and street furniture are missing. This is not sufficient harbour realism."
+  },
+  "forest": {
+    "status": "Rejected",
+    "notes": "Zero generated trees: the current vector-land-use path produced no forest mask, so the forest became open grass. A separate diagnostic detects tree cover across about 70 percent of this exact sample using the existing land-cover adapter. That layer was not added to this frozen experiment."
+  },
+  "dry": {
+    "status": "Limited",
+    "notes": "Dry ground and a narrow road generate without invented urban pavements. Large repeated flat ground, missing scrub and absent terrain relief prevent accurate reproduction of the badlands."
+  }
+}

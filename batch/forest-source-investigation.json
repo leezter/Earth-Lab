@@ -1,0 +1,18 @@
+{
+  "source": "Existing Earth land-cover adapter",
+  "seconds": 0.46899999999732245,
+  "classes": {
+    "10": 14423,
+    "30": 84,
+    "50": 3640,
+    "80": 24439,
+    "90": 182
+  },
+  "shape": [
+    162,
+    264
+  ],
+  "experiment_changed": false,
+  "exact_scene_tree_cover_fraction": 0.6958579881656805,
+  "exact_scene_water_fraction": 0.1502958579881657
+}

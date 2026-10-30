@@ -1,0 +1,28 @@
+{
+  "kind": "data-only general-rule check before freezing",
+  "forest_trees": 800,
+  "raster": {
+    "source": "ESA WorldCover",
+    "landcover_release": "v200-2021",
+    "native_landcover_resolution_m": 10,
+    "sample_grid_m": 5.0,
+    "canopy_source": "Meta/WRI canopy-height model",
+    "canopy_release": "v2-ml3",
+    "sampled_cells": [
+      "14/8792/5374",
+      "14/8792/5375"
+    ],
+    "source_files": [
+      "N51E012"
+    ],
+    "class_fractions": {
+      "tree cover": 0.8545706371191135,
+      "permanent water bodies": 0.14542936288088643
+    },
+    "landcover_valid_fraction": 1.0,
+    "canopy_valid_fraction": 1.0,
+    "warnings": [],
+    "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+  },
+  "height_bounds_pass": true
+}

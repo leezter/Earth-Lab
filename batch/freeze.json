@@ -1,0 +1,18 @@
+{
+  "id": "six-settings-v1",
+  "created_utc": "2026-10-29T22:50:02.594951+00:00",
+  "source_hashes": {
+    "batch/scene_builder.py": "292c64ce8636e823dcd4412eb18f3c9d0dd427cdba4252633055abf5ccecd639",
+    "batch/prepare.py": "bc75ae8c3dd8453bdcbbd21e05ad3ac3cc7f61e3473baf5e4b1a856f7555a4f7",
+    "batch/bake.py": "9e11ee981c78e7461051e78f14cde6063c72efe43d7f0793383cab8572fe94b7",
+    "batch/tiles.py": "ee9598a57e7b98231dae84c26885cf59988a9da94888a89ce852c753e44e74dc",
+    "batch/run.py": "3601ece5a9633bcc18668f76a06f19f810e2431078b15f46c2434936d313da4d",
+    "batch/sites.json": "9df8a51728f87cb1d4e39b0984bb832b5e05cfe39e31ab9ef540ba37a00917a1",
+    "assets/materials/batch-manifest.json": "32b1603c9cc1608d7759af81a4ea947abec693a6e7527c58ebc4b8176afd8bf0"
+  },
+  "render_pixels": 6144,
+  "metres": 192,
+  "samples": 48,
+  "manual_scene_tuning": false,
+  "acceptance": "Data/geometry/browser gates plus a separate visual review. Export success is not visual acceptance."
+}

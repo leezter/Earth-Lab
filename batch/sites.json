@@ -1,0 +1,44 @@
+[
+  {
+    "id": "berlin",
+    "name": "Kreuzberg, Berlin",
+    "setting": "dense urban",
+    "lat": 52.4971,
+    "lon": 13.44561
+  },
+  {
+    "id": "haworth",
+    "name": "Main Street, Haworth",
+    "setting": "Yorkshire village",
+    "lat": 53.8315408,
+    "lon": -1.9557264
+  },
+  {
+    "id": "granada",
+    "name": "Albaic\u00edn, Granada",
+    "setting": "Mediterranean old town",
+    "lat": 37.1811,
+    "lon": -3.5925
+  },
+  {
+    "id": "industrial",
+    "name": "Westhafen, Berlin",
+    "setting": "industrial harbour",
+    "lat": 52.5374096,
+    "lon": 13.3354466
+  },
+  {
+    "id": "forest",
+    "name": "Havelchaussee, Grunewald",
+    "setting": "forest road",
+    "lat": 52.4966877,
+    "lon": 13.2022647
+  },
+  {
+    "id": "dry",
+    "name": "Tabernas countryside",
+    "setting": "dry rural",
+    "lat": 37.0675509,
+    "lon": -2.5294696
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "berlin": {
+    "status": "Candidate - retained urban readability",
+    "notes": "Roads and courtyard footprints remain readable at both zooms, with additional canopy-guided trees. Roof texture is sharp but repetitive and generic. Some forest-ground patches have visible coarse boundaries. This is not a street-by-street survey."
+  },
+  "haworth": {
+    "status": "Limited - vegetation improved; ground remains generic",
+    "notes": "The same street is retained, with much more vegetation behind the buildings. The large generic hard-surface background is still prominent, and forest-ground patches reveal the raster grid. The coarse built-up class cannot distinguish individual lawns, yards and gardens."
+  },
+  "granada": {
+    "status": "Candidate - retained old-town readability",
+    "notes": "Dense roof footprints, courtyards and narrow connected streets remain readable. Additional trees vary in size. Orange roof tiles and roof details remain inferred and repetitive. The flat prototype still omits the actual hills."
+  },
+  "industrial": {
+    "status": "Limited - little visible benefit in this camera view",
+    "notes": "Warehouse roofs, road and water remain intact. The added trees mostly lie outside this central camera view; the broad yard is still a generic surface. Quay edges, equipment, markings and site-specific ground detail are absent."
+  },
+  "forest": {
+    "status": "Candidate - previous missing forest restored",
+    "notes": "The formerly empty scene now clearly reads as a forest road, with dense canopy, varied crown sizes and forest-floor texture. The car and road remain visible in both zooms. Tree positions, species and crowns are procedural; the foliage is repetitive, and mapped path ribbons and uniform verges still look artificial."
+  },
+  "dry": {
+    "status": "Limited - class variation added; boundaries need blending",
+    "notes": "Ground is now divided into grass, sparse/bare and shrub areas, with low shrubs and no invented tall trees. However the raster boundaries are visibly blocky and the grass colour is too uniform to establish a convincing dry landscape. Regional and seasonal material treatment is still needed; this is not accepted as a faithful Tabernas replica."
+  }
+}

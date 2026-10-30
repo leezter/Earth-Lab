@@ -1,0 +1,60 @@
+{
+  "metres": 192,
+  "pixels": 6144,
+  "pixels_per_metre": 32,
+  "tile_metres": 64,
+  "tile_pixels": 2048,
+  "extent": [
+    -96,
+    -96,
+    96,
+    96
+  ],
+  "files": [
+    {
+      "name": "0_0.webp",
+      "bytes": 1371030,
+      "sha256": "cae9a474116b6b92803154bc26da76192653fda1509b717354178058d98ec7b1"
+    },
+    {
+      "name": "1_0.webp",
+      "bytes": 1581202,
+      "sha256": "d72d45588287ee177c395282028d2b542234ad629668398fcb1a6f2da1ab5eb4"
+    },
+    {
+      "name": "2_0.webp",
+      "bytes": 1473216,
+      "sha256": "39b2d0a865e5740fc587e2f8855a3315240d40d534b9d10f1b36129d12fef41b"
+    },
+    {
+      "name": "0_1.webp",
+      "bytes": 1450350,
+      "sha256": "33219399c6dcca0cf90e27f0a23cc1aedf5c46d46c6187d7f7d93193e0ecaa5b"
+    },
+    {
+      "name": "1_1.webp",
+      "bytes": 1456172,
+      "sha256": "1848ca640e11f678bbc1e10d0a5ccccd59006dde0883c3dc08d5262266d595fa"
+    },
+    {
+      "name": "2_1.webp",
+      "bytes": 1450642,
+      "sha256": "d0ea1206d7aea23fcfa96aa54820306361405933f51d9703c035d685ac61e82e"
+    },
+    {
+      "name": "0_2.webp",
+      "bytes": 1483414,
+      "sha256": "11a904a45174a1ac9e5643535109f2b103a5668decd2fe9abf1f5008b5d5322f"
+    },
+    {
+      "name": "1_2.webp",
+      "bytes": 1489160,
+      "sha256": "9086aad2aa53e7c039b0a49bca9200d2aa8655c82952d8b0af3a24156e9a8dc0"
+    },
+    {
+      "name": "2_2.webp",
+      "bytes": 1421596,
+      "sha256": "8418a430c7d053eb65bc4874d24029a8c76beb8e07d4c23b497dac8727c1e44a"
+    }
+  ]
+}

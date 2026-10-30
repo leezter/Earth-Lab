@@ -1,0 +1,20 @@
+"""After generation, export a v1/v2 gallery without editing rendered scenes."""
+from pathlib import Path
+import json,html
+ROOT=Path(__file__).resolve().parent;OLD=ROOT.parent/'batch'
+def page(online=False):
+ new=json.loads((ROOT/'report.json').read_text());old=json.loads((OLD/'report.json').read_text());oldsites={s['id']:s for s in old['sites']}
+ review=json.loads((ROOT/'visual-review.json').read_text())if(ROOT/'visual-review.json').exists()else {}
+ cards=[]
+ for s in new['sites']:
+  sid=s['id'];previous=oldsites[sid];rating=review.get(sid,{});name=html.escape(s['name'])
+  if s['status']!='built':cards.append(f'<section><h2>{name}</h2><p>{html.escape(s["status"])}: {html.escape(s.get("error",""))}</p></section>');continue
+  before=f'/v1-reviews/{sid}-overview.png'if online else f'../batch/web/reviews/{sid}-overview.png'
+  after=f'/reviews/{sid}-overview.png'if online else f'web/reviews/{sid}-overview.png'
+  close=f'/reviews/{sid}-close.png'if online else f'web/reviews/{sid}-close.png'
+  beforeclose=f'/v1-reviews/{sid}-close.png'if online else f'../batch/web/reviews/{sid}-close.png'
+  meta=s['context']['raster'];cover=meta['class_fractions'].get('tree cover',0)
+  cards.append(f'<section><h2>{name}</h2><p>{html.escape(rating.get("status","Awaiting visual review"))}</p><p>{html.escape(rating.get("notes",""))}</p><p>Tree meshes in the area plus shadow margin: {previous.get("trees",0)} → {s.get("trees",0)}. Shrubs: {s.get("shrubs",0)}. Tree-cover classification inside the playable sample: {cover:.0%}. Canopy-height coverage: {meta["canopy_valid_fraction"]:.0%}. Build: {s["total_seconds"]/60:.1f} min.</p><a href="http://127.0.0.1:47844/?site={sid}">Drive version 2</a> · <a href="http://127.0.0.1:47843/?site={sid}">Drive version 1</a><div class="pair"><div><h3>Version 1</h3><a href="{before}" target="_blank"><img src="{before}" alt="{name}, version 1"></a></div><div><h3>Version 2: land cover and canopy</h3><a href="{after}" target="_blank"><img src="{after}" alt="{name}, version 2"></a></div></div><details><summary>Compare close driving views</summary><div class="pair"><div><h3>Version 1 close view</h3><a href="{beforeclose}" target="_blank"><img src="{beforeclose}" alt="{name}, version 1 close view"></a></div><div><h3>Version 2 close view</h3><a href="{close}" target="_blank"><img src="{close}" alt="{name}, version 2 close view"></a></div></div></details></section>')
+ return '''<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Earth Lab · Land-cover comparison</title><style>body{background:#14232b;color:#eaf0ee;font:16px system-ui;line-height:1.6;max-width:1700px;margin:auto;padding:30px}a{color:#87ddc5}p{max-width:1200px}section{margin:42px 0}img{width:100%;border-radius:12px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}details{margin:20px 0}@media(max-width:1000px){.pair{grid-template-columns:1fr}}</style><h1>Earth Lab · Land cover and canopy, across all six settings</h1><p>The same six areas, resolution, materials and lighting. Version 2 adds ESA WorldCover classification and modelled canopy heights, gathering neighbouring data cells. Roads and building footprints override coarse raster masks. Tree positions are generated within supported areas; they are not surveyed trunks. WorldCover is the 2021 v200 product, not a current street survey.</p><p>Version 1 is preserved unchanged. Version 2 is frozen before rendering and applied without individual scene repairs. These screenshots are automatic captures at matching camera settings. Terrain height, architectural detail and live lighting remain outside this version.</p>'''+''.join(cards)+'<p>Map: Overture / OpenStreetMap contributors and upstream providers. Land cover: ESA WorldCover, CC BY 4.0. Canopy height: Meta/WRI model, CC BY 4.0. Powered by Poly Haven: CC0 materials. Vehicles and physics: RacingVibes.</p>'
+if __name__=='__main__':
+ (ROOT/'Review.html').write_text(page(False),encoding='utf-8');(ROOT/'web/gallery.html').write_text(page(True),encoding='utf-8');print('Comparison exported.')

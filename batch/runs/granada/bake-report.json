@@ -1,0 +1,37 @@
+{
+  "renderer": "Blender Cycles",
+  "blender": "4.5.14 LTS",
+  "device": "GPU",
+  "pixels": 6144,
+  "metres": 192,
+  "pixels_per_metre": 32.0,
+  "samples": 48,
+  "seconds": 128.70300000000134,
+  "objects": 2642,
+  "buildings": 372,
+  "trees": 60,
+  "context": {
+    "building_share": 0.360411170807132,
+    "forest_share": 0.0,
+    "green_share": 0.018917698408309074,
+    "regional_guess": "mediterranean",
+    "ground": "concrete_pavement",
+    "roof_default": "clay_roof_tiles_02",
+    "inference": "Regional fallback uses coarse geographic boxes, not a climate survey."
+  },
+  "material_sources": [
+    "asphalt_02",
+    "roof_slates_02",
+    "clay_roof_tiles_02",
+    "concrete_pavement",
+    "cobblestone_floor_03",
+    "aerial_grass_rock",
+    "brown_mud_dry",
+    "forest_floor",
+    "gravel_floor",
+    "corrugated_iron",
+    "dry_ground_rocks"
+  ],
+  "geometry": "mapped footprints; inferred pitched roofs and roof fittings",
+  "vegetation": "procedural botanical mesh placements"
+}

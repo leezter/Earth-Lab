@@ -1,0 +1,51 @@
+{
+  "pipeline_hashes_unchanged": true,
+  "material_checksums_verified": 33,
+  "configured_material_sets": 11,
+  "sites": [
+    {
+      "id": "berlin",
+      "built": true,
+      "tiles_verified": 9,
+      "geometry_finite": true,
+      "manual_scene_edits": 0
+    },
+    {
+      "id": "haworth",
+      "built": true,
+      "tiles_verified": 9,
+      "geometry_finite": true,
+      "manual_scene_edits": 0
+    },
+    {
+      "id": "granada",
+      "built": true,
+      "tiles_verified": 9,
+      "geometry_finite": true,
+      "manual_scene_edits": 0
+    },
+    {
+      "id": "industrial",
+      "built": true,
+      "tiles_verified": 9,
+      "geometry_finite": true,
+      "manual_scene_edits": 0
+    },
+    {
+      "id": "forest",
+      "built": true,
+      "tiles_verified": 9,
+      "geometry_finite": true,
+      "manual_scene_edits": 0
+    },
+    {
+      "id": "dry",
+      "built": true,
+      "tiles_verified": 9,
+      "geometry_finite": true,
+      "manual_scene_edits": 0
+    }
+  ],
+  "technical_built": 6,
+  "attempted": 6
+}

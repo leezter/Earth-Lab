@@ -1,0 +1,19 @@
+{
+  "id": "six-settings-v2",
+  "created_utc": "2026-10-29T23:39:53.045210+00:00",
+  "source_hashes": {
+    "batch_v2/scene_builder.py": "37a07cd78c3ccf040aeae209912186db4564cc2d26e7c306143e95b0ecef0536",
+    "batch_v2/landcover.py": "9fbdb33f1768d1edf0824ec1d6e920d5a0ab129898735be3a785ab715ccf67b8",
+    "batch_v2/prepare.py": "dee6b82a5c3fd902377ba788d4e3afa5c0004fe1dcfb5d921e898078c87c6bd5",
+    "batch_v2/bake.py": "2e2b8f01394636612a75caf2892c519b737ec9e58fab5aa93698b13eb0c24c66",
+    "batch_v2/tiles.py": "ee9598a57e7b98231dae84c26885cf59988a9da94888a89ce852c753e44e74dc",
+    "batch_v2/run.py": "76931b7704587e3c91c8b5c60ba9c1c8c01dedf80157f9f4dc879acf5e904316",
+    "batch_v2/sites.json": "9df8a51728f87cb1d4e39b0984bb832b5e05cfe39e31ab9ef540ba37a00917a1",
+    "assets/materials/batch-manifest.json": "32b1603c9cc1608d7759af81a4ea947abec693a6e7527c58ebc4b8176afd8bf0"
+  },
+  "render_pixels": 6144,
+  "metres": 192,
+  "samples": 48,
+  "manual_scene_tuning": false,
+  "acceptance": "Data/geometry/browser gates plus a separate visual review. Export success is not visual acceptance."
+}

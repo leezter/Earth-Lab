@@ -1,0 +1,243 @@
+{
+  "freeze": "six-settings-v2",
+  "pipeline_hashes_unchanged": true,
+  "manual_scene_edits": 0,
+  "built": 6,
+  "attempted": 6,
+  "driving_passes": 6,
+  "screenshots": 12,
+  "tile_bytes": 70694286,
+  "median_build_seconds": 161.03150000000096,
+  "sites": [
+    {
+      "id": "berlin",
+      "buildings": 111,
+      "trees_v1": 226,
+      "trees_v2": 494,
+      "shrubs": 0,
+      "total_build_seconds": 429.95300000000134,
+      "previous_build_seconds": 164.04699999999866,
+      "raster": {
+        "source": "ESA WorldCover",
+        "landcover_release": "v200-2021",
+        "native_landcover_resolution_m": 10,
+        "sample_grid_m": 5.0,
+        "canopy_source": "Meta/WRI canopy-height model",
+        "canopy_release": "v2-ml3",
+        "sampled_cells": [
+          "14/8803/5374",
+          "14/8804/5374",
+          "14/8803/5375",
+          "14/8804/5375"
+        ],
+        "source_files": [
+          "N51E012"
+        ],
+        "class_fractions": {
+          "tree cover": 0.13434903047091412,
+          "built-up": 0.8656509695290858
+        },
+        "landcover_valid_fraction": 1.0,
+        "canopy_valid_fraction": 1.0,
+        "warnings": [],
+        "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+      },
+      "visual_review": {
+        "status": "Candidate - retained urban readability",
+        "notes": "Roads and courtyard footprints remain readable at both zooms, with additional canopy-guided trees. Roof texture is sharp but repetitive and generic. Some forest-ground patches have visible coarse boundaries. This is not a street-by-street survey."
+      }
+    },
+    {
+      "id": "haworth",
+      "buildings": 59,
+      "trees_v1": 110,
+      "trees_v2": 682,
+      "shrubs": 0,
+      "total_build_seconds": 161.11000000000058,
+      "previous_build_seconds": 148.75,
+      "raster": {
+        "source": "ESA WorldCover",
+        "landcover_release": "v200-2021",
+        "native_landcover_resolution_m": 10,
+        "sample_grid_m": 5.0,
+        "canopy_source": "Meta/WRI canopy-height model",
+        "canopy_release": "v2-ml3",
+        "sampled_cells": [
+          "14/8102/5273",
+          "14/8103/5273"
+        ],
+        "source_files": [
+          "N51W003"
+        ],
+        "class_fractions": {
+          "tree cover": 0.3060941828254848,
+          "grassland": 0.008310249307479225,
+          "built-up": 0.685595567867036
+        },
+        "landcover_valid_fraction": 1.0,
+        "canopy_valid_fraction": 1.0,
+        "warnings": [],
+        "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+      },
+      "visual_review": {
+        "status": "Limited - vegetation improved; ground remains generic",
+        "notes": "The same street is retained, with much more vegetation behind the buildings. The large generic hard-surface background is still prominent, and forest-ground patches reveal the raster grid. The coarse built-up class cannot distinguish individual lawns, yards and gardens."
+      }
+    },
+    {
+      "id": "granada",
+      "buildings": 372,
+      "trees_v1": 60,
+      "trees_v2": 159,
+      "shrubs": 3,
+      "total_build_seconds": 251.70300000000134,
+      "previous_build_seconds": 250.125,
+      "raster": {
+        "source": "ESA WorldCover",
+        "landcover_release": "v200-2021",
+        "native_landcover_resolution_m": 10,
+        "sample_grid_m": 5.0,
+        "canopy_source": "Meta/WRI canopy-height model",
+        "canopy_release": "v2-ml3",
+        "sampled_cells": [
+          "14/8028/6366"
+        ],
+        "source_files": [
+          "N36W006"
+        ],
+        "class_fractions": {
+          "tree cover": 0.13988919667590027,
+          "grassland": 0.013850415512465374,
+          "built-up": 0.8462603878116344
+        },
+        "landcover_valid_fraction": 1.0,
+        "canopy_valid_fraction": 1.0,
+        "warnings": [],
+        "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+      },
+      "visual_review": {
+        "status": "Candidate - retained old-town readability",
+        "notes": "Dense roof footprints, courtyards and narrow connected streets remain readable. Additional trees vary in size. Orange roof tiles and roof details remain inferred and repetitive. The flat prototype still omits the actual hills."
+      }
+    },
+    {
+      "id": "industrial",
+      "buildings": 24,
+      "trees_v1": 0,
+      "trees_v2": 12,
+      "shrubs": 0,
+      "total_build_seconds": 137.21899999999732,
+      "previous_build_seconds": 136.4690000000046,
+      "raster": {
+        "source": "ESA WorldCover",
+        "landcover_release": "v200-2021",
+        "native_landcover_resolution_m": 10,
+        "sample_grid_m": 5.0,
+        "canopy_source": "Meta/WRI canopy-height model",
+        "canopy_release": "v2-ml3",
+        "sampled_cells": [
+          "14/8798/5371",
+          "14/8799/5371",
+          "14/8798/5372",
+          "14/8799/5372"
+        ],
+        "source_files": [
+          "N51E012"
+        ],
+        "class_fractions": {
+          "built-up": 0.7763157894736842,
+          "bare / sparse vegetation": 0.012465373961218837,
+          "permanent water bodies": 0.21121883656509696
+        },
+        "landcover_valid_fraction": 1.0,
+        "canopy_valid_fraction": 1.0,
+        "warnings": [],
+        "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+      },
+      "visual_review": {
+        "status": "Limited - little visible benefit in this camera view",
+        "notes": "Warehouse roofs, road and water remain intact. The added trees mostly lie outside this central camera view; the broad yard is still a generic surface. Quay edges, equipment, markings and site-specific ground detail are absent."
+      }
+    },
+    {
+      "id": "forest",
+      "buildings": 0,
+      "trees_v1": 0,
+      "trees_v2": 800,
+      "shrubs": 0,
+      "total_build_seconds": 160.95300000000134,
+      "previous_build_seconds": 136.59300000000076,
+      "raster": {
+        "source": "ESA WorldCover",
+        "landcover_release": "v200-2021",
+        "native_landcover_resolution_m": 10,
+        "sample_grid_m": 5.0,
+        "canopy_source": "Meta/WRI canopy-height model",
+        "canopy_release": "v2-ml3",
+        "sampled_cells": [
+          "14/8792/5374",
+          "14/8792/5375"
+        ],
+        "source_files": [
+          "N51E012"
+        ],
+        "class_fractions": {
+          "tree cover": 0.8545706371191135,
+          "permanent water bodies": 0.14542936288088643
+        },
+        "landcover_valid_fraction": 1.0,
+        "canopy_valid_fraction": 1.0,
+        "warnings": [],
+        "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+      },
+      "visual_review": {
+        "status": "Candidate - previous missing forest restored",
+        "notes": "The formerly empty scene now clearly reads as a forest road, with dense canopy, varied crown sizes and forest-floor texture. The car and road remain visible in both zooms. Tree positions, species and crowns are procedural; the foliage is repetitive, and mapped path ribbons and uniform verges still look artificial."
+      }
+    },
+    {
+      "id": "dry",
+      "buildings": 0,
+      "trees_v1": 0,
+      "trees_v2": 0,
+      "shrubs": 107,
+      "total_build_seconds": 136.42199999999866,
+      "previous_build_seconds": 147.375,
+      "raster": {
+        "source": "ESA WorldCover",
+        "landcover_release": "v200-2021",
+        "native_landcover_resolution_m": 10,
+        "sample_grid_m": 5.0,
+        "canopy_source": "Meta/WRI canopy-height model",
+        "canopy_release": "v2-ml3",
+        "sampled_cells": [
+          "14/8076/6373",
+          "14/8077/6373"
+        ],
+        "source_files": [
+          "N36W003"
+        ],
+        "class_fractions": {
+          "shrubland": 0.1128808864265928,
+          "grassland": 0.5713296398891967,
+          "bare / sparse vegetation": 0.3157894736842105
+        },
+        "landcover_valid_fraction": 1.0,
+        "canopy_valid_fraction": 1.0,
+        "warnings": [],
+        "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+      },
+      "visual_review": {
+        "status": "Limited - class variation added; boundaries need blending",
+        "notes": "Ground is now divided into grass, sparse/bare and shrub areas, with low shrubs and no invented tall trees. However the raster boundaries are visibly blocky and the grass colour is too uniform to establish a convincing dry landscape. Regional and seasonal material treatment is still needed; this is not accepted as a faithful Tabernas replica."
+      }
+    }
+  ],
+  "limits": [
+    "WorldCover 2021 is 10 m classification, not current street-level detail.",
+    "Canopy heights are modelled; tree positions and species are inferred.",
+    "Fixed 192 m areas; no terrain elevation or continuous streaming.",
+    "Desktop browser checks only; Android performance untested.",
+    "Technical checks and image review do not establish surveyed accuracy."
+  ]
+}

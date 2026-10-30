@@ -1,0 +1,8 @@
+{
+  "revision": "clear-spawn-v1",
+  "reason": "Initial Haworth spawn moved only 0.45 metres before contact with mapped building geometry.",
+  "change": "General car-sized clearance envelope used for initial spawn and recovery across every location.",
+  "site_specific_branches": false,
+  "baked_scenes_changed": false,
+  "initial_test": "browser-verification-initial.json"
+}

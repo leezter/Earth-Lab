@@ -1,0 +1,333 @@
+{
+  "freeze": "six-settings-v2",
+  "started_utc": "2026-10-29T23:39:53.048211+00:00",
+  "sites": [
+    {
+      "id": "berlin",
+      "name": "Kreuzberg, Berlin",
+      "setting": "dense urban",
+      "lat": 52.4971,
+      "lon": 13.44561,
+      "status": "built",
+      "actual_lat": 52.4970790178281,
+      "actual_lon": 13.445586694114322,
+      "automatic_road_snap_metres": 2.8196363726777918,
+      "context": {
+        "building_share": 0.39653686681356515,
+        "forest_share": 0.13760025905195544,
+        "green_share": 0.025470972124096894,
+        "regional_guess": "temperate",
+        "ground": "concrete_pavement",
+        "roof_default": "roof_slates_02",
+        "inference": "Ground uses WorldCover classification, clipped by mapped geometry; roof styles still use regional fallbacks.",
+        "raster": {
+          "source": "ESA WorldCover",
+          "landcover_release": "v200-2021",
+          "native_landcover_resolution_m": 10,
+          "sample_grid_m": 5.0,
+          "canopy_source": "Meta/WRI canopy-height model",
+          "canopy_release": "v2-ml3",
+          "sampled_cells": [
+            "14/8803/5374",
+            "14/8804/5374",
+            "14/8803/5375",
+            "14/8804/5375"
+          ],
+          "source_files": [
+            "N51E012"
+          ],
+          "class_fractions": {
+            "tree cover": 0.13434903047091412,
+            "built-up": 0.8656509695290858
+          },
+          "landcover_valid_fraction": 1.0,
+          "canopy_valid_fraction": 1.0,
+          "warnings": [],
+          "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+        }
+      },
+      "buildings": 111,
+      "trees": 494,
+      "shrubs": 0,
+      "roads": 189,
+      "total_seconds": 429.95300000000134,
+      "bake_seconds": 350.20300000000134,
+      "tile_bytes": 12107646,
+      "tile_manifest_sha256": "53e1d481be1f4ec2ea805d4a663e366ed339d0080ee1e1b8693b7f34fb700814",
+      "visual_status": "not_reviewed",
+      "manual_scene_edits": 0
+    },
+    {
+      "id": "haworth",
+      "name": "Main Street, Haworth",
+      "setting": "Yorkshire village",
+      "lat": 53.8315408,
+      "lon": -1.9557264,
+      "status": "built",
+      "actual_lat": 53.8315568,
+      "actual_lon": -1.9558895,
+      "automatic_road_snap_metres": 10.862116475328781,
+      "context": {
+        "building_share": 0.15349134182102364,
+        "forest_share": 0.3116629734995891,
+        "green_share": 0.013886673171507038,
+        "regional_guess": "british",
+        "ground": "concrete_pavement",
+        "roof_default": "roof_slates_02",
+        "inference": "Ground uses WorldCover classification, clipped by mapped geometry; roof styles still use regional fallbacks.",
+        "raster": {
+          "source": "ESA WorldCover",
+          "landcover_release": "v200-2021",
+          "native_landcover_resolution_m": 10,
+          "sample_grid_m": 5.0,
+          "canopy_source": "Meta/WRI canopy-height model",
+          "canopy_release": "v2-ml3",
+          "sampled_cells": [
+            "14/8102/5273",
+            "14/8103/5273"
+          ],
+          "source_files": [
+            "N51W003"
+          ],
+          "class_fractions": {
+            "tree cover": 0.3060941828254848,
+            "grassland": 0.008310249307479225,
+            "built-up": 0.685595567867036
+          },
+          "landcover_valid_fraction": 1.0,
+          "canopy_valid_fraction": 1.0,
+          "warnings": [],
+          "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+        }
+      },
+      "buildings": 59,
+      "trees": 682,
+      "shrubs": 0,
+      "roads": 88,
+      "total_seconds": 161.11000000000058,
+      "bake_seconds": 129.86000000000058,
+      "tile_bytes": 11028696,
+      "tile_manifest_sha256": "f88d87b9240659f0307ac9f0a9b687b5bb4eb65199a4bab2a1b229c1849d7902",
+      "visual_status": "not_reviewed",
+      "manual_scene_edits": 0
+    },
+    {
+      "id": "granada",
+      "name": "Albaic\u00edn, Granada",
+      "setting": "Mediterranean old town",
+      "lat": 37.1811,
+      "lon": -3.5925,
+      "status": "built",
+      "actual_lat": 37.18103451981613,
+      "actual_lon": -3.592483724319633,
+      "automatic_road_snap_metres": 7.43077875996871,
+      "context": {
+        "building_share": 0.360411170807132,
+        "forest_share": 0.14147966831282224,
+        "green_share": 0.03140021682370616,
+        "regional_guess": "mediterranean",
+        "ground": "concrete_pavement",
+        "roof_default": "clay_roof_tiles_02",
+        "inference": "Ground uses WorldCover classification, clipped by mapped geometry; roof styles still use regional fallbacks.",
+        "raster": {
+          "source": "ESA WorldCover",
+          "landcover_release": "v200-2021",
+          "native_landcover_resolution_m": 10,
+          "sample_grid_m": 5.0,
+          "canopy_source": "Meta/WRI canopy-height model",
+          "canopy_release": "v2-ml3",
+          "sampled_cells": [
+            "14/8028/6366"
+          ],
+          "source_files": [
+            "N36W006"
+          ],
+          "class_fractions": {
+            "tree cover": 0.13988919667590027,
+            "grassland": 0.013850415512465374,
+            "built-up": 0.8462603878116344
+          },
+          "landcover_valid_fraction": 1.0,
+          "canopy_valid_fraction": 1.0,
+          "warnings": [],
+          "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+        }
+      },
+      "buildings": 372,
+      "trees": 159,
+      "shrubs": 3,
+      "roads": 797,
+      "total_seconds": 251.70300000000134,
+      "bake_seconds": 129.48400000000402,
+      "tile_bytes": 13176782,
+      "tile_manifest_sha256": "b8df02cccba45f8c7a4dc29ea18cfee266917bf4cdf81d75b756545d255f49b7",
+      "visual_status": "not_reviewed",
+      "manual_scene_edits": 0
+    },
+    {
+      "id": "industrial",
+      "name": "Westhafen, Berlin",
+      "setting": "industrial harbour",
+      "lat": 52.5374096,
+      "lon": 13.3354466,
+      "status": "built",
+      "actual_lat": 52.537141651317505,
+      "actual_lon": 13.335343756197393,
+      "automatic_road_snap_metres": 30.62995915637091,
+      "context": {
+        "building_share": 0.2083972153485627,
+        "forest_share": 0.0,
+        "green_share": 0.0,
+        "regional_guess": "temperate",
+        "ground": "concrete_pavement",
+        "roof_default": "roof_slates_02",
+        "inference": "Ground uses WorldCover classification, clipped by mapped geometry; roof styles still use regional fallbacks.",
+        "raster": {
+          "source": "ESA WorldCover",
+          "landcover_release": "v200-2021",
+          "native_landcover_resolution_m": 10,
+          "sample_grid_m": 5.0,
+          "canopy_source": "Meta/WRI canopy-height model",
+          "canopy_release": "v2-ml3",
+          "sampled_cells": [
+            "14/8798/5371",
+            "14/8799/5371",
+            "14/8798/5372",
+            "14/8799/5372"
+          ],
+          "source_files": [
+            "N51E012"
+          ],
+          "class_fractions": {
+            "built-up": 0.7763157894736842,
+            "bare / sparse vegetation": 0.012465373961218837,
+            "permanent water bodies": 0.21121883656509696
+          },
+          "landcover_valid_fraction": 1.0,
+          "canopy_valid_fraction": 1.0,
+          "warnings": [],
+          "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+        }
+      },
+      "buildings": 24,
+      "trees": 12,
+      "shrubs": 0,
+      "roads": 65,
+      "total_seconds": 137.21899999999732,
+      "bake_seconds": 123.0460000000021,
+      "tile_bytes": 3114868,
+      "tile_manifest_sha256": "d55bcd6b35437485ef8a72a3608886b7df1eac9258a7936d03e7151bcee00a2d",
+      "visual_status": "not_reviewed",
+      "manual_scene_edits": 0
+    },
+    {
+      "id": "forest",
+      "name": "Havelchaussee, Grunewald",
+      "setting": "forest road",
+      "lat": 52.4966877,
+      "lon": 13.2022647,
+      "status": "built",
+      "actual_lat": 52.49668769711617,
+      "actual_lon": 13.202264703254817,
+      "automatic_road_snap_metres": 0.0003895073949699295,
+      "context": {
+        "building_share": 0.0,
+        "forest_share": 0.8527728438153397,
+        "green_share": 0.0,
+        "regional_guess": "temperate",
+        "ground": "forest_floor",
+        "roof_default": "roof_slates_02",
+        "inference": "Ground uses WorldCover classification, clipped by mapped geometry; roof styles still use regional fallbacks.",
+        "raster": {
+          "source": "ESA WorldCover",
+          "landcover_release": "v200-2021",
+          "native_landcover_resolution_m": 10,
+          "sample_grid_m": 5.0,
+          "canopy_source": "Meta/WRI canopy-height model",
+          "canopy_release": "v2-ml3",
+          "sampled_cells": [
+            "14/8792/5374",
+            "14/8792/5375"
+          ],
+          "source_files": [
+            "N51E012"
+          ],
+          "class_fractions": {
+            "tree cover": 0.8545706371191135,
+            "permanent water bodies": 0.14542936288088643
+          },
+          "landcover_valid_fraction": 1.0,
+          "canopy_valid_fraction": 1.0,
+          "warnings": [],
+          "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+        }
+      },
+      "buildings": 0,
+      "trees": 800,
+      "shrubs": 0,
+      "roads": 15,
+      "total_seconds": 160.95300000000134,
+      "bake_seconds": 130.26600000000326,
+      "tile_bytes": 14898568,
+      "tile_manifest_sha256": "4689819030c32224d798064ebc35a634824214be00699dcf938ae3e4d01de0ce",
+      "visual_status": "not_reviewed",
+      "manual_scene_edits": 0
+    },
+    {
+      "id": "dry",
+      "name": "Tabernas countryside",
+      "setting": "dry rural",
+      "lat": 37.0675509,
+      "lon": -2.5294696,
+      "status": "built",
+      "actual_lat": 37.0685651,
+      "actual_lon": -2.5274214,
+      "automatic_road_snap_metres": 214.1149773211712,
+      "context": {
+        "building_share": 0.0,
+        "forest_share": 0.0,
+        "green_share": 0.5778284721397482,
+        "regional_guess": "mediterranean",
+        "ground": "aerial_grass_rock",
+        "roof_default": "clay_roof_tiles_02",
+        "inference": "Ground uses WorldCover classification, clipped by mapped geometry; roof styles still use regional fallbacks.",
+        "raster": {
+          "source": "ESA WorldCover",
+          "landcover_release": "v200-2021",
+          "native_landcover_resolution_m": 10,
+          "sample_grid_m": 5.0,
+          "canopy_source": "Meta/WRI canopy-height model",
+          "canopy_release": "v2-ml3",
+          "sampled_cells": [
+            "14/8076/6373",
+            "14/8077/6373"
+          ],
+          "source_files": [
+            "N36W003"
+          ],
+          "class_fractions": {
+            "shrubland": 0.1128808864265928,
+            "grassland": 0.5713296398891967,
+            "bare / sparse vegetation": 0.3157894736842105
+          },
+          "landcover_valid_fraction": 1.0,
+          "canopy_valid_fraction": 1.0,
+          "warnings": [],
+          "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+        }
+      },
+      "buildings": 0,
+      "trees": 0,
+      "shrubs": 107,
+      "roads": 2,
+      "total_seconds": 136.42199999999866,
+      "bake_seconds": 118.125,
+      "tile_bytes": 16367726,
+      "tile_manifest_sha256": "37cf8b0c90f8cbb1fc59b3095ca50a0f1d466b5bd38078764b824f6f05d5b474",
+      "visual_status": "not_reviewed",
+      "manual_scene_edits": 0
+    }
+  ],
+  "finished_utc": "2026-10-30T00:01:10.408696+00:00",
+  "source_hashes_unchanged": true
+}

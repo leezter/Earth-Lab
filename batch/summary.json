@@ -1,0 +1,21 @@
+{
+  "experiment": "six-settings-v1",
+  "technical_built": 6,
+  "attempted": 6,
+  "runtime_driving_passes": 6,
+  "automatic_screenshots": 12,
+  "visual_candidates": 2,
+  "visual_limited": 3,
+  "visual_rejected": 1,
+  "exact_real_world_accuracy_validated": false,
+  "source_hashes_unchanged": true,
+  "manual_baked_scene_edits": 0,
+  "general_viewer_fix": "clear-spawn-v1; original failing test retained",
+  "configured_material_sets": 11,
+  "pixels_per_metre": 32,
+  "tile_bytes_total": 62984092,
+  "build_seconds_min": 136.4690000000046,
+  "build_seconds_max": 250.125,
+  "build_seconds_median": 148.0625,
+  "next_data_gap": "Use raster land cover and canopy data to distinguish forest, fields, bare ground and water; rerun the batch as a new frozen version."
+}

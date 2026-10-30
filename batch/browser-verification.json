@@ -1,0 +1,194 @@
+{
+  "desktopBrowser": "Edge headless",
+  "results": [
+    {
+      "id": "berlin",
+      "load_and_checks_seconds": 4.604,
+      "state": {
+        "rendered": true,
+        "renderedTiles": 9,
+        "buildMs": [],
+        "origin": [
+          52.4970790178281,
+          13.445586694114322
+        ],
+        "roads": 189,
+        "buildings": 418,
+        "tiles": 0,
+        "ready": 0,
+        "loading": false,
+        "paused": false,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "concrete-oval"
+        },
+        "fps": 60.007742934572185,
+        "epoch": 1
+      },
+      "distanceDrivenMetres": 30.227028787278662,
+      "movement": true,
+      "pause": true,
+      "recovery": true,
+      "aerialRequests": 0,
+      "screenshots": 2
+    },
+    {
+      "id": "haworth",
+      "load_and_checks_seconds": 4.33,
+      "state": {
+        "rendered": true,
+        "renderedTiles": 9,
+        "buildMs": [],
+        "origin": [
+          53.8315568,
+          -1.9558895
+        ],
+        "roads": 88,
+        "buildings": 123,
+        "tiles": 0,
+        "ready": 0,
+        "loading": false,
+        "paused": false,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "fps": 58.10575246949446,
+        "epoch": 2
+      },
+      "distanceDrivenMetres": 4.439063565667999,
+      "movement": true,
+      "pause": true,
+      "recovery": true,
+      "aerialRequests": 0,
+      "screenshots": 2
+    },
+    {
+      "id": "granada",
+      "load_and_checks_seconds": 4.544,
+      "state": {
+        "rendered": true,
+        "renderedTiles": 9,
+        "buildMs": [],
+        "origin": [
+          37.18103451981613,
+          -3.592483724319633
+        ],
+        "roads": 797,
+        "buildings": 1722,
+        "tiles": 0,
+        "ready": 0,
+        "loading": false,
+        "paused": false,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "concrete-oval"
+        },
+        "fps": 52.24458204334354,
+        "epoch": 3
+      },
+      "distanceDrivenMetres": 35.11682036593365,
+      "movement": true,
+      "pause": true,
+      "recovery": true,
+      "aerialRequests": 0,
+      "screenshots": 2
+    },
+    {
+      "id": "industrial",
+      "load_and_checks_seconds": 4.404,
+      "state": {
+        "rendered": true,
+        "renderedTiles": 9,
+        "buildMs": [],
+        "origin": [
+          52.537141651317505,
+          13.335343756197393
+        ],
+        "roads": 65,
+        "buildings": 50,
+        "tiles": 0,
+        "ready": 0,
+        "loading": false,
+        "paused": false,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "fps": 60.00774293457237,
+        "epoch": 4
+      },
+      "distanceDrivenMetres": 29.508256786222496,
+      "movement": true,
+      "pause": true,
+      "recovery": true,
+      "aerialRequests": 0,
+      "screenshots": 2
+    },
+    {
+      "id": "forest",
+      "load_and_checks_seconds": 4.217,
+      "state": {
+        "rendered": true,
+        "renderedTiles": 9,
+        "buildMs": [],
+        "origin": [
+          52.49668769711617,
+          13.202264703254817
+        ],
+        "roads": 15,
+        "buildings": 0,
+        "tiles": 0,
+        "ready": 0,
+        "loading": false,
+        "paused": false,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "fps": 56.12541126378935,
+        "epoch": 5
+      },
+      "distanceDrivenMetres": 33.11754084036393,
+      "movement": true,
+      "pause": true,
+      "recovery": true,
+      "aerialRequests": 0,
+      "screenshots": 2
+    },
+    {
+      "id": "dry",
+      "load_and_checks_seconds": 4.266,
+      "state": {
+        "rendered": true,
+        "renderedTiles": 9,
+        "buildMs": [],
+        "origin": [
+          37.0685651,
+          -2.5274214
+        ],
+        "roads": 2,
+        "buildings": 0,
+        "tiles": 0,
+        "ready": 0,
+        "loading": false,
+        "paused": false,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "fps": 52.285050348567225,
+        "epoch": 6
+      },
+      "distanceDrivenMetres": 30.890700416659257,
+      "movement": true,
+      "pause": true,
+      "recovery": true,
+      "aerialRequests": 0,
+      "screenshots": 2
+    }
+  ],
+  "errors": [],
+  "missingTileHandled": true,
+  "missingTileRetry": true
+}

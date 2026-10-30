@@ -1,0 +1,64 @@
+{
+  "renderer": "Blender Cycles",
+  "blender": "4.5.14 LTS",
+  "device": "GPU",
+  "pixels": 6144,
+  "metres": 192,
+  "pixels_per_metre": 32.0,
+  "samples": 48,
+  "seconds": 123.0460000000021,
+  "objects": 378,
+  "buildings": 24,
+  "trees": 12,
+  "shrubs": 0,
+  "context": {
+    "building_share": 0.2083972153485627,
+    "forest_share": 0.0,
+    "green_share": 0.0,
+    "regional_guess": "temperate",
+    "ground": "concrete_pavement",
+    "roof_default": "roof_slates_02",
+    "inference": "Ground uses WorldCover classification, clipped by mapped geometry; roof styles still use regional fallbacks.",
+    "raster": {
+      "source": "ESA WorldCover",
+      "landcover_release": "v200-2021",
+      "native_landcover_resolution_m": 10,
+      "sample_grid_m": 5.0,
+      "canopy_source": "Meta/WRI canopy-height model",
+      "canopy_release": "v2-ml3",
+      "sampled_cells": [
+        "14/8798/5371",
+        "14/8799/5371",
+        "14/8798/5372",
+        "14/8799/5372"
+      ],
+      "source_files": [
+        "N51E012"
+      ],
+      "class_fractions": {
+        "built-up": 0.7763157894736842,
+        "bare / sparse vegetation": 0.012465373961218837,
+        "permanent water bodies": 0.21121883656509696
+      },
+      "landcover_valid_fraction": 1.0,
+      "canopy_valid_fraction": 1.0,
+      "warnings": [],
+      "tree_positions": "Procedural candidates within cover/canopy masks, not surveyed trunks."
+    }
+  },
+  "material_sources": [
+    "asphalt_02",
+    "roof_slates_02",
+    "clay_roof_tiles_02",
+    "concrete_pavement",
+    "cobblestone_floor_03",
+    "aerial_grass_rock",
+    "brown_mud_dry",
+    "forest_floor",
+    "gravel_floor",
+    "corrugated_iron",
+    "dry_ground_rocks"
+  ],
+  "geometry": "mapped footprints; inferred pitched roofs and roof fittings",
+  "vegetation": "procedural botanical mesh placements"
+}
