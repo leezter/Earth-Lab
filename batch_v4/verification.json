@@ -1,0 +1,21 @@
+{
+  "site": {
+    "id": "place-de77d816e307b1e8",
+    "name": "Kreuzberg, Berlin - road update",
+    "lat": 52.4971,
+    "lon": 13.44561,
+    "status": "built",
+    "actual_lat": 52.4970790178281,
+    "actual_lon": 13.445586694114322,
+    "automatic_road_snap_metres": 2.8196363726777918,
+    "total_seconds": 164.45300000000134,
+    "renderer_freeze": "road-materials-v4.4"
+  },
+  "distance": 29.76975642505684,
+  "pause": true,
+  "recovery": true,
+  "cacheReuse": true,
+  "reload": true,
+  "errors": [],
+  "screenshots": 2
+}

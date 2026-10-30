@@ -1,0 +1,13 @@
+{
+  "renderer": "road-materials-v4.4",
+  "source_hashes_verified": true,
+  "tiles_verified": 9,
+  "tile_bytes": 11582562,
+  "buildings_unchanged": true,
+  "roof_finishes_unchanged": true,
+  "driving_footprint_difference_m2": 0.03314149999974505,
+  "trees_unchanged": true,
+  "compiled_sample_locations": 6,
+  "material_families": 13,
+  "in_game_visual_review": "Kreuzberg only; all families also shown on the material sheet"
+}

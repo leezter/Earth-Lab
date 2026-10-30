@@ -1,0 +1,136 @@
+"""Rendered district study. The photographic baseline is left untouched."""
+import sys,os,json,math,threading,webbrowser,argparse,hashlib,time
+from pathlib import Path
+from http.server import SimpleHTTPRequestHandler
+from urllib.parse import urlparse,parse_qs
+REPO=Path(__file__).resolve().parent.parent
+sys.path.insert(0,str(REPO))
+ROOT=Path(__file__).resolve().parent
+import road_data as baseline
+from road_types import FAMILIES,segments
+import numpy as np
+from shapely.geometry import Polygon,LineString,box,Point
+from shapely.ops import unary_union,transform
+import mapdata
+import landcover
+SCENES={};LOCK=threading.Lock();VERSION=4
+
+def scene(lat,lon):
+ key=(round(lat,6),round(lon,6))
+ with LOCK:
+  if key in SCENES:return SCENES[key]
+  raw=baseline.features(lat,lon)
+  scale=math.cos(math.radians(lat))*111319.490793
+  def xy(p):return [(p[0]-lon)*scale,-(p[1]-lat)*111319.490793]
+  extent=box(-420,-420,420,420)
+  def clean(p):
+   if not p.is_valid:p=p.buffer(0)
+   return p.intersection(extent)
+  def polygons(g):
+   if g.is_empty:return []
+   if g.geom_type=='Polygon':return [[[round(x,3),round(y,3)] for x,y in r.coords] for r in [g.exterior,*g.interiors]]
+   return None
+  def export(g):
+   if g.geom_type=='Polygon':return [polygons(g)] if not g.is_empty else []
+   return [polygons(p) for p in getattr(g,'geoms',[]) if p.geom_type=='Polygon' and p.area>.03]
+  # Read the mapped roof metadata and actual land-use polygons, not photographed pixels.
+  md=mapdata.MapData(str(baseline.CACHE),baseline.FETCH)
+  try:c=md.cell_at(lat,lon,layers=('buildings','land_use','water'))
+  finally:md.close()
+  bf=c.layers['buildings'];lookup={str(fid):i for i,fid in enumerate(bf.ids)}
+  def attr(f,k,i,default=None):
+   a=f.attrs.get(k)
+   if a is None:return default
+   v=a[i].item() if hasattr(a[i],'item') else a[i]
+   return default if isinstance(v,float) and not math.isfinite(v) else v
+  structures=[];solids=[]
+  for b in raw['buildings']:
+   i=lookup.get(b['id']);height=attr(bf,'height',i,None) if i is not None else None
+   if not height:
+    floors=attr(bf,'num_floors',i,None)if i is not None else None
+    height=floors*3 if floors else 7 if 49<lat<60 and -9<lon<3 else 10 if 30<lat<42 and -12<lon<40 else 12
+   for p in b['parts']:
+    poly=clean(Polygon([xy(v)for v in p[0]],[[xy(v)for v in r]for r in p[1:]]))
+    if poly.area<8:continue
+    solids.append(poly)
+    for coords in export(poly):
+     pg=Polygon(coords[0],coords[1:]);h=hashlib.sha256(b['id'].encode()).hexdigest();seed=int(h[:8],16)
+     inner=pg.buffer(-.6,join_style=2)
+     structures.append({'id':b['id'],'seed':seed,'parts':[coords],'inner':export(inner),'height':height or 15,'class':attr(bf,'class',i,'')if i is not None else '','roof':attr(bf,'roof_shape',i,'')if i is not None else '', 'color':attr(bf,'roof_color',i,'')if i is not None else '', 'material':attr(bf,'roof_material',i,'')if i is not None else '', 'bounds':list(pg.bounds),'name':b['name']})
+  solid=unary_union(solids)
+  local=box(-96,-96,96,96);building_share=solid.intersection(local).area/local.area
+  mediterranean=30<lat<42 and -12<lon<40
+  uk=49<lat<60 and -9<lon<3
+  lanes={k:[]for k in FAMILIES};path_surfaces={k:[]for k in FAMILIES};walks=[];paths=[];streets=[];roadout=[]
+  for r in raw['roads']:
+   cls=r['class'];ped=cls in ['footway','path','cycleway','steps','pedestrian','bridleway'];surface=r['surface'].lower()
+   width=r['width'];width=min(width,3)if ped else width
+   touched=False
+   for line,mat in segments(r,xy):
+     if not line.intersects(extent):continue
+     touched=True;line=line.intersection(extent)
+     if ped:
+      pg=line.buffer(width/2,cap_style=2,join_style=1);paths.append(pg);path_surfaces[mat].append(pg);continue
+     # All carriageways are united before edging, so junctions have no stacked ribbon caps.
+     lanes[mat].append(line.buffer(width/2,cap_style=2,join_style=1))
+     urban=cls in ['residential','tertiary','secondary','primary','living_street','unclassified']
+     pavement=0 if r['sidewalk']=='no' else (2.1 if uk else 2.5 if mediterranean else 3.1) if urban and (r['sidewalk'] or building_share>.12) else 1.4 if r['sidewalk']else 0
+     if pavement:walks.append(line.buffer(width/2+pavement,cap_style=2,join_style=1))
+     streets.append({'points':list(line.coords),'width':width,'name':r['name'],'class':cls,'surface_family':mat})
+   if touched:roadout.append(r)
+  driving=unary_union([p for group in lanes.values()for p in group]).difference(solid.buffer(.1))
+  pedestrian=unary_union(walks+paths).difference(driving).difference(solid.buffer(.15))
+  greens=[];waters=[];forests=[];industry=[]
+  for name,target in [('land_use',greens),('water',waters)]:
+   f=c.layers.get(name)
+   if f is None:continue
+   for i in range(len(f.ids)):
+    if int(f.kind[i])!=3:continue
+    cls=str(attr(f,'class',i,''))+str(attr(f,'subtype',i,''))
+    if name=='land_use' and not any(k in cls.lower()for k in ['park','garden','grass','forest','wood','recreation','cemetery']):continue
+    for part in f.parts(i):
+     if not len(part) or len(part[0])<4:continue
+     p=clean(Polygon([xy(v)for v in part[0]],[[xy(v)for v in ring]for ring in part[1:]]))
+     if p.area>3:
+      target.append(p)
+      if name=='land_use' and any(v in cls.lower()for v in ['forest','wood']):forests.append(p)
+  green=unary_union(greens).difference(solid).difference(driving).difference(pedestrian)
+  water=unary_union(waters)
+  # Courtyard gardens and foliage are procedural, bounded by mapped geometry.
+  joined=solid.buffer(.7)
+  enclosed=[joined]if joined.geom_type=='Polygon'else list(getattr(joined,'geoms',[]))
+  courts=[Polygon(r) for p in enclosed if p.geom_type=='Polygon' for r in p.interiors]
+  gardens=unary_union(courts).buffer(-1).difference(unary_union(paths))
+  ras=landcover.read(lat,lon)
+  raster_forest=landcover.mask(ras,[10,95]);raster_grass=landcover.mask(ras,[30,100]);raster_crop=landcover.mask(ras,[40]);raster_bare=landcover.mask(ras,[60]);raster_shrub=landcover.mask(ras,[20]);raster_wet=landcover.mask(ras,[90]);raster_snow=landcover.mask(ras,[70])
+  if water.is_empty:water=landcover.mask(ras,[80])
+  blocked=unary_union([solid.buffer(.35),driving.buffer(.5),pedestrian.buffer(.15),water.buffer(.5)])
+  ground_masks={name:g.difference(blocked)for name,g in {'landcover_forest':raster_forest,'landcover_grass':raster_grass,'landcover_crop':raster_crop,'landcover_bare':raster_bare,'landcover_shrub':raster_shrub,'landcover_wetland':raster_wet,'landcover_snow':raster_snow}.items()}
+  green=green.difference(raster_forest).difference(water)
+  vegetation=unary_union([green,gardens,raster_forest,landcover.mask(ras,canopy=True)]).difference(blocked)
+  forest_share=raster_forest.intersection(local).area/local.area;green_share=unary_union([green,raster_grass]).intersection(local).area/local.area
+  stats=ras['meta']['class_fractions'];dominant=max(stats,key=stats.get)
+  base={'tree cover':'forest_floor','mangroves':'forest_floor','grassland':'aerial_grass_rock','cropland':'brown_mud_dry','shrubland':'brown_mud_dry','bare / sparse vegetation':'dry_ground_rocks','built-up':'concrete_pavement','herbaceous wetland':'forest_floor'}.get(dominant,'brown_mud_dry')
+  context={'building_share':building_share,'forest_share':forest_share,'green_share':green_share,'regional_guess':'mediterranean'if mediterranean else 'british'if uk else 'temperate','ground':base,'roof_default':'clay_roof_tiles_02'if mediterranean else 'roof_slates_02','inference':'Ground uses WorldCover classification, clipped by mapped geometry; roof styles still use regional fallbacks.','raster':ras['meta']}
+  rng=np.random.default_rng(72431);trees=[];shrubs=[];spacing=4.8 if forest_share>.2 else 6.
+  for x,y in rng.uniform(-155,155,(24000,2)):
+   pt=Point(x,y)
+   if not vegetation.contains(pt):continue
+   cls,h=landcover.at(ras,x,y)
+   if np.isfinite(h) and h<3:continue
+   if any((x-a['x'])**2+(y-a['y'])**2<spacing**2 for a in trees):continue
+   height=float(np.clip(h,3,35))if np.isfinite(h)else float(rng.uniform(12,19)if cls in [10,95]else rng.uniform(6,12))
+   radius=float(np.clip(height*.27,1.6,6));radius=min(radius,float(driving.distance(pt))-.4)
+   if radius<1.6:continue
+   trees.append({'x':round(float(x),2),'y':round(float(y),2),'r':round(radius,2),'height':round(height,2),'height_source':'canopy model'if np.isfinite(h)else 'inferred fallback','seed':int(rng.integers(0,2**30))})
+   if len(trees)>=800:break
+  for x,y in rng.uniform(-155,155,(6000,2)):
+   if not ground_masks['landcover_shrub'].contains(Point(x,y)):continue
+   if any((x-a['x'])**2+(y-a['y'])**2<36 for a in shrubs):continue
+   shrubs.append({'x':round(float(x),2),'y':round(float(y),2),'r':round(float(rng.uniform(.45,1)),2),'height':round(float(rng.uniform(.6,1.6)),2),'is_shrub':True,'seed':int(rng.integers(0,2**30))})
+   if len(shrubs)>=450:break
+  result={**raw,'roads':roadout,'buildings':[b for b in raw['buildings']if b['id']in {b['id']for b in structures}], 'scene':{'context':context,'origin':[lat,lon],'version':VERSION,'extent':[-420,-420,420,420],'buildings':structures,'roads':export(driving),'surfaces':{k:export(unary_union(v).intersection(driving))for k,v in lanes.items()},'path_surfaces':{k:export(unary_union(v).intersection(pedestrian))for k,v in path_surfaces.items()},'pavements':export(pedestrian),'green':export(green),'gardens':export(gardens),'water':export(water),'trees':trees,'shrubs':shrubs,'landcover':{name:export(g)for name,g in ground_masks.items()},'streets':streets,'notes':['Footprints and road centre lines are mapped.','Roof fittings, missing roof styles and tree positions are inferred. Raster cover and canopy heights guide vegetation; this is not a tree survey.','Unmapped urban pavement widths are inferred. No claim of surveyed street furniture.']}}
+  SCENES[key]=result
+  while len(SCENES)>3:SCENES.pop(next(iter(SCENES)))
+  (ROOT/'scene-summary.json').write_text(json.dumps({'origin':[lat,lon],'buildings':len(structures),'trees':len(trees),'roads':len(roadout),'road_area':driving.area,'pavement_area':pedestrian.area,'road_building_overlap':driving.intersection(solid).area,'notes':result['scene']['notes']},indent=2))
+  return result

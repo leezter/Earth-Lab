@@ -1,0 +1,25 @@
+# Road materials edition
+
+Open http://127.0.0.1:47846/ or run `launch.py`. Search for a place, generate its 192 m area, then drive. The previous roof edition remains on port 47845. New renders use an independent versioned cache.
+
+## Material families
+
+Thirteen Blender shader families: asphalt, continuous concrete, jointed concrete slabs, manufactured paving blocks, cut stone setts, irregular cobbles, compacted aggregate, loose gravel, earth, sand, grass, wood boards and metal. They combine physical-size structural patterns, diffuse photographic microdetail, roughness and bump, with broad nonperiodic stains. Two differently oriented scan samples reduce repeated photographic landmarks. The editable material study is `road-materials.blend`; `road-materials.png` shows every family at a shared scale. It is a material reference, not proof of street-specific accuracy.
+
+Mapped OSM surface tags take precedence over broader Overture surface rules. Where Overture specifies a change along a segment, the compiler splits the material geometry at that fraction instead of choosing the longest rule for the entire road. Source provenance, ambiguity, lane counts and smoothness are retained in each area's input JSON. Lane counts and smoothness are not yet used to fabricate paint or surveyed damage. `paved`, `unpaved` and absent surfaces use labelled, conservative visual approximations. Paving stones, setts and cobbles no longer collapse into one texture; ground, sand, compacted and grass no longer fall back to asphalt. Approximate driving-grip families also distinguish unpaved ground from tarmac.
+
+Stone/block/slab patterns follow local road tangents. All carriageways are still united before kerb edging, while material ownership is made exclusive at junctions to prevent coplanar overlaps. At mixed-surface intersections the family priority is inferred (asphalt first), not surveyed. Pedestrian path surfaces now receive their mapped family separately from the generic pavement fallback. Width, pavement inference, collision geometry and the original map-data limitations still apply.
+
+## Accuracy and performance
+
+Colours, condition, aggregate and wear are plausible family-level representations. These are not sampled copies of each street. No invented lane paint, crossings, parking bays or potholes are added. The shader change is baked into the same nine 2048-square WebP tiles; no extra runtime shader layers or per-stone objects are added. New areas still take minutes to generate; completed areas reuse their tiles. Buildings use the unchanged version-3 roof system. Terrain elevation, traffic, audio and live lighting remain out of scope.
+
+`test_road_types.py` checks classification and partial/multipart surface rules. `freeze.json` versions the released renderer; `initial-material-study/` and `photographic-material-study/` retain intermediate source snapshots from this development iteration. These are development revisions, not unseen-location scalability tests. The six-location geometry audit also checks that the road material union covers the carriageway without significant overlap. Finished custom areas retain logs, inputs, geometry and tile hashes under `custom/`. The material sheet covers all families; actual in-game visual acceptance is recorded separately.
+
+## References and credits
+
+Surface descriptions and photographic examples: https://wiki.openstreetmap.org/wiki/Key:surface . Broader transport categories: https://docs.overturemaps.org/schema/reference/transportation/types/segment/road_surface/ . These references establish surface families, not exact appearance or global road-length prevalence. Source survey results from the six prior scenes and Taginfo tagged-way counts are in `../road-source-audit.json`; tagged-way counts include non-road features and are not a world-road census.
+
+Photographic detail: **Powered by Poly Haven**, CC0; https://polyhaven.com/license . The existing `assets/materials/batch-manifest.json` retains exact authors, source URLs, dimensions and checksums. No new texture downloads or BeamNG game assets are required. Procedural structures and shaders are authored for Earth Lab. Map geometry: Overture Maps and OpenStreetMap contributors/upstream providers; see their attribution requirements. Land cover, canopy, RacingVibes physics and vehicle artwork retain the credits in `../batch_v2/README.md`.
+
+Delivered checks: four classification/rule tests pass, all six prior sites pass material coverage/overlap checks, and Kreuzberg passes the real browser driving/pause/recovery/cache/reload tour. Nine output tile hashes are verified. Its buildings, roof finishes and trees are unchanged; the carriageway geometry differs by only 0.033 m² due to precision. Visual review accepts this as a more readable road prototype, not a street replica: asphalt is still fairly uniform, inferred mixed-surface junctions can have abrupt transitions, and markings are not included. See `audit.json`, `verification.json` and `six-location-data-audit.json`.

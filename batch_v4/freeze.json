@@ -1,0 +1,15 @@
+{
+  "id": "road-materials-v4.4",
+  "source_hashes": {
+    "batch_v4/scene_builder.py": "c8b0374843d85b8d30a3cae9e1c554e19767bc53775508732ec48f833aa48302",
+    "batch_v4/landcover.py": "b97c806be0fd945c573e3d919da395cb33e4515961b00701de4645d1fecdbd6d",
+    "batch_v4/prepare.py": "ae6dc3a2119c399f4101d1bf56c2939b730e5f602675d586eaec0d2d974c5e14",
+    "batch_v4/bake.py": "e6a3471b5394d3cad6d475ac088d6288d8167b7b0704d342de87f5b8bf1f1549",
+    "batch_v4/tiles.py": "ee9598a57e7b98231dae84c26885cf59988a9da94888a89ce852c753e44e74dc",
+    "batch_v4/roof_styles.py": "15f36e208894d0a0387d678e2d310bf70cf1f107b7d68f2da734f4df5619eacd",
+    "batch_v4/road_types.py": "6a8b3606b35da8ccce0352799d12e15987f0a6d43210ebf845b5f6fef3786a82",
+    "batch_v4/road_materials.py": "54e4ab008bec422876f6769e5d913ace76fdafc1e2e11c8298c7e929bcfbb82a",
+    "batch_v4/road_data.py": "1acf2c9cc148be6b80e15bc7fb2eef3a416a46390d5766a0a9f02b8054780a37",
+    "assets/materials/batch-manifest.json": "32b1603c9cc1608d7759af81a4ea947abec693a6e7527c58ebc4b8176afd8bf0"
+  }
+}

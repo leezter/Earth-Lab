@@ -32,3 +32,5 @@ node_modules/
 /batch_v2/custom/
 /batch_v3/custom/
 /batch_v3/scene-summary.json
+/batch_v4/custom/
+/batch_v4/scene-summary.json

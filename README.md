@@ -1,6 +1,8 @@
 # RacingVibes rendered district study
 
-Latest roof-variety edition: **Play Earth Lab - roof update.lnk**, or http://127.0.0.1:47845/ . It supports place search and generation with mapped roof attributes and deterministic regional fallback finishes. See [batch_v3/README.md](batch_v3/README.md). Older versions are preserved.
+Latest road-material edition: **Play Earth Lab - road update.lnk**, or http://127.0.0.1:47846/ . Place search and generation use separate road surface families and retain the roof improvements. See [batch_v4/README.md](batch_v4/README.md).
+
+Previous roof-variety edition: **Play Earth Lab - roof update.lnk**, or http://127.0.0.1:47845/ . It supports place search and generation with mapped roof attributes and deterministic regional fallback finishes. See [batch_v3/README.md](batch_v3/README.md). Older versions are preserved.
 
 Launch **Play rendered Kreuzberg.lnk**. The new build runs at http://127.0.0.1:47841 . The original photographic prototype on port 47840 and the RacingVibes game are preserved.
 

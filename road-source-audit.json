@@ -1,0 +1,268 @@
+{
+  "six_sample_surfaces": [
+    {
+      "site": "berlin",
+      "roads": 189,
+      "surface": {
+        "paving_stones": 43,
+        "asphalt": 93,
+        "sett": 37,
+        "compacted": 6,
+        "paved": 6,
+        "ground": 2,
+        "concrete": 2
+      }
+    },
+    {
+      "site": "haworth",
+      "roads": 88,
+      "surface": {
+        "asphalt": 72,
+        "gravel": 1,
+        "paving_stones": 4,
+        "paved": 1,
+        "unpaved": 1,
+        "sett": 4,
+        "grass": 2,
+        "unhewn_cobblestone": 1,
+        "compacted": 1,
+        "dirt": 1
+      }
+    },
+    {
+      "site": "granada",
+      "roads": 797,
+      "surface": {
+        "unhewn_cobblestone": 477,
+        "sett": 60,
+        "paving_stones": 86,
+        "asphalt": 141,
+        "fine_gravel": 3,
+        "compacted": 8,
+        "concrete": 9,
+        "unpaved": 6,
+        "pebblestone": 2,
+        "cobblestone": 3,
+        "earth": 1,
+        "ground": 1
+      }
+    },
+    {
+      "site": "industrial",
+      "roads": 65,
+      "surface": {
+        "asphalt": 53,
+        "paving_stones": 3,
+        "ground": 5,
+        "compacted": 2,
+        "paved": 2
+      }
+    },
+    {
+      "site": "forest",
+      "roads": 15,
+      "surface": {
+        "asphalt": 8,
+        "dirt": 5,
+        "pebblestone": 1,
+        "compacted": 1
+      }
+    },
+    {
+      "site": "dry",
+      "roads": 2,
+      "surface": {
+        "asphalt": 2
+      }
+    }
+  ],
+  "taginfo_surface_counts": {
+    "url": "https://taginfo.openstreetmap.org/api/4/key/values?key=surface&filter=ways&sortname=count&sortorder=desc&page=1&rp=20",
+    "data_until": "2026-10-30T00:59:34Z",
+    "page": 1,
+    "rp": 20,
+    "total": 8107,
+    "data": [
+      {
+        "value": "asphalt",
+        "count": 37924386,
+        "fraction": 0.4638,
+        "in_wiki": true,
+        "description": "Specifies that object is paved with asphalt concrete.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "unpaved",
+        "count": 13264293,
+        "fraction": 0.1622,
+        "in_wiki": true,
+        "description": "Indicates that the feature has an unpaved surface, such as gravel or grass.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "concrete",
+        "count": 5679282,
+        "fraction": 0.0695,
+        "in_wiki": true,
+        "description": "A surface of cement based concrete, cast in place.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "paving_stones",
+        "count": 5269571,
+        "fraction": 0.0644,
+        "in_wiki": true,
+        "description": "A surface paved with artificial blocks (block pavers, bricks) or natural stones (flagstones), with a flat top.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "paved",
+        "count": 4521888,
+        "fraction": 0.0553,
+        "in_wiki": true,
+        "description": "Describes the surface of a feature roughly as predominantly paved over the whole surface area; i.e., covered with paving stones, concrete, bitumen or asphalt. This value gives only a rough description; use a more precise value if possible.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "ground",
+        "count": 3865404,
+        "fraction": 0.0473,
+        "in_wiki": true,
+        "description": "No special surface, the ground itself has marks of human or animal usage. This value gives only a rough description; if possible, use a more precise value such as grass, clay, laterite, sand, earth, gravel or pebblestone.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "gravel",
+        "count": 2464178,
+        "fraction": 0.0301,
+        "in_wiki": true,
+        "description": "This tag has very large meaning range. Used for cases ranging from huge gravel pieces like track ballast used as surface, through small pieces of gravel to compacted surface.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "dirt",
+        "count": 2051616,
+        "fraction": 0.0251,
+        "in_wiki": true,
+        "description": "Used for where surface is exposed earth/soil/dirt but it is not sand or gravel or rock.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "grass",
+        "count": 1630914,
+        "fraction": 0.0199,
+        "in_wiki": true,
+        "description": "Specifies that object has grass as a surface.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "compacted",
+        "count": 1546802,
+        "fraction": 0.0189,
+        "in_wiki": true,
+        "description": null,
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "sand",
+        "count": 687311,
+        "fraction": 0.0084,
+        "in_wiki": true,
+        "description": "Specifies that object has sand as a surface.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "sett",
+        "count": 659860,
+        "fraction": 0.0081,
+        "in_wiki": true,
+        "description": "Sett paving, formed from natural stones cut to have a flat top (with regular or irregular shape).",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "fine_gravel",
+        "count": 587018,
+        "fraction": 0.0072,
+        "in_wiki": true,
+        "description": "Loose, small gravel, not compacted, typically used on paths and driveways with minimal traffic.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "wood",
+        "count": 295659,
+        "fraction": 0.0036,
+        "in_wiki": true,
+        "description": "Object with wooden surface. Used for bridges, plank walkways, and garden decking.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "concrete:plates",
+        "count": 232667,
+        "fraction": 0.0028,
+        "in_wiki": true,
+        "description": "A surface made of heavy duty prefabricated concrete plates.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "pebblestone",
+        "count": 159005,
+        "fraction": 0.0019,
+        "in_wiki": true,
+        "description": null,
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "earth",
+        "count": 155659,
+        "fraction": 0.0019,
+        "in_wiki": true,
+        "description": "Used for where surface is exposed earth/soil/dirt but it is not sand or gravel or rock.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "cobblestone",
+        "count": 133759,
+        "fraction": 0.0016,
+        "in_wiki": true,
+        "description": "Generic value for cobblestone, used for both sett and true cobblestone.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "grass_paver",
+        "count": 64661,
+        "fraction": 0.0008,
+        "in_wiki": true,
+        "description": "Specifies that object is paved with grass paver \u2013 paving with large deliberate voids in it.",
+        "desclang": "en",
+        "descdir": "ltr"
+      },
+      {
+        "value": "metal",
+        "count": 60230,
+        "fraction": 0.0007,
+        "in_wiki": true,
+        "description": "Used for metal-surfaced bridges, or for temporary tracks over fields for normal road vehicles or site traffic.",
+        "desclang": "en",
+        "descdir": "ltr"
+      }
+    ]
+  }
+}
