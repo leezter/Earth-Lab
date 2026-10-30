@@ -1,0 +1,17 @@
+{
+  "job": {
+    "id": "place-725fac0c5ab64749",
+    "name": "Kreuzberg, Berlin - roof variety",
+    "lat": 52.4971,
+    "lon": 13.44561,
+    "status": "built",
+    "actual_lat": 52.4970790178281,
+    "actual_lon": 13.445586694114322,
+    "automatic_road_snap_metres": 2.8196363726777918,
+    "total_seconds": 190.75,
+    "renderer_freeze": "roof-variety-v3"
+  },
+  "distance": 26.595575617869457,
+  "errors": [],
+  "screenshots": 2
+}

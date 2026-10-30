@@ -30,3 +30,5 @@ node_modules/
 !/batch_v2/runs/*/baked/manifest.json
 !/batch_v2/runs/*/baked/tiles/
 /batch_v2/custom/
+/batch_v3/custom/
+/batch_v3/scene-summary.json

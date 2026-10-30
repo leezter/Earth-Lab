@@ -1,0 +1,20 @@
+{
+  "geometry_unchanged": {
+    "buildings": true,
+    "flat": true,
+    "trees": true,
+    "shrubs": true,
+    "roads": true
+  },
+  "source_hashes_unchanged": true,
+  "tiles_verified": 9,
+  "roof_material_counts": {
+    "roof_slates_02": 53,
+    "clay_roof_tiles_02": 46,
+    "corrugated_iron": 9,
+    "asphalt_02": 3
+  },
+  "distinct_finish_colours": 14,
+  "mapped_materials": 0,
+  "mapped_colours": 0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "roof-variety-v3",
+  "source_hashes": {
+    "batch_v3/scene_builder.py": "37a07cd78c3ccf040aeae209912186db4564cc2d26e7c306143e95b0ecef0536",
+    "batch_v3/landcover.py": "b97c806be0fd945c573e3d919da395cb33e4515961b00701de4645d1fecdbd6d",
+    "batch_v3/prepare.py": "dee6b82a5c3fd902377ba788d4e3afa5c0004fe1dcfb5d921e898078c87c6bd5",
+    "batch_v3/bake.py": "c13b4ed7297bc69413d344904c09fd4f3c8c74f702026f11bb320fd69bb9f0d0",
+    "batch_v3/tiles.py": "ee9598a57e7b98231dae84c26885cf59988a9da94888a89ce852c753e44e74dc",
+    "batch_v3/roof_styles.py": "675df24576485d46da387f2a5bbd651f06580dfbf6e7148d0ad645c769198af8",
+    "assets/materials/batch-manifest.json": "32b1603c9cc1608d7759af81a4ea947abec693a6e7527c58ebc4b8176afd8bf0"
+  }
+}

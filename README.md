@@ -1,5 +1,7 @@
 # RacingVibes rendered district study
 
+Latest roof-variety edition: **Play Earth Lab - roof update.lnk**, or http://127.0.0.1:47845/ . It supports place search and generation with mapped roof attributes and deterministic regional fallback finishes. See [batch_v3/README.md](batch_v3/README.md). Older versions are preserved.
+
 Launch **Play rendered Kreuzberg.lnk**. The new build runs at http://127.0.0.1:47841 . The original photographic prototype on port 47840 and the RacingVibes game are preserved.
 
 This is an 840 m square visual study centred on Kreuzberg. It keeps the four vehicle sprites, original vehicle/gearbox/Planck physics snapshot, driving controls and collision hulls from Earth Lab. WASD/arrows drive, S brakes then reverses, R recovers, P pauses. Touch controls are included. The study returns the vehicle to the start when it approaches its boundary; continuous city streaming is intentionally deferred until the visual approach is accepted. Other searched locations can be generated, but this revision was visually reviewed in Berlin only.
