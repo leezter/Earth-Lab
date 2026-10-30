@@ -11,7 +11,7 @@ try:
   (ROOT/'server.pid').write_text(str(p.pid))
   for _ in range(40):
    if alive():break
-   if p.poll()is not None:raise RuntimeError('Batch viewer failed. See batch_v2/server.log.')
+   if p.poll()is not None:raise RuntimeError(f'Batch viewer failed. See {ROOT / "server.log"}.')
    time.sleep(.25)
   else:raise RuntimeError('Batch viewer did not start')
  webbrowser.open(URL+'/gallery.html')

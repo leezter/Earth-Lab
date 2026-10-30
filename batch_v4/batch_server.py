@@ -53,10 +53,10 @@ class Handler(baseline.Handler):
    sid=q.get('id',['berlin'])[0];entry=next((s for s in sites()if s['id']==sid),None)
    if not entry or entry['status']!='built':return self.reply({'error':'Scene unavailable: '+str(entry.get('error',entry['status'])if entry else sid)},503)
    return self.reply(json.loads((folder(sid)/'district-data.json').read_text()))
-  if u.path=='/gallery.html':return self.raw((ROOT/'web/gallery.html').read_text(encoding='utf-8')if(ROOT/'web/gallery.html').exists()else '<a href="/">Drive roof edition</a>')
+  if u.path=='/gallery.html':return self.raw((ROOT/'web/gallery.html').read_text(encoding='utf-8')if(ROOT/'web/gallery.html').exists()else '<a href="/">Drive road materials edition</a>')
   return super().do_GET()
 if __name__=='__main__':
  custom_places.resume_queued()
- s=baseline.Server(('127.0.0.1',47846),Handler);(ROOT/'server-token.txt').write_text(baseline.STOP_TOKEN);print('Six-setting batch: http://127.0.0.1:47846',flush=True)
+ s=baseline.Server(('127.0.0.1',47846),Handler);(ROOT/'server-token.txt').write_text(baseline.STOP_TOKEN);print('Earth Lab road materials v4: http://127.0.0.1:47846',flush=True)
  if '--no-browser'not in sys.argv:webbrowser.open('http://127.0.0.1:47846/gallery.html')
  s.serve_forever()

@@ -1,4 +1,4 @@
-"""Generate one selected location with the roof-variety v3 renderer."""
+"""Generate one selected location with the frozen road-materials v4 renderer."""
 from pathlib import Path
 import sys,json,hashlib,subprocess,time,math,traceback
 ROOT=Path(__file__).resolve().parent;sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT.parent))
@@ -14,7 +14,7 @@ def step(cmd,name):
  if r.returncode:raise RuntimeError(name+' failed; check '+name+'.log')
 try:
  freeze=jobs.read(ROOT/'freeze.json')
- for f,h in freeze['source_hashes'].items():assert hashlib.sha256((ROOT.parent/f).read_bytes()).hexdigest()==h,'Renderer differs from frozen v3'
+ for f,h in freeze['source_hashes'].items():assert hashlib.sha256((ROOT.parent/f).read_bytes()).hexdigest()==h,f'Renderer differs from {freeze["id"]}: {f}'
  phase('finding road');lat,lon=d['lat'],d['lon'];raw=scene_builder.baseline.features(lat,lon);scale=111319.490793*math.cos(math.radians(lat));best=None
  for road in raw['roads']:
   if road['class']in ['footway','path','cycleway','steps','pedestrian','bridleway']:continue
