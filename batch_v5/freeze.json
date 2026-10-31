@@ -1,0 +1,19 @@
+{
+  "id": "pavements-v5.2",
+  "source_hashes": {
+    "batch_v5/scene_builder.py": "5b4d9aecc541de460384ef006e1347ef462147ee2d1bfcc73a2b876aeaac433a",
+    "batch_v5/road_data.py": "1acf2c9cc148be6b80e15bc7fb2eef3a416a46390d5766a0a9f02b8054780a37",
+    "batch_v5/road_types.py": "6a8b3606b35da8ccce0352799d12e15987f0a6d43210ebf845b5f6fef3786a82",
+    "batch_v5/road_materials.py": "54e4ab008bec422876f6769e5d913ace76fdafc1e2e11c8298c7e929bcfbb82a",
+    "batch_v5/roof_styles.py": "15f36e208894d0a0387d678e2d310bf70cf1f107b7d68f2da734f4df5619eacd",
+    "batch_v5/landcover.py": "b97c806be0fd945c573e3d919da395cb33e4515961b00701de4645d1fecdbd6d",
+    "batch_v5/prepare.py": "6a5881f1cdc5eb5de68bbb15914ed708d6e7fa90054480d8127405b62dc2c565",
+    "batch_v5/bake.py": "bf5b972890f1e1cbbafb34336bf31743b3bb4ada4c4d8b894b2b22ce75cce40c",
+    "batch_v5/tiles.py": "ee9598a57e7b98231dae84c26885cf59988a9da94888a89ce852c753e44e74dc",
+    "batch_v5/pavement_sources.py": "a86766b026c0418962e6fae33304d484103a6c00471bf3f547864e2ad4261f8a",
+    "batch_v5/pavements.py": "d46e95da09a6d5e697c39fce09fac100db5d5ed4c2c78b7ad70c06a5435538ba",
+    "batch_v5/pavement_materials.py": "7f05b6e3de9a90a4563bada1a024d9b9a012fea881e768e087f216b0454d9428",
+    "assets/materials/batch-manifest.json": "32b1603c9cc1608d7759af81a4ea947abec693a6e7527c58ebc4b8176afd8bf0",
+    "earth_backend.py": "397b796b9abf7fea5c5fa81e5949a35184a2b225f82d66995f7cd46468c019f2"
+  }
+}

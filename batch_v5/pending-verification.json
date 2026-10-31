@@ -1,0 +1,11 @@
+{
+  "checked_utc": "2026-10-30T23:46:39.291Z",
+  "renderer": "pavements-v5.2",
+  "currentScene": "place-f645dce70a27b745",
+  "otherJob": "place-f014162f3e9f84c6",
+  "otherJobStatusBefore": "rendering",
+  "otherJobStatusAfter": "rendering",
+  "currentSceneStillPlayable": true,
+  "distanceDrivenMetres": 26.49702542103325,
+  "errors": []
+}

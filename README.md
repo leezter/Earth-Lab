@@ -1,5 +1,7 @@
 # RacingVibes rendered district study
 
+Latest pavement edition: **Play Earth Lab - pavement update.lnk**, or http://127.0.0.1:47847/ . Side-specific pavements, mapped widths/surfaces and historical Berlin survey polygons use a separate renderer and cache. See [batch_v5/README.md](batch_v5/README.md).
+
 Latest road-material edition: **Play Earth Lab - road update.lnk**, or http://127.0.0.1:47846/ . Place search and generation use separate road surface families and retain the roof improvements. See [batch_v4/README.md](batch_v4/README.md).
 
 Previous roof-variety edition: **Play Earth Lab - roof update.lnk**, or http://127.0.0.1:47845/ . It supports place search and generation with mapped roof attributes and deterministic regional fallback finishes. See [batch_v3/README.md](batch_v3/README.md). Older versions are preserved.

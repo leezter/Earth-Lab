@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-10-30T23:50:55.747689+00:00",
+  "renderer": "pavements-v5.2",
+  "scope": "Desktop screenshots of two previously used sample areas; no current street survey or worldwide acceptance test.",
+  "sites": [
+    {
+      "id": "place-f645dce70a27b745",
+      "name": "Kreuzberg, Berlin",
+      "assessment": "Candidate: more complete pavement footprint, legible junction corners and distinct material bands. Reduced slab contrast improves the initial preview.",
+      "limitations": [
+        "Historical survey may not reflect later changes.",
+        "Colours and wear are approximate.",
+        "Generic yards and sharp mixed-road surface transitions remain."
+      ],
+      "screenshots": [
+        "web/reviews/berlin-overview.png",
+        "web/reviews/berlin-close.png"
+      ]
+    },
+    {
+      "id": "place-f014162f3e9f84c6",
+      "name": "Main Street, Haworth",
+      "assessment": "Limited: paths and roadside paving are readable, but widths remain inferred and generic yards/land-cover boundaries still dominate some areas.",
+      "limitations": [
+        "No explicitly mapped widths were found in the retained OSM pavement records for this sample.",
+        "No street-specific visual accuracy acceptance."
+      ],
+      "screenshots": [
+        "web/reviews/haworth-overview.png",
+        "web/reviews/haworth-close.png"
+      ]
+    }
+  ]
+}

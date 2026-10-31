@@ -34,6 +34,8 @@ node_modules/
 /batch_v3/scene-summary.json
 /batch_v4/custom/
 /batch_v4/scene-summary.json
+/batch_v5/custom/
+/batch_v5/scene-summary.json
 
 # Numbered Blender autosave backups; keep authored .blend sources.
 *.blend[0-9]*

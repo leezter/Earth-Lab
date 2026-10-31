@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Earth Lab — Pavements v5</title>
+<style>body{background:#14232b;color:#eaf0ee;font:16px system-ui;line-height:1.6;max-width:1200px;margin:40px auto;padding:0 24px}a{color:#87ddc5}li{margin:12px 0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}img{width:100%}@media(max-width:850px){.pair{grid-template-columns:1fr}}</style>
+<h1>Pavements · edition 5</h1>
+<p><a href="/">Drive / generate a place</a> · <a href="http://127.0.0.1:47846/">Previous road edition</a> · <a href="/api/credits">Sources and licences</a></p>
+<p>Side-specific pavement presence, widths and surfaces; separately mapped paths; walking-scale paving materials. In Berlin, the installed 2014/2015 street survey supplies pavement material bands, driveway footprints and tree-pit holes. Elsewhere, mapped OSM polygons and tags take priority over inferred ribbons.</p>
+<p>Survey geometry is historical. Missing widths, colours, kerb profiles and surface condition remain approximate. This edition does not add crossings, tactile paving, parking layouts or street furniture.</p>
+<h2>Your generated areas</h2><ul id="sites"><li>Loading…</li></ul>
+<h2>Visual comparison</h2><p>Matching views of Kreuzberg. The earlier image is retained v4 evidence; the v5 image is captured by this edition's browser check.</p>
+<div class="pair"><div><h3>Road edition v4</h3><img src="/v4-reviews/berlin-close.png" alt="Earlier road edition"></div><div><h3>Pavement edition v5</h3><img src="/reviews/berlin-close.png" alt="New pavement edition; available after verification"></div></div>
+<script type="module">
+const list=document.querySelector('#sites');
+try{const response=await fetch('/api/sites');if(!response.ok)throw Error('Area list unavailable');const sites=await response.json();list.replaceChildren();for(const s of sites){const li=document.createElement('li'),a=document.createElement('a');a.textContent=s.name+' · '+s.status;a.href='/?site='+encodeURIComponent(s.id);li.append(a);if(s.status==='built'){const text=document.createElement('small');text.textContent=' — '+(s.pavement_sources?.survey?.status==='available'?'historical Berlin survey + OSM':'OSM with labelled fallbacks');li.append(text);}list.append(li);}if(!sites.length)list.textContent='No generated areas yet. Open the driving page to search and generate.';}catch(e){list.textContent=e.message;}
+</script></html>

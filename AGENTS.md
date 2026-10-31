@@ -8,7 +8,8 @@ offline; the browser drives a dynamic car over baked tiles. This is a desktop
 visual-generation prototype, not a complete world simulator.
 
 Read `README.md` and the relevant edition's README before changing behavior.
-`batch_v4/` is the current road-material edition (localhost port 47846).
+`batch_v5/` is the current pavement edition (localhost port 47847); read its README.
+`batch_v4/` preserves the road-material edition (localhost port 47846).
 `batch_v3/` preserves the roof edition (47845), `batch_v2/` the land-cover/canopy
 edition (47844), `batch/` the original six-location trial (47843), and `study/`
 the fixed Blender street study (47842). The root Canvas district uses 47841.
@@ -60,9 +61,10 @@ Do not introduce a new dependency stack merely to work around a missing local se
 
 ```powershell
 $earthPython = "$env:LOCALAPPDATA\Programs\BeamNG.Earth.Berlin.Realism\.venv\Scripts\python.exe"
-& $earthPython batch_v4/launch.py
-& $earthPython batch_v4/stop.py
-& $earthPython batch_v4/test_road_types.py
+& $earthPython batch_v5/launch.py
+& $earthPython batch_v5/stop.py
+& $earthPython batch_v5/test_pavements.py
+& $earthPython batch_v5/test_road_types.py
 & $earthPython batch_v3/test_roof_styles.py
 ```
 

@@ -1,0 +1,42 @@
+{
+  "checked_utc": "2026-10-30T23:49:26.631Z",
+  "desktopBrowser": "Edge headless",
+  "results": [
+    {
+      "id": "place-f014162f3e9f84c6",
+      "name": "Main Street, Haworth - pavement edition",
+      "sceneReadySeconds": 0.643,
+      "cachedReuseSeconds": 0.011,
+      "load_and_checks_seconds": 4.14,
+      "distanceDrivenMetres": 4.328687009445971,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-f645dce70a27b745",
+      "name": "Kreuzberg, Berlin - pavement edition",
+      "sceneReadySeconds": 0.54,
+      "cachedReuseSeconds": 0.013,
+      "load_and_checks_seconds": 4.215,
+      "distanceDrivenMetres": 29.024861051108463,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    }
+  ],
+  "errors": [],
+  "aerialRequests": 0,
+  "sceneSwitching": true,
+  "missingTileFailureRetry": true,
+  "pickerPendingKeepsScene": true,
+  "pickerFailureRetry": true,
+  "pickerLifecycleUsesMockJob": true,
+  "gallery": true
+}

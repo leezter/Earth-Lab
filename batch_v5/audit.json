@@ -1,0 +1,101 @@
+{
+  "checked_utc": "2026-10-30T23:49:58.134713+00:00",
+  "renderer": "pavements-v5.2",
+  "previous_frozen_sources_verified": [
+    "six-settings-v1",
+    "six-settings-v2",
+    "roof-variety-v3",
+    "road-materials-v4.4"
+  ],
+  "scenes": [
+    {
+      "id": "place-f014162f3e9f84c6",
+      "name": "Main Street, Haworth - pavement edition",
+      "tiles_verified": 9,
+      "build_seconds": 159.86000000000058,
+      "tile_bytes": 10664062,
+      "playable_pavement_m2": 3272.246,
+      "survey_pavement_missing_m2": 0.0,
+      "material_overlap_m2": 0.00626,
+      "raw_pavement_material_difference_m2": 0.12944,
+      "export_tolerance_metres": 0.002,
+      "raw_pavement_road_overlap_m2": 0.17017,
+      "export_island_cutoff_m2": 0.03,
+      "omitted_pavement_islands_m2": 0.0,
+      "playable_pavement_gap_m2": 0.0,
+      "omitted_road_islands_m2": 0.0,
+      "materials": 7,
+      "sources": {
+        "osm": {
+          "status": "available",
+          "source": "https://www.openstreetmap.org/api/0.6/map?bbox=-1.9622825,53.8277839,-1.9494965,53.8353297",
+          "licence": "ODbL",
+          "retrieved_utc": "2026-10-30T23:40:30.727629+00:00",
+          "osm_timestamp": null,
+          "response_sha256": "11d135e341245f6f3f05da015d5572af421842b6ed80e782136eb381cf709b81",
+          "features": 181,
+          "cache_reused": true
+        },
+        "survey": {
+          "source": "https://gdi.berlin.de/services/wfs/strassenbefahrung",
+          "status": "outside coverage",
+          "features": 0
+        }
+      }
+    },
+    {
+      "id": "place-f645dce70a27b745",
+      "name": "Kreuzberg, Berlin - pavement edition",
+      "tiles_verified": 9,
+      "build_seconds": 171.9210000000021,
+      "tile_bytes": 11822774,
+      "playable_pavement_m2": 3881.351,
+      "survey_pavement_missing_m2": 0.06463,
+      "material_overlap_m2": 0.09598,
+      "raw_pavement_material_difference_m2": 0.77974,
+      "export_tolerance_metres": 0.002,
+      "raw_pavement_road_overlap_m2": 0.01411,
+      "export_island_cutoff_m2": 0.03,
+      "omitted_pavement_islands_m2": 0.19754,
+      "playable_pavement_gap_m2": 0.0,
+      "omitted_road_islands_m2": 0.03257,
+      "materials": 27,
+      "sources": {
+        "osm": {
+          "status": "available",
+          "source": "https://www.openstreetmap.org/api/0.6/map?bbox=13.4393894,52.4933061,13.4517840,52.5008519",
+          "licence": "ODbL",
+          "retrieved_utc": "2026-10-30T23:35:29.064436+00:00",
+          "osm_timestamp": null,
+          "response_sha256": "973c70db56263bb00e71c776ef1975a41cecfc031341158dfb1298d7a87b74a4",
+          "features": 1022,
+          "cache_reused": true
+        },
+        "survey": {
+          "source": "https://gdi.berlin.de/services/wfs/strassenbefahrung",
+          "status": "available",
+          "features": 1445,
+          "metadata": {
+            "schema": 2,
+            "crs": "EPSG:25833",
+            "source": "https://gdi.berlin.de/services/wfs/strassenbefahrung",
+            "license": "dl-de-zero-2.0",
+            "survey": "2014/2015",
+            "retrieved": "2026-10-25",
+            "expected": {
+              "cm_fahrbahn": 63175,
+              "cl_gehweg": 713598,
+              "ck_parkflaeche": 50019,
+              "by_gehwegueberfahrt": 154030,
+              "bn_baumscheibe": 178576
+            },
+            "complete": true
+          },
+          "local_features_sha256": "c5a53979bce9f3ec26016cad60096ef777bd434e1953f9f4cd43b13f34c69acb",
+          "warning": "Survey dates from 2014/2015; later street changes are not represented."
+        }
+      }
+    }
+  ],
+  "completed_scene_checks": 2
+}
