@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-10-31T00:35:26.938Z",
+  "probe": {
+    "site": "place-d0682c7101f1a1cc",
+    "renderer": "sites-v6.2",
+    "point": [
+      -67.03482204799099,
+      -6.5414672368625375
+    ],
+    "family": "asphalt",
+    "expectedSurfaceType": "tarmac-pro"
+  },
+  "surface": {
+    "onRoad": true,
+    "surfaceType": "tarmac-pro"
+  },
+  "hud": "Mapped site · asphalt grip approximation"
+}

@@ -1,0 +1,1 @@
+The first street build was stopped during Blender assembly after more than seven minutes without reaching READY_TO_RENDER. Approximately 2,500 inherited fence cuboids were being created with separate operators. The source snapshot is retained; its local jobs are failed/superseded, not accepted builds. Version 7.2 batches cuboids by material and bevel, with metric UVs for masonry.

@@ -1,0 +1,10 @@
+{
+  "blender": "4.5.14 LTS",
+  "referenceOnly": true,
+  "rendered_hardware": {
+    "signal": 1,
+    "stop": 1,
+    "give_way": 1
+  },
+  "placement": "Inferred roadside placement from mapped controls; not surveyed pole locations."
+}

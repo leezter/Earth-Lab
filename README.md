@@ -1,5 +1,9 @@
 # RacingVibes rendered district study
 
+Latest road markings/signals edition: **Play Earth Lab - streets update.lnk**, or http://127.0.0.1:47849/ . Lane/control evidence drives paint and roadside hardware, with labelled inferred layouts and optional illustrative signal indicators. See [batch_v7/README.md](batch_v7/README.md).
+
+Latest sites and boundaries edition: **Play Earth Lab - sites update.lnk**, or http://127.0.0.1:47848/ . Mapped parking/yard surfaces and property boundaries retain the pavement improvements in an independent renderer/cache. See [batch_v6/README.md](batch_v6/README.md).
+
 Latest pavement edition: **Play Earth Lab - pavement update.lnk**, or http://127.0.0.1:47847/ . Side-specific pavements, mapped widths/surfaces and historical Berlin survey polygons use a separate renderer and cache. See [batch_v5/README.md](batch_v5/README.md).
 
 Latest road-material edition: **Play Earth Lab - road update.lnk**, or http://127.0.0.1:47846/ . Place search and generation use separate road surface families and retain the roof improvements. See [batch_v4/README.md](batch_v4/README.md).

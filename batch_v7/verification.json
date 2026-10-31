@@ -1,0 +1,77 @@
+{
+  "viewer_source_hashes": {
+    "app.js": "b18d95108862f6b4919489e1f09cbb39f627c0f9b19c72e3736be44461437126",
+    "spawn.js": "4e8f526fe70a104b38d8fc4ad8db877ebd651e7c8751dbd39fbd85238e2f6fa4",
+    "ground.js": "6d555444b0e91ee88d22a20ff315f200686f8395d760e1cc552ad3bdf0ec6c6c",
+    "signals.js": "f0ed46ba3cf439b935bd5e956259501b0de3b4dc1de543f61233ff7379b059b7"
+  },
+  "checked_utc": "2026-10-31T13:52:17.242Z",
+  "desktopBrowser": "Edge headless",
+  "results": [
+    {
+      "id": "place-2d44bdfc7e1e0614",
+      "name": "London - Trafalgar Square streets",
+      "sceneReadySeconds": 0.595,
+      "cachedReuseSeconds": 0.008,
+      "load_and_checks_seconds": 4.053,
+      "distanceDrivenMetres": 22.521598088861868,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-6e0c062f06fe0ea1",
+      "name": "Berlin - marked signal approaches",
+      "sceneReadySeconds": 0.524,
+      "cachedReuseSeconds": 0.01,
+      "load_and_checks_seconds": 4.111,
+      "distanceDrivenMetres": 33.5567387756293,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-98ffbd3504369b06",
+      "name": "New York - City Hall streets",
+      "sceneReadySeconds": 0.449,
+      "cachedReuseSeconds": 0.008,
+      "load_and_checks_seconds": 3.938,
+      "distanceDrivenMetres": 30.358139788418537,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-9ebdf0a98d854349",
+      "name": "New York - Broadway marked street",
+      "sceneReadySeconds": 0.397,
+      "cachedReuseSeconds": 0.011,
+      "load_and_checks_seconds": 3.844,
+      "distanceDrivenMetres": 27.728485658801997,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    }
+  ],
+  "errors": [],
+  "aerialRequests": 0,
+  "livePlaceSearch": true,
+  "sceneSwitching": true,
+  "missingTileFailureRetry": true,
+  "pickerPendingKeepsScene": true,
+  "pickerFailureRetry": true,
+  "pickerLifecycleUsesMockJob": true,
+  "gallery": true
+}

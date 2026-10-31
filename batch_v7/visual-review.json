@@ -1,0 +1,39 @@
+{
+  "checked_utc": "2026-10-31T13:57:51.782472+00:00",
+  "renderer": "streets-v7.2",
+  "scope": "Targeted desktop integration previews; no surveyed paint/pole accuracy or worldwide acceptance.",
+  "samples": [
+    {
+      "name": "Berlin - marked signal approaches",
+      "assessment": "Candidate: road-control lines and visible signal indicators make the approach more legible. Nearby explicitly unmarked roads remain largely unpainted.",
+      "limits": [
+        "Pole positions/counts and stop-line layout are inferred.",
+        "Some patterns and clipped fragments remain abrupt."
+      ]
+    },
+    {
+      "name": "London - Trafalgar Square streets",
+      "assessment": "Candidate: multiple lane dividers, crossing/control lines and indicators improve street structure.",
+      "limits": [
+        "Underlying carriageway and island geometry remains approximate.",
+        "The simple signal cycle does not reconstruct actual turning conflicts or schedules."
+      ]
+    },
+    {
+      "name": "New York - Broadway marked street",
+      "assessment": "Candidate targeted street preview: lane paint, arrows, controls and indicators are visible from a road-centred start.",
+      "limits": [
+        "Lane and arrow layouts are approximated from source attributes; some separately mapped line geometry has sharp transitions.",
+        "No claim of colour-calibrated or street-survey accuracy."
+      ]
+    },
+    {
+      "name": "New York - City Hall streets",
+      "assessment": "Limited: initial nearest-road snap centres on the paved Steve Flanders Square/plaza. Marked roads exist around the bake edges. Retained as evidence; Broadway is the road-focused preview.",
+      "limits": [
+        "Road class alone does not establish public motor-vehicle access.",
+        "This result is not visually accepted as a road-marking showcase."
+      ]
+    }
+  ]
+}

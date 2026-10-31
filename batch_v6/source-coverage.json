@@ -1,0 +1,46 @@
+[
+  {
+    "origin": [
+      52.4970790178281,
+      13.445586694114322
+    ],
+    "site_area_playable_m2": 314.93,
+    "boundary_kinds_playable": {
+      "wall": 6,
+      "fence": 1
+    },
+    "gates_playable": 1,
+    "skipped": {
+      "unconfirmed yard/courtyard/forecourt surface": 3,
+      "gate orientation not established by connected geometry": 6
+    },
+    "compile_seconds": 2.58
+  },
+  {
+    "origin": [
+      53.8315568,
+      -1.9558895
+    ],
+    "site_area_playable_m2": 1007.12,
+    "boundary_kinds_playable": {},
+    "gates_playable": 1,
+    "skipped": {
+      "gate orientation not established by connected geometry": 1
+    },
+    "compile_seconds": 0.53
+  },
+  {
+    "origin": [
+      53.44257516132465,
+      -2.2324636640317235
+    ],
+    "site_area_playable_m2": 634.89,
+    "boundary_kinds_playable": {},
+    "gates_playable": 0,
+    "skipped": {
+      "unconfirmed yard/courtyard/forecourt surface": 1,
+      "gate orientation not established by connected geometry": 1
+    },
+    "compile_seconds": 0.8
+  }
+]

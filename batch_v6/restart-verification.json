@@ -1,0 +1,40 @@
+{
+  "checked_utc": "2026-10-31T00:40:23.264Z",
+  "renderer": "sites-v6.2",
+  "completedScenesRetained": 3,
+  "creditsAvailable": true,
+  "results": [
+    {
+      "id": "place-864849e90a3bcb79",
+      "nineCachedTilesRenderedAfterRestart": true,
+      "stationaryFpsSamples": [
+        59.99612928198177,
+        59.988002399520106,
+        60.007742934572214,
+        60.007742934572164
+      ]
+    },
+    {
+      "id": "place-d0682c7101f1a1cc",
+      "nineCachedTilesRenderedAfterRestart": true,
+      "stationaryFpsSamples": [
+        59.99612928198183,
+        59.988002399520106,
+        59.99612928198177,
+        60.00774293457226
+      ]
+    },
+    {
+      "id": "place-fab318ad63997e48",
+      "nineCachedTilesRenderedAfterRestart": true,
+      "stationaryFpsSamples": [
+        59.99612928198183,
+        59.99612928198183,
+        60.007742934572164,
+        60.00774293457226
+      ]
+    }
+  ],
+  "errors": [],
+  "note": "Stationary desktop samples after settling; not a driving performance benchmark or Android acceptance."
+}

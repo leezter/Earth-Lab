@@ -1,0 +1,450 @@
+{
+  "profile": {
+    "name": "generic continental-style approximation",
+    "left": false,
+    "centre": "white",
+    "dash": 3.0,
+    "gap": 6.0
+  },
+  "paint_area_m2": 46.955,
+  "feature_counts": {
+    "crossing": 6,
+    "give_way_line": 2,
+    "signal_stop_line": 5,
+    "centre_divider": 27,
+    "lane_divider": 9,
+    "turn_arrow": 3
+  },
+  "hardware_counts": {
+    "give_way": 2,
+    "signal": 5
+  },
+  "records": [
+    {
+      "kind": "crossing",
+      "source": "OSM way/55464613",
+      "presence_evidence": "mapped crossing markings",
+      "style_inferred": true,
+      "pattern": "zebra",
+      "position_inferred": false
+    },
+    {
+      "kind": "crossing",
+      "source": "OSM way/912886324",
+      "presence_evidence": "mapped crossing markings",
+      "style_inferred": true,
+      "pattern": "zebra",
+      "position_inferred": false
+    },
+    {
+      "kind": "crossing",
+      "source": "OSM way/1450891663",
+      "presence_evidence": "mapped crossing markings",
+      "style_inferred": true,
+      "pattern": "zebra",
+      "position_inferred": false
+    },
+    {
+      "kind": "crossing",
+      "source": "OSM way/1450891664",
+      "presence_evidence": "mapped crossing markings",
+      "style_inferred": true,
+      "pattern": "zebra",
+      "position_inferred": false
+    },
+    {
+      "kind": "crossing",
+      "source": "OSM way/1461657956",
+      "presence_evidence": "mapped crossing markings",
+      "style_inferred": true,
+      "pattern": "zebra",
+      "position_inferred": false
+    },
+    {
+      "kind": "crossing",
+      "source": "OSM way/1461657957",
+      "presence_evidence": "mapped crossing markings",
+      "style_inferred": true,
+      "pattern": "zebra",
+      "position_inferred": false
+    },
+    {
+      "kind": "give_way_line",
+      "source": "OSM node/268409465",
+      "presence_evidence": "mapped junction control; painted line inferred",
+      "style_inferred": true,
+      "direction_inferred": true,
+      "position_inferred": false
+    },
+    {
+      "kind": "give_way_line",
+      "source": "OSM node/3565899454",
+      "presence_evidence": "mapped junction control; painted line inferred",
+      "style_inferred": true,
+      "direction_inferred": false,
+      "position_inferred": false
+    },
+    {
+      "kind": "signal_stop_line",
+      "source": "OSM node/4775505185",
+      "presence_evidence": "mapped junction control; painted line inferred",
+      "style_inferred": true,
+      "direction_inferred": true,
+      "position_inferred": false
+    },
+    {
+      "kind": "signal_stop_line",
+      "source": "OSM node/4775505185",
+      "presence_evidence": "mapped junction control; painted line inferred",
+      "style_inferred": true,
+      "direction_inferred": true,
+      "position_inferred": false
+    },
+    {
+      "kind": "signal_stop_line",
+      "source": "OSM node/6933134732",
+      "presence_evidence": "mapped junction control; painted line inferred",
+      "style_inferred": true,
+      "direction_inferred": true,
+      "position_inferred": false
+    },
+    {
+      "kind": "signal_stop_line",
+      "source": "OSM node/12058032418",
+      "presence_evidence": "mapped junction control; painted line inferred",
+      "style_inferred": true,
+      "direction_inferred": false,
+      "position_inferred": false
+    },
+    {
+      "kind": "signal_stop_line",
+      "source": "OSM node/12058032419",
+      "presence_evidence": "mapped junction control; painted line inferred",
+      "style_inferred": true,
+      "direction_inferred": false,
+      "position_inferred": false
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/13232333",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": false
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/17369012",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/23044097",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "lane_divider",
+      "source": "OSM way/33231763",
+      "presence_evidence": "mapped lane count; paint presence inferred",
+      "style_inferred": true,
+      "lanes": 3,
+      "width_inferred": true
+    },
+    {
+      "kind": "lane_divider",
+      "source": "OSM way/33231763",
+      "presence_evidence": "mapped lane count; paint presence inferred",
+      "style_inferred": true,
+      "lanes": 3,
+      "width_inferred": true
+    },
+    {
+      "kind": "lane_divider",
+      "source": "OSM way/33231767",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "lane_divider",
+      "source": "OSM way/65040950",
+      "presence_evidence": "mapped lane count; paint presence inferred",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/72183565",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "lane_divider",
+      "source": "OSM way/130667390",
+      "presence_evidence": "mapped lane count; paint presence inferred",
+      "style_inferred": true,
+      "lanes": 3,
+      "width_inferred": true
+    },
+    {
+      "kind": "lane_divider",
+      "source": "OSM way/130667390",
+      "presence_evidence": "mapped lane count; paint presence inferred",
+      "style_inferred": true,
+      "lanes": 3,
+      "width_inferred": true
+    },
+    {
+      "kind": "turn_arrow",
+      "source": "OSM way/130667390",
+      "presence_evidence": "mapped turn:lanes; placement inferred",
+      "style_inferred": true,
+      "turn": "left;through"
+    },
+    {
+      "kind": "turn_arrow",
+      "source": "OSM way/130667390",
+      "presence_evidence": "mapped turn:lanes; placement inferred",
+      "style_inferred": true,
+      "turn": "through"
+    },
+    {
+      "kind": "turn_arrow",
+      "source": "OSM way/130667390",
+      "presence_evidence": "mapped turn:lanes; placement inferred",
+      "style_inferred": true,
+      "turn": "right"
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/180442271",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": false
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/206807723",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/206807724",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/328426240",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 3,
+      "width_inferred": true
+    },
+    {
+      "kind": "lane_divider",
+      "source": "OSM way/328426240",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 3,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/852542873",
+      "presence_evidence": "mapped lane count; paint presence inferred",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": false
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/875833367",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/975440485",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/975440486",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1082303475",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1082303476",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 3,
+      "width_inferred": true
+    },
+    {
+      "kind": "lane_divider",
+      "source": "OSM way/1082303476",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 3,
+      "width_inferred": true
+    },
+    {
+      "kind": "lane_divider",
+      "source": "OSM way/1096948331",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1147029653",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1147029654",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1147029655",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1147029657",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1147029658",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1225230658",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1301848024",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1450891667",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1450908069",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1456043081",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1462133665",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1462133672",
+      "presence_evidence": "lane_markings=yes",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": true
+    },
+    {
+      "kind": "centre_divider",
+      "source": "OSM way/1555173219",
+      "presence_evidence": "mapped lane count; paint presence inferred",
+      "style_inferred": true,
+      "lanes": 2,
+      "width_inferred": false
+    }
+  ],
+  "skipped": {
+    "unmarked or unspecified crossing paint": 28,
+    "control without connected driving way": 5,
+    "no usable multi-lane count": 377,
+    "explicitly unmarked lane dividers": 15
+  },
+  "limitations": [
+    "Lane widths, dash/line patterns and colours use labelled regional approximations; not surveyed paint.",
+    "Signal/control nodes do not establish physical pole positions; roadside placement is inferred.",
+    "Unmarked roads, unknown lane counts and ambiguous odd lane splits receive no inferred dividers.",
+    "Crossing paint requires a marking tag; unspecified crossings are not automatically zebra crossings.",
+    "Illustrative signal phases are not real schedules. No traffic AI, enforcement or live lighting is added."
+  ]
+}

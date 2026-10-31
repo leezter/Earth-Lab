@@ -1,0 +1,61 @@
+{
+  "viewer_source_hashes": {
+    "app.js": "f94d064f8a5ed92aa4931982fd572f881c3d0116506e45cf943370c728ad3520",
+    "spawn.js": "4e8f526fe70a104b38d8fc4ad8db877ebd651e7c8751dbd39fbd85238e2f6fa4",
+    "ground.js": "6d555444b0e91ee88d22a20ff315f200686f8395d760e1cc552ad3bdf0ec6c6c"
+  },
+  "checked_utc": "2026-10-31T00:39:09.647Z",
+  "desktopBrowser": "Edge headless",
+  "results": [
+    {
+      "id": "place-864849e90a3bcb79",
+      "name": "Manchester, mapped hedge - sites and boundaries",
+      "sceneReadySeconds": 0.636,
+      "cachedReuseSeconds": 0.008,
+      "load_and_checks_seconds": 4.207,
+      "distanceDrivenMetres": 34.927438980988214,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-d0682c7101f1a1cc",
+      "name": "Main Street, Haworth - sites and boundaries",
+      "sceneReadySeconds": 0.346,
+      "cachedReuseSeconds": 0.013,
+      "load_and_checks_seconds": 3.811,
+      "distanceDrivenMetres": 4.292455632236001,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-fab318ad63997e48",
+      "name": "Kreuzberg, Berlin - sites and boundaries",
+      "sceneReadySeconds": 0.546,
+      "cachedReuseSeconds": 0.02,
+      "load_and_checks_seconds": 4.099,
+      "distanceDrivenMetres": 30.034170713854213,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    }
+  ],
+  "errors": [],
+  "aerialRequests": 0,
+  "sceneSwitching": true,
+  "missingTileFailureRetry": true,
+  "pickerPendingKeepsScene": true,
+  "pickerFailureRetry": true,
+  "pickerLifecycleUsesMockJob": true,
+  "gallery": true
+}

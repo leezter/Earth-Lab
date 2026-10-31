@@ -1,0 +1,62 @@
+{
+  "checked_utc": "2026-10-31T00:30:57.393759+00:00",
+  "checks": [
+    {
+      "command": [
+        "batch_v6/test_sites.py"
+      ],
+      "passed": true,
+      "checks": 11
+    },
+    {
+      "command": [
+        "batch_v6/test_boundary_geometry.py"
+      ],
+      "passed": true,
+      "checks": 3
+    },
+    {
+      "command": [
+        "batch_v6/test_pavements.py"
+      ],
+      "passed": true,
+      "checks": 10
+    },
+    {
+      "command": [
+        "batch_v6/test_pavement_sources.py"
+      ],
+      "passed": true,
+      "checks": 3
+    },
+    {
+      "command": [
+        "batch_v6/test_road_types.py"
+      ],
+      "passed": true,
+      "checks": 4
+    },
+    {
+      "command": [
+        "batch_v3/test_roof_styles.py"
+      ],
+      "passed": true,
+      "checks": 5
+    },
+    {
+      "command": [
+        "batch_v6/test_spawn.cjs"
+      ],
+      "passed": true,
+      "checks": 4
+    },
+    {
+      "command": [
+        "batch_v6/test_ground.cjs"
+      ],
+      "passed": true,
+      "checks": 6
+    }
+  ],
+  "total_checks": 46
+}

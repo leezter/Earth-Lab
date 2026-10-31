@@ -1,0 +1,14 @@
+{
+  "blender": "4.5.14 LTS",
+  "referenceOnly": true,
+  "rendered_parts": {
+    "wall": 1,
+    "fence": 1,
+    "hedge": 1,
+    "gate": 1
+  },
+  "material_variants": 3,
+  "batched_cuboids": 66,
+  "cuboid_mesh_objects": 5,
+  "note": "Positions follow mapped lines/nodes. Missing dimensions, construction and open gate pose are inferred."
+}

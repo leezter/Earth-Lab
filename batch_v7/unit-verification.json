@@ -1,0 +1,86 @@
+{
+  "checked_utc": "2026-10-31T13:37:20.503158+00:00",
+  "checks": [
+    {
+      "command": [
+        "batch_v7/test_streets.py"
+      ],
+      "passed": true,
+      "python_tests": 15,
+      "output": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.031s\n\nOK"
+    },
+    {
+      "command": [
+        "batch_v7/test_sites.py"
+      ],
+      "passed": true,
+      "python_tests": 11,
+      "output": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.007s\n\nOK"
+    },
+    {
+      "command": [
+        "batch_v7/test_boundary_geometry.py"
+      ],
+      "passed": true,
+      "python_tests": 3,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK"
+    },
+    {
+      "command": [
+        "batch_v7/test_pavements.py"
+      ],
+      "passed": true,
+      "python_tests": 10,
+      "output": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.009s\n\nOK"
+    },
+    {
+      "command": [
+        "batch_v7/test_pavement_sources.py"
+      ],
+      "passed": true,
+      "python_tests": 3,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.007s\n\nOK"
+    },
+    {
+      "command": [
+        "batch_v7/test_road_types.py"
+      ],
+      "passed": true,
+      "python_tests": 4,
+      "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.253s\n\nOK"
+    },
+    {
+      "command": [
+        "batch_v3/test_roof_styles.py"
+      ],
+      "passed": true,
+      "python_tests": 5,
+      "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK"
+    },
+    {
+      "command": [
+        "batch_v7/test_spawn.cjs"
+      ],
+      "passed": true,
+      "python_tests": null,
+      "output": "PASS 4 spawn/clearance checks"
+    },
+    {
+      "command": [
+        "batch_v7/test_ground.cjs"
+      ],
+      "passed": true,
+      "python_tests": null,
+      "output": "PASS 6 site grip/hole checks"
+    },
+    {
+      "command": [
+        "batch_v7/test_signals.cjs"
+      ],
+      "passed": true,
+      "python_tests": null,
+      "output": "PASS signal phase conflicts, transitions, pause and reset"
+    }
+  ],
+  "python_tests": 51
+}

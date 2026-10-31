@@ -1,0 +1,50 @@
+{
+  "checked_utc": "2026-10-31T13:56:36.103Z",
+  "renderer": "streets-v7.2",
+  "completedScenesRetained": 4,
+  "creditsAvailable": true,
+  "results": [
+    {
+      "id": "place-2d44bdfc7e1e0614",
+      "nineCachedTilesRenderedAfterRestart": true,
+      "stationaryFpsSamples": [
+        60.007742934572214,
+        59.98800239952005,
+        60.01936108422072,
+        59.98800239952016
+      ]
+    },
+    {
+      "id": "place-6e0c062f06fe0ea1",
+      "nineCachedTilesRenderedAfterRestart": true,
+      "stationaryFpsSamples": [
+        59.98452012383904,
+        60.01936108422072,
+        59.99612928198177,
+        59.99612928198183
+      ]
+    },
+    {
+      "id": "place-98ffbd3504369b06",
+      "nineCachedTilesRenderedAfterRestart": true,
+      "stationaryFpsSamples": [
+        60.007742934572164,
+        59.98452012383904,
+        59.99612928198177,
+        59.99612928198183
+      ]
+    },
+    {
+      "id": "place-9ebdf0a98d854349",
+      "nineCachedTilesRenderedAfterRestart": true,
+      "stationaryFpsSamples": [
+        60.01936108422072,
+        59.96131528046422,
+        60.04261088514433,
+        59.98800239952005
+      ]
+    }
+  ],
+  "errors": [],
+  "note": "Stationary desktop samples after settling; not a driving performance benchmark or Android acceptance."
+}

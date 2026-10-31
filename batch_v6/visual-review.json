@@ -1,0 +1,44 @@
+{
+  "checked_utc": "2026-10-31T00:40:52.479014+00:00",
+  "renderer": "sites-v6.2",
+  "scope": "Desktop screenshots and source/geometry checks; no street survey, photographic colour match, worldwide or Android acceptance.",
+  "sites": [
+    {
+      "name": "Kreuzberg, Berlin",
+      "assessment": "Candidate incremental improvement: mapped parking strips and courtyard boundary detail; pavement footprint retained. Large unknown courtyard surfaces remain unchanged.",
+      "limits": [
+        "Survey parking geometry is historical (2014/2015).",
+        "Colours, surface condition and missing boundary dimensions are inferred."
+      ],
+      "screenshots": [
+        "web/reviews/berlin-overview.png",
+        "web/reviews/berlin-close.png"
+      ]
+    },
+    {
+      "name": "Main Street, Haworth",
+      "assessment": "Limited improvement: mapped parking ground replaces generic ground in part of the playable area. Missing site surfaces and existing coarse land-cover edges remain visible.",
+      "limits": [
+        "No mapped wall/fence/hedge parts inside this particular playable square; some are rendered outside it for shadow context.",
+        "Parking finish uses a labelled inference where absent."
+      ],
+      "screenshots": [
+        "web/reviews/haworth-overview.png",
+        "web/reviews/haworth-close.png"
+      ]
+    },
+    {
+      "name": "Manchester, mapped hedge",
+      "assessment": "Feature integration sample: the mapped hedge is visible and divides a plot; unknown surrounding ground remains unchanged.",
+      "limits": [
+        "Chosen to exercise known mapped hedge coverage, not a blind generalisation test.",
+        "No new site-ground area in this playable square; mapped site ground exists outside it.",
+        "Road width/surface and vegetation remain approximations inherited from earlier editions."
+      ],
+      "screenshots": [
+        "web/reviews/manchester-overview.png",
+        "web/reviews/manchester-close.png"
+      ]
+    }
+  ]
+}

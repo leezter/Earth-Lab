@@ -1,0 +1,333 @@
+{
+  "checked_utc": "2026-10-31T13:52:17.693863+00:00",
+  "renderer": "streets-v7.2",
+  "previous_frozen_sources_verified": [
+    "six-settings-v1",
+    "six-settings-v2",
+    "roof-variety-v3",
+    "road-materials-v4.4",
+    "pavements-v5.2",
+    "sites-v6.2"
+  ],
+  "scenes": [
+    {
+      "id": "place-2d44bdfc7e1e0614",
+      "name": "London - Trafalgar Square streets",
+      "tiles_verified": 9,
+      "build_seconds": 169.875,
+      "tile_bytes": 7119114,
+      "playable_pavement_m2": 7741.868,
+      "survey_pavement_missing_m2": 0.0,
+      "material_overlap_m2": 0.08376,
+      "raw_pavement_material_difference_m2": 1.25012,
+      "export_tolerance_metres": 0.002,
+      "raw_pavement_road_overlap_m2": 0.32746,
+      "export_island_cutoff_m2": 0.03,
+      "omitted_pavement_islands_m2": 0.04036,
+      "playable_pavement_gap_m2": 0.002,
+      "omitted_road_islands_m2": 0.0,
+      "materials": 8,
+      "sources": {
+        "osm": {
+          "status": "available",
+          "source": "https://www.openstreetmap.org/api/0.6/map?bbox=-0.1340290,51.5037034,-0.1219055,51.5112492",
+          "licence": "ODbL",
+          "retrieved_utc": "2026-10-31T13:40:58.818192+00:00",
+          "osm_timestamp": null,
+          "evidence_schema": "streets-v7",
+          "response_sha256": "38bed7020fa18d2f715c5b7d036eca4a826a59c5c6225f46857d9fbcfb038b5f",
+          "features": 3122,
+          "cache_reused": false
+        },
+        "survey": {
+          "source": "https://gdi.berlin.de/services/wfs/strassenbefahrung",
+          "status": "outside coverage",
+          "features": 0
+        }
+      },
+      "playable_site_area_m2": 0.0,
+      "site_materials": 1,
+      "playable_site_material_gap_m2": 0.0,
+      "boundary_parts": 192,
+      "playable_boundary_parts": 29,
+      "gate_assets": 78,
+      "boundary_assets": {
+        "rendered_parts": {
+          "wall": 193,
+          "fence": 78,
+          "hedge": 0,
+          "gate": 12
+        },
+        "material_variants": 5,
+        "batched_cuboids": 2078,
+        "cuboid_mesh_objects": 9,
+        "note": "Positions follow mapped lines/nodes. Missing dimensions, construction and open gate pose are inferred."
+      },
+      "playable_paint_m2": 157.469,
+      "playable_hardware": {
+        "signal": 40,
+        "stop": 0,
+        "give_way": 0
+      },
+      "traffic_assets": {
+        "rendered_hardware": {
+          "signal": 56,
+          "stop": 0,
+          "give_way": 0
+        },
+        "placement": "Inferred roadside placement from mapped controls; not surveyed pole locations."
+      },
+      "street_profile": {
+        "name": "British/Irish-style geographic approximation",
+        "left": true,
+        "centre": "white",
+        "dash": 2.0,
+        "gap": 4.0
+      }
+    },
+    {
+      "id": "place-6e0c062f06fe0ea1",
+      "name": "Berlin - marked signal approaches",
+      "tiles_verified": 9,
+      "build_seconds": 175.89000000000033,
+      "tile_bytes": 9816114,
+      "playable_pavement_m2": 5750.199,
+      "survey_pavement_missing_m2": 0.06646,
+      "material_overlap_m2": 0.08024,
+      "raw_pavement_material_difference_m2": 0.62064,
+      "export_tolerance_metres": 0.002,
+      "raw_pavement_road_overlap_m2": 0.05059,
+      "export_island_cutoff_m2": 0.03,
+      "omitted_pavement_islands_m2": 0.16658,
+      "playable_pavement_gap_m2": 0.0,
+      "omitted_road_islands_m2": 0.03261,
+      "materials": 22,
+      "sources": {
+        "osm": {
+          "status": "available",
+          "source": "https://www.openstreetmap.org/api/0.6/map?bbox=13.4377999,52.4962495,13.4501953,52.5037953",
+          "licence": "ODbL",
+          "retrieved_utc": "2026-10-31T13:24:46.952237+00:00",
+          "osm_timestamp": null,
+          "evidence_schema": "streets-v7",
+          "response_sha256": "40cf8c47db4a8230099f48e1e3581329cc6a3c07f2a8a28a70117185c78ce4ea",
+          "features": 2628,
+          "cache_reused": true
+        },
+        "survey": {
+          "source": "https://gdi.berlin.de/services/wfs/strassenbefahrung",
+          "status": "available",
+          "features": 2067,
+          "metadata": {
+            "schema": 2,
+            "crs": "EPSG:25833",
+            "source": "https://gdi.berlin.de/services/wfs/strassenbefahrung",
+            "license": "dl-de-zero-2.0",
+            "survey": "2014/2015",
+            "retrieved": "2026-10-25",
+            "expected": {
+              "cm_fahrbahn": 63175,
+              "cl_gehweg": 713598,
+              "ck_parkflaeche": 50019,
+              "by_gehwegueberfahrt": 154030,
+              "bn_baumscheibe": 178576
+            },
+            "complete": true
+          },
+          "local_features_sha256": "15a04f75bd4a32a97e717ff97bc94e070cb8d0f1f3f0871954c76690a6475256",
+          "warning": "Survey dates from 2014/2015; later street changes are not represented."
+        }
+      },
+      "playable_site_area_m2": 1330.572,
+      "site_materials": 5,
+      "playable_site_material_gap_m2": 0.0,
+      "boundary_parts": 183,
+      "playable_boundary_parts": 11,
+      "gate_assets": 67,
+      "boundary_assets": {
+        "rendered_parts": {
+          "wall": 9,
+          "fence": 67,
+          "hedge": 0,
+          "gate": 11
+        },
+        "material_variants": 4,
+        "batched_cuboids": 2650,
+        "cuboid_mesh_objects": 7,
+        "note": "Positions follow mapped lines/nodes. Missing dimensions, construction and open gate pose are inferred."
+      },
+      "playable_paint_m2": 13.985,
+      "playable_hardware": {
+        "signal": 4,
+        "stop": 0,
+        "give_way": 0
+      },
+      "traffic_assets": {
+        "rendered_hardware": {
+          "signal": 13,
+          "stop": 0,
+          "give_way": 2
+        },
+        "placement": "Inferred roadside placement from mapped controls; not surveyed pole locations."
+      },
+      "street_profile": {
+        "name": "generic continental-style approximation",
+        "left": false,
+        "centre": "white",
+        "dash": 3.0,
+        "gap": 6.0
+      }
+    },
+    {
+      "id": "place-98ffbd3504369b06",
+      "name": "New York - City Hall streets",
+      "tiles_verified": 9,
+      "build_seconds": 200.48500000000058,
+      "tile_bytes": 11980196,
+      "playable_pavement_m2": 9576.11,
+      "survey_pavement_missing_m2": 0.0,
+      "material_overlap_m2": 0.08425,
+      "raw_pavement_material_difference_m2": 0.62192,
+      "export_tolerance_metres": 0.002,
+      "raw_pavement_road_overlap_m2": 0.30862,
+      "export_island_cutoff_m2": 0.03,
+      "omitted_pavement_islands_m2": 0.13662,
+      "playable_pavement_gap_m2": 0.00108,
+      "omitted_road_islands_m2": 0.0,
+      "materials": 7,
+      "sources": {
+        "osm": {
+          "status": "available",
+          "source": "https://www.openstreetmap.org/api/0.6/map?bbox=-74.0112019,40.7087182,-74.0012468,40.7162641",
+          "licence": "ODbL",
+          "retrieved_utc": "2026-10-31T13:37:38.162932+00:00",
+          "osm_timestamp": null,
+          "evidence_schema": "streets-v7",
+          "response_sha256": "b3ae20e4553fe416358f1b8b09eab1372ac532c22f40ec9b26d8376ff374d212",
+          "features": 4096,
+          "cache_reused": false
+        },
+        "survey": {
+          "source": "https://gdi.berlin.de/services/wfs/strassenbefahrung",
+          "status": "outside coverage",
+          "features": 0
+        }
+      },
+      "playable_site_area_m2": 1048.09,
+      "site_materials": 1,
+      "playable_site_material_gap_m2": 0.0,
+      "boundary_parts": 197,
+      "playable_boundary_parts": 32,
+      "gate_assets": 44,
+      "boundary_assets": {
+        "rendered_parts": {
+          "wall": 22,
+          "fence": 230,
+          "hedge": 11,
+          "gate": 17
+        },
+        "material_variants": 6,
+        "batched_cuboids": 7422,
+        "cuboid_mesh_objects": 11,
+        "note": "Positions follow mapped lines/nodes. Missing dimensions, construction and open gate pose are inferred."
+      },
+      "playable_paint_m2": 251.333,
+      "playable_hardware": {
+        "signal": 22,
+        "stop": 0,
+        "give_way": 0
+      },
+      "traffic_assets": {
+        "rendered_hardware": {
+          "signal": 48,
+          "stop": 2,
+          "give_way": 0
+        },
+        "placement": "Inferred roadside placement from mapped controls; not surveyed pole locations."
+      },
+      "street_profile": {
+        "name": "US-style geographic approximation",
+        "left": false,
+        "centre": "yellow",
+        "dash": 3.0,
+        "gap": 9.0
+      }
+    },
+    {
+      "id": "place-9ebdf0a98d854349",
+      "name": "New York - Broadway marked street",
+      "tiles_verified": 9,
+      "build_seconds": 186.89099999999962,
+      "tile_bytes": 9756668,
+      "playable_pavement_m2": 6887.449,
+      "survey_pavement_missing_m2": 0.0,
+      "material_overlap_m2": 0.09431,
+      "raw_pavement_material_difference_m2": 0.47115,
+      "export_tolerance_metres": 0.002,
+      "raw_pavement_road_overlap_m2": 0.24112,
+      "export_island_cutoff_m2": 0.03,
+      "omitted_pavement_islands_m2": 0.14498,
+      "playable_pavement_gap_m2": 0.0,
+      "omitted_road_islands_m2": 0.0,
+      "materials": 7,
+      "sources": {
+        "osm": {
+          "status": "available",
+          "source": "https://www.openstreetmap.org/api/0.6/map?bbox=-74.0122352,40.7092347,-74.0022801,40.7167805",
+          "licence": "ODbL",
+          "retrieved_utc": "2026-10-31T13:47:55.833163+00:00",
+          "osm_timestamp": null,
+          "evidence_schema": "streets-v7",
+          "response_sha256": "ac2301e9fa0d60db03a4fb52810f8f85d74a5354e3e608d4a4806cf1c02838aa",
+          "features": 4115,
+          "cache_reused": false
+        },
+        "survey": {
+          "source": "https://gdi.berlin.de/services/wfs/strassenbefahrung",
+          "status": "outside coverage",
+          "features": 0
+        }
+      },
+      "playable_site_area_m2": 1048.104,
+      "site_materials": 1,
+      "playable_site_material_gap_m2": 0.0,
+      "boundary_parts": 208,
+      "playable_boundary_parts": 16,
+      "gate_assets": 44,
+      "boundary_assets": {
+        "rendered_parts": {
+          "wall": 0,
+          "fence": 117,
+          "hedge": 0,
+          "gate": 7
+        },
+        "material_variants": 2,
+        "batched_cuboids": 3891,
+        "cuboid_mesh_objects": 5,
+        "note": "Positions follow mapped lines/nodes. Missing dimensions, construction and open gate pose are inferred."
+      },
+      "playable_paint_m2": 78.585,
+      "playable_hardware": {
+        "signal": 13,
+        "stop": 0,
+        "give_way": 0
+      },
+      "traffic_assets": {
+        "rendered_hardware": {
+          "signal": 54,
+          "stop": 0,
+          "give_way": 0
+        },
+        "placement": "Inferred roadside placement from mapped controls; not surveyed pole locations."
+      },
+      "street_profile": {
+        "name": "US-style geographic approximation",
+        "left": false,
+        "centre": "yellow",
+        "dash": 3.0,
+        "gap": 9.0
+      }
+    }
+  ],
+  "completed_scene_checks": 4
+}

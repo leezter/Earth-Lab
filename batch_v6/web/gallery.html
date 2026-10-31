@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Earth Lab — Sites and boundaries v6</title>
+<style>body{background:#14232b;color:#eaf0ee;font:16px system-ui;line-height:1.6;max-width:1200px;margin:40px auto;padding:0 24px}a{color:#87ddc5}li{margin:12px 0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}img{width:100%}@media(max-width:850px){.pair{grid-template-columns:1fr}}</style>
+<h1>Sites and boundaries · edition 6</h1>
+<p><a href="/">Drive / generate a place</a> · <a href="http://127.0.0.1:47847/">Previous pavement edition</a> · <a href="/api/credits">Sources and licences</a></p>
+<p>Mapped parking footprints, confirmed yard/courtyard/forecourt surfaces, walls, fences, hedges and connected gates. Material, colour and missing dimensions use labelled approximations. Berlin parking polygons can use the installed 2014/2015 survey.</p>
+<p>Unknown yards remain unchanged. No parking bays, parked cars or additional property boundaries are invented. Wall, fence and hedge footprints block the car; gates are shown open as an inferred display pose, with decorative posts/leaves.</p>
+<h2>Your generated areas</h2><ul id="sites"><li>Loading…</li></ul>
+<h2>Kreuzberg comparison</h2><p>Matching views. The pavement-edition image is retained v5 evidence; the new image is captured by the v6 browser check. Mapping coverage varies by location.</p>
+<div class="pair"><div><h3>Pavement edition v5</h3><img src="/v5-reviews/berlin-overview.png" alt="Earlier pavement edition"></div><div><h3>Sites edition v6</h3><img src="/reviews/berlin-overview.png" alt="Sites edition; available after verification"></div></div>
+<script type="module">
+const list=document.querySelector('#sites');
+try{const response=await fetch('/api/sites');if(!response.ok)throw Error('Area list unavailable');const sites=await response.json();list.replaceChildren();for(const s of sites){const li=document.createElement('li'),a=document.createElement('a');a.textContent=s.name+' · '+s.status;a.href='/?site='+encodeURIComponent(s.id);li.append(a);list.append(li);}if(!sites.length)list.textContent='No generated areas yet. Open the driving page to search and generate.';}catch(e){list.textContent=e.message;}
+</script></html>
