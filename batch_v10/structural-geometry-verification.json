@@ -1,0 +1,23 @@
+{
+  "renderer": "bridges-v10.29",
+  "builds": [
+    {
+      "id": "place-549fd39762ef0871",
+      "structures": [
+        {
+          "id": "bridge-4686103",
+          "source_m2": 4576.695411466483,
+          "mesh_m2": 4576.695411466475,
+          "missing_m2": 0.0,
+          "outside_m2": 0.0
+        }
+      ],
+      "overheads": 3
+    },
+    {
+      "id": "place-9e1def73b9116854",
+      "structures": [],
+      "overheads": 0
+    }
+  ]
+}

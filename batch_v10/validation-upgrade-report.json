@@ -1,0 +1,38 @@
+{
+  "from": "bridges-v10.28",
+  "to": "bridges-v10.29",
+  "changed_validation_files": [
+    "batch_v10/validation.py"
+  ],
+  "renderer_inputs_unchanged": true,
+  "builds": [
+    {
+      "id": "place-9e1def73b9116854",
+      "original_job": "place-6019ae66c1479f70",
+      "name": "Hornsey Lane - deck portals and surface rendering",
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 1,
+        "decoded_image_bytes": 155352280,
+        "bridges": 1,
+        "max_ground_plane_error_m": 7.460698725481052e-14,
+        "content_identity": "4c8382320cb17e62556afc0edb4443903d983639bcc14290120003c365ce58e4"
+      }
+    },
+    {
+      "id": "place-549fd39762ef0871",
+      "original_job": "place-d3edf5f258b36962",
+      "name": "Oberbaum - deck portals and surface rendering",
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 5,
+        "decoded_image_bytes": 218334260,
+        "bridges": 2,
+        "max_ground_plane_error_m": 1.687538997430238e-14,
+        "content_identity": "55677a8846e8dd13c7ec1eb30fd76ee39e8ab377e7d61fefe4af6691293264e6"
+      }
+    }
+  ]
+}

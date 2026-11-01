@@ -1,121 +1,51 @@
 {
-  "from": "bridges-v10.13",
-  "to": "bridges-v10.14",
+  "from": "bridges-v10.25",
+  "to": "bridges-v10.26",
   "changed_viewer_files": [
-    "batch_v10/web/app.js"
+    "batch_v10/web/elevation.js"
   ],
   "renderer_inputs_unchanged": true,
   "builds": [
     {
-      "id": "fixture-64eabf42fbc15735",
-      "original_job": "fixture-6c34e162b80dccf0",
-      "name": "Synthetic flat test",
-      "acceptance": {
-        "status": "passed",
-        "tiles": 9,
-        "patches": 0,
-        "decoded_image_bytes": 150994944,
-        "bridges": 0,
-        "max_ground_plane_error_m": 0,
-        "content_identity": "b99df8aa504943066e8d32d8501a58c3c32ad06c5c816bec61fd9a9c2504af1a"
-      }
-    },
-    {
-      "id": "fixture-dec22d686495f634",
-      "original_job": "fixture-702ac399494b664a",
-      "name": "Synthetic hills test",
-      "acceptance": {
-        "status": "passed",
-        "tiles": 9,
-        "patches": 0,
-        "decoded_image_bytes": 150994944,
-        "bridges": 0,
-        "max_ground_plane_error_m": 5.329070518200751e-15,
-        "content_identity": "f1b1afda6c0b2f3c52ba4708f71e9ecaf39b2cf4dadb1a4b8c68e4d51a5bfb6a"
-      }
-    },
-    {
-      "id": "fixture-d7917bf3f06829b0",
-      "original_job": "fixture-b17deee412ea180e",
-      "name": "Synthetic junctions test",
-      "acceptance": {
-        "status": "passed",
-        "tiles": 9,
-        "patches": 4,
-        "decoded_image_bytes": 189188712,
-        "bridges": 4,
-        "max_ground_plane_error_m": 4.551914400963142e-15,
-        "content_identity": "9c1ad0979ec1ea62ff7fa0cded8f45b998cba17a9a81c94d3423c65535ce3427"
-      }
-    },
-    {
-      "id": "fixture-2f616729f599387d",
-      "original_job": "fixture-e632a4aba4b4b2e4",
-      "name": "Synthetic overpass test",
+      "id": "place-84808edd0e2db624",
+      "original_job": "place-0aba67bd8c5aa0d0",
+      "name": "Hornsey Lane - structural regression",
       "acceptance": {
         "status": "passed",
         "tiles": 9,
         "patches": 1,
-        "decoded_image_bytes": 153495824,
+        "decoded_image_bytes": 155352280,
         "bridges": 1,
-        "max_ground_plane_error_m": 4.796163466380676e-14,
-        "content_identity": "b4c6f6fce64431692d18f144ed162b6ba4085b9709abc1fead356a9f67ad6472"
+        "max_ground_plane_error_m": 7.460698725481052e-14,
+        "content_identity": "acf6240d7473f90480393e3eaa01e81fd028c6977dec2f7efbc2d69a4e956545"
       }
     },
     {
-      "id": "place-89f229ffb29986bd",
-      "original_job": "place-00f26df685fc811f",
-      "name": "Halifax viaducts 53.726589, -1.860018",
-      "acceptance": {
-        "status": "passed",
-        "tiles": 9,
-        "patches": 4,
-        "decoded_image_bytes": 177376960,
-        "bridges": 14,
-        "max_ground_plane_error_m": 5.1958437552457326e-14,
-        "content_identity": "e6c70469a3b411aaecbb03361e03accbdd239baafc8c50eed79782c2784dc3bf"
-      }
-    },
-    {
-      "id": "place-9730cda9e56cf479",
-      "original_job": "place-2814bdbea44c9472",
-      "name": "Halifax viaducts 53.72558, -1.859568",
-      "acceptance": {
-        "status": "passed",
-        "tiles": 9,
-        "patches": 1,
-        "decoded_image_bytes": 151047648,
-        "bridges": 14,
-        "max_ground_plane_error_m": 3.552713678800501e-14,
-        "content_identity": "109d9ff91dcfe28623c9bfb72cef3eb336f6176e193fccdf5d0993348cd6eb71"
-      }
-    },
-    {
-      "id": "place-816268416cb633f5",
-      "original_job": "place-364383385f7317bc",
-      "name": "Halifax viaducts 53.726006, -1.859824",
+      "id": "place-395c14ee8255f3ae",
+      "original_job": "place-6f66774d6e2887c6",
+      "name": "Oberbaum - structural decks and arch passage",
       "acceptance": {
         "status": "passed",
         "tiles": 9,
         "patches": 3,
-        "decoded_image_bytes": 157250092,
-        "bridges": 14,
-        "max_ground_plane_error_m": 3.197442310920451e-14,
-        "content_identity": "652d236b2f5c993deb2b1a7e45f266c2d2f4e1ca5e1c59dfa042861b35681190"
+        "decoded_image_bytes": 198728148,
+        "bridges": 2,
+        "max_ground_plane_error_m": 1.687538997430238e-14,
+        "content_identity": "861eaf7fd9abce402ee43748869052caee16ae1a5d8f1b76a43a57eb26d5fcc7"
       }
     },
     {
-      "id": "place-80fb5b75f55cf2af",
-      "original_job": "place-cb615ba18b40cd12",
-      "name": "Halifax viaducts 53.727338, -1.859579",
+      "id": "place-855b21b17ab5b6d2",
+      "original_job": "place-bc72f5dfd390430d",
+      "name": "Nearby Map location 52.493650, 13.321845",
       "acceptance": {
         "status": "passed",
         "tiles": 9,
-        "patches": 10,
-        "decoded_image_bytes": 209858428,
-        "bridges": 14,
-        "max_ground_plane_error_m": 5.3290705182007514e-14,
-        "content_identity": "8a4d13aba7cc26b259e9346ce798f4f4a3740b986c1ecb54a18d023d96ae9b3a"
+        "patches": 0,
+        "decoded_image_bytes": 150994944,
+        "bridges": 0,
+        "max_ground_plane_error_m": 4.621303340002214e-15,
+        "content_identity": "bc21111689806619879826b91727b1b7b9ad0b4cf533d56efc06f45348e3c155"
       }
     }
   ]

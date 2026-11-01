@@ -8,8 +8,8 @@
     },
     {
       "edition": "batch_v10",
-      "id": "bridges-v10.23",
-      "source_hashes": 229
+      "id": "bridges-v10.29",
+      "source_hashes": 230
     },
     {
       "edition": "batch_v2",
@@ -54,37 +54,26 @@
   ],
   "current_builds": [
     {
-      "id": "place-61e02761a111f922",
-      "name": "Map location 52.500576, 13.440578 - repaired",
+      "id": "place-549fd39762ef0871",
+      "name": "Oberbaum - deck portals and surface rendering",
       "status": "passed",
       "tiles": 9,
-      "patches": 0,
-      "decoded_image_bytes": 150994944,
-      "bridges": 0,
-      "max_ground_plane_error_m": 5.10702591327572e-15,
-      "content_identity": "b0b45dc664d2bc899d07084c7f6c320f3bab370a2dbc8234e0e9b2742f8a9545"
-    },
-    {
-      "id": "place-63827fb33a50c6a1",
-      "name": "Map location 52.495585, 13.436612 - repaired",
-      "status": "passed",
-      "tiles": 9,
-      "patches": 0,
-      "decoded_image_bytes": 150994944,
-      "bridges": 0,
-      "max_ground_plane_error_m": 1.199040866595169e-14,
-      "content_identity": "b0d3b3b2e7701079f6ccb73d414b7375bae5651aacd0b3d82b45907c6e85d221"
-    },
-    {
-      "id": "place-8a594721f96a5dc1",
-      "name": "Oberbaumbruecke - divided bridge repair",
-      "status": "passed",
-      "tiles": 9,
-      "patches": 2,
-      "decoded_image_bytes": 172947820,
+      "patches": 5,
+      "decoded_image_bytes": 218334260,
       "bridges": 2,
       "max_ground_plane_error_m": 1.687538997430238e-14,
-      "content_identity": "f57e288cfb829644ba7d2380708d6ad2ce1873d504b61c8cd8607435cf8b75cf"
+      "content_identity": "55677a8846e8dd13c7ec1eb30fd76ee39e8ab377e7d61fefe4af6691293264e6"
+    },
+    {
+      "id": "place-9e1def73b9116854",
+      "name": "Hornsey Lane - deck portals and surface rendering",
+      "status": "passed",
+      "tiles": 9,
+      "patches": 1,
+      "decoded_image_bytes": 155352280,
+      "bridges": 1,
+      "max_ground_plane_error_m": 7.460698725481052e-14,
+      "content_identity": "4c8382320cb17e62556afc0edb4443903d983639bcc14290120003c365ce58e4"
     }
   ]
 }

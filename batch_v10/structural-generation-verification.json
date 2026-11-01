@@ -1,0 +1,187 @@
+{
+  "renderer": "bridges-v10.25",
+  "builds": [
+    {
+      "id": "place-6f66774d6e2887c6",
+      "name": "Oberbaum - structural decks and arch passage",
+      "lat": 52.50175,
+      "lon": 13.44563,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.25",
+      "actual_lat": 52.50177162362605,
+      "actual_lon": 13.445584004620905,
+      "automatic_road_snap_metres": 3.9381473784419083,
+      "total_seconds": 211.06199999999808,
+      "content_identity": "627974f41a1559a3c7b7574638ee8dbb25a1f74ef93f653249560669aaedfc69",
+      "bridge_count": 2,
+      "terrain_source": {
+        "status": "available",
+        "policy": "installed-ground-v1:z15:grid6m:binomial3:relative-only",
+        "providers": [
+          "mapterhorn"
+        ],
+        "adapter_sha256": "ad1f2d8507bff3eaed8d235f22b95ea04918340118af04a53ca1fe7a18eb7066",
+        "adapter_decoded_version": 2,
+        "requested_zoom": 15,
+        "native_resolution": "Provider dependent; z15 can upsample coarser ground-filtered DSM",
+        "datum": "Provider-dependent orthometric heights; relative scene reference only",
+        "absolute_reference_m": 32.25,
+        "osm_ele_policy": "Retained, not fused without verified datum conversion",
+        "attribution": "Mapterhorn and upstream terrain providers; AWS Terrain Tiles where used",
+        "source_urls": [
+          "https://mapterhorn.com/attribution",
+          "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+        ],
+        "inputs": [
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17607,
+              10748
+            ],
+            "sha256": "9d2279ba026fd829bdb9357f90598701e1bfcdcdb0ad8577fbacfa41540bfe59"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17607,
+              10749
+            ],
+            "sha256": "7d00c0804d774cef50b4a2d1121fcdee2b564479d292a2883919e348ff4b5d41"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17608,
+              10748
+            ],
+            "sha256": "04a6c085630d3ee3bf839078c3507a8d6c1c51fc9063865d78bb97843fa52ef1"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17608,
+              10749
+            ],
+            "sha256": "662519cab8170b4cc20adc6b46e0841f09c2d9e14e7a6bc749d2eecbe30e97c9"
+          }
+        ],
+        "stats": {
+          "dem:mirror": 4
+        },
+        "sample_sha256": "ebd5c1ac95a39b9d57db07f469b9e300422d2ca6f00e0f9864bfb706aebe11ee"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 3,
+        "decoded_image_bytes": 198728148,
+        "bridges": 2,
+        "max_ground_plane_error_m": 1.687538997430238e-14,
+        "content_identity": "627974f41a1559a3c7b7574638ee8dbb25a1f74ef93f653249560669aaedfc69"
+      }
+    },
+    {
+      "id": "place-0aba67bd8c5aa0d0",
+      "name": "Hornsey Lane - structural regression",
+      "lat": 51.57,
+      "lon": -0.1385,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.25",
+      "actual_lat": 51.570184305464565,
+      "actual_lon": -0.13800966364889755,
+      "automatic_road_snap_metres": 39.648305443208734,
+      "total_seconds": 153.54699999999866,
+      "content_identity": "e6dd3f4a8dcb67e6b1c79472409bbfb693b2e8f3f6b0c56081591a203f42140b",
+      "bridge_count": 1,
+      "terrain_source": {
+        "status": "available",
+        "policy": "installed-ground-v1:z15:grid6m:binomial3:relative-only",
+        "providers": [
+          "mapterhorn"
+        ],
+        "adapter_sha256": "ad1f2d8507bff3eaed8d235f22b95ea04918340118af04a53ca1fe7a18eb7066",
+        "adapter_decoded_version": 2,
+        "requested_zoom": 15,
+        "native_resolution": "Provider dependent; z15 can upsample coarser ground-filtered DSM",
+        "datum": "Provider-dependent orthometric heights; relative scene reference only",
+        "absolute_reference_m": 81.15905258335586,
+        "osm_ele_policy": "Retained, not fused without verified datum conversion",
+        "attribution": "Mapterhorn and upstream terrain providers; AWS Terrain Tiles where used",
+        "source_urls": [
+          "https://mapterhorn.com/attribution",
+          "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+        ],
+        "inputs": [
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16370,
+              10886
+            ],
+            "sha256": "092c6a39da427679b241394e266cad542eea3afb549c3b0c017e733658f445ba"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16370,
+              10887
+            ],
+            "sha256": "475c640394a9b5cf2cfbe8367c996bb881e4c1b2a625ff473b99c2d64f76ae91"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16371,
+              10886
+            ],
+            "sha256": "3b049956e082e2f93f8e7a350c382221a14b7e70f91cb682cfc3fc19a5b88335"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16371,
+              10887
+            ],
+            "sha256": "85b5d7e80a0dac0389924ffbfef347e93889f660b9bf670489d07fd81c0ffd7b"
+          }
+        ],
+        "stats": {
+          "dem:mirror": 4
+        },
+        "sample_sha256": "e99958dfbd44a06bb2041cd120df590538e012f6dac06eec11b425add4bae5c5"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 1,
+        "decoded_image_bytes": 155352280,
+        "bridges": 1,
+        "max_ground_plane_error_m": 7.460698725481052e-14,
+        "content_identity": "e6dd3f4a8dcb67e6b1c79472409bbfb693b2e8f3f6b0c56081591a203f42140b"
+      }
+    },
+    {
+      "id": "place-a57fdbd22322b38d",
+      "name": "Pulteney - held-out structural bridge",
+      "lat": 51.3849,
+      "lon": -2.3593,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.25",
+      "actual_lat": 51.38489890737278,
+      "actual_lon": -2.3593385653912367,
+      "automatic_road_snap_metres": 2.682008407333598,
+      "error": "Tunnel driving is not supported (OSM way 194482647)",
+      "retryable": true
+    }
+  ],
+  "manual_overrides": false
+}

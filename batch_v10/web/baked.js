@@ -28,12 +28,17 @@ export class DistrictRenderer{
  }
  draw(ctx){ctx.fillStyle='#807f71';ctx.fillRect(-96,-96,192,192);if(this.atlas)ctx.drawImage(this.atlas,-96,-96,192,192);}
  drawDecks(ctx,car,above){
-  for(const p of [...this.patches.values()].sort((a,b)=>(this.scene.surface_network.surfaces.find(s=>s.id===(a.surface_id||a.id))?.render_order||0)-(this.scene.surface_network.surfaces.find(s=>s.id===(b.surface_id||b.id))?.render_order||0))){
-   const s=this.scene.surface_network.surfaces.find(s=>s.id===(p.surface_id||p.id)),height=profileAt(s,car.x/10,car.y/10).z;
-   if((car.surfaceId!==(p.surface_id||p.id)&&height>car.z+.15)!==above)continue;
+  const height=p=>p.kind==='overhead'?p.zmax:profileAt(this.scene.surface_network.surfaces.find(s=>s.id===(p.surface_id||p.id)),car.x/10,car.y/10).z;
+  const active=this.scene.surface_network.surfaces.find(s=>s.id===car.surfaceId);
+  const supportedDecks=active?.kind==='deck'?[active]:(active?.connections||[]).map(id=>this.scene.surface_network.surfaces.find(s=>s.id===id)).filter(d=>d?.kind==='deck'&&d.nodes.some((node,i)=>active.nodes.includes(node)&&Math.hypot(car.x/10-d.points[i===0?0:d.points.length-1][0],car.y/10-d.points[i===0?0:d.points.length-1][1])<=Math.max(8,active.width,d.width)+4));
+  for(const p of [...this.patches.values()].sort((a,b)=>height(a)-height(b))){
+   const surface=this.scene.surface_network.surfaces.find(s=>s.id===(p.surface_id||p.id));
+   const sameSlab=surface&&supportedDecks.some(d=>d.id===surface.id||(d.structural_owner&&surface.structural_owner===d.structural_owner));
+   if((!sameSlab&&car.surfaceId!==(p.surface_id||p.id)&&height(p)>car.z+.15)!==above)continue;
    const [x0,y0,x1,y1]=p.bounds;ctx.drawImage(p.image,x0,y0,x1-x0,y1-y0);
   }
  }
+ drawOverheads(ctx){for(const p of this.patches.values())if(p.kind==='overhead'){const [x0,y0,x1,y1]=p.bounds;ctx.drawImage(p.image,x0,y0,x1-x0,y1-y0);}}
  drawRails(ctx,car){
   for(const ob of this.scene.surface_network.obstacles){
    if(ob.kind!=='rail'||ob.surface_id!==car.surfaceId)continue;

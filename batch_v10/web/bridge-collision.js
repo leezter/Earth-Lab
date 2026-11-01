@@ -15,7 +15,7 @@ export function installCollision(car,elevation,buildings,boundarySolids,units=10
  const pl=window.planck,world=car.physics.planckBody.getWorld(),body=world.createBody({type:'static'});
  const obstacles=[...elevation.network.obstacles];
  for(const car of parkedCars)obstacles.push({kind:'parked-car',parts:car.parts,zmin:car.zmin,zmax:car.zmax});
- for(const b of buildings)obstacles.push({kind:'ground',parts:b.parts,height:Math.min(26,Math.max(5,b.height||12))});
+ for(const b of buildings)obstacles.push({kind:'ground',parts:b.collision_parts||b.parts,height:Math.min(26,Math.max(5,b.height||12))});
  for(const b of boundarySolids)obstacles.push({kind:'ground',parts:b.parts,height:b.height||3.5});
  let count=0;
  const edge=(a,b,obstacle)=>{

@@ -1,0 +1,601 @@
+{
+  "renderer": "bridges-v10.29",
+  "sites": [
+    {
+      "id": "place-9e1def73b9116854",
+      "name": "Hornsey Lane - deck portals and surface rendering",
+      "results": [
+        {
+          "deck": "bridge-4368279",
+          "kind": "GT",
+          "reverse": false,
+          "completed": true,
+          "progress": 53.8252811996938,
+          "length": 54.31517239611995,
+          "visited": [
+            "osm-395196462-0",
+            "bridge-4368279",
+            "osm-395196461-0"
+          ],
+          "expected": [
+            "osm-395196462-0",
+            "bridge-4368279",
+            "osm-395196461-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -1.1850175305710935,
+            -59.71381897751114
+          ]
+        },
+        {
+          "deck": "bridge-4368279",
+          "kind": "GT",
+          "reverse": true,
+          "completed": true,
+          "progress": 53.87705489319055,
+          "length": 54.31517239611995,
+          "visited": [
+            "osm-395196461-0",
+            "bridge-4368279",
+            "osm-395196462-0"
+          ],
+          "expected": [
+            "osm-395196461-0",
+            "bridge-4368279",
+            "osm-395196462-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -44.89744180005899,
+            -29.154903095271955
+          ]
+        },
+        {
+          "deck": "bridge-4368279",
+          "kind": "F1",
+          "reverse": false,
+          "completed": true,
+          "progress": 53.89862430158043,
+          "length": 54.31517239611995,
+          "visited": [
+            "osm-395196462-0",
+            "bridge-4368279",
+            "osm-395196461-0"
+          ],
+          "expected": [
+            "osm-395196462-0",
+            "bridge-4368279",
+            "osm-395196461-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -1.1502299705793242,
+            -59.79058787313869
+          ]
+        },
+        {
+          "deck": "bridge-4368279",
+          "kind": "F1",
+          "reverse": true,
+          "completed": true,
+          "progress": 53.83633280056026,
+          "length": 54.31517239611995,
+          "visited": [
+            "osm-395196461-0",
+            "bridge-4368279",
+            "osm-395196462-0"
+          ],
+          "expected": [
+            "osm-395196461-0",
+            "bridge-4368279",
+            "osm-395196462-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -44.85878866314623,
+            -29.17274393482426
+          ]
+        },
+        {
+          "deck": "bridge-4368279",
+          "kind": "Bubble",
+          "reverse": false,
+          "completed": true,
+          "progress": 53.84024215684212,
+          "length": 54.31517239611995,
+          "visited": [
+            "osm-395196462-0",
+            "bridge-4368279",
+            "osm-395196461-0"
+          ],
+          "expected": [
+            "osm-395196462-0",
+            "bridge-4368279",
+            "osm-395196461-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -1.1958934351063468,
+            -59.75412068706676
+          ]
+        },
+        {
+          "deck": "bridge-4368279",
+          "kind": "Bubble",
+          "reverse": true,
+          "completed": true,
+          "progress": 53.86627380752858,
+          "length": 54.31517239611995,
+          "visited": [
+            "osm-395196461-0",
+            "bridge-4368279",
+            "osm-395196462-0"
+          ],
+          "expected": [
+            "osm-395196461-0",
+            "bridge-4368279",
+            "osm-395196462-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -44.891532342701545,
+            -29.16447464194395
+          ]
+        },
+        {
+          "deck": "bridge-4368279",
+          "kind": "Truck",
+          "reverse": false,
+          "completed": true,
+          "progress": 53.88314890352614,
+          "length": 54.31517239611995,
+          "visited": [
+            "osm-395196462-0",
+            "bridge-4368279",
+            "osm-395196461-0"
+          ],
+          "expected": [
+            "osm-395196462-0",
+            "bridge-4368279",
+            "osm-395196461-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -1.20454601230845,
+            -59.83879935442841
+          ]
+        },
+        {
+          "deck": "bridge-4368279",
+          "kind": "Truck",
+          "reverse": true,
+          "completed": true,
+          "progress": 53.85332506820136,
+          "length": 54.31517239611995,
+          "visited": [
+            "osm-395196461-0",
+            "bridge-4368279",
+            "osm-395196462-0"
+          ],
+          "expected": [
+            "osm-395196461-0",
+            "bridge-4368279",
+            "osm-395196462-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -44.858101013004514,
+            -29.146443512061136
+          ]
+        }
+      ]
+    },
+    {
+      "id": "place-549fd39762ef0871",
+      "name": "Oberbaum - deck portals and surface rendering",
+      "results": [
+        {
+          "deck": "bridge-4686103",
+          "kind": "GT",
+          "reverse": false,
+          "completed": true,
+          "progress": 161.90103762645774,
+          "length": 162.3435909479683,
+          "visited": [
+            "osm-1171049218-0",
+            "bridge-4686103",
+            "osm-909409602-0"
+          ],
+          "expected": [
+            "osm-1171049218-0",
+            "bridge-4686103",
+            "osm-909409602-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -49.364008190429395,
+            63.99709140920415
+          ]
+        },
+        {
+          "deck": "bridge-4686103",
+          "kind": "GT",
+          "reverse": true,
+          "completed": true,
+          "progress": 161.94080901139543,
+          "length": 162.3435909479683,
+          "visited": [
+            "osm-909409602-0",
+            "bridge-4686103",
+            "osm-1171049218-0"
+          ],
+          "expected": [
+            "osm-909409602-0",
+            "bridge-4686103",
+            "osm-1171049218-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            48.76684726622666,
+            -64.2209791181022
+          ]
+        },
+        {
+          "deck": "bridge-4686103",
+          "kind": "F1",
+          "reverse": false,
+          "completed": true,
+          "progress": 161.94854437106406,
+          "length": 162.3435909479683,
+          "visited": [
+            "osm-1171049218-0",
+            "bridge-4686103",
+            "osm-909409602-0"
+          ],
+          "expected": [
+            "osm-1171049218-0",
+            "bridge-4686103",
+            "osm-909409602-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -49.386475675027484,
+            64.03956269243967
+          ]
+        },
+        {
+          "deck": "bridge-4686103",
+          "kind": "F1",
+          "reverse": true,
+          "completed": true,
+          "progress": 161.8946537243029,
+          "length": 162.3435909479683,
+          "visited": [
+            "osm-909409602-0",
+            "bridge-4686103",
+            "osm-1171049218-0"
+          ],
+          "expected": [
+            "osm-909409602-0",
+            "bridge-4686103",
+            "osm-1171049218-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            48.75171649376447,
+            -64.17615534693627
+          ]
+        },
+        {
+          "deck": "bridge-4686103",
+          "kind": "Bubble",
+          "reverse": false,
+          "completed": true,
+          "progress": 161.94552708007325,
+          "length": 162.3435909479683,
+          "visited": [
+            "osm-1171049218-0",
+            "bridge-4686103",
+            "osm-909409602-0"
+          ],
+          "expected": [
+            "osm-1171049218-0",
+            "bridge-4686103",
+            "osm-909409602-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -49.379780761597814,
+            64.04076131633289
+          ]
+        },
+        {
+          "deck": "bridge-4686103",
+          "kind": "Bubble",
+          "reverse": true,
+          "completed": true,
+          "progress": 161.95970956357235,
+          "length": 162.3435909479683,
+          "visited": [
+            "osm-909409602-0",
+            "bridge-4686103",
+            "osm-1171049218-0"
+          ],
+          "expected": [
+            "osm-909409602-0",
+            "bridge-4686103",
+            "osm-1171049218-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            48.79700270092124,
+            -64.22474944733509
+          ]
+        },
+        {
+          "deck": "bridge-4686103",
+          "kind": "Truck",
+          "reverse": false,
+          "completed": true,
+          "progress": 161.9057194402813,
+          "length": 162.3435909479683,
+          "visited": [
+            "osm-1171049218-0",
+            "bridge-4686103",
+            "osm-909409602-0"
+          ],
+          "expected": [
+            "osm-1171049218-0",
+            "bridge-4686103",
+            "osm-909409602-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -49.29709413185144,
+            64.0524033158893
+          ]
+        },
+        {
+          "deck": "bridge-4686103",
+          "kind": "Truck",
+          "reverse": true,
+          "completed": true,
+          "progress": 161.9793772216896,
+          "length": 162.3435909479683,
+          "visited": [
+            "osm-909409602-0",
+            "bridge-4686103",
+            "osm-1171049218-0"
+          ],
+          "expected": [
+            "osm-909409602-0",
+            "bridge-4686103",
+            "osm-1171049218-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            48.800933495479164,
+            -64.24538174081978
+          ]
+        },
+        {
+          "deck": "bridge-4686104",
+          "kind": "GT",
+          "reverse": false,
+          "completed": true,
+          "progress": 162.0210403476126,
+          "length": 162.4554431630116,
+          "visited": [
+            "osm-127734801-0",
+            "bridge-4686104",
+            "osm-4686105-0"
+          ],
+          "expected": [
+            "osm-127734801-0",
+            "bridge-4686104",
+            "osm-4686105-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            55.63191285748392,
+            -58.84880393148137
+          ]
+        },
+        {
+          "deck": "bridge-4686104",
+          "kind": "GT",
+          "reverse": true,
+          "completed": true,
+          "progress": 162.0364769487389,
+          "length": 162.4554431630116,
+          "visited": [
+            "osm-4686105-0",
+            "bridge-4686104",
+            "osm-127734801-0"
+          ],
+          "expected": [
+            "osm-4686105-0",
+            "bridge-4686104",
+            "osm-127734801-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -43.57948952949315,
+            68.68973196180431
+          ]
+        },
+        {
+          "deck": "bridge-4686104",
+          "kind": "F1",
+          "reverse": false,
+          "completed": true,
+          "progress": 162.00930160311964,
+          "length": 162.4554431630116,
+          "visited": [
+            "osm-127734801-0",
+            "bridge-4686104",
+            "osm-4686105-0"
+          ],
+          "expected": [
+            "osm-127734801-0",
+            "bridge-4686104",
+            "osm-4686105-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            55.614517577282655,
+            -58.84681497151157
+          ]
+        },
+        {
+          "deck": "bridge-4686104",
+          "kind": "F1",
+          "reverse": true,
+          "completed": true,
+          "progress": 161.97581652050528,
+          "length": 162.4554431630116,
+          "visited": [
+            "osm-4686105-0",
+            "bridge-4686104",
+            "osm-127734801-0"
+          ],
+          "expected": [
+            "osm-4686105-0",
+            "bridge-4686104",
+            "osm-127734801-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -43.54121543175433,
+            68.64249048511502
+          ]
+        },
+        {
+          "deck": "bridge-4686104",
+          "kind": "Bubble",
+          "reverse": false,
+          "completed": true,
+          "progress": 162.0620587921942,
+          "length": 162.4554431630116,
+          "visited": [
+            "osm-127734801-0",
+            "bridge-4686104",
+            "osm-4686105-0"
+          ],
+          "expected": [
+            "osm-127734801-0",
+            "bridge-4686104",
+            "osm-4686105-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            55.61992657250736,
+            -58.90781270107293
+          ]
+        },
+        {
+          "deck": "bridge-4686104",
+          "kind": "Bubble",
+          "reverse": true,
+          "completed": true,
+          "progress": 161.98860264318114,
+          "length": 162.4554431630116,
+          "visited": [
+            "osm-4686105-0",
+            "bridge-4686104",
+            "osm-127734801-0"
+          ],
+          "expected": [
+            "osm-4686105-0",
+            "bridge-4686104",
+            "osm-127734801-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -43.54680257972551,
+            68.65475296174246
+          ]
+        },
+        {
+          "deck": "bridge-4686104",
+          "kind": "Truck",
+          "reverse": false,
+          "completed": true,
+          "progress": 161.95892957676816,
+          "length": 162.4554431630116,
+          "visited": [
+            "osm-127734801-0",
+            "bridge-4686104",
+            "osm-4686105-0"
+          ],
+          "expected": [
+            "osm-127734801-0",
+            "bridge-4686104",
+            "osm-4686105-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            55.524452512082654,
+            -58.849311643349175
+          ]
+        },
+        {
+          "deck": "bridge-4686104",
+          "kind": "Truck",
+          "reverse": true,
+          "completed": true,
+          "progress": 161.96237613889906,
+          "length": 162.4554431630116,
+          "visited": [
+            "osm-4686105-0",
+            "bridge-4686104",
+            "osm-127734801-0"
+          ],
+          "expected": [
+            "osm-4686105-0",
+            "bridge-4686104",
+            "osm-127734801-0"
+          ],
+          "recoveries": 0,
+          "bodyPreserved": true,
+          "final": [
+            -43.578261869130294,
+            68.5897181377367
+          ]
+        }
+      ],
+      "visibility": {
+        "sharedDeck": 269,
+        "bankPortal": 264,
+        "underRoof": 0
+      }
+    }
+  ],
+  "errors": [],
+  "scope": "Actual mapped bank/deck transitions; initial pose only, ordinary keyboard controls thereafter",
+  "finished_utc": "2026-11-01T20:42:35.100Z"
+}

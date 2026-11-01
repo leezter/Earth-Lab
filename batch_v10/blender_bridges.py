@@ -35,6 +35,8 @@ def build(s,mesh,lines,concrete,road_materials):
     groups={};surfaces={g['id']:g for g in s['surface_network']['surfaces']}
     for deck in s['bridge_meshes']:
         objects=[];g=deck['mesh'];surface=surfaces[deck['id']];material,scale=road_materials[deck['surface']]
+        if deck.get('structure_mesh'):
+            sm=deck['structure_mesh'];objects.append(mesh('Mapped structural deck / '+deck['id'],[(x,-y,z)for x,y,z in sm['vertices']],sm['faces'],material,scale))
         objects.append(mesh('Bridge deck / '+deck['id'],[(x,-y,z)for x,y,z in g['vertices']],g['faces'],material,scale))
         for part in deck['parts']:
             for ring in part:
@@ -46,6 +48,7 @@ def build(s,mesh,lines,concrete,road_materials):
         groups[deck['id']]=objects
     rail_meshes={}
     for obstacle in s['surface_network']['obstacles']:
+        if obstacle.get('collision_only'):continue
         if obstacle['kind']=='rail':
             a,b=obstacle['a'],obstacle['b'];za,zb=obstacle['za'],obstacle['zb']
             if not any(abs(p[0])<155 and abs(p[1])<155 for p in (a,b)):continue
@@ -64,6 +67,8 @@ def build(s,mesh,lines,concrete,road_materials):
     for sid,(vertices,faces) in rail_meshes.items():
         ob=mesh('Inferred parapets / '+sid,vertices,faces,concrete)
         if surfaces[sid]['kind']=='deck':groups[sid].append(ob)
+    for overhead in s.get('bridge_overheads',[]):
+        groups[overhead['id']]=[o for o in bpy.context.scene.objects if o.get('building_id')==overhead['building_id']]
     for objects in groups.values():
         for obj in objects:obj.visible_camera=False
     return groups
@@ -72,10 +77,15 @@ def build(s,mesh,lines,concrete,road_materials):
 def patches(s,groups,scene,camera,root):
     records=[];all_objects=list(scene.objects);surfaces={s['id']:s for s in s['surface_network']['surfaces']}
     for sid,objects in groups.items():
-        deck=next(d for d in s['bridge_meshes']if d['id']==sid)
+        overhead=next((d for d in s.get('bridge_overheads',[])if d['id']==sid),None)
+        if overhead:
+            points=[p for part in overhead['parts'] for ring in part for p in ring]
+            bounds=[min(p[0]for p in points),min(p[1]for p in points),max(p[0]for p in points),max(p[1]for p in points)];bounds=[bounds[0]-.5,bounds[1]-.5,bounds[2]+.5,bounds[3]+.5]
+            deck={'image_regions':overhead.get('image_regions',[{'suffix':'roof','bounds':bounds}])}
+        else:deck=next(d for d in s['bridge_meshes']if d['id']==sid)
         visible=set(objects)
         for other,obs in groups.items():
-            coplanar_join=other!=sid and bool(set(surfaces[sid]['nodes'])&set(surfaces[other]['nodes']))
+            coplanar_join=other in surfaces and sid in surfaces and other!=sid and (bool(set(surfaces[sid]['nodes'])&set(surfaces[other]['nodes'])) or (surfaces[sid].get('structural_owner') and surfaces[sid].get('structural_owner')==surfaces[other].get('structural_owner')))
             for obj in obs:obj.visible_shadow=not coplanar_join
         for obj in all_objects:
             if obj.type in {'MESH','CURVE','FONT'}:obj.visible_camera=obj in visible
@@ -88,5 +98,5 @@ def patches(s,groups,scene,camera,root):
             pid=sid+'-p-'+region['suffix'];name=pid+'.png';scene.render.filepath=str(root/'baked'/name)
             bpy.ops.render.render(write_still=True)
             records.append({'id':pid,'surface_id':sid,'name':name,'bounds':[x0,y0,x1,y1],
-                            'width':scene.render.resolution_x,'height':scene.render.resolution_y})
+                            'zmax':overhead['zmax'] if overhead else None,'kind':'overhead' if overhead else 'deck','width':scene.render.resolution_x,'height':scene.render.resolution_y})
     (root/'baked/bridge-passes.json').write_text(json.dumps(records,indent=2))

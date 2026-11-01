@@ -5,7 +5,7 @@ connectivity, relative terrain height, constrained road profiles and slope
 forces to the top-down driving prototype. The previous
 [street-details edition](../batch_v9/README.md) remains on port 47851.
 
-Current renderer identity: **bridges-v10.23**. Frozen inputs include the viewer
+Current renderer identity: **bridges-v10.29**. Frozen inputs include the viewer
 and isolated driving runtime. Development identities and their evidence remain
 under `development-bridges-v10.*`; their results do not substitute for current
 acceptance.
@@ -15,6 +15,49 @@ WASD/arrows drive, P pauses, R recovers on the current connected surface.
 The existing map picker/search and serial generation queue remain available.
 An area becomes playable only after geometry checks, nine 2048-square ground
 tiles and every declared transparent bridge pass have been verified.
+
+## Surface rendering and bank portals (v10.27-v10.29)
+
+Passage base/ceiling volumes are explicitly collision-only. They are no longer
+extruded as visible abutment walls or shadow casters. The structural slab uses the
+carriageway material family as an inferred fallback, avoiding the old pale slab /
+dark strip contrast. Same-slab members do not shadow one another or composite
+above a car supported by that slab; actual overhead structures retain their height
+ordering.
+
+At a mapped shared endpoint, contact transfers from the deck to its connected bank
+road even if the larger structural footprint extends past the endpoint. This is a
+local source-node portal rule, not permission to jump to an unrelated nearby road.
+`test_bridge_compositing.cjs` covers shared-slab ordering, overhead separation and
+an oversized-footprint bank handoff. `verify_bridge_portals.cjs` drives from bank
+to bank through the span with ordinary keyboard throttle/brake/steering, all four
+vehicles and both directions. The renderer and cached scenes from prior versions
+remain unchanged. Higher overlapping building roofs receive their own sparse passes, regardless of whether a passage is allowed. V10.29 strengthens acceptance for structural mesh/image coverage and excludes context-only roofs outside the playable crop from required passes. It explicitly reuses the unchanged v10.28 images after revalidation.
+
+## Structural bridge model (v10.25-v10.26)
+
+Mapped `man_made=bridge` footprints now supply structural deck surfaces independently
+of motor carriageway widths. This fills the physical slab between separately mapped
+lanes without merging unrelated bridge levels. V10.26 uses the mapped structural slab for physical support, including shoulders, while keeping motor lane widths separate. Interior parapets are removed where
+the mapped structure shows that they would bisect the shared deck. Image patches
+have overlapping sampling margins instead of hard cell-edge cuts.
+
+Small building footprints crossing a continuous bridge road may receive an inferred
+4.6 m clearance corridor **only** inside a mapped arch bridge structure, where roof
+height permits that clearance. Tower/side collisions and ceiling/base height limits
+remain. Unknown building intersections retain the previous blocking behavior.
+Openings and clearance are modelled inference, not surveyed dimensions or a general
+tunnel system. No place-name or coordinate exceptions are used.
+
+Associated roofs are baked as separate transparent overhead passes and composited
+in height order, above cars travelling underneath. Road/parapet images cannot draw
+back over those roofs. `verify_structural_geometry.py` independently checks actual
+structural mesh coverage and image coverage. `verify_structural_bridges.cjs` tests
+full-span driving with all four vehicles in both directions on the two carriageways.
+`structural-generation-verification.json` records additional fixed-pipeline locations,
+including failures; this is not a claim of worldwide or majority bridge acceptance.
+
+The v10.21-v10.23 sections below describe retained earlier behavior and evidence.
 
 ## Divided carriageway bridge repair (v10.21-v10.23)
 

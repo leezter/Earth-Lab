@@ -57,7 +57,7 @@ function spawn(at=null,requestedSurface=null){
   for(const b of scene.buildings||[]){
    const p=b.parts[0][0][0],base=elevation.ground(...p).z;
    const target=current?profileAt(current,x,y).z:elevation.ground(x,y).z;
-   if(verticalOverlap(target,target+vehicleHeights[kind],base-.3,base+Math.min(26,Math.max(5,b.height))))solids.push(b);
+   if(verticalOverlap(target,target+vehicleHeights[kind],base-.3,base+Math.min(26,Math.max(5,b.height))))solids.push({...b,parts:b.collision_parts||b.parts});
   }
   for(const part of scene.boundary_solids||[]){
    const target=current?profileAt(current,x,y).z:elevation.ground(x,y).z,base=elevation.ground(...part[0][0]).z;
@@ -101,7 +101,7 @@ async function open(lat,lon,label){
   scene=data.scene;elevation=new ElevationSystem(scene);signals=new SignalLayer(scene.traffic_hardware||[]);district=next;origin=scene.origin;car=null;
   try{spawn();}catch(e){scene=old.scene;elevation=old.elevation;district=old.district;signals=old.signals;car=old.car;origin=old.origin;next.dispose();throw e;}
   parked=nextParked;old.parked?.dispose();old.district?.dispose();loading=false;routeOptions();
-  const count=new Set(scene.bake.patches.map(p=>p.surface_id||p.id)).size;
+  const count=new Set(scene.bake.patches.filter(p=>p.kind!=='overhead').map(p=>p.surface_id||p.id)).size;
   status(`${label||'Area'} · 192 m · ${count} fixed bridge${count===1?'':'s'} · ${scene.terrain.source.status==='available'?'relative terrain heights':'flat terrain fallback'}`);
   $('pavement-source').textContent=`Mapped parking · ${scene.parked_cars?.length||0} parked cars with inferred occupancy. Bridge heights and signal phases are illustrative.`;
   $('credit').textContent='Map: Overture / OSM · Terrain: Mapterhorn / upstream providers · Materials: Poly Haven';
@@ -185,7 +185,7 @@ window.earthLab={get car(){return car;},get elevation(){return elevation;},get s
  get boundarySolids(){return scene?.boundary_solids||[];},
  get state(){return {loading,paused,fps,epoch,surface,rendererFreeze:scene?.renderer_freeze,renderedTiles:district?.cache.size||0,
   parkedCars:parked?.cars.length||0,parkedDecodedBytes:parked?.decodedBytes||0,
-  bridgePatches:district?.patches.size||0,decodedBytes:district?.decodedBytes||0,bridgeCount:scene?new Set(scene.bake.patches.map(p=>p.surface_id||p.id)).size:0,
+  bridgePatches:district?.patches.size||0,decodedBytes:district?.decodedBytes||0,bridgeCount:scene?new Set(scene.bake.patches.filter(p=>p.kind!=='overhead').map(p=>p.surface_id||p.id)).size:0,
   collisionFixtures:collisions?.fixtures||0,recoveries:elevation?.recoveries||0,activeSurface:car?.surfaceId,height:car?.z,grade:car?.grade,origin};}};
 const preferred=new URLSearchParams(location.search).get('site'),first=sites.find(s=>s.id===preferred&&s.status==='built')||sites.find(s=>!s.fixture&&s.status==='built'&&s.acceptance?.patches>0)||sites.find(s=>s.status==='built');
 requestAnimationFrame(render);if(first){$('presets').value=first.id;$('visit').click();}else status('Search or select a map location to generate a bridge-aware scene.');

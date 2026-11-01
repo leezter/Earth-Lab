@@ -30,17 +30,31 @@ def prepare(scene):
         if surface['kind']!='deck':continue
         mesh=refined_mesh(surface['parts'],clip,2,lambda x,y:profile_at(surface,x,y)[0]+.024)
         report.append({'id':surface['id'],**coverage(source_shape(surface['parts'],clip),mesh)})
-        shape=source_shape(surface['parts']).intersection(box(-96,-96,96,96));regions=[]
+        structural=surface.get('structure_parts',[])
+        structural_mesh=refined_mesh(structural,clip,2,lambda x,y:profile_at(surface,x,y)[0]-.08) if structural else None
+        shape=source_shape(surface['parts']).union(source_shape(structural)).intersection(box(-96,-96,96,96));regions=[]
         for ix in range(6):
             for iy in range(6):
                 cell=box(-96+ix*32,-96+iy*32,-64+ix*32,-64+iy*32);part=shape.intersection(cell)
                 if part.area<.001:continue
                 xa,ya,xb,yb=part.bounds
+                # One pixel of shared coverage prevents filtered patch seams.
                 regions.append({'suffix':str(ix)+'-'+str(iy),'bounds':[
-                    max(cell.bounds[0],math.floor((xa-.7)*32)/32),max(cell.bounds[1],math.floor((ya-.7)*32)/32),
-                    min(cell.bounds[2],math.ceil((xb+.7)*32)/32),min(cell.bounds[3],math.ceil((yb+.7)*32)/32)]})
-        meshes.append({'id':surface['id'],'surface':surface['surface'],'mesh':mesh,'thickness':surface['thickness'],
+                    max(-96,math.floor((xa-.7)*32)/32),max(-96,math.floor((ya-.7)*32)/32),
+                    min(96,math.ceil((xb+.7)*32)/32),min(96,math.ceil((yb+.7)*32)/32)]})
+        meshes.append({'structure_mesh':structural_mesh,'id':surface['id'],'surface':surface['surface'],'mesh':mesh,'thickness':surface['thickness'],
                        'parts':export(source_shape(surface['parts'],clip)),'image_regions':regions})
+    for overhead in scene.get('bridge_overheads',[]):
+        footprint=source_shape(overhead['parts']).intersection(box(-96,-96,96,96));regions=[]
+        for ix in range(6):
+            for iy in range(6):
+                cell=box(-96+32*ix,-96+32*iy,-64+32*ix,-64+32*iy);part=footprint.intersection(cell)
+                if part.area<.001:continue
+                xa,ya,xb,yb=part.bounds
+                regions.append({'suffix':str(ix)+'-'+str(iy),'bounds':[
+                    max(-96,math.floor((xa-.7)*32)/32),max(-96,math.floor((ya-.7)*32)/32),
+                    min(96,math.ceil((xb+.7)*32)/32),min(96,math.ceil((yb+.7)*32)/32)]})
+        overhead['image_regions']=regions
     scene['bridge_meshes']=meshes
     return report
 

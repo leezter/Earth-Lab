@@ -45,12 +45,14 @@ def enrich(data,osm,xy):
         nearest=min(decks,key=lambda g:LineString(g['points']).distance(Point(0,0)))
         point=LineString(nearest['points']).interpolate(LineString(nearest['points']).project(Point(0,0)))
         if abs(point.x)<80 and abs(point.y)<80:s['spawn']={'x':point.x,'y':point.y,'surface_id':nearest['id']}
+    from bridge_structures import attach,finish_obstacles
+    attach(s,network,terrain,osm,xy)
     # Do not publish bridge edges that intersect an unrelated building. Ground
     # solids below a deck are filtered by height in the browser.
     for bridge in network['report']['records']:
         deck=next(g for g in network['surfaces']if g['id']==bridge['id'])
         for building in s['buildings']:
-            shape=unary_union([Polygon(p[0],p[1:]).buffer(0)for p in building['parts']])
+            shape=unary_union([Polygon(p[0],p[1:]).buffer(0)for p in building.get('collision_parts',building['parts'])])
             if LineString(deck['points']).buffer(deck['width']/2).intersection(shape).area>.1:
                 centre=shape.centroid
                 from terrain import profile_at
@@ -61,6 +63,7 @@ def enrich(data,osm,xy):
                     network['report']['omitted'].append({'id':deck['id'],'reason':'Bridge section inside mapped building remains blocked; no building passage or floor inferred',
                         'blocked_area_m2':blocked.area,'building_height_m':building['height']})
     obstacles(network,terrain)
+    finish_obstacles(network)
     s.update(terrain=terrain,surface_network=network,bridge_report=network['report'],bridge_checks=checks)
     s['notes'].append('Bridges use mapped topology, inferred metric profiles and generic structures; terrain is relative, provider-dependent elevation.')
     return data

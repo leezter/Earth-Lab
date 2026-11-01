@@ -70,7 +70,7 @@ export class ElevationSystem{
  nearby(x,y){return this.grid.get(`${Math.floor(x/20)},${Math.floor(y/20)}`)||[];}
  inside(s,x,y){
   if(s.blocked_parts?.some(p=>containsPart([x,y],p)))return false;
-  if(s.parts.some(p=>containsPart([x,y],p))||projectLine(s.points,x,y).distance<1e-6)return true;
+  if((s.structural_owner&&this.surfaces.get(s.structural_owner)?.structure_parts?.some(p=>containsPart([x,y],p)))||s.parts.some(p=>containsPart([x,y],p))||projectLine(s.points,x,y).distance<1e-6)return true;
   // Planck edge contacts permit centimetre-scale penetration before resolving.
   // Keep contact support within that tolerance while the barrier stops the body.
   if(s.kind==='deck'||s.kind==='approach')for(const part of s.parts)for(const ring of part)
@@ -110,6 +110,18 @@ export class ElevationSystem{
  }
  resolve(x,y,id='terrain'){
   const current=this.surfaces.get(id);
+  // Structural footprints can extend beyond mapped road endpoints. Hand off
+  // at the shared source portal, before the slab's larger footprint traps a car.
+  if(current?.kind==='deck')for(const cid of current.connections){
+   const other=this.surfaces.get(cid);if(!other||other.kind==='deck')continue;
+   for(const node of current.nodes){
+    if(!other.nodes.includes(node))continue;
+    const i=current.nodes[0]===node?0:current.points.length-1;
+    const p=current.points[i],q=current.points[i===0?1:i-1];
+    const outward=(x-p[0])*(p[0]-q[0])+(y-p[1])*(p[1]-q[1]);
+    if(outward>=0&&this.connectedAt(current,other,x,y)&&this.inside(other,x,y))return this.contact(other,x,y);
+   }
+  }
   if(current&&this.inside(current,x,y))return this.contact(current,x,y);
   if(current){
    const candidates=[],pending=[current],seen=new Set([current.id]);

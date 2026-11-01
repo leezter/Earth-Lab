@@ -155,7 +155,8 @@ for b in s['buildings']:
   else:
    cube('Rooflight frame',(x,-y,z+.18),(1.25,1.75,.32),metal,.06);cube('Rooflight glazing',(x,-y,z+.36),(1.08,1.58,.035),glass,.02)
  base_z=min(height_at(s['terrain'],x,y)for part in b['parts']for ring in part for x,y in ring)
- for obj in set(scene.objects)-old_building_objects:obj['terrain_offset']=base_z
+ for obj in set(scene.objects)-old_building_objects:
+  obj['terrain_offset']=base_z;obj['building_id']=b['id']
 BOUNDARY_REPORT=boundary_assets.build(s,cube,lines,basic)
 TRAFFIC_REPORT=traffic_assets.build(s,basic)
 FURNITURE_REPORT=v9_assets.build(s,basic)

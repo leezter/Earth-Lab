@@ -1,0 +1,23 @@
+const assert=require('node:assert/strict'),path=require('node:path'),{pathToFileURL}=require('node:url');
+(async()=>{
+ const {DistrictRenderer}=await import(pathToFileURL(path.join(__dirname,'web/baked.js')));
+ const {ElevationSystem}=await import(pathToFileURL(path.join(__dirname,'web/elevation.js')));
+ const parts=(x0,y0,x1,y1)=>[[[[x0,y0],[x1,y0],[x1,y1],[x0,y1],[x0,y0]]]];
+ const surface=(id,z,owner)=>({id,kind:'deck',width:3.25,points:[[0,0],[20,0]],profile:[[0,z],[20,z]],structural_owner:owner,nodes:['a','b'],parts:parts(0,-2,20,2),connections:[]});
+ const surfaces=[surface('left',3,'left'),surface('right',3.5,'left'),surface('upper',9)];
+ const patches=new Map(['left','right','upper','roof'].map(id=>[id,{id,surface_id:id,kind:id==='roof'?'overhead':'deck',zmax:15,bounds:[0,0,20,20],image:id}]));
+ const drawn=[],renderer={scene:{surface_network:{surfaces}},patches},ctx={drawImage:im=>drawn.push(im)},car={surfaceId:'left',x:100,y:0,z:3};
+ DistrictRenderer.prototype.drawDecks.call(renderer,ctx,car,false);assert.deepEqual(drawn,['left','right']);
+ drawn.length=0;DistrictRenderer.prototype.drawDecks.call(renderer,ctx,car,true);assert.deepEqual(drawn,['upper','roof']);
+ const bank={id:'bank',kind:'ground',points:[[-20,0],[0,0]],profile:[[0,0],[20,3]],nodes:['outside','a'],width:4,parts:parts(-20,-2,0,2),connections:['left']};
+ surfaces[0].connections=['bank'];surfaces[0].structure_parts=parts(-5,-8,24,8);
+ surfaces.push(bank);drawn.length=0;
+ DistrictRenderer.prototype.drawDecks.call(renderer,ctx,{surfaceId:'bank',x:-20,y:0,z:2.7},false);
+ assert.deepEqual(drawn,['left','right'],'Connected portal images must also stay below a car approaching from the bank');
+ const scene={surface_network:{surfaces:[surfaces[0],bank]},roads:bank.parts,water:[],terrain:{origin:[-20,-20],step:20,heights:[[0,0,0],[0,3,3],[0,3,3]],embankments:[]}};
+ const e=new ElevationSystem(scene);
+ assert.equal(e.resolve(-1,0,'left').id,'bank','A larger physical footprint must not trap vehicles beyond the source portal');
+ assert.equal(e.resolve(1,0,'bank').id,'left');
+ assert.equal(e.resolve(4,7,'left').id,'left','Mapped shoulder support remains available');
+ console.log('Shared slab drawing order and oversized-footprint endpoint handoff passed');
+})().catch(e=>{console.error(e);process.exitCode=1;});

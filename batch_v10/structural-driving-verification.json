@@ -1,0 +1,347 @@
+{
+  "renderer": "bridges-v10.27",
+  "source": "Completed mapped scenes; cache-reuse.json retains original render identity; no mocked generation responses",
+  "selections": [
+    {
+      "id": "place-56fb695ea64b9ea3",
+      "requested": [
+        52.50175,
+        13.44563
+      ],
+      "actual": [
+        52.50177162362605,
+        13.445584004620905
+      ],
+      "movedMetres": 9.63338799394639,
+      "tiles": 9,
+      "patches": 23,
+      "pauseRecoveryReload": true
+    }
+  ],
+  "traversals": [
+    {
+      "surface": "bridge-4686103",
+      "kind": "GT",
+      "direction": -1,
+      "segment": [
+        10,
+        140.3435909479683
+      ],
+      "station": 9.92320648194089,
+      "pose": [
+        39.824255270135026,
+        -51.56599444423091,
+        -0.9131772768134326
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686103",
+      "kind": "GT",
+      "direction": 1,
+      "segment": [
+        10,
+        140.3435909479683
+      ],
+      "station": 140.78291223259686,
+      "pose": [
+        -40.161670176757035,
+        52.00289238744496,
+        2.228415376776362
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686103",
+      "kind": "F1",
+      "direction": -1,
+      "segment": [
+        10,
+        140.3435909479683
+      ],
+      "station": 9.881395405117562,
+      "pose": [
+        39.842203352132785,
+        -51.604961660979995,
+        -0.9137194910731974
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686103",
+      "kind": "F1",
+      "direction": 1,
+      "segment": [
+        10,
+        140.3435909479683
+      ],
+      "station": 140.3917873518186,
+      "pose": [
+        -39.899885251124225,
+        51.71088019931777,
+        2.2296700557551086
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686103",
+      "kind": "Bubble",
+      "direction": -1,
+      "segment": [
+        10,
+        140.3435909479683
+      ],
+      "station": 9.383208397591593,
+      "pose": [
+        40.154320558520155,
+        -51.993375815495675,
+        -0.9131772768134068
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686103",
+      "kind": "Bubble",
+      "direction": 1,
+      "segment": [
+        10,
+        140.3435909479683
+      ],
+      "station": 140.91481163307148,
+      "pose": [
+        -40.24229159916261,
+        52.107284140447135,
+        2.2284153767763875
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686103",
+      "kind": "Truck",
+      "direction": -1,
+      "segment": [
+        10,
+        140.3435909479683
+      ],
+      "station": 9.945281023996053,
+      "pose": [
+        39.81076255543873,
+        -51.548523552523,
+        -0.9131772768134205
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686103",
+      "kind": "Truck",
+      "direction": 1,
+      "segment": [
+        10,
+        140.3435909479683
+      ],
+      "station": 140.75488573704789,
+      "pose": [
+        -40.1445394246254,
+        51.98071082338466,
+        2.2284153767763835
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686104",
+      "kind": "GT",
+      "direction": -1,
+      "segment": [
+        10,
+        140.4554431630116
+      ],
+      "station": 9.621232181262236,
+      "pose": [
+        -34.02327363176286,
+        56.88191947532992,
+        2.2314299192658713
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686104",
+      "kind": "GT",
+      "direction": 1,
+      "segment": [
+        10,
+        140.4554431630116
+      ],
+      "station": 141.49390200311046,
+      "pose": [
+        46.896072957648,
+        -47.24521624579226,
+        -0.9101627343239438
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686104",
+      "kind": "F1",
+      "direction": -1,
+      "segment": [
+        10,
+        140.4554431630116
+      ],
+      "station": 9.365032855640916,
+      "pose": [
+        -34.153988485731745,
+        57.10480401299459,
+        2.23064335225708
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686104",
+      "kind": "F1",
+      "direction": 1,
+      "segment": [
+        10,
+        140.4554431630116
+      ],
+      "station": 140.78058874438597,
+      "pose": [
+        46.4244409767456,
+        -46.70834973414873,
+        -0.9086288128752028
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686104",
+      "kind": "Bubble",
+      "direction": -1,
+      "segment": [
+        10,
+        140.4554431630116
+      ],
+      "station": 9.44551876800448,
+      "pose": [
+        -34.13109441530435,
+        57.02066342018948,
+        2.2314299192658775
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686104",
+      "kind": "Bubble",
+      "direction": 1,
+      "segment": [
+        10,
+        140.4554431630116
+      ],
+      "station": 140.86443492124545,
+      "pose": [
+        46.50982109035444,
+        -46.748186767628326,
+        -0.9101627343239155
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686104",
+      "kind": "Truck",
+      "direction": -1,
+      "segment": [
+        10,
+        140.4554431630116
+      ],
+      "station": 9.653328578733797,
+      "pose": [
+        -34.003578728225364,
+        56.85657604412377,
+        2.231429919265864
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "surface": "bridge-4686104",
+      "kind": "Truck",
+      "direction": 1,
+      "segment": [
+        10,
+        140.4554431630116
+      ],
+      "station": 141.5251060556215,
+      "pose": [
+        46.91522030290166,
+        -47.26985507820877,
+        -0.9101627343240566
+      ],
+      "width": 3.25,
+      "completed": true,
+      "wrongLevel": false,
+      "bodyPreserved": true,
+      "recoveries": 0
+    }
+  ],
+  "errors": [],
+  "fallbackRequests": 0,
+  "buildingPassage": "Full-span driving including inferred arch corridor",
+  "finished_utc": "2026-11-01T20:21:56.897Z"
+}
