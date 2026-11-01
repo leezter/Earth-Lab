@@ -6,10 +6,11 @@ ROOT=Path(__file__).resolve().parent;REPO=ROOT.parent;sys.path.insert(0,str(REPO
 import earth_backend as baseline
 import custom_places
 import place_search
+from site_labels import labelled
 from site_catalog import displayed
 def report():return {'edition':'mobility-v9','sites':sites(),'verification':json.loads((ROOT/'verification.json').read_text())if(ROOT/'verification.json').exists()else None}
 def available_sites():return [d for d in custom_places.entries()if d['status']=='built' or d['id']==custom_places.identifier(d['lat'],d['lon'])]
-def sites():return displayed(custom_places.entries(),custom_places.identifier,lambda d:(custom_places.directory(d['id'])/'job.json').stat().st_mtime)
+def sites():return [labelled(d) for d in displayed(custom_places.entries(),custom_places.identifier,lambda d:(custom_places.directory(d['id'])/'job.json').stat().st_mtime)]
 def folder(sid):return custom_places.directory(sid)if sid.startswith('place-')else ROOT/'runs'/sid
 class Handler(baseline.Handler):
  def __init__(self,*a,**kw):SimpleHTTPRequestHandler.__init__(self,*a,directory=str(ROOT/'web'),**kw)
@@ -41,7 +42,7 @@ class Handler(baseline.Handler):
    if self.headers.get('Content-Type','').split(';')[0]!='application/json':return self.reply({'error':'JSON required'},415)
    size=int(self.headers.get('Content-Length',0))
    if not 0<size<=4096:return self.reply({'error':'Invalid request size'},400)
-   d=json.loads(self.rfile.read(size));return self.reply(custom_places.submit(d['lat'],d['lon'],d.get('name','Custom location')))
+   d=json.loads(self.rfile.read(size));return self.reply(labelled(custom_places.submit(d['lat'],d['lon'],d.get('name','Custom location'))))
   except (ValueError,KeyError,TypeError)as e:return self.reply({'error':str(e)},400)
  def do_GET(self):
   u=urlparse(self.path);q=parse_qs(u.query)
@@ -54,7 +55,7 @@ class Handler(baseline.Handler):
   if u.path=='/api/health':return self.reply({'ok':True,'edition':'mobility-v9'})
   if u.path=='/api/job':
    sid=q.get('id',[''])[0]
-   try:return self.reply(custom_places.read(custom_places.directory(sid)/'job.json'))
+   try:return self.reply(labelled(custom_places.read(custom_places.directory(sid)/'job.json')))
    except (ValueError,FileNotFoundError):return self.reply({'error':'Unknown area'},404)
   if u.path=='/api/sites':return self.reply(sites())
   if u.path=='/api/report':return self.reply(report())

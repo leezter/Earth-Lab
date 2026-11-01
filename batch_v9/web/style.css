@@ -8,6 +8,9 @@ form[hidden]{display:none}
 
 /* Keep the picker usable on short windows without covering driving controls. */
 header{max-height:calc(100dvh - 115px);overflow-y:auto;z-index:2}
+#hide-menu{float:right;font-size:12px;padding:5px 9px;margin:-4px -4px 8px 8px}
+#reopen-menu{position:fixed;top:16px;left:16px;z-index:3;box-shadow:0 4px 16px #0007}
+header[hidden],#reopen-menu[hidden]{display:none}
 #map-picker{margin:10px 0;border:1px solid #73808a66;border-radius:8px;overflow:hidden}
 #map-picker summary{padding:10px;cursor:pointer;font-size:13px;font-weight:650;color:#8de9e0}
 #map-picker summary:focus-visible,button:focus-visible{outline:2px solid #71ddd2;outline-offset:2px}
