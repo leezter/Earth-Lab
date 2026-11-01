@@ -1,9 +1,9 @@
 {
-  "id": "bridges-v10.14",
+  "id": "bridges-v10.18",
   "source_hashes": {
     "assets/materials/batch-manifest.json": "32b1603c9cc1608d7759af81a4ea947abec693a6e7527c58ebc4b8176afd8bf0",
     "batch_v10/bake.py": "36ad5f08e433106cd173e929bfc99df1b9a3ef6861939324edcf70ad5d90523a",
-    "batch_v10/batch_server.py": "afb5d7e3e6809d1da9d3b3fad6ade7ccdaa587f08de0f9299270216cb54f323d",
+    "batch_v10/batch_server.py": "b94a78e8c4c7ebd034816dfe83f8528edc6c3d9b23c2331f80684c90a52d0664",
     "batch_v10/blender_bridges.py": "a56ec88870dfc707e71b13add67120987fdaa937a99bdd23ba2bbad12a380836",
     "batch_v10/boundary_assets.py": "4edada939f3f207698dd31e2839b49b6fd15892be53cde8d91302e21db15f2a9",
     "batch_v10/boundary_geometry.py": "d319a5b875b2c0a7e2c4f27f89a4b3cb07f5242edd7c4faeb0c73ef6f3dd88aa",
@@ -17,6 +17,7 @@
     "batch_v10/landcover.py": "b97c806be0fd945c573e3d919da395cb33e4515961b00701de4645d1fecdbd6d",
     "batch_v10/launch.py": "68c7a99ceeebf29217ba24b4209c909efc908864e7da446b4adcddbeb9adbe53",
     "batch_v10/layered_network.py": "1cb0423a624be31ba501a337099177a687cd063369ead5724b8bb183fd4baeb6",
+    "batch_v10/nearby_places.py": "b574a3bf38d80d3a9ede9535fe8a8d8933a85dbcb6beb84b5853a0ca74942de9",
     "batch_v10/parking_features.py": "5578c21992c5b7f9f521a983c68625dd8db34cab5d45b3b1aae18f1471148b81",
     "batch_v10/pavement_materials.py": "ddea7da0d56bd45ee2490d1933d7415f73d64f24406c20b48d277cf531365ee1",
     "batch_v10/pavement_sources.py": "13c07b98f7395a08ae7318d76c733de92ae7aa325895d2b7fedfb92920e0fafb",
@@ -63,7 +64,7 @@
     "batch_v10/web/ground.js": "b18bf8c76cd5ef5f9d6cd2856a4d67d4d5f1f465a82e8c198ee9818dddb787e5",
     "batch_v10/web/index.html": "d9eb33ee3e9229609b61da6fa80157b3fa498115a34fcaeee4ee9025e9be268f",
     "batch_v10/web/menu.js": "58ca7db6d063ba1f7f062ce45e3dde8cda731879728efb28c974165579ad77ae",
-    "batch_v10/web/picker.js": "1a39ed334f611b5b279fc2f8861be1c4bcd9645544a03ec5db654922a8c3359c",
+    "batch_v10/web/picker.js": "6dbb6837708588af38812d48f6c116a77f18eefb28ad150b68fa583ace5c8fd8",
     "batch_v10/web/signals.js": "aadb6834af58407228930ef0bde4d51b32580bd5e074d870d48d34be5eb36ad8",
     "batch_v10/web/spawn.js": "746d3dec1a06b9bf306daa513f526bfd6335b14fe982c1340796037fef894c9f",
     "batch_v10/web/style.css": "3010b33c6bf9d97c80cd428eb52c755fedcf918a1029b8a2ff50763ee8b0b093",

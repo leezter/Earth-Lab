@@ -5,7 +5,7 @@ connectivity, relative terrain height, constrained road profiles and slope
 forces to the top-down driving prototype. The previous
 [street-details edition](../batch_v9/README.md) remains on port 47851.
 
-Current renderer identity: **bridges-v10.14**. Frozen inputs include the viewer
+Current renderer identity: **bridges-v10.18**. Frozen inputs include the viewer
 and isolated driving runtime. Development identities and their evidence remain
 under `development-bridges-v10.*`; their results do not substitute for current
 acceptance.
@@ -15,6 +15,42 @@ WASD/arrows drive, P pauses, R recovers on the current connected surface.
 The existing map picker/search and serial generation queue remain available.
 An area becomes playable only after geometry checks, nine 2048-square ground
 tiles and every declared transparent bridge pass have been verified.
+
+## Nearby-area fallback (v10.17; drive-button feedback v10.18)
+
+When a requested area fails generation, the map picker automatically looks for
+an already validated real scene within 1.5 km. It chooses the closest actual
+scene centre, checks its image hashes and nine tiles, moves the map marker,
+loads it, and states the distance from the original selection. The Drive button
+closes the menu, resumes play and focuses the canvas. If the area is already
+active, it preserves the current car and position rather than reloading it. Synthetic
+fixtures and failed, incomplete or damaged scenes are excluded.
+
+If no validated scene is nearby, it samples nearby mapped driving roads in
+nearest-first order and tries at most eight candidates, with 64 m spacing.
+These are sampled candidates, not an exhaustive search over every possible map
+centre. No further candidate starts after twelve minutes; an already running
+job may finish. A bounded-search failure asks for another selection instead of
+repeating the same failure indefinitely. Current driving remains available.
+Changing the selection invalidates stale results, and a pending nearby search
+can resume after reload without resetting its attempt count.
+
+Known deterministic failures are reused only while their generation-model
+hashes match the current model. Fixing the underlying renderer invalidates that
+failure history. Failed jobs and their diagnostics remain untouched; fallback
+selection does not relabel old renders as freshly generated output. The existing
+accepted scenes keep their original bake identities. This release changes the
+selection service and picker, not bridge geometry or vehicle physics.
+
+Verification: 136 Python tests and `verify_nearby.cjs`. The real failed Ostkreuz
+request resolves to the accepted area 71.6 m away without a new render. Browser
+checks also exercise candidate failure then success, the eight-attempt limit,
+continued availability of the old drive, stale-selection handling and reload
+resumption. Candidate generation statuses in those browser scenarios are mocked;
+no new uncached Blender generation is claimed. Results are in
+`nearby-verification.json`. `verify_drive_button.cjs` additionally checks actual
+keyboard driving immediately after clicking, no same-scene reload, and failed
+scene-load retry. Results are in `drive-button-verification.json`.
 
 ## Model and limits
 
@@ -108,7 +144,7 @@ location is not accepted evidence. `probe_bridges.py` checks a separate frozen
 source/network sample only; its report explicitly excludes Blender, driving and
 visual acceptance.
 
-## Verified behavior and coverage
+## Bridge-model verification retained from v10.14
 
 The current viewer draws active rails before higher deck patches, so lower
 railings remain hidden beneath an upper deck. V10.14 reuses unchanged v10.13
@@ -213,7 +249,7 @@ checks, then passed upper/lower driving, collisions, occlusion and lifecycle
 checks with all four vehicles. The freeze audit passed all ten editions.
 
 
-The current edition passes 128 Python tests and the JavaScript surface/contact
+The v10.14 bridge extension passed 128 Python tests and the JavaScript surface/contact
 regressions. The retained v10.8 desktop Edge checks cover all four vehicles, both directions
 above and below a synthetic overpass, rail/support collisions, occlusion,
 level-preserving recovery, pause, scene changes, reload and missing-image retry.

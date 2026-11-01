@@ -1,0 +1,27 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const{chromium}=require(process.env.EARTH_PLAYWRIGHT||'C:/Users/leezt/AppData/Local/npm-cache/_npx/420ff84f11983ee5/node_modules/playwright');
+(async()=>{const url='http://127.0.0.1:47852',browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});const results={deliveryRenderer:JSON.parse(fs.readFileSync(path.join(__dirname,'freeze.json'))).id};
+try{const p=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];p.on('pageerror',e=>errors.push(e.message));
+await p.goto(url+'/?site=place-b22396e333e0a3d4');await p.waitForFunction(()=>window.earthLab?.car&&!earthLab.state.loading);
+await p.locator('#query').fill('52.5031523, 13.4695776');await p.locator('#query').press('Enter');await p.locator('#generate').click();
+await p.waitForFunction(()=>document.querySelector('#generate').textContent==='Drive nearby area'&&!earthLab.state.loading);
+await p.evaluate(()=>{window.beforeDrive={car:earthLab.car,body:earthLab.car.physics.planckBody,epoch:earthLab.state.epoch};});
+await p.locator('#pause').click();await p.locator('#generate').click();
+assert(await p.locator('#menu-panel').isHidden());assert.equal(await p.evaluate(()=>document.activeElement.id),'world');
+assert(await p.evaluate(()=>!earthLab.state.paused&&earthLab.car===beforeDrive.car&&earthLab.car.physics.planckBody===beforeDrive.body&&earthLab.state.epoch===beforeDrive.epoch));
+const before=await p.evaluate(()=>[earthLab.car.x,earthLab.car.y]);await p.keyboard.down('ArrowUp');await p.waitForTimeout(900);await p.keyboard.up('ArrowUp');const after=await p.evaluate(()=>[earthLab.car.x,earthLab.car.y]);
+results.nearbyDrivenMetres=Math.hypot(after[0]-before[0],after[1]-before[1])/10;assert(results.nearbyDrivenMetres>.1);results.sameSceneNotReloaded=true;results.resumedAndFocused=true;
+// The generated-area button must also focus driving; failed loads must be retryable.
+await p.getByRole('button',{name:'Open menu',exact:true}).click();
+const sites=await(await fetch(url+'/api/sites')).json(),target=sites.find(s=>s.status==='built'&&s.id!== 'place-b22396e333e0a3d4'&&!s.fixture);assert(target);
+await p.route('**/api/generate',r=>r.fulfill({json:target}));
+await p.locator('#query').fill('52.5, 13.4');await p.locator('#query').press('Enter');await p.locator('#generate').click();
+await p.waitForFunction(()=>document.querySelector('#generate').textContent==='Drive generated area');
+let fail=true;await p.route('**/api/data?id='+target.id,r=>fail?r.fulfill({status:503,json:{error:'Test load failure'}}):r.continue());
+await p.locator('#generate').click();await p.waitForFunction(()=>document.querySelector('#generation').textContent.includes('could not be opened'));
+assert(await p.locator('#menu-panel').isVisible());assert(!await p.locator('#generate').isDisabled());results.loadFailureRetry=true;
+fail=false;await p.locator('#generate').click();await p.waitForFunction(()=>document.querySelector('#menu-panel').hidden&&!earthLab.state.loading);
+assert.equal(await p.evaluate(()=>document.activeElement.id),'world');assert((await p.url()).includes(target.id));
+results.generatedAreaButton=true;results.errors=errors;assert.deepEqual(errors,[]);
+results.finished_utc=new Date().toISOString();fs.writeFileSync(path.join(__dirname,'drive-button-verification.json'),JSON.stringify(results,null,2));console.log(results);
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

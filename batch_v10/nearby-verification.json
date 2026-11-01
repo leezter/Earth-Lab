@@ -1,0 +1,15 @@
+{
+  "deliveryRenderer": "bridges-v10.18",
+  "scope": "Real cached Ostkreuz fallback; new-candidate terminal statuses mocked; no new Blender render",
+  "realOstkreuzFallback": {
+    "text": "Using an available area 72 m from your selected location. The original area could not be generated.",
+    "activeScene": "/baked/place-b22396e333e0a3d4/"
+  },
+  "failedCandidateThenSuccess": true,
+  "eightAttemptLimit": true,
+  "oldDriveRetained": true,
+  "drivingWhileSearchingMetres": 7.606801201839717,
+  "staleSelectionIgnored": true,
+  "reloadResumesOriginalSearch": true,
+  "finished_utc": "2026-11-01T17:47:54.770Z"
+}

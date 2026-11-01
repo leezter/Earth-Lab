@@ -57,10 +57,25 @@ class Handler(baseline.Handler):
    if self.headers.get('Content-Type','').split(';')[0]!='application/json':return self.reply({'error':'JSON required'},415)
    size=int(self.headers.get('Content-Length',0))
    if not 0<size<=4096:return self.reply({'error':'Invalid request size'},400)
-   d=json.loads(self.rfile.read(size));return self.reply(labelled(custom_places.submit(d['lat'],d['lon'],d.get('name','Custom location'))))
+   d=json.loads(self.rfile.read(size))
+   if d.get('nearby'):
+    import nearby_places
+    lat,lon=nearby_places.coordinates(d['lat'],d['lon']);failed=nearby_places.previous_failure(lat,lon)
+    if failed:return self.reply(labelled(failed))
+   return self.reply(labelled(custom_places.submit(d['lat'],d['lon'],d.get('name','Custom location'))))
   except (ValueError,KeyError,TypeError)as e:return self.reply({'error':str(e)},400)
  def do_GET(self):
   u=urlparse(self.path);q=parse_qs(u.query)
+  if u.path=='/api/nearby':
+   try:
+    import nearby_places
+    result=nearby_places.find(q.get('lat',[''])[0],q.get('lon',[''])[0])
+    if result['ready']:result['ready']=labelled(result['ready'])
+    return self.reply(result)
+   except (ValueError,TypeError)as e:return self.reply({'error':str(e)},400)
+   except Exception as e:
+    print('Nearby search failed:',str(e),flush=True)
+    return self.reply({'error':'Nearby areas could not be checked. Try again shortly.'},503)
   if u.path=='/api/search':
    try:return self.reply(place_search.search(q.get('q',[''])[0]))
    except ValueError as e:return self.reply({'error':str(e)},400)

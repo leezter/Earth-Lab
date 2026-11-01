@@ -1,6 +1,6 @@
 # RacingVibes rendered district study
 
-Latest bridges and terrain edition: http://127.0.0.1:47852/ (gallery: http://127.0.0.1:47852/gallery.html), or run `batch_v10/launch.py` with the existing Earth Python environment. Fixed bridges, connected elevated branches and ordered deck crossings have separate supporting surfaces, height-aware collisions and over/under rendering; terrain and inferred road profiles affect slope response. See [batch_v10/README.md](batch_v10/README.md) for scope, generation, checks and source limits.
+Latest bridges and terrain edition: http://127.0.0.1:47852/ (gallery: http://127.0.0.1:47852/gallery.html), or run `batch_v10/launch.py` with the existing Earth Python environment. Fixed bridges, connected elevated branches and ordered deck crossings have separate supporting surfaces, height-aware collisions and over/under rendering; terrain and inferred road profiles affect slope response. Unavailable selections automatically fall back to a nearby validated area or a bounded search of nearby roads. See [batch_v10/README.md](batch_v10/README.md) for scope, generation, checks and source limits.
 
 Previous street-details edition: **Play Earth Lab - street details update.lnk**, or http://127.0.0.1:47851/ . Supported cycle/bus lanes, refuges, crossing approaches and mapped furniture retain the v8.4 geometry fixes. See [batch_v9/README.md](batch_v9/README.md).
 
