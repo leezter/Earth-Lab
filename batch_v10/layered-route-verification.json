@@ -1,0 +1,3958 @@
+{
+  "renderer": "bridges-v10.14",
+  "modelOverride": null,
+  "method": "Guided keyboard inputs after spawn; deterministic frame clock",
+  "sites": [
+    {
+      "id": "fixture-d7917bf3f06829b0",
+      "name": "Synthetic junctions test",
+      "geometryRenderer": "bridges-v10.14",
+      "routes": [
+        {
+          "id": "2:bridge-1-0>bridge-1-1",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.005076773788216471,
+          "manoeuvres": 0,
+          "steps": 1813,
+          "progress": 47.21265066621722,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0",
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            23.212650666217222,
+            0
+          ],
+          "height": 4.8693092267385785,
+          "angle": 0,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-0>bridge-1-1",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.004596550281154244,
+          "manoeuvres": 0,
+          "steps": 1921,
+          "progress": 47.20147916251619,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0",
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            23.201479162516197,
+            0
+          ],
+          "height": 4.871096667330741,
+          "angle": 0,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-0>bridge-1-1",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.0048190670488361675,
+          "manoeuvres": 0,
+          "steps": 1864,
+          "progress": 47.221871638486505,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0",
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            23.2218716384865,
+            0
+          ],
+          "height": 4.867833871175494,
+          "angle": 0,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-0>bridge-1-1",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.004771971454074375,
+          "manoeuvres": 0,
+          "steps": 1865,
+          "progress": 47.203148805868274,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0",
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            23.203148805868274,
+            0
+          ],
+          "height": 4.870829524394409,
+          "angle": 0,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-0>bridge-2-0",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.005097670139480925,
+          "manoeuvres": 0,
+          "steps": 1751,
+          "progress": 47.21376514219286,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0",
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            13.168029612346052,
+            19.117660621280397
+          ],
+          "height": 4.864741904084188,
+          "angle": 0.8981538487593419,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-0>bridge-2-0",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.004557161661239206,
+          "manoeuvres": 0,
+          "steps": 2304,
+          "progress": 47.21592760570396,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0",
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            15.09962291284408,
+            17.78303384018641
+          ],
+          "height": 4.864395909922413,
+          "angle": 1.516632728484642,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-0>bridge-2-0",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.0048203493081722115,
+          "manoeuvres": 0,
+          "steps": 1758,
+          "progress": 47.220037601650034,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0",
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            13.15616318854614,
+            19.133504783301778
+          ],
+          "height": 4.86373831057104,
+          "angle": 0.8725497682206915,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-0>bridge-2-0",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.005105399093896068,
+          "manoeuvres": 0,
+          "steps": 1784,
+          "progress": 47.20353151125896,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0",
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            13.082494467682384,
+            19.1644304973996
+          ],
+          "height": 4.866379285033613,
+          "angle": 0.8008901617369736,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-1>bridge-1-0",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00526413838886608,
+          "manoeuvres": 0,
+          "steps": 1854,
+          "progress": 47.21003094094937,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1",
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -23.210030940949373,
+            0.02015636302726097
+          ],
+          "height": 5.963604950551896,
+          "angle": 3.1477014574453865,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-1>bridge-1-0",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.004509149004583435,
+          "manoeuvres": 0,
+          "steps": 1950,
+          "progress": 47.204427123572025,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1",
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -23.204427123572025,
+            0.035526017979258605
+          ],
+          "height": 5.962708339771525,
+          "angle": 3.1283021806916933,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-1>bridge-1-0",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.004754616440037829,
+          "manoeuvres": 0,
+          "steps": 1843,
+          "progress": 47.207997839218955,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1",
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -23.207997839218955,
+            -0.010010749029491601
+          ],
+          "height": 5.9632796542750315,
+          "angle": 3.1213015272320463,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-1>bridge-1-0",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.005116163779071314,
+          "manoeuvres": 0,
+          "steps": 1897,
+          "progress": 47.20535939300191,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1",
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -23.205359393001917,
+            0.020394776665925315
+          ],
+          "height": 5.962857502880306,
+          "angle": 3.1791983498467973,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-1>bridge-2-0",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00526413838886608,
+          "manoeuvres": 0,
+          "steps": 1609,
+          "progress": 47.20650819822873,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1",
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            13.107506981060514,
+            19.15073456917852
+          ],
+          "height": 4.865903015118449,
+          "angle": 0.8063990494316033,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-1>bridge-2-0",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.0048403505303724614,
+          "manoeuvres": 8,
+          "steps": 7304,
+          "progress": 47.20608786089192,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1",
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            9.851881310354845,
+            21.404118024524784
+          ],
+          "height": 4.8659702690923385,
+          "angle": 1.4593340937297439,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-1>bridge-2-0",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00480150121600964,
+          "manoeuvres": 0,
+          "steps": 1605,
+          "progress": 47.215881777246175,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1",
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            13.143879192921759,
+            19.13695452232177
+          ],
+          "height": 4.864403242475658,
+          "angle": 0.8504457235992996,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-1-1>bridge-2-0",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.005198745106503644,
+          "manoeuvres": 0,
+          "steps": 1620,
+          "progress": 47.20593487844765,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1",
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            13.126124450991492,
+            19.13714824525098
+          ],
+          "height": 4.865994746283422,
+          "angle": 0.8545142873438367,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-2-0>bridge-1-0",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.005264138388866968,
+          "manoeuvres": 0,
+          "steps": 1768,
+          "progress": 47.217540656725504,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0",
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -23.217540656725507,
+            0.08204518056295462
+          ],
+          "height": 5.964806505076081,
+          "angle": -3.03430326970208,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-2-0>bridge-1-0",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.004510844067635134,
+          "manoeuvres": 0,
+          "steps": 1907,
+          "progress": 47.20770445633372,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0",
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -23.207704456333722,
+            -2.8857830091099443
+          ],
+          "height": 5.963232713013395,
+          "angle": -3.134559418047533,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-2-0>bridge-1-0",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.004746381957226653,
+          "manoeuvres": 0,
+          "steps": 1764,
+          "progress": 47.208436632279074,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0",
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -23.208436632279074,
+            0.08217980586907724
+          ],
+          "height": 5.963349861164652,
+          "angle": -3.032257848410897,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-2-0>bridge-1-0",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.005060425632232857,
+          "manoeuvres": 0,
+          "steps": 1799,
+          "progress": 47.20506877797509,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0",
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -23.205068777975093,
+            0.044796873592465744
+          ],
+          "height": 5.962811004476018,
+          "angle": -3.0747014769413394,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-2-0>bridge-1-1",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.005264138388866968,
+          "manoeuvres": 0,
+          "steps": 1599,
+          "progress": 47.224753390578435,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0",
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            23.224753390578435,
+            -0.013369114173473995
+          ],
+          "height": 4.867372790840784,
+          "angle": 0.042144040796428375,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-2-0>bridge-1-1",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.004841862985448309,
+          "manoeuvres": 8,
+          "steps": 6502,
+          "progress": 47.207327556007,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0",
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            23.207327556007005,
+            -4.031429174927786
+          ],
+          "height": 4.870160924372212,
+          "angle": -0.5094299298134959,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-2-0>bridge-1-1",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.004807272577350474,
+          "manoeuvres": 0,
+          "steps": 1602,
+          "progress": 47.212974110089775,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0",
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            23.212974110089778,
+            -0.09259286094943942
+          ],
+          "height": 4.869257475718969,
+          "angle": 0.11211548320161699,
+          "failure": null
+        },
+        {
+          "id": "2:bridge-2-0>bridge-1-1",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "junction",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.005060425632232857,
+          "manoeuvres": 0,
+          "steps": 1631,
+          "progress": 47.20681260838551,
+          "total": 48,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0",
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            23.206812608385512,
+            -0.0548365727376105
+          ],
+          "height": 4.870243315991652,
+          "angle": 0.09217291962142636,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-0:0:1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009629055881366533,
+          "manoeuvres": 0,
+          "steps": 1421,
+          "progress": 71.2471148665971,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -5.752885133402901,
+            0
+          ],
+          "height": 5.416666666666667,
+          "angle": 0,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-0:0:1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009628858968176779,
+          "manoeuvres": 0,
+          "steps": 1474,
+          "progress": 71.24725848236108,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -5.752741517638925,
+            0
+          ],
+          "height": 5.416666666666667,
+          "angle": 0,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009551295825576567,
+          "manoeuvres": 0,
+          "steps": 1466,
+          "progress": 71.23071003687559,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -5.769289963124402,
+            0
+          ],
+          "height": 5.416666666666667,
+          "angle": 0,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00962111846770064,
+          "manoeuvres": 0,
+          "steps": 1432,
+          "progress": 71.22317137499107,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -5.776828625008938,
+            0
+          ],
+          "height": 5.416666666666667,
+          "angle": 0,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009666034850138061,
+          "manoeuvres": 0,
+          "steps": 1335,
+          "progress": 71.23765944452441,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -76.23765944452441,
+            0.04135828417861296
+          ],
+          "height": 0.015997314618535638,
+          "angle": 3.1861195824038746,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00968351525467881,
+          "manoeuvres": 0,
+          "steps": 1370,
+          "progress": 71.20159861577243,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -76.20159861577243,
+            -0.12003628399502922
+          ],
+          "height": 0.01660465489225326,
+          "angle": 3.012645757180686,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009621579833985816,
+          "manoeuvres": 0,
+          "steps": 1354,
+          "progress": 71.2286229057342,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -76.2286229057342,
+            0.013449352395297154
+          ],
+          "height": 0.016149508956055,
+          "angle": 3.145288313252535,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009645237171015175,
+          "manoeuvres": 0,
+          "steps": 1348,
+          "progress": 71.20197918755301,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-0"
+          ],
+          "end": "bridge-1-0",
+          "expected": "bridge-1-0",
+          "position": [
+            -76.20197918755301,
+            0.06238457127731972
+          ],
+          "height": 0.016598245262264513,
+          "angle": 3.2544476158456614,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-1:0:1",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009637431152345888,
+          "manoeuvres": 0,
+          "steps": 1318,
+          "progress": 71.23003439811598,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            76.23003439811598,
+            0
+          ],
+          "height": 0,
+          "angle": 0,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-1:0:1",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009638024785422417,
+          "manoeuvres": 0,
+          "steps": 1321,
+          "progress": 71.20417060547568,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            76.20417060547568,
+            0
+          ],
+          "height": 0,
+          "angle": 0,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-1:0:1",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009615569302603433,
+          "manoeuvres": 0,
+          "steps": 1362,
+          "progress": 71.20793364857947,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            76.20793364857947,
+            0
+          ],
+          "height": 0,
+          "angle": 0,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-1:0:1",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00963665256265367,
+          "manoeuvres": 0,
+          "steps": 1326,
+          "progress": 71.22003058826009,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            76.22003058826009,
+            0
+          ],
+          "height": 0,
+          "angle": 0,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-1:0:-1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008239437599016797,
+          "manoeuvres": 0,
+          "steps": 1457,
+          "progress": 71.21846953895228,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            5.7815304610477245,
+            0.070326026996303
+          ],
+          "height": 5.416666666666667,
+          "angle": 3.2233390478854202,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-1:0:-1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007733123623734128,
+          "manoeuvres": 0,
+          "steps": 1516,
+          "progress": 71.20235111615351,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            5.7976488838464855,
+            0.1131520928601423
+          ],
+          "height": 5.416666666666667,
+          "angle": 3.3058695486187095,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-1:0:-1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007958284299879992,
+          "manoeuvres": 0,
+          "steps": 1486,
+          "progress": 71.23385933168257,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            5.766140668317432,
+            -0.014823397977910819
+          ],
+          "height": 5.416666666666667,
+          "angle": 3.13253550029436,
+          "failure": null
+        },
+        {
+          "id": "bridge-1-1:0:-1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008383971912865107,
+          "manoeuvres": 0,
+          "steps": 1450,
+          "progress": 71.2235425837805,
+          "total": 72,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1-1"
+          ],
+          "end": "bridge-1-1",
+          "expected": "bridge-1-1",
+          "position": [
+            5.776457416219502,
+            0.0710524835494692
+          ],
+          "height": 5.416666666666667,
+          "angle": 3.2620286345328178,
+          "failure": null
+        },
+        {
+          "id": "bridge-2-0:0:1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009640113870550415,
+          "manoeuvres": 0,
+          "steps": 1287,
+          "progress": 69.23181588940236,
+          "total": 69.99999999999999,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            42.243164938948816,
+            61.03996775795438
+          ],
+          "height": 0,
+          "angle": 0.9516897225221044,
+          "failure": null
+        },
+        {
+          "id": "bridge-2-0:0:1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009646670375928146,
+          "manoeuvres": 0,
+          "steps": 1293,
+          "progress": 69.22110771885102,
+          "total": 69.99999999999999,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            42.25923220152062,
+            61.01582034212938
+          ],
+          "height": 0,
+          "angle": 0.9944688550439441,
+          "failure": null
+        },
+        {
+          "id": "bridge-2-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00961625368539476,
+          "manoeuvres": 0,
+          "steps": 1321,
+          "progress": 69.22551023820326,
+          "total": 69.99999999999999,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            42.232130472344906,
+            61.03993768871105
+          ],
+          "height": 0,
+          "angle": 0.9550144118603804,
+          "failure": null
+        },
+        {
+          "id": "bridge-2-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009640262384631448,
+          "manoeuvres": 0,
+          "steps": 1280,
+          "progress": 69.24618994647457,
+          "total": 69.99999999999999,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            42.29919311036793,
+            61.01866162372787
+          ],
+          "height": 0,
+          "angle": 1.0178094896712857,
+          "failure": null
+        },
+        {
+          "id": "bridge-2-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008244890432413304,
+          "manoeuvres": 0,
+          "steps": 1418,
+          "progress": 69.22549729403822,
+          "total": 69.99999999999999,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            3.3328486784999862,
+            4.715943570901841
+          ],
+          "height": 5.416666666666667,
+          "angle": -2.2525443067180624,
+          "failure": null
+        },
+        {
+          "id": "bridge-2-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007780484610370841,
+          "manoeuvres": 0,
+          "steps": 1473,
+          "progress": 69.21549461185012,
+          "total": 69.99999999999999,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            3.1569481700541395,
+            4.849886714604798
+          ],
+          "height": 5.416666666666667,
+          "angle": -1.9318957274173347,
+          "failure": null
+        },
+        {
+          "id": "bridge-2-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007958636624366022,
+          "manoeuvres": 0,
+          "steps": 1444,
+          "progress": 69.20693014679138,
+          "total": 69.99999999999999,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            3.2810277864450796,
+            4.7744020634597515
+          ],
+          "height": 5.416666666666667,
+          "angle": -2.165720559806524,
+          "failure": null
+        },
+        {
+          "id": "bridge-2-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008420111093206506,
+          "manoeuvres": 0,
+          "steps": 1410,
+          "progress": 69.21499150636694,
+          "total": 69.99999999999999,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-2-0"
+          ],
+          "end": "bridge-2-0",
+          "expected": "bridge-2-0",
+          "position": [
+            3.2325096525996413,
+            4.798186826392596
+          ],
+          "height": 5.416666666666667,
+          "angle": -2.1050272625054913,
+          "failure": null
+        },
+        {
+          "id": "bridge-3-0:0:1",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009639197209100558,
+          "manoeuvres": 0,
+          "steps": 2945,
+          "progress": 153.2076949196375,
+          "total": 154,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-3-0"
+          ],
+          "end": "bridge-3-0",
+          "expected": "bridge-3-0",
+          "position": [
+            30.07311915396046,
+            76.20769491963749
+          ],
+          "height": 4.096768812857998,
+          "angle": 1.639224462833828,
+          "failure": null
+        },
+        {
+          "id": "bridge-3-0:0:1",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009656381080334953,
+          "manoeuvres": 0,
+          "steps": 3027,
+          "progress": 153.2091871225013,
+          "total": 154,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-3-0"
+          ],
+          "end": "bridge-3-0",
+          "expected": "bridge-3-0",
+          "position": [
+            30.06863864006119,
+            76.2091871225013
+          ],
+          "height": 4.09653006039979,
+          "angle": 1.6518740892006143,
+          "failure": null
+        },
+        {
+          "id": "bridge-3-0:0:1",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009621030304652223,
+          "manoeuvres": 0,
+          "steps": 3007,
+          "progress": 153.21677192088245,
+          "total": 154,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-3-0"
+          ],
+          "end": "bridge-3-0",
+          "expected": "bridge-3-0",
+          "position": [
+            30.01574293004461,
+            76.21677192088245
+          ],
+          "height": 4.095316492658806,
+          "angle": 1.5776682336727237,
+          "failure": null
+        },
+        {
+          "id": "bridge-3-0:0:1",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009728164033476538,
+          "manoeuvres": 0,
+          "steps": 2956,
+          "progress": 153.2295133196601,
+          "total": 154,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-3-0"
+          ],
+          "end": "bridge-3-0",
+          "expected": "bridge-3-0",
+          "position": [
+            29.848883826944007,
+            76.2295133196601
+          ],
+          "height": 4.093277868854382,
+          "angle": 1.4441079693529872,
+          "failure": null
+        },
+        {
+          "id": "bridge-3-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009649637747404682,
+          "manoeuvres": 0,
+          "steps": 2874,
+          "progress": 153.2093940292658,
+          "total": 154,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-3-0"
+          ],
+          "end": "bridge-3-0",
+          "expected": "bridge-3-0",
+          "position": [
+            30.09750975691144,
+            -76.20939402926581
+          ],
+          "height": 0,
+          "angle": -1.6798353195768618,
+          "failure": null
+        },
+        {
+          "id": "bridge-3-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009652670084392412,
+          "manoeuvres": 0,
+          "steps": 2944,
+          "progress": 153.25446712295823,
+          "total": 154,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-3-0"
+          ],
+          "end": "bridge-3-0",
+          "expected": "bridge-3-0",
+          "position": [
+            29.891385458201977,
+            -76.25446712295823
+          ],
+          "height": 0,
+          "angle": -1.4351978531678409,
+          "failure": null
+        },
+        {
+          "id": "bridge-3-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009621666772421378,
+          "manoeuvres": 0,
+          "steps": 2920,
+          "progress": 153.21571671769007,
+          "total": 154,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-3-0"
+          ],
+          "end": "bridge-3-0",
+          "expected": "bridge-3-0",
+          "position": [
+            29.981554614989967,
+            -76.21571671769007
+          ],
+          "height": 0,
+          "angle": -1.5576607911865612,
+          "failure": null
+        },
+        {
+          "id": "bridge-3-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009651802895775496,
+          "manoeuvres": 0,
+          "steps": 2902,
+          "progress": 153.21059525645418,
+          "total": 154,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-3-0"
+          ],
+          "end": "bridge-3-0",
+          "expected": "bridge-3-0",
+          "position": [
+            29.923205288624285,
+            -76.21059525645418
+          ],
+          "height": 0,
+          "angle": -1.4225560122533616,
+          "failure": null
+        }
+      ],
+      "excluded": []
+    },
+    {
+      "id": "place-89f229ffb29986bd",
+      "name": "Halifax viaducts 53.726589, -1.860018",
+      "geometryRenderer": "bridges-v10.14",
+      "routes": [
+        {
+          "id": "bridge-22817576-0:0:1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00825099058133727,
+          "manoeuvres": 0,
+          "steps": 748,
+          "progress": 36.23869723905402,
+          "total": 37.00000000000002,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            13.594344420744331,
+            -44.08317656503782
+          ],
+          "height": -2.3467722607241113,
+          "angle": 1.955980054571484,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007748971851746944,
+          "manoeuvres": 0,
+          "steps": 780,
+          "progress": 36.20390374891254,
+          "total": 37.00000000000002,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            13.65410542596408,
+            -44.09712235383988
+          ],
+          "height": -2.3523392191467463,
+          "angle": 2.0319897097053246,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007958272020172963,
+          "manoeuvres": 0,
+          "steps": 761,
+          "progress": 36.2439968425784,
+          "total": 37.00000000000002,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            13.579128656265008,
+            -44.083448667022026
+          ],
+          "height": -2.345924324160211,
+          "angle": 1.9340506280713916,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008354673498847554,
+          "manoeuvres": 0,
+          "steps": 741,
+          "progress": 36.2159895142621,
+          "total": 37.00000000000002,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            13.618586902366966,
+            -44.09806388397679
+          ],
+          "height": -2.3504054966908154,
+          "angle": 1.9694426228526045,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009642554542793391,
+          "manoeuvres": 0,
+          "steps": 634,
+          "progress": 36.246536540255704,
+          "total": 37.00000000000002,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            26.59681231439554,
+            -77.10045682557444
+          ],
+          "height": -6.9398192295772345,
+          "angle": -1.2774957036138517,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009629827247613854,
+          "manoeuvres": 0,
+          "steps": 649,
+          "progress": 36.22330234387179,
+          "total": 37.00000000000002,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            26.549612991680313,
+            -77.0940027009552
+          ],
+          "height": -6.93691865314685,
+          "angle": -1.201341470343305,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00962005006788802,
+          "manoeuvres": 0,
+          "steps": 660,
+          "progress": 36.24769778801095,
+          "total": 37.00000000000002,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            26.546874510560247,
+            -77.1212788175508
+          ],
+          "height": -6.939964200714306,
+          "angle": -1.1972211115825842,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009643503848160151,
+          "manoeuvres": 0,
+          "steps": 645,
+          "progress": 36.24023893735701,
+          "total": 37.00000000000002,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            26.51402015837088,
+            -77.12614572143065
+          ],
+          "height": -6.939033031585531,
+          "angle": -1.1392028502988587,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009396329048202645,
+          "manoeuvres": 0,
+          "steps": 1871,
+          "progress": 91.23934903787682,
+          "total": 91.99998437514466,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            -64.40418197481507,
+            -6.555534451782324
+          ],
+          "height": 12.464795038649415,
+          "angle": 2.1913992837873013,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00944213470868327,
+          "manoeuvres": 0,
+          "steps": 1940,
+          "progress": 91.24136206097687,
+          "total": 91.99998437514466,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            -64.52842353712671,
+            -6.6537087749244135
+          ],
+          "height": 12.46447295495341,
+          "angle": 2.0481066844409597,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008855613106923954,
+          "manoeuvres": 0,
+          "steps": 1902,
+          "progress": 91.20499281361654,
+          "total": 91.99998437514466,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            -64.34565629722752,
+            -6.5523027600825134
+          ],
+          "height": 12.47029203453106,
+          "angle": 2.261111191098272,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009620897266708894,
+          "manoeuvres": 0,
+          "steps": 1861,
+          "progress": 91.20909392213504,
+          "total": 91.99998437514466,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            -64.3540958213332,
+            -6.5538672306636006
+          ],
+          "height": 12.469635857168097,
+          "angle": 2.275668185485196,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00964472192412913,
+          "manoeuvres": 0,
+          "steps": 1603,
+          "progress": 91.20880928187199,
+          "total": 91.99998437514466,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            -8.065975288467861,
+            -77.31298447380334
+          ],
+          "height": -0.25073104755657566,
+          "angle": -0.9359559925203071,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009712773507731143,
+          "manoeuvres": 0,
+          "steps": 1633,
+          "progress": 91.2014305485801,
+          "total": 91.99998437514466,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            -8.081775228961336,
+            -77.31605071842986
+          ],
+          "height": -0.24955045022987377,
+          "angle": -0.927776266873584,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009621744229239226,
+          "manoeuvres": 0,
+          "steps": 1619,
+          "progress": 91.21292501597554,
+          "total": 91.99998437514466,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            -8.082274135758635,
+            -77.3310851185192
+          ],
+          "height": -0.2513895650131437,
+          "angle": -0.9048379531470648,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009701752128012942,
+          "manoeuvres": 0,
+          "steps": 1636,
+          "progress": 91.21429156683686,
+          "total": 91.99998437514466,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            -8.119360511479881,
+            -77.36208354683076
+          ],
+          "height": -0.2516082131509549,
+          "angle": -0.8749372156776232,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:1",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00946896684357501,
+          "manoeuvres": 0,
+          "steps": 325,
+          "progress": 18.233889668339994,
+          "total": 18.999999999999993,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            66.03816288912007,
+            -76.80490328663362
+          ],
+          "height": -8.581075192894328,
+          "angle": -1.2083928530271528,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:1",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009100477392098405,
+          "manoeuvres": 0,
+          "steps": 337,
+          "progress": 18.220687521772817,
+          "total": 18.999999999999993,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            66.11779788936704,
+            -76.76175745731099
+          ],
+          "height": -8.580171753659439,
+          "angle": -1.2788380248511497,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:1",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008568078851456384,
+          "manoeuvres": 0,
+          "steps": 339,
+          "progress": 18.214273964822386,
+          "total": 18.999999999999993,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            66.05936676683547,
+            -76.77627407205547
+          ],
+          "height": -8.579732866016831,
+          "angle": -1.2205597146071427,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:1",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009054276702804565,
+          "manoeuvres": 0,
+          "steps": 329,
+          "progress": 18.243945424637715,
+          "total": 18.999999999999993,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            66.0403147681383,
+            -76.81482289402501
+          ],
+          "height": -8.5817633207476,
+          "angle": -1.185043242462711,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008118537484899768,
+          "manoeuvres": 0,
+          "steps": 378,
+          "progress": 18.203152515776008,
+          "total": 18.999999999999993,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            60.10856549644566,
+            -60.406929412755304
+          ],
+          "height": -7.407659387720285,
+          "angle": 1.9376034206909911,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007652126476565435,
+          "manoeuvres": 0,
+          "steps": 397,
+          "progress": 18.23937736846775,
+          "total": 18.999999999999993,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            60.1607612471938,
+            -60.34929633608526
+          ],
+          "height": -7.402073391073765,
+          "angle": 2.0263556095492383,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007882370963442575,
+          "manoeuvres": 0,
+          "steps": 385,
+          "progress": 18.21627772772474,
+          "total": 18.999999999999993,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            60.08376603980114,
+            -60.40201504856011
+          ],
+          "height": -7.40557941811617,
+          "angle": 1.9247304401151786,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00825901383619776,
+          "manoeuvres": 0,
+          "steps": 365,
+          "progress": 18.22737180752429,
+          "total": 18.999999999999993,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            59.99550559161126,
+            -60.42244518109364
+          ],
+          "height": -7.403821324695749,
+          "angle": 1.8056143466503518,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:1",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00964155200468575,
+          "manoeuvres": 0,
+          "steps": 1402,
+          "progress": 79.22151334566588,
+          "total": 79.99994637729252,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -25.634718471788403,
+            -76.85791341461521
+          ],
+          "height": 1.686192110912935,
+          "angle": -0.9159509132731479,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:1",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.010057559365864499,
+          "manoeuvres": 0,
+          "steps": 1432,
+          "progress": 79.23527843621221,
+          "total": 79.99994637729252,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -25.524484345361493,
+            -76.79044226160254
+          ],
+          "height": 1.6839896964255248,
+          "angle": -1.0439974512634316,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:1",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009621745140819371,
+          "manoeuvres": 0,
+          "steps": 1418,
+          "progress": 79.20701643284804,
+          "total": 79.99994637729252,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -25.62185942785668,
+            -76.82972308755636
+          ],
+          "height": 1.6885116169637906,
+          "angle": -0.9261442131202461,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:1",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009640552402698788,
+          "manoeuvres": 0,
+          "steps": 1432,
+          "progress": 79.20090878058332,
+          "total": 79.99994637729252,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -25.580960922610597,
+            -76.79053861739985
+          ],
+          "height": 1.6894888413261453,
+          "angle": -1.033789853194881,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009037263715384825,
+          "manoeuvres": 0,
+          "steps": 1626,
+          "progress": 79.21147774230731,
+          "total": 79.99994637729259,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -74.2591417470039,
+            -15.323569430419756
+          ],
+          "height": 12.30801448336695,
+          "angle": 2.1692275051960483,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00924729096173671,
+          "manoeuvres": 0,
+          "steps": 1688,
+          "progress": 79.22686688347451,
+          "total": 79.99994637729259,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -74.29776604335783,
+            -15.33496484803714
+          ],
+          "height": 12.305552220780196,
+          "angle": 2.12377872775077,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00856128013458246,
+          "manoeuvres": 0,
+          "steps": 1654,
+          "progress": 79.22559929795591,
+          "total": 79.99994637729259,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -74.20211280828708,
+            -15.259398924297903
+          ],
+          "height": 12.305755034463173,
+          "angle": 2.254496827509712,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009076818148091803,
+          "manoeuvres": 0,
+          "steps": 1618,
+          "progress": 79.23720344755519,
+          "total": 79.99994637729259,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -74.18096037104922,
+            -15.227416680639752
+          ],
+          "height": 12.303898370527289,
+          "angle": 2.3462920701745484,
+          "failure": null
+        }
+      ],
+      "excluded": []
+    },
+    {
+      "id": "place-816268416cb633f5",
+      "name": "Halifax viaducts 53.726006, -1.859824",
+      "geometryRenderer": "bridges-v10.14",
+      "routes": [],
+      "excluded": []
+    },
+    {
+      "id": "place-9730cda9e56cf479",
+      "name": "Halifax viaducts 53.72558, -1.859568",
+      "geometryRenderer": "bridges-v10.14",
+      "routes": [],
+      "excluded": []
+    },
+    {
+      "id": "place-80fb5b75f55cf2af",
+      "name": "Halifax viaducts 53.727338, -1.859579",
+      "geometryRenderer": "bridges-v10.14",
+      "routes": [
+        {
+          "id": "bridge-21152367-0:0:1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009370347316341565,
+          "manoeuvres": 0,
+          "steps": 267,
+          "progress": 13.249202312553534,
+          "total": 14.000000000000002,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-21152367-0"
+          ],
+          "end": "bridge-21152367-0",
+          "expected": "bridge-21152367-0",
+          "position": [
+            -24.492215074086555,
+            -76.5649974170041
+          ],
+          "height": 23.25360202838382,
+          "angle": -1.771045345701791,
+          "failure": null
+        },
+        {
+          "id": "bridge-21152367-0:0:1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008972504528031777,
+          "manoeuvres": 0,
+          "steps": 285,
+          "progress": 13.239033357926875,
+          "total": 14.000000000000002,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-21152367-0"
+          ],
+          "end": "bridge-21152367-0",
+          "expected": "bridge-21152367-0",
+          "position": [
+            -24.485337198801517,
+            -76.55632191840915
+          ],
+          "height": 23.253891702030486,
+          "angle": -1.7776357165784948,
+          "failure": null
+        },
+        {
+          "id": "bridge-21152367-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00869255664089863,
+          "manoeuvres": 0,
+          "steps": 276,
+          "progress": 13.208225032380259,
+          "total": 14.000000000000002,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-21152367-0"
+          ],
+          "end": "bridge-21152367-0",
+          "expected": "bridge-21152367-0",
+          "position": [
+            -24.427877591368652,
+            -76.5399311229171
+          ],
+          "height": 23.254769310431396,
+          "angle": -1.834631055600083,
+          "failure": null
+        },
+        {
+          "id": "bridge-21152367-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.0090139327764156,
+          "manoeuvres": 0,
+          "steps": 266,
+          "progress": 13.2296622236387,
+          "total": 14.000000000000002,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-21152367-0"
+          ],
+          "end": "bridge-21152367-0",
+          "expected": "bridge-21152367-0",
+          "position": [
+            -24.494599648196573,
+            -76.54411277888792
+          ],
+          "height": 23.25415864890382,
+          "angle": -1.7679848658806168,
+          "failure": null
+        },
+        {
+          "id": "bridge-21152367-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008231346174707,
+          "manoeuvres": 0,
+          "steps": 273,
+          "progress": 13.242023323716003,
+          "total": 14,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-21152367-0"
+          ],
+          "end": "bridge-21152367-0",
+          "expected": "bridge-21152367-0",
+          "position": [
+            -21.155109006614932,
+            -64.52750463646248
+          ],
+          "height": 23.58613038565502,
+          "angle": 1.323605536364547,
+          "failure": null
+        },
+        {
+          "id": "bridge-21152367-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007698005230594163,
+          "manoeuvres": 0,
+          "steps": 291,
+          "progress": 13.223423547743744,
+          "total": 14,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-21152367-0"
+          ],
+          "end": "bridge-21152367-0",
+          "expected": "bridge-21152367-0",
+          "position": [
+            -21.088358527263154,
+            -64.56480270772425
+          ],
+          "height": 23.58613038565502,
+          "angle": 1.3949642250848862,
+          "failure": null
+        },
+        {
+          "id": "bridge-21152367-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007956328805967416,
+          "manoeuvres": 0,
+          "steps": 281,
+          "progress": 13.224038866258043,
+          "total": 14,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-21152367-0"
+          ],
+          "end": "bridge-21152367-0",
+          "expected": "bridge-21152367-0",
+          "position": [
+            -21.186550874405864,
+            -64.5376401947562
+          ],
+          "height": 23.58613038565502,
+          "angle": 1.3097425598730497,
+          "failure": null
+        },
+        {
+          "id": "bridge-21152367-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008308623774226476,
+          "manoeuvres": 0,
+          "steps": 273,
+          "progress": 13.221701868475078,
+          "total": 14,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-21152367-0"
+          ],
+          "end": "bridge-21152367-0",
+          "expected": "bridge-21152367-0",
+          "position": [
+            -21.226904418598345,
+            -64.52916007587956
+          ],
+          "height": 23.58613038565502,
+          "angle": 1.2305189571108068,
+          "failure": null
+        },
+        {
+          "id": "bridge-22727221-0:0:1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008292673495656544,
+          "manoeuvres": 0,
+          "steps": 273,
+          "progress": 13.213375889766453,
+          "total": 13.996046484727113,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22727221-0"
+          ],
+          "end": "bridge-22727221-0",
+          "expected": "bridge-22727221-0",
+          "position": [
+            -16.47740432277525,
+            -76.83246695210211
+          ],
+          "height": 23.99426756811576,
+          "angle": -1.4224648012436192,
+          "failure": null
+        },
+        {
+          "id": "bridge-22727221-0:0:1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007691182529391938,
+          "manoeuvres": 0,
+          "steps": 289,
+          "progress": 13.200892471923794,
+          "total": 13.996046484727113,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22727221-0"
+          ],
+          "end": "bridge-22727221-0",
+          "expected": "bridge-22727221-0",
+          "position": [
+            -16.498151223003962,
+            -76.8207515795383
+          ],
+          "height": 23.99227022126093,
+          "angle": -1.37900703207224,
+          "failure": null
+        },
+        {
+          "id": "bridge-22727221-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007937045610656668,
+          "manoeuvres": 0,
+          "steps": 280,
+          "progress": 13.21126269146094,
+          "total": 13.996046484727113,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22727221-0"
+          ],
+          "end": "bridge-22727221-0",
+          "expected": "bridge-22727221-0",
+          "position": [
+            -16.42575105015165,
+            -76.82841830426995
+          ],
+          "height": 23.993929456386876,
+          "angle": -1.4602008998788798,
+          "failure": null
+        },
+        {
+          "id": "bridge-22727221-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008372188391327029,
+          "manoeuvres": 0,
+          "steps": 269,
+          "progress": 13.209597647757716,
+          "total": 13.996046484727113,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22727221-0"
+          ],
+          "end": "bridge-22727221-0",
+          "expected": "bridge-22727221-0",
+          "position": [
+            -16.538666119074197,
+            -76.83097978779924
+          ],
+          "height": 23.99366304939436,
+          "angle": -1.3138730189474168,
+          "failure": null
+        },
+        {
+          "id": "bridge-22727221-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009585304646687831,
+          "manoeuvres": 0,
+          "steps": 240,
+          "progress": 13.226921163585587,
+          "total": 13.996046484727113,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22727221-0"
+          ],
+          "end": "bridge-22727221-0",
+          "expected": "bridge-22727221-0",
+          "position": [
+            -18.455411724348835,
+            -64.59963475469772
+          ],
+          "height": 23.58613038565502,
+          "angle": 1.7403743913092804,
+          "failure": null
+        },
+        {
+          "id": "bridge-22727221-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009525277870864102,
+          "manoeuvres": 0,
+          "steps": 249,
+          "progress": 13.21002128468167,
+          "total": 13.996046484727113,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22727221-0"
+          ],
+          "end": "bridge-22727221-0",
+          "expected": "bridge-22727221-0",
+          "position": [
+            -18.56979651348931,
+            -64.64237761636188
+          ],
+          "height": 23.58613038565502,
+          "angle": 1.630813875079367,
+          "failure": null
+        },
+        {
+          "id": "bridge-22727221-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009058549397753524,
+          "manoeuvres": 0,
+          "steps": 267,
+          "progress": 13.197857379022695,
+          "total": 13.996046484727113,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22727221-0"
+          ],
+          "end": "bridge-22727221-0",
+          "expected": "bridge-22727221-0",
+          "position": [
+            -18.428109566353505,
+            -64.62333825569206
+          ],
+          "height": 23.58613038565502,
+          "angle": 1.7661580625669382,
+          "failure": null
+        },
+        {
+          "id": "bridge-22727221-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009474347821225138,
+          "manoeuvres": 0,
+          "steps": 246,
+          "progress": 13.244444094726742,
+          "total": 13.996046484727113,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22727221-0"
+          ],
+          "end": "bridge-22727221-0",
+          "expected": "bridge-22727221-0",
+          "position": [
+            -18.584721914908293,
+            -64.61043260893386
+          ],
+          "height": 23.58613038565502,
+          "angle": 1.5982807994504429,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009643225442808045,
+          "manoeuvres": 0,
+          "steps": 2045,
+          "progress": 107.22802598980522,
+          "total": 107.99999999999987,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            -15.40272705645271,
+            39.39433704982322
+          ],
+          "height": 14.201960705044378,
+          "angle": 2.020646531263693,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009656320891620496,
+          "manoeuvres": 0,
+          "steps": 2089,
+          "progress": 107.21145153672687,
+          "total": 107.99999999999987,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            -15.435301938288271,
+            39.363766249967505
+          ],
+          "height": 14.199308792551841,
+          "angle": 1.8967024465028728,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00961747818829295,
+          "manoeuvres": 0,
+          "steps": 2081,
+          "progress": 107.2315321490104,
+          "total": 107.99999999999987,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            -15.452954277088569,
+            39.37841512667889
+          ],
+          "height": 14.202521690517207,
+          "angle": 1.929391663024571,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009633967785740438,
+          "manoeuvres": 0,
+          "steps": 2059,
+          "progress": 107.23496477833915,
+          "total": 107.99999999999987,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            -15.486339761475824,
+            39.36901576562729
+          ],
+          "height": 14.203070911209808,
+          "angle": 1.8964751663914166,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009637621051178158,
+          "manoeuvres": 0,
+          "steps": 2044,
+          "progress": 107.21480222908667,
+          "total": 107.99999999999993,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            23.458050177420407,
+            -59.70115198716295
+          ],
+          "height": 14.972106371741235,
+          "angle": -1.2739341540435085,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.0096415638543359,
+          "manoeuvres": 0,
+          "steps": 2083,
+          "progress": 107.22263786966381,
+          "total": 107.99999999999993,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            23.341076752402838,
+            -59.755418733266744
+          ],
+          "height": 14.973360074233577,
+          "angle": -1.1267220955356942,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009620050067887576,
+          "manoeuvres": 0,
+          "steps": 2090,
+          "progress": 107.20659505335807,
+          "total": 107.99999999999993,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            23.39095198301826,
+            -59.71863764940234
+          ],
+          "height": 14.97079322362466,
+          "angle": -1.1836421185390773,
+          "failure": null
+        },
+        {
+          "id": "bridge-22817576-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.0097694849336456,
+          "manoeuvres": 0,
+          "steps": 2049,
+          "progress": 107.20647447811935,
+          "total": 107.99999999999993,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-22817576-0"
+          ],
+          "end": "bridge-22817576-0",
+          "expected": "bridge-22817576-0",
+          "position": [
+            23.388939232857215,
+            -59.71929708981494
+          ],
+          "height": 14.970773931586463,
+          "angle": -1.1295114777864956,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:1",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.0179609349931642,
+          "manoeuvres": 0,
+          "steps": 3562,
+          "progress": 188.22157001342336,
+          "total": 188.99694696343326,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            -77.05084202240003,
+            56.71645763299284
+          ],
+          "height": 26.61502075536634,
+          "angle": 2.2791695469242628,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:1",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.0152709606832655,
+          "manoeuvres": 0,
+          "steps": 3637,
+          "progress": 188.19704999935675,
+          "total": 188.99694696343326,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            -77.04877352397057,
+            56.68683821156753
+          ],
+          "height": 26.611097553115684,
+          "angle": 2.241503261819576,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:1",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.015245432651918023,
+          "manoeuvres": 0,
+          "steps": 3639,
+          "progress": 188.21816568614477,
+          "total": 188.99694696343326,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            -77.06115619544028,
+            56.70396605064243
+          ],
+          "height": 26.614476063001767,
+          "angle": 2.251872600713807,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:1",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.01700261967216221,
+          "manoeuvres": 0,
+          "steps": 3595,
+          "progress": 188.20160322411758,
+          "total": 188.99694696343326,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            -77.08216477234016,
+            56.66624969629652
+          ],
+          "height": 26.611826069077416,
+          "angle": 2.2279150091098483,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.016956557491909052,
+          "manoeuvres": 0,
+          "steps": 3562,
+          "progress": 188.2191367191392,
+          "total": 188.99694696343326,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            52.470796683987615,
+            -77.1105469841143
+          ],
+          "height": 25.265690964988302,
+          "angle": -0.678117369903935,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009634290432281034,
+          "manoeuvres": 0,
+          "steps": 3654,
+          "progress": 188.22599478570837,
+          "total": 188.99694696343326,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            52.38338135921081,
+            -77.24471220083345
+          ],
+          "height": 25.265690964988302,
+          "angle": -0.5492561480903193,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.014266343038565665,
+          "manoeuvres": 0,
+          "steps": 3613,
+          "progress": 188.21923711313158,
+          "total": 188.99694696343326,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            52.442358343824424,
+            -77.15052869192102
+          ],
+          "height": 25.265690964988302,
+          "angle": -0.6305442219776267,
+          "failure": null
+        },
+        {
+          "id": "bridge-50846593-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.016761720635951605,
+          "manoeuvres": 0,
+          "steps": 3598,
+          "progress": 188.228046054862,
+          "total": 188.99694696343326,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-50846593-0"
+          ],
+          "end": "bridge-50846593-0",
+          "expected": "bridge-50846593-0",
+          "position": [
+            52.474542039185714,
+            -77.12063111098425
+          ],
+          "height": 25.265690964988302,
+          "angle": -0.7091314839755881,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008972624191835976,
+          "manoeuvres": 0,
+          "steps": 356,
+          "progress": 20.25083371920612,
+          "total": 21,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            37.70534794936865,
+            4.778372151931405
+          ],
+          "height": 7.778625579551308,
+          "angle": -1.182832795715256,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008558689612177872,
+          "manoeuvres": 0,
+          "steps": 368,
+          "progress": 20.213498118756412,
+          "total": 21,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            37.74205909710328,
+            4.83153097005045
+          ],
+          "height": 7.778226331301836,
+          "angle": -1.242303432765706,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00824828472230621,
+          "manoeuvres": 0,
+          "steps": 390,
+          "progress": 20.213037694029556,
+          "total": 21,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            37.70779553231761,
+            4.8195050095099585
+          ],
+          "height": 7.778221407749944,
+          "angle": -1.2205654622595763,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008682326007429353,
+          "manoeuvres": 0,
+          "steps": 361,
+          "progress": 20.257524363832584,
+          "total": 21,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            37.74282792248836,
+            4.784940156154635
+          ],
+          "height": 7.778697125960708,
+          "angle": -1.231211878723192,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007657660221966012,
+          "manoeuvres": 0,
+          "steps": 417,
+          "progress": 20.247010363187755,
+          "total": 21.000000000000004,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            31.00505684970488,
+            23.088810245185652
+          ],
+          "height": 9.066172502945141,
+          "angle": 1.8991692988617117,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007177582259693338,
+          "manoeuvres": 0,
+          "steps": 439,
+          "progress": 20.22534433539889,
+          "total": 21.000000000000004,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            31.097080570698513,
+            23.09935930174394
+          ],
+          "height": 9.063415597304227,
+          "angle": 2.0011718385357216,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007410513591842971,
+          "manoeuvres": 0,
+          "steps": 427,
+          "progress": 20.23158087507805,
+          "total": 21.000000000000004,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            31.0458140618242,
+            23.08727175818293
+          ],
+          "height": 9.064347027706374,
+          "angle": 1.9193006438341789,
+          "failure": null
+        },
+        {
+          "id": "bridge-116129498-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.0077294560932958944,
+          "manoeuvres": 0,
+          "steps": 416,
+          "progress": 20.20928395347553,
+          "total": 21.000000000000004,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116129498-0"
+          ],
+          "end": "bridge-116129498-0",
+          "expected": "bridge-116129498-0",
+          "position": [
+            31.023989375331507,
+            23.0555614452362
+          ],
+          "height": 9.061016971020566,
+          "angle": 1.8896617179646908,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.012891225402807294,
+          "manoeuvres": 0,
+          "steps": 1300,
+          "progress": 71.21752724051991,
+          "total": 71.99992681481348,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -36.05705804867303,
+            -20.609973706189756
+          ],
+          "height": 20.01893331792017,
+          "angle": -0.9789804955047677,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.0129318385855548,
+          "manoeuvres": 0,
+          "steps": 1333,
+          "progress": 71.22123854757125,
+          "total": 71.99992681481348,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -36.169926875088606,
+            -20.688778673652205
+          ],
+          "height": 20.019527127048384,
+          "angle": -0.7673100045450275,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.010486727174853883,
+          "manoeuvres": 0,
+          "steps": 1320,
+          "progress": 71.20945728128915,
+          "total": 71.99992681481348,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -36.03636187460917,
+            -20.58667466723971
+          ],
+          "height": 20.01764212444325,
+          "angle": -1.00158678417014,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009639033563011878,
+          "manoeuvres": 0,
+          "steps": 1321,
+          "progress": 71.21296504409642,
+          "total": 71.99992681481348,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -36.03863220944279,
+            -20.59237102402986
+          ],
+          "height": 20.01820336649241,
+          "angle": -1.023497337904588,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009633946110419345,
+          "manoeuvres": 0,
+          "steps": 1385,
+          "progress": 71.20073638436703,
+          "total": 71.9999268148135,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -77.49487556504621,
+            36.27045162365276
+          ],
+          "height": 24.22759879969743,
+          "angle": 2.2433590233572986,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009636834841934672,
+          "manoeuvres": 0,
+          "steps": 1427,
+          "progress": 71.23672402338627,
+          "total": 71.9999268148135,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -77.5190494835297,
+            36.29720538810482
+          ],
+          "height": 24.233350077890417,
+          "angle": 2.2554901181900995,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009620050067887576,
+          "manoeuvres": 0,
+          "steps": 1412,
+          "progress": 71.23627123025793,
+          "total": 71.9999268148135,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -77.50990189615152,
+            36.30391153462456
+          ],
+          "height": 24.233307713045686,
+          "angle": 2.238993929130578,
+          "failure": null
+        },
+        {
+          "id": "bridge-116138293-0:0:-1",
+          "equivalentEnd": false,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009641286757187117,
+          "manoeuvres": 0,
+          "steps": 1390,
+          "progress": 71.24011036219561,
+          "total": 71.9999268148135,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "end": "bridge-116138293-0",
+          "expected": "bridge-116138293-0",
+          "position": [
+            -77.50146767156025,
+            36.315536232698534
+          ],
+          "height": 24.23395861141279,
+          "angle": 2.2398503476430336,
+          "failure": null
+        },
+        {
+          "id": "bridge-1214629809-0:0:1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.008476750084433604,
+          "manoeuvres": 0,
+          "steps": 542,
+          "progress": 26.201364964981472,
+          "total": 27,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1214629809-0"
+          ],
+          "end": "bridge-1214629809-0",
+          "expected": "bridge-1214629809-0",
+          "position": [
+            -21.883694958478774,
+            -53.64636763224091
+          ],
+          "height": 23.58613038565502,
+          "angle": -1.0939123243634805,
+          "failure": null
+        },
+        {
+          "id": "bridge-1214629809-0:0:1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.007718073263006886,
+          "manoeuvres": 0,
+          "steps": 570,
+          "progress": 26.23493189013057,
+          "total": 27,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1214629809-0"
+          ],
+          "end": "bridge-1214629809-0",
+          "expected": "bridge-1214629809-0",
+          "position": [
+            -21.806069020198162,
+            -53.65151266036478
+          ],
+          "height": 23.58613038565502,
+          "angle": -1.1996258489020368,
+          "failure": null
+        },
+        {
+          "id": "bridge-1214629809-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00795905101086447,
+          "manoeuvres": 0,
+          "steps": 552,
+          "progress": 26.201704952987065,
+          "total": 27,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1214629809-0"
+          ],
+          "end": "bridge-1214629809-0",
+          "expected": "bridge-1214629809-0",
+          "position": [
+            -21.819161411518003,
+            -53.62096261157926
+          ],
+          "height": 23.58613038565502,
+          "angle": -1.1917508342093484,
+          "failure": null
+        },
+        {
+          "id": "bridge-1214629809-0:0:1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00869783571884497,
+          "manoeuvres": 0,
+          "steps": 537,
+          "progress": 26.229697005938938,
+          "total": 27,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1214629809-0"
+          ],
+          "end": "bridge-1214629809-0",
+          "expected": "bridge-1214629809-0",
+          "position": [
+            -21.847595480579752,
+            -53.662459154118814
+          ],
+          "height": 23.58613038565502,
+          "angle": -1.1075506106029331,
+          "failure": null
+        },
+        {
+          "id": "bridge-1214629809-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "GT",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.00963873576458596,
+          "manoeuvres": 0,
+          "steps": 481,
+          "progress": 26.22798568566166,
+          "total": 26.999999999999996,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1214629809-0"
+          ],
+          "end": "bridge-1214629809-0",
+          "expected": "bridge-1214629809-0",
+          "position": [
+            -31.249069125061784,
+            -30.004315773331495
+          ],
+          "height": 20.46403018228606,
+          "angle": 1.9232693066676037,
+          "failure": null
+        },
+        {
+          "id": "bridge-1214629809-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "F1",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009650082229736512,
+          "manoeuvres": 0,
+          "steps": 495,
+          "progress": 26.24259379027169,
+          "total": 26.999999999999996,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1214629809-0"
+          ],
+          "end": "bridge-1214629809-0",
+          "expected": "bridge-1214629809-0",
+          "position": [
+            -31.317033272100968,
+            -30.01572702447915
+          ],
+          "height": 20.46169288554845,
+          "angle": 1.8729597210159257,
+          "failure": null
+        },
+        {
+          "id": "bridge-1214629809-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Bubble",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009617867222178944,
+          "manoeuvres": 0,
+          "steps": 489,
+          "progress": 26.235233523200577,
+          "total": 26.999999999999996,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1214629809-0"
+          ],
+          "end": "bridge-1214629809-0",
+          "expected": "bridge-1214629809-0",
+          "position": [
+            -31.246880704248003,
+            -29.99563744286296
+          ],
+          "height": 20.462870528279833,
+          "angle": 1.950737481232801,
+          "failure": null
+        },
+        {
+          "id": "bridge-1214629809-0:0:-1",
+          "equivalentEnd": true,
+          "kind": "Truck",
+          "route": "deck",
+          "reached": true,
+          "wrongLevel": 0,
+          "maxHeightStep": 0.009643865438491162,
+          "manoeuvres": 0,
+          "steps": 484,
+          "progress": 26.239009451786927,
+          "total": 26.999999999999996,
+          "replaced": false,
+          "recoveries": 0,
+          "visited": [
+            "bridge-1214629809-0"
+          ],
+          "end": "bridge-1214629809-0",
+          "expected": "bridge-1214629809-0",
+          "position": [
+            -31.348000184526096,
+            -30.031953068949207
+          ],
+          "height": 20.462266379706016,
+          "angle": 1.822725693921088,
+          "failure": null
+        }
+      ],
+      "excluded": []
+    }
+  ],
+  "finished_utc": "2026-11-01T16:55:02.355Z"
+}

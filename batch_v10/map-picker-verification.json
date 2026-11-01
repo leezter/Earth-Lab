@@ -1,0 +1,18 @@
+{
+  "checkedUTC": "2026-11-01T17:00:34.683Z",
+  "mapTilesLoaded": true,
+  "mapClick": true,
+  "keyboardSelection": true,
+  "realCachedGeneration": "place-89f229ffb29986bd",
+  "nineTiles": true,
+  "staleResponseGuard": true,
+  "mockedPendingFailureRetry": true,
+  "drivingWhilePending": true,
+  "pauseRecovery": true,
+  "searchPlacement": true,
+  "offlineFallback": true,
+  "narrowLayout": true,
+  "reloadSceneSwitch": true,
+  "frozenInputsUnchanged": true,
+  "errors": []
+}

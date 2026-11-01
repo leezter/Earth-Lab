@@ -1,0 +1,764 @@
+{
+  "renderer": "bridges-v10.4",
+  "method": "Guided keyboard inputs, deterministic frame clock; no pose changes after spawn",
+  "sites": [
+    {
+      "id": "place-0e7db53eace3eb42",
+      "name": "Hornsey Lane bridge - London",
+      "routes": [
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 32,
+          "progress": 6.600470297762988,
+          "target": 53,
+          "reached": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 1,
+          "height": 14.453063159429552,
+          "visited": [
+            "osm-395196462-0"
+          ],
+          "failure": {
+            "x": -40.48341938044192,
+            "y": -32.67466871528292,
+            "angle": -0.6601236417939687,
+            "id": "osm-395196462-0",
+            "centre": {
+              "id": "bridge-4368279",
+              "z": 14.484986784608559,
+              "supported": true
+            },
+            "corners": [
+              {
+                "x": -39.48385066865181,
+                "y": -34.94159849291946,
+                "id": "bridge-4368279",
+                "z": 14.46499791080019,
+                "supported": true
+              },
+              {
+                "x": -38.039442255351986,
+                "y": -33.080974066419394,
+                "id": "bridge-4368279",
+                "z": 14.46124697252161,
+                "supported": true
+              },
+              {
+                "x": -41.482988092232034,
+                "y": -30.40773893764638,
+                "id": "bridge-4368279",
+                "z": 14.485922759146662,
+                "supported": false
+              },
+              {
+                "x": -42.92739650553186,
+                "y": -32.268363364146445,
+                "id": "bridge-4368279",
+                "z": 14.485922759146662,
+                "supported": false
+              }
+            ]
+          }
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 44,
+          "progress": 49.03837298092668,
+          "target": 4,
+          "reached": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 1,
+          "height": 12.061812133124565,
+          "visited": [
+            "osm-395196461-0"
+          ],
+          "failure": {
+            "x": -5.72554149048228,
+            "y": -56.532638401509516,
+            "angle": 2.5035598518046576,
+            "id": "osm-395196461-0",
+            "centre": {
+              "id": "bridge-4368279",
+              "z": 12.051913341244132,
+              "supported": true
+            },
+            "corners": [
+              {
+                "x": -6.774940624863221,
+                "y": -54.28834125472045,
+                "id": "bridge-4368279",
+                "z": 12.07173212476336,
+                "supported": true
+              },
+              {
+                "x": -8.177897199534303,
+                "y": -56.18041730247519,
+                "id": "bridge-4368279",
+                "z": 12.073513306718247,
+                "supported": true
+              },
+              {
+                "x": -4.67614235610134,
+                "y": -58.77693554829858,
+                "id": "bridge-4368279",
+                "z": 12.05164563437152,
+                "supported": false
+              },
+              {
+                "x": -3.273185781430257,
+                "y": -56.88485950054384,
+                "id": "bridge-4368279",
+                "z": 12.05164563437152,
+                "supported": false
+              }
+            ]
+          }
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 45,
+          "progress": 6.5983020148800025,
+          "target": 53,
+          "reached": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 1,
+          "height": 14.445564380928184,
+          "visited": [
+            "osm-395196462-0"
+          ],
+          "failure": {
+            "x": -40.440870081333884,
+            "y": -32.617409032215356,
+            "angle": -0.6384939031912161,
+            "id": "osm-395196462-0",
+            "centre": {
+              "id": "bridge-4368279",
+              "z": 14.484958675718323,
+              "supported": true
+            },
+            "corners": [
+              {
+                "x": -39.403146690112926,
+                "y": -34.822716605347246,
+                "id": "bridge-4368279",
+                "z": 14.464969155807399,
+                "supported": true
+              },
+              {
+                "x": -38.02954031280196,
+                "y": -32.9720075039997,
+                "id": "bridge-4368279",
+                "z": 14.462387092816165,
+                "supported": true
+              },
+              {
+                "x": -41.47859347255484,
+                "y": -30.412101459083466,
+                "id": "bridge-4368279",
+                "z": 14.485922759146662,
+                "supported": false
+              },
+              {
+                "x": -42.852199849865805,
+                "y": -32.262810560431014,
+                "id": "bridge-4368279",
+                "z": 14.485922759146662,
+                "supported": false
+              }
+            ]
+          }
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 57,
+          "progress": 48.97286536531914,
+          "target": 4,
+          "reached": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 1,
+          "height": 12.049405945824933,
+          "visited": [
+            "osm-395196461-0"
+          ],
+          "failure": {
+            "x": -5.807053735485894,
+            "y": -56.53930878556298,
+            "angle": 2.5139114096490496,
+            "id": "osm-395196461-0",
+            "centre": {
+              "id": "bridge-4368279",
+              "z": 12.05239509063917,
+              "supported": true
+            },
+            "corners": [
+              {
+                "x": -6.868561240003781,
+                "y": -54.34535045718657,
+                "id": "bridge-4368279",
+                "z": 12.07271044590222,
+                "supported": true
+              },
+              {
+                "x": -8.222076624504867,
+                "y": -56.21080342135342,
+                "id": "bridge-4368279",
+                "z": 12.073931740997361,
+                "supported": true
+              },
+              {
+                "x": -4.745546230968007,
+                "y": -58.73326711393939,
+                "id": "bridge-4368279",
+                "z": 12.05164563437152,
+                "supported": false
+              },
+              {
+                "x": -3.392030846466922,
+                "y": -56.86781414977254,
+                "id": "bridge-4368279",
+                "z": 12.05164563437152,
+                "supported": false
+              }
+            ]
+          }
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 36,
+          "progress": 6.538335515555829,
+          "target": 53,
+          "reached": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 1,
+          "height": 14.468017854926735,
+          "visited": [
+            "osm-395196462-0"
+          ],
+          "failure": {
+            "x": -40.56219943542033,
+            "y": -32.661546946563384,
+            "angle": -0.646815804729575,
+            "id": "osm-395196462-0",
+            "centre": {
+              "id": "bridge-4368279",
+              "z": 14.48554096679916,
+              "supported": true
+            },
+            "corners": [
+              {
+                "x": -39.53896198473259,
+                "y": -34.610800369789835,
+                "id": "bridge-4368279",
+                "z": 14.47000969372567,
+                "supported": true
+              },
+              {
+                "x": -38.40735089994829,
+                "y": -33.1123590777489,
+                "id": "bridge-4368279",
+                "z": 14.46756482046263,
+                "supported": true
+              },
+              {
+                "x": -41.58543688610808,
+                "y": -30.712293523336932,
+                "id": "bridge-4368279",
+                "z": 14.485922759146662,
+                "supported": false
+              },
+              {
+                "x": -42.717047970892374,
+                "y": -32.21073481537787,
+                "id": "bridge-4368279",
+                "z": 14.485922759146662,
+                "supported": false
+              }
+            ]
+          }
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 52,
+          "progress": 49.04300559698128,
+          "target": 4,
+          "reached": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 1,
+          "height": 12.064536302718071,
+          "visited": [
+            "osm-395196461-0"
+          ],
+          "failure": {
+            "x": -5.683536026963386,
+            "y": -56.495979213169264,
+            "angle": 2.5186424635364575,
+            "id": "osm-395196461-0",
+            "centre": {
+              "id": "bridge-4368279",
+              "z": 12.051808494973217,
+              "supported": true
+            },
+            "corners": [
+              {
+                "x": -6.752997805222107,
+                "y": -54.57169875198548,
+                "id": "bridge-4368279",
+                "z": 12.067820287909893,
+                "supported": true
+              },
+              {
+                "x": -7.8485288129688895,
+                "y": -56.09671736300808,
+                "id": "bridge-4368279",
+                "z": 12.068621061757396,
+                "supported": true
+              },
+              {
+                "x": -4.614074248704665,
+                "y": -58.42025967435305,
+                "id": "bridge-4368279",
+                "z": 12.05164563437152,
+                "supported": false
+              },
+              {
+                "x": -3.5185432409578836,
+                "y": -56.895241063330445,
+                "id": "bridge-4368279",
+                "z": 12.05164563437152,
+                "supported": false
+              }
+            ]
+          }
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 31,
+          "progress": 6.561766608588039,
+          "target": 53,
+          "reached": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 1,
+          "height": 14.452159596896045,
+          "visited": [
+            "osm-395196462-0"
+          ],
+          "failure": {
+            "x": -40.47090736128564,
+            "y": -32.60109218780487,
+            "angle": -0.6535482105989944,
+            "id": "osm-395196462-0",
+            "centre": {
+              "id": "bridge-4368279",
+              "z": 14.485217659289077,
+              "supported": true
+            },
+            "corners": [
+              {
+                "x": -38.97676728472027,
+                "y": -35.56183014619484,
+                "id": "bridge-4368279",
+                "z": 14.448250321173928,
+                "supported": true
+              },
+              {
+                "x": -37.223061535117154,
+                "y": -33.27185393096705,
+                "id": "bridge-4368279",
+                "z": 14.444070950666482,
+                "supported": true
+              },
+              {
+                "x": -41.96504743785101,
+                "y": -29.6403542294149,
+                "id": "bridge-4368279",
+                "z": 14.485922759146662,
+                "supported": false
+              },
+              {
+                "x": -43.718753187454126,
+                "y": -31.930330444642696,
+                "id": "bridge-4368279",
+                "z": 14.485922759146662,
+                "supported": false
+              }
+            ]
+          }
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 44,
+          "progress": 48.98153563373197,
+          "target": 4,
+          "reached": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 1,
+          "height": 12.050371134196393,
+          "visited": [
+            "osm-395196461-0"
+          ],
+          "failure": {
+            "x": -5.808105909820061,
+            "y": -56.55126846543671,
+            "angle": 2.529217742565001,
+            "id": "osm-395196461-0",
+            "centre": {
+              "id": "bridge-4368279",
+              "z": 12.052350053097637,
+              "supported": true
+            },
+            "corners": [
+              {
+                "x": -7.422848613086259,
+                "y": -53.65454103108971,
+                "id": "bridge-4368279",
+                "z": 12.091265188365682,
+                "supported": true
+              },
+              {
+                "x": -9.08080885663614,
+                "y": -56.0147619430613,
+                "id": "bridge-4368279",
+                "z": 12.091828221666344,
+                "supported": true
+              },
+              {
+                "x": -4.1933632065538635,
+                "y": -59.44799589978372,
+                "id": "bridge-4368279",
+                "z": 12.05164563437152,
+                "supported": false
+              },
+              {
+                "x": -2.535402963003983,
+                "y": -57.087774987812125,
+                "id": "bridge-4368279",
+                "z": 12.05164563437152,
+                "supported": false
+              }
+            ]
+          }
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 332,
+          "progress": 69.330856684232,
+          "target": 70.06711408237437,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 2.282518544462745,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 331,
+          "progress": 34.86075815480337,
+          "target": 34.067114082374374,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.6869272284652035,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 337,
+          "progress": 69.29085712328022,
+          "target": 70.06711408237437,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 2.284291398682959,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 351,
+          "progress": 34.81167130188137,
+          "target": 34.067114082374374,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.6886708641496297,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 341,
+          "progress": 69.34889382478804,
+          "target": 70.06711408237437,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 2.280988197272117,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 342,
+          "progress": 34.813050222480605,
+          "target": 34.067114082374374,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.688137475982918,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 311,
+          "progress": 69.27124034900828,
+          "target": 70.06711408237437,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 2.2862976693587154,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 330,
+          "progress": 34.81457588399529,
+          "target": 34.067114082374374,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.688643522725938,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 332,
+          "progress": 86.22400019101522,
+          "target": 86.938329725175,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.359786140073674,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 330,
+          "progress": 51.66430591144736,
+          "target": 50.938329725174995,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 1.9227930275465086,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 351,
+          "progress": 86.18574563837574,
+          "target": 86.938329725175,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.358606933546587,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 335,
+          "progress": 51.651562600261414,
+          "target": 50.938329725174995,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 1.9221850074024855,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 341,
+          "progress": 86.1438982430179,
+          "target": 86.938329725175,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.356783903163391,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 341,
+          "progress": 51.681175311584646,
+          "target": 50.938329725174995,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 1.9235696121170958,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 330,
+          "progress": 86.21111939045477,
+          "target": 86.938329725175,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.3594141126199837,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 332,
+          "progress": 51.71926891597183,
+          "target": 50.938329725174995,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 1.9254892655019937,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        }
+      ]
+    }
+  ]
+}

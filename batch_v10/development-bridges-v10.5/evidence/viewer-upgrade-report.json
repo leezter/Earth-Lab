@@ -1,0 +1,94 @@
+{
+  "from": "bridges-v10.4",
+  "to": "bridges-v10.5",
+  "changed_viewer_files": [
+    "batch_v10/web/elevation.js"
+  ],
+  "renderer_inputs_unchanged": true,
+  "builds": [
+    {
+      "id": "fixture-c097e41e7c5878e8",
+      "original_job": "fixture-12dd67b98440f96c",
+      "name": "Synthetic flat test",
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 0,
+        "decoded_image_bytes": 150994944,
+        "bridges": 0,
+        "max_ground_plane_error_m": 0,
+        "content_identity": "4b599cb6c3c1235b4f0f8f2dca3589743d5a36aa38e4b42f8291688059311001"
+      }
+    },
+    {
+      "id": "fixture-3a73d72903ab2f98",
+      "original_job": "fixture-2c1ce9ed9685be55",
+      "name": "Synthetic overpass test",
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 1,
+        "decoded_image_bytes": 153495824,
+        "bridges": 1,
+        "max_ground_plane_error_m": 4.796163466380676e-14,
+        "content_identity": "6745c95592ddced9f98715ed0cdb255ac895435029cb24bc9ee92e7c835a8ebd"
+      }
+    },
+    {
+      "id": "fixture-ebba5eceeef13042",
+      "original_job": "fixture-f7ed9a591d2c7324",
+      "name": "Synthetic hills test",
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 0,
+        "decoded_image_bytes": 150994944,
+        "bridges": 0,
+        "max_ground_plane_error_m": 5.329070518200751e-15,
+        "content_identity": "d3cb9aec4294c6dc8db0b19abc782d1028744f95779216994c2906d03ac01360"
+      }
+    },
+    {
+      "id": "place-03db23df7a4aaada",
+      "original_job": "place-0e7db53eace3eb42",
+      "name": "Hornsey Lane bridge - London",
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 1,
+        "decoded_image_bytes": 156531904,
+        "bridges": 1,
+        "max_ground_plane_error_m": 7.460698725481052e-14,
+        "content_identity": "aeea2f3535c0f44eb54ef2b11ab0ff4766f7a0059f06b11cf05269e6fd1c4a41"
+      }
+    },
+    {
+      "id": "place-f080e2493e82d5fc",
+      "original_job": "place-11805767fac6f60d",
+      "name": "Gotteron bridge - Fribourg",
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 1,
+        "decoded_image_bytes": 194196504,
+        "bridges": 1,
+        "max_ground_plane_error_m": 1.0658141036401503e-13,
+        "content_identity": "4c02be2c42745c09d3b633408f7bef2e571af3513094727ce36e94341e88d8ad"
+      }
+    },
+    {
+      "id": "place-74f251808b7d2557",
+      "original_job": "place-46a7d296f1c8377a",
+      "name": "Schlesische bridge - Berlin",
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 2,
+        "decoded_image_bytes": 153691768,
+        "bridges": 2,
+        "max_ground_plane_error_m": 1.6153745008296028e-14,
+        "content_identity": "aac34d7407800589495d653b21cc7f3004bb76e505395094f14d5f20d1da3c23"
+      }
+    }
+  ]
+}

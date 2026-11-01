@@ -1,0 +1,719 @@
+{
+  "renderer": "bridges-v10.14",
+  "started_utc": "2026-11-01T17:01:05.776Z",
+  "scope": "Desktop Edge, ordinary keyboard driving; not Android acceptance",
+  "sites": [
+    {
+      "id": "fixture-2f616729f599387d",
+      "name": "Synthetic overpass test",
+      "frames": 181,
+      "meanFps": 60.2369542065729,
+      "p95Ms": 16.800000000000182,
+      "p99Ms": 17,
+      "maxMs": 17.199999999999818,
+      "jsHeapBytes": 9502437,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 59.98800239952005,
+        "epoch": 1,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 4,
+        "decodedBytes": 153495824,
+        "bridgeCount": 1,
+        "collisionFixtures": 396,
+        "recoveries": 0,
+        "activeSurface": "approach-b",
+        "height": 4.731654006933792,
+        "grade": 0.05179308234458002,
+        "origin": [
+          0,
+          0
+        ]
+      },
+      "browserProcessIds": [
+        11892,
+        22024,
+        16800,
+        1084,
+        1764,
+        26548,
+        13816,
+        5888
+      ],
+      "processMemory": [
+        {
+          "Id": 5888,
+          "WorkingSet64": 33312768,
+          "PeakWorkingSet64": 33460224,
+          "PrivateMemorySize64": 58679296
+        },
+        {
+          "Id": 1084,
+          "WorkingSet64": 298307584,
+          "PeakWorkingSet64": 300814336,
+          "PrivateMemorySize64": 610258944
+        },
+        {
+          "Id": 1764,
+          "WorkingSet64": 58994688,
+          "PeakWorkingSet64": 59523072,
+          "PrivateMemorySize64": 77185024
+        },
+        {
+          "Id": 11892,
+          "WorkingSet64": 167456768,
+          "PeakWorkingSet64": 176975872,
+          "PrivateMemorySize64": 112533504
+        },
+        {
+          "Id": 13816,
+          "WorkingSet64": 20402176,
+          "PeakWorkingSet64": 20402176,
+          "PrivateMemorySize64": 8642560
+        },
+        {
+          "Id": 16800,
+          "WorkingSet64": 223821824,
+          "PeakWorkingSet64": 309678080,
+          "PrivateMemorySize64": 62271488
+        },
+        {
+          "Id": 22024,
+          "WorkingSet64": 35246080,
+          "PeakWorkingSet64": 35246080,
+          "PrivateMemorySize64": 18194432
+        },
+        {
+          "Id": 26548,
+          "WorkingSet64": 21929984,
+          "PeakWorkingSet64": 21929984,
+          "PrivateMemorySize64": 8974336
+        }
+      ],
+      "loadMilliseconds": 935.4225
+    },
+    {
+      "id": "fixture-dec22d686495f634",
+      "name": "Synthetic hills test",
+      "frames": 182,
+      "meanFps": 60.08980454303117,
+      "p95Ms": 16.899999999999636,
+      "p99Ms": 17,
+      "maxMs": 17.100000000000364,
+      "jsHeapBytes": 9873617,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 59.97600959616145,
+        "epoch": 2,
+        "surface": {
+          "onRoad": false,
+          "surfaceType": "gravel-rally"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 0,
+        "decodedBytes": 150994944,
+        "bridgeCount": 0,
+        "collisionFixtures": 0,
+        "recoveries": 0,
+        "activeSurface": "terrain",
+        "height": -0.474189095842853,
+        "grade": 0.07999999999999996,
+        "origin": [
+          0,
+          0
+        ]
+      },
+      "browserProcessIds": [
+        11892,
+        22024,
+        16800,
+        1084,
+        1764,
+        26548,
+        13816
+      ],
+      "processMemory": [
+        {
+          "Id": 1084,
+          "WorkingSet64": 349179904,
+          "PeakWorkingSet64": 350932992,
+          "PrivateMemorySize64": 762863616
+        },
+        {
+          "Id": 1764,
+          "WorkingSet64": 62390272,
+          "PeakWorkingSet64": 63410176,
+          "PrivateMemorySize64": 80785408
+        },
+        {
+          "Id": 11892,
+          "WorkingSet64": 167858176,
+          "PeakWorkingSet64": 176975872,
+          "PrivateMemorySize64": 112693248
+        },
+        {
+          "Id": 13816,
+          "WorkingSet64": 20430848,
+          "PeakWorkingSet64": 20430848,
+          "PrivateMemorySize64": 8646656
+        },
+        {
+          "Id": 16800,
+          "WorkingSet64": 226054144,
+          "PeakWorkingSet64": 379604992,
+          "PrivateMemorySize64": 64237568
+        },
+        {
+          "Id": 22024,
+          "WorkingSet64": 34828288,
+          "PeakWorkingSet64": 35254272,
+          "PrivateMemorySize64": 17817600
+        },
+        {
+          "Id": 26548,
+          "WorkingSet64": 21934080,
+          "PeakWorkingSet64": 21934080,
+          "PrivateMemorySize64": 8974336
+        }
+      ],
+      "loadMilliseconds": 500.78529999999955
+    },
+    {
+      "id": "fixture-64eabf42fbc15735",
+      "name": "Synthetic flat test",
+      "frames": 183,
+      "meanFps": 60.19736842105263,
+      "p95Ms": 16.799999999999272,
+      "p99Ms": 16.80000000000109,
+      "maxMs": 16.80000000000109,
+      "jsHeapBytes": 10925699,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 59.996129281981936,
+        "epoch": 3,
+        "surface": {
+          "onRoad": false,
+          "surfaceType": "gravel-rally"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 0,
+        "decodedBytes": 150994944,
+        "bridgeCount": 0,
+        "collisionFixtures": 0,
+        "recoveries": 0,
+        "activeSurface": "terrain",
+        "height": 0,
+        "grade": 0,
+        "origin": [
+          0,
+          0
+        ]
+      },
+      "browserProcessIds": [
+        11892,
+        22024,
+        16800,
+        1084,
+        1764,
+        26548,
+        13816
+      ],
+      "processMemory": [
+        {
+          "Id": 1084,
+          "WorkingSet64": 196448256,
+          "PeakWorkingSet64": 351268864,
+          "PrivateMemorySize64": 601055232
+        },
+        {
+          "Id": 1764,
+          "WorkingSet64": 66170880,
+          "PeakWorkingSet64": 68038656,
+          "PrivateMemorySize64": 84746240
+        },
+        {
+          "Id": 11892,
+          "WorkingSet64": 169123840,
+          "PeakWorkingSet64": 176975872,
+          "PrivateMemorySize64": 113889280
+        },
+        {
+          "Id": 13816,
+          "WorkingSet64": 20434944,
+          "PeakWorkingSet64": 20434944,
+          "PrivateMemorySize64": 8650752
+        },
+        {
+          "Id": 16800,
+          "WorkingSet64": 225865728,
+          "PeakWorkingSet64": 379604992,
+          "PrivateMemorySize64": 62676992
+        },
+        {
+          "Id": 22024,
+          "WorkingSet64": 34828288,
+          "PeakWorkingSet64": 35254272,
+          "PrivateMemorySize64": 17817600
+        },
+        {
+          "Id": 26548,
+          "WorkingSet64": 21934080,
+          "PeakWorkingSet64": 21934080,
+          "PrivateMemorySize64": 8974336
+        }
+      ],
+      "loadMilliseconds": 417.3811999999998
+    },
+    {
+      "id": "fixture-d7917bf3f06829b0",
+      "name": "Synthetic junctions test",
+      "frames": 181,
+      "meanFps": 60.09495667186082,
+      "p95Ms": 16.799999999999272,
+      "p99Ms": 16.899999999997817,
+      "maxMs": 17,
+      "jsHeapBytes": 17491371,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 60.03098373353972,
+        "epoch": 4,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 35,
+        "decodedBytes": 189188712,
+        "bridgeCount": 4,
+        "collisionFixtures": 912,
+        "recoveries": 0,
+        "activeSurface": "bridge-1-0",
+        "height": 6.05,
+        "grade": 0,
+        "origin": [
+          0,
+          0
+        ]
+      },
+      "browserProcessIds": [
+        11892,
+        22024,
+        16800,
+        1084,
+        1764,
+        26548,
+        13816
+      ],
+      "processMemory": [
+        {
+          "Id": 1084,
+          "WorkingSet64": 364371968,
+          "PeakWorkingSet64": 364642304,
+          "PrivateMemorySize64": 804364288
+        },
+        {
+          "Id": 1764,
+          "WorkingSet64": 73334784,
+          "PeakWorkingSet64": 73814016,
+          "PrivateMemorySize64": 92151808
+        },
+        {
+          "Id": 11892,
+          "WorkingSet64": 168181760,
+          "PeakWorkingSet64": 176975872,
+          "PrivateMemorySize64": 112476160
+        },
+        {
+          "Id": 13816,
+          "WorkingSet64": 20439040,
+          "PeakWorkingSet64": 20439040,
+          "PrivateMemorySize64": 8654848
+        },
+        {
+          "Id": 16800,
+          "WorkingSet64": 290873344,
+          "PeakWorkingSet64": 422432768,
+          "PrivateMemorySize64": 124882944
+        },
+        {
+          "Id": 22024,
+          "WorkingSet64": 34828288,
+          "PeakWorkingSet64": 35254272,
+          "PrivateMemorySize64": 17817600
+        },
+        {
+          "Id": 26548,
+          "WorkingSet64": 21934080,
+          "PeakWorkingSet64": 21934080,
+          "PrivateMemorySize64": 8974336
+        }
+      ],
+      "loadMilliseconds": 955.4448000000011
+    },
+    {
+      "id": "place-89f229ffb29986bd",
+      "name": "Halifax viaducts 53.726589, -1.860018",
+      "frames": 181,
+      "meanFps": 60.108926673729016,
+      "p95Ms": 16.900000000001455,
+      "p99Ms": 17,
+      "maxMs": 17,
+      "jsHeapBytes": 32798894,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 60.00774293457195,
+        "epoch": 5,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 19,
+        "decodedBytes": 177376960,
+        "bridgeCount": 4,
+        "collisionFixtures": 1023,
+        "recoveries": 0,
+        "activeSurface": "osm-108386047-0",
+        "height": 0.862830835961109,
+        "grade": 0.019477341018473683,
+        "origin": [
+          53.72658828438656,
+          -1.86002047154149
+        ]
+      },
+      "browserProcessIds": [
+        11892,
+        22024,
+        16800,
+        1084,
+        1764,
+        26548,
+        13816
+      ],
+      "processMemory": [
+        {
+          "Id": 1084,
+          "WorkingSet64": 347037696,
+          "PeakWorkingSet64": 367439872,
+          "PrivateMemorySize64": 761569280
+        },
+        {
+          "Id": 1764,
+          "WorkingSet64": 85303296,
+          "PeakWorkingSet64": 85397504,
+          "PrivateMemorySize64": 104349696
+        },
+        {
+          "Id": 11892,
+          "WorkingSet64": 168071168,
+          "PeakWorkingSet64": 176975872,
+          "PrivateMemorySize64": 112328704
+        },
+        {
+          "Id": 13816,
+          "WorkingSet64": 20439040,
+          "PeakWorkingSet64": 20439040,
+          "PrivateMemorySize64": 8654848
+        },
+        {
+          "Id": 16800,
+          "WorkingSet64": 353992704,
+          "PeakWorkingSet64": 485343232,
+          "PrivateMemorySize64": 186294272
+        },
+        {
+          "Id": 22024,
+          "WorkingSet64": 34828288,
+          "PeakWorkingSet64": 35254272,
+          "PrivateMemorySize64": 17817600
+        },
+        {
+          "Id": 26548,
+          "WorkingSet64": 21934080,
+          "PeakWorkingSet64": 21934080,
+          "PrivateMemorySize64": 8974336
+        }
+      ],
+      "loadMilliseconds": 1186.653000000002
+    },
+    {
+      "id": "place-816268416cb633f5",
+      "name": "Halifax viaducts 53.726006, -1.859824",
+      "frames": 183,
+      "meanFps": 60.223121729657535,
+      "p95Ms": 16.900000000001455,
+      "p99Ms": 16.900000000001455,
+      "maxMs": 17,
+      "jsHeapBytes": 70066364,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 60.00774293457237,
+        "epoch": 6,
+        "surface": {
+          "onRoad": false,
+          "surfaceType": "gravel-rally"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 4,
+        "decodedBytes": 157250092,
+        "bridgeCount": 3,
+        "collisionFixtures": 392,
+        "recoveries": 0,
+        "activeSurface": "terrain",
+        "height": -1.2158699836715887,
+        "grade": 0.06696915699475739,
+        "origin": [
+          53.72600822610582,
+          -1.859812088737755
+        ]
+      },
+      "browserProcessIds": [
+        11892,
+        22024,
+        16800,
+        1084,
+        1764,
+        26548,
+        13816
+      ],
+      "processMemory": [
+        {
+          "Id": 1084,
+          "WorkingSet64": 373014528,
+          "PeakWorkingSet64": 381685760,
+          "PrivateMemorySize64": 782581760
+        },
+        {
+          "Id": 1764,
+          "WorkingSet64": 93888512,
+          "PeakWorkingSet64": 94752768,
+          "PrivateMemorySize64": 113287168
+        },
+        {
+          "Id": 11892,
+          "WorkingSet64": 174174208,
+          "PeakWorkingSet64": 176975872,
+          "PrivateMemorySize64": 118341632
+        },
+        {
+          "Id": 13816,
+          "WorkingSet64": 20430848,
+          "PeakWorkingSet64": 20439040,
+          "PrivateMemorySize64": 8593408
+        },
+        {
+          "Id": 16800,
+          "WorkingSet64": 368619520,
+          "PeakWorkingSet64": 535822336,
+          "PrivateMemorySize64": 199385088
+        },
+        {
+          "Id": 22024,
+          "WorkingSet64": 34795520,
+          "PeakWorkingSet64": 35254272,
+          "PrivateMemorySize64": 17752064
+        },
+        {
+          "Id": 26548,
+          "WorkingSet64": 21934080,
+          "PeakWorkingSet64": 21934080,
+          "PrivateMemorySize64": 8974336
+        }
+      ],
+      "loadMilliseconds": 902.8713000000025
+    },
+    {
+      "id": "place-9730cda9e56cf479",
+      "name": "Halifax viaducts 53.72558, -1.859568",
+      "frames": 182,
+      "meanFps": 60.11362135021483,
+      "p95Ms": 16.80000000000291,
+      "p99Ms": 16.80000000000291,
+      "maxMs": 16.80000000000291,
+      "jsHeapBytes": 19407301,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 60.00774293457237,
+        "epoch": 7,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 1,
+        "decodedBytes": 151047648,
+        "bridgeCount": 1,
+        "collisionFixtures": 135,
+        "recoveries": 0,
+        "activeSurface": "osm-45103799-1",
+        "height": 0.8848719288358978,
+        "grade": 0.08607159800010555,
+        "origin": [
+          53.72557085274305,
+          -1.859635536167721
+        ]
+      },
+      "browserProcessIds": [
+        11892,
+        22024,
+        16800,
+        1084,
+        1764,
+        26548,
+        13816
+      ],
+      "processMemory": [
+        {
+          "Id": 1084,
+          "WorkingSet64": 346165248,
+          "PeakWorkingSet64": 381685760,
+          "PrivateMemorySize64": 744120320
+        },
+        {
+          "Id": 1764,
+          "WorkingSet64": 101535744,
+          "PeakWorkingSet64": 102633472,
+          "PrivateMemorySize64": 121212928
+        },
+        {
+          "Id": 11892,
+          "WorkingSet64": 168849408,
+          "PeakWorkingSet64": 180195328,
+          "PrivateMemorySize64": 112869376
+        },
+        {
+          "Id": 13816,
+          "WorkingSet64": 20439040,
+          "PeakWorkingSet64": 20439040,
+          "PrivateMemorySize64": 8601600
+        },
+        {
+          "Id": 16800,
+          "WorkingSet64": 288063488,
+          "PeakWorkingSet64": 541442048,
+          "PrivateMemorySize64": 117604352
+        },
+        {
+          "Id": 22024,
+          "WorkingSet64": 34795520,
+          "PeakWorkingSet64": 35254272,
+          "PrivateMemorySize64": 17752064
+        },
+        {
+          "Id": 26548,
+          "WorkingSet64": 21934080,
+          "PeakWorkingSet64": 21934080,
+          "PrivateMemorySize64": 8974336
+        }
+      ],
+      "loadMilliseconds": 875.0756000000038
+    },
+    {
+      "id": "place-80fb5b75f55cf2af",
+      "name": "Halifax viaducts 53.727338, -1.859579",
+      "frames": 182,
+      "meanFps": 60.25492468134415,
+      "p95Ms": 16.80000000000291,
+      "p99Ms": 17,
+      "maxMs": 17,
+      "jsHeapBytes": 44126659,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 59.97291545753514,
+        "epoch": 8,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 45,
+        "decodedBytes": 209858428,
+        "bridgeCount": 10,
+        "collisionFixtures": 1507,
+        "recoveries": 0,
+        "activeSurface": "bridge-22817576-0",
+        "height": 12.496869510612298,
+        "grade": 0.15999999999999992,
+        "origin": [
+          53.72733813735567,
+          -1.859579592296451
+        ]
+      },
+      "browserProcessIds": [
+        11892,
+        22024,
+        16800,
+        1084,
+        1764,
+        26548,
+        13816
+      ],
+      "processMemory": [
+        {
+          "Id": 1084,
+          "WorkingSet64": 341475328,
+          "PeakWorkingSet64": 381685760,
+          "PrivateMemorySize64": 752271360
+        },
+        {
+          "Id": 1764,
+          "WorkingSet64": 108908544,
+          "PeakWorkingSet64": 112529408,
+          "PrivateMemorySize64": 128802816
+        },
+        {
+          "Id": 11892,
+          "WorkingSet64": 169369600,
+          "PeakWorkingSet64": 180195328,
+          "PrivateMemorySize64": 113344512
+        },
+        {
+          "Id": 13816,
+          "WorkingSet64": 20439040,
+          "PeakWorkingSet64": 20439040,
+          "PrivateMemorySize64": 8601600
+        },
+        {
+          "Id": 16800,
+          "WorkingSet64": 402358272,
+          "PeakWorkingSet64": 541442048,
+          "PrivateMemorySize64": 233598976
+        },
+        {
+          "Id": 22024,
+          "WorkingSet64": 34795520,
+          "PeakWorkingSet64": 35254272,
+          "PrivateMemorySize64": 17752064
+        },
+        {
+          "Id": 26548,
+          "WorkingSet64": 21934080,
+          "PeakWorkingSet64": 21934080,
+          "PrivateMemorySize64": 8974336
+        }
+      ],
+      "loadMilliseconds": 1617.177300000003
+    }
+  ],
+  "finished_utc": "2026-11-01T17:01:50.881Z"
+}

@@ -1,0 +1,99 @@
+{
+  "renderer": "bridges-v10.11",
+  "manual_crop_or_geometry_adjustments": false,
+  "builds": [
+    {
+      "id": "place-c9340d499d80f4dd",
+      "name": "Halifax layered bridge acceptance",
+      "lat": 53.726589,
+      "lon": -1.860018,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.11",
+      "actual_lat": 53.72658828438656,
+      "actual_lon": -1.86002047154149,
+      "automatic_road_snap_metres": 0.18122555612843014,
+      "error": "rendering failed; check rendering.log",
+      "retryable": true
+    },
+    {
+      "id": "place-1a7d1d5eea9377af",
+      "name": "Halifax layered bridge acceptance",
+      "lat": 53.72558,
+      "lon": -1.859568,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.11",
+      "actual_lat": 53.72557085274305,
+      "actual_lon": -1.859635536167721,
+      "automatic_road_snap_metres": 4.563167530753127,
+      "error": "Insufficient inferred clearance: bridge-116138293-0",
+      "retryable": true
+    },
+    {
+      "id": "place-906fb64ea8bb2e7f",
+      "name": "Halifax layered bridge acceptance",
+      "lat": 53.726006,
+      "lon": -1.859824,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.11",
+      "actual_lat": 53.72600822610582,
+      "actual_lon": -1.859812088737755,
+      "automatic_road_snap_metres": 0.8227068434704142,
+      "error": "rendering failed; check rendering.log",
+      "retryable": true
+    },
+    {
+      "id": "place-cec108d2440c8256",
+      "name": "Halifax layered bridge acceptance",
+      "lat": 53.727338,
+      "lon": -1.859579,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.11",
+      "error": "Frozen renderer input changed: batch_v10/blender_bridges.py",
+      "retryable": true
+    },
+    {
+      "id": "fixture-2efd2c5093bd24ca",
+      "fixture": "junctions",
+      "name": "Synthetic junctions test",
+      "lat": 0,
+      "lon": 0.03,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.11",
+      "error": "Frozen renderer input changed: batch_v10/blender_bridges.py",
+      "retryable": true
+    },
+    {
+      "id": "fixture-900da7ed304474b1",
+      "fixture": "overpass",
+      "name": "Synthetic overpass test",
+      "lat": 0,
+      "lon": 0,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.11",
+      "error": "Frozen renderer input changed: batch_v10/blender_bridges.py",
+      "retryable": true
+    },
+    {
+      "id": "fixture-4ed82b0c6464a702",
+      "fixture": "flat",
+      "name": "Synthetic flat test",
+      "lat": 0,
+      "lon": 0.02,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.11",
+      "error": "Frozen renderer input changed: batch_v10/blender_bridges.py",
+      "retryable": true
+    },
+    {
+      "id": "fixture-d37284779f3d816f",
+      "fixture": "hills",
+      "name": "Synthetic hills test",
+      "lat": 0,
+      "lon": 0.01,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.11",
+      "error": "Frozen renderer input changed: batch_v10/blender_bridges.py",
+      "retryable": true
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "edition": "preserved v9",
+  "site": "place-e0c095f2789f0156",
+  "name": "Kreuzberg",
+  "vehicles": [
+    {
+      "kind": "GT",
+      "drivenMetres": 11.382137335284417,
+      "pause": true,
+      "recover": true
+    },
+    {
+      "kind": "F1",
+      "drivenMetres": 3.3338322721052065,
+      "pause": true,
+      "recover": true
+    },
+    {
+      "kind": "Bubble",
+      "drivenMetres": 6.19364907201038,
+      "pause": true,
+      "recover": true
+    },
+    {
+      "kind": "Truck",
+      "drivenMetres": 13.564864505321353,
+      "pause": true,
+      "recover": true
+    }
+  ],
+  "errors": [],
+  "reload": true,
+  "finished_utc": "2026-11-01T16:47:24.569Z"
+}

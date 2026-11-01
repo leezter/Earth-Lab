@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "freezes": [
+    {
+      "edition": "batch",
+      "id": "six-settings-v1",
+      "source_hashes": 7
+    },
+    {
+      "edition": "batch_v10",
+      "id": "bridges-v10.2",
+      "source_hashes": 71
+    },
+    {
+      "edition": "batch_v2",
+      "id": "six-settings-v2",
+      "source_hashes": 8
+    },
+    {
+      "edition": "batch_v3",
+      "id": "roof-variety-v3",
+      "source_hashes": 7
+    },
+    {
+      "edition": "batch_v4",
+      "id": "road-materials-v4.4",
+      "source_hashes": 10
+    },
+    {
+      "edition": "batch_v5",
+      "id": "pavements-v5.2",
+      "source_hashes": 14
+    },
+    {
+      "edition": "batch_v6",
+      "id": "sites-v6.2",
+      "source_hashes": 17
+    },
+    {
+      "edition": "batch_v7",
+      "id": "streets-v7.2",
+      "source_hashes": 19
+    },
+    {
+      "edition": "batch_v8",
+      "id": "geometry-v8.4",
+      "source_hashes": 24
+    },
+    {
+      "edition": "batch_v9",
+      "id": "mobility-v9.4",
+      "source_hashes": 29
+    }
+  ],
+  "current_builds": [
+    {
+      "id": "fixture-43f5bdf250a42314",
+      "name": "Synthetic hills test",
+      "status": "passed",
+      "tiles": 9,
+      "patches": 0,
+      "decoded_image_bytes": 150994944,
+      "bridges": 0,
+      "content_identity": "08ec11a59e2164a04de8531953fba47760a59e2c6f17acb8c80df9a258068d6f"
+    },
+    {
+      "id": "fixture-4dc89baaf91c0296",
+      "name": "Synthetic overpass test",
+      "status": "passed",
+      "tiles": 9,
+      "patches": 1,
+      "decoded_image_bytes": 153495824,
+      "bridges": 1,
+      "content_identity": "9dffde2bfd6c5dd36b55bd343e7cecd892633e0a317bcf01162a5e9d73e6079d"
+    },
+    {
+      "id": "fixture-705fcde68e516b1c",
+      "name": "Synthetic flat test",
+      "status": "passed",
+      "tiles": 9,
+      "patches": 0,
+      "decoded_image_bytes": 150994944,
+      "bridges": 0,
+      "content_identity": "35fd067f9a87435836b1731b7e130774aaaa407c86e99c42a3a9d824738aa2c6"
+    },
+    {
+      "id": "place-4637c3ffc66f3030",
+      "name": "Schlesische bridge \u00b7 Berlin",
+      "status": "passed",
+      "tiles": 9,
+      "patches": 2,
+      "decoded_image_bytes": 153691768,
+      "bridges": 2,
+      "content_identity": "ba0baf0bd57702634cd0337e547eb3618e34854b51468c7e5f360104165481f4"
+    }
+  ]
+}

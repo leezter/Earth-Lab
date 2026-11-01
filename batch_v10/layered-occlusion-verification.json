@@ -1,0 +1,41 @@
+{
+  "renderer": "bridges-v10.14",
+  "groundUnderDeck": {
+    "id": "osm-4-0",
+    "point": [
+      -30,
+      0
+    ],
+    "surfaces": [
+      "osm-4-0",
+      "osm-4-0"
+    ],
+    "differentBytes": 0
+  },
+  "middleUnderUpper": {
+    "id": "bridge-1-1",
+    "point": [
+      30,
+      0
+    ],
+    "surfaces": [
+      "bridge-1-1",
+      "bridge-1-1"
+    ],
+    "differentBytes": 0
+  },
+  "upperVisible": {
+    "id": "bridge-3-0",
+    "point": [
+      30,
+      0
+    ],
+    "surfaces": [
+      "bridge-3-0",
+      "bridge-3-0"
+    ],
+    "differentBytes": 9014
+  },
+  "lowerRailDifferentBytes": 0,
+  "finished_utc": "2026-11-01T16:52:54.404Z"
+}

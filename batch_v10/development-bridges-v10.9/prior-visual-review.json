@@ -1,0 +1,19 @@
+{
+  "scope": "Manual screen review of top-down prototype layering and terrain; not surveyed architectural or real-world visual accuracy",
+  "reviewed_images": [
+    "web/reviews/site-place-6fd38f12939fb638.png",
+    "web/reviews/site-place-0ec6cd28be51fe11.png",
+    "web/reviews/site-place-84eb40a853aba10f.png"
+  ],
+  "image_identity": "bridges-v10.7, same renderer/model inputs and image bytes reused by v10.8 with explicit provenance",
+  "observations": {
+    "London": "Raised deck reads clearly above the lower road; connected approaches and buildings visible. Generic bridge structure.",
+    "Berlin": "River deck and bank opening visible. Generic structures and sharp local shadow shapes remain approximate.",
+    "Fribourg": "Curved elevated road and separate lower roads visible. Steep terrain, abrupt shadow shapes and coarse land cover remain approximate."
+  },
+  "limits": [
+    "No architectural reconstruction or survey comparison",
+    "Top-down shading cannot convey every real slope or clearance",
+    "Visual review is distinct from passing contact, mesh coverage and tile integrity checks"
+  ]
+}

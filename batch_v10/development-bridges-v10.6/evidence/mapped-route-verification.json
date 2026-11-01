@@ -1,0 +1,986 @@
+{
+  "renderer": "bridges-v10.6",
+  "method": "Guided keyboard inputs, deterministic frame clock; no pose changes after spawn",
+  "sites": [
+    {
+      "id": "place-64819cf053884e64",
+      "name": "Hornsey Lane bridge - London",
+      "routes": [
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 411,
+          "progress": 52.24779523662841,
+          "target": 53,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 12.567825803702224,
+          "visited": [
+            "osm-395196462-0",
+            "bridge-4368279",
+            "osm-395196461-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 447,
+          "progress": 4.750528789211073,
+          "target": 4,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 14.802362463532496,
+          "visited": [
+            "osm-395196461-0",
+            "bridge-4368279",
+            "osm-395196462-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 420,
+          "progress": 52.299210471570795,
+          "target": 53,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 12.573001539328471,
+          "visited": [
+            "osm-395196462-0",
+            "bridge-4368279",
+            "osm-395196461-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 466,
+          "progress": 4.70731309969532,
+          "target": 4,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 14.809400998550984,
+          "visited": [
+            "osm-395196461-0",
+            "bridge-4368279",
+            "osm-395196462-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 457,
+          "progress": 52.209444631239634,
+          "target": 53,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 12.569962234853804,
+          "visited": [
+            "osm-395196462-0",
+            "bridge-4368279",
+            "osm-395196461-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 461,
+          "progress": 4.745735944305431,
+          "target": 4,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 14.803292418366583,
+          "visited": [
+            "osm-395196461-0",
+            "bridge-4368279",
+            "osm-395196462-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 412,
+          "progress": 52.20221981555546,
+          "target": 53,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 12.552319636704494,
+          "visited": [
+            "osm-395196462-0",
+            "bridge-4368279",
+            "osm-395196461-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-4368279",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 446,
+          "progress": 4.778457177638373,
+          "target": 4,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 14.797345181119098,
+          "visited": [
+            "osm-395196461-0",
+            "bridge-4368279",
+            "osm-395196462-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 332,
+          "progress": 69.330856684232,
+          "target": 70.06711408237437,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 2.282518544462745,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 331,
+          "progress": 34.86075815480337,
+          "target": 34.067114082374374,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.6869272284652035,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 337,
+          "progress": 69.29085712328022,
+          "target": 70.06711408237437,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 2.284291398682959,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 351,
+          "progress": 34.81167130188137,
+          "target": 34.067114082374374,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.6886708641496297,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 341,
+          "progress": 69.34889382478804,
+          "target": 70.06711408237437,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 2.280988197272117,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 342,
+          "progress": 34.813050222480605,
+          "target": 34.067114082374374,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.688137475982918,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 311,
+          "progress": 69.27124034900828,
+          "target": 70.06711408237437,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 2.2862976693587154,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-130883595-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 330,
+          "progress": 34.81457588399529,
+          "target": 34.067114082374374,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.688643522725938,
+          "visited": [
+            "osm-130883595-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 332,
+          "progress": 86.22400019101522,
+          "target": 86.938329725175,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.359786140073674,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 330,
+          "progress": 51.66430591144736,
+          "target": 50.938329725174995,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 1.9227930275465086,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 351,
+          "progress": 86.18574563837574,
+          "target": 86.938329725175,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.358606933546587,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 335,
+          "progress": 51.651562600261414,
+          "target": 50.938329725174995,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 1.9221850074024855,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 341,
+          "progress": 86.1438982430179,
+          "target": 86.938329725175,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.356783903163391,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 341,
+          "progress": 51.681175311584646,
+          "target": 50.938329725174995,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 1.9235696121170958,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 330,
+          "progress": 86.21111939045477,
+          "target": 86.938329725175,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.3594141126199837,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-403966472-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 332,
+          "progress": 51.71926891597183,
+          "target": 50.938329725174995,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 1.9254892655019937,
+          "visited": [
+            "osm-403966472-0"
+          ],
+          "failure": null
+        }
+      ]
+    },
+    {
+      "id": "place-51dd3509280db0f6",
+      "name": "Gotteron bridge - Fribourg",
+      "routes": [
+        {
+          "surface": "bridge-128382670",
+          "route": "deck",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 1071,
+          "progress": 182.29234263732306,
+          "target": 183,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 21.286522255543755,
+          "visited": [
+            "bridge-128382670",
+            "osm-128416902-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-128382670",
+          "route": "deck",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 1066,
+          "progress": 66.7051545966428,
+          "target": 66,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 22.384532324953426,
+          "visited": [
+            "osm-128416902-0",
+            "bridge-128382670"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-128382670",
+          "route": "deck",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 1105,
+          "progress": 182.21100107036239,
+          "target": 183,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 21.272320074812395,
+          "visited": [
+            "bridge-128382670",
+            "osm-128416902-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-128382670",
+          "route": "deck",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 1094,
+          "progress": 66.73865847836785,
+          "target": 66,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 22.383995039618654,
+          "visited": [
+            "osm-128416902-0",
+            "bridge-128382670"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-128382670",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 1088,
+          "progress": 182.2231968326688,
+          "target": 183,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 21.27194485851586,
+          "visited": [
+            "bridge-128382670",
+            "osm-128416902-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-128382670",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 1086,
+          "progress": 66.74832890236542,
+          "target": 66,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 22.383839959767382,
+          "visited": [
+            "osm-128416902-0",
+            "bridge-128382670"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "bridge-128382670",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 1061,
+          "progress": 181.69530658087237,
+          "target": 183,
+          "reached": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 1,
+          "height": 21.164412861791366,
+          "visited": [
+            "bridge-128382670",
+            "osm-128416902-0"
+          ],
+          "failure": {
+            "x": 5.216890061316962,
+            "y": -35.97026701114105,
+            "angle": -1.6607786662026074,
+            "id": "osm-128416902-0",
+            "centre": {
+              "id": "osm-128416902-0",
+              "z": 21.164325943060142,
+              "supported": true
+            },
+            "corners": [
+              {
+                "x": 3.5121893177880947,
+                "y": -38.81498478302319,
+                "id": "osm-128416902-0",
+                "z": 21.555016349101216,
+                "supported": true
+              },
+              {
+                "x": 6.384870161156273,
+                "y": -39.07417524319774,
+                "id": "osm-128416902-0",
+                "z": 22.01492921179709,
+                "supported": true
+              },
+              {
+                "x": 6.92159080484583,
+                "y": -33.1255492392589,
+                "id": "bridge-128382670",
+                "z": 20.91309671125747,
+                "supported": true
+              },
+              {
+                "x": 4.048909961477652,
+                "y": -32.86635877908435,
+                "id": "osm-128416902-0",
+                "z": 20.97217879594558,
+                "supported": true
+              }
+            ]
+          }
+        },
+        {
+          "surface": "bridge-128382670",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 12,
+          "progress": 182.52570186912575,
+          "target": 66,
+          "reached": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 1,
+          "height": 21.358429614530625,
+          "visited": [
+            "osm-128416902-0"
+          ],
+          "failure": {
+            "x": 5.455191765269242,
+            "y": -36.656655061411826,
+            "angle": 1.3934700226770802,
+            "id": "osm-128416902-0",
+            "centre": {
+              "id": "osm-128416902-0",
+              "z": 21.335370645338337,
+              "supported": true
+            },
+            "corners": [
+              {
+                "x": 7.4015472101120645,
+                "y": -33.97148759755027,
+                "id": "osm-128416902-0",
+                "z": 21.253559316462518,
+                "supported": true
+              },
+              {
+                "x": 4.562427145855247,
+                "y": -33.46269276342323,
+                "id": "osm-128416902-0",
+                "z": 20.989986228520287,
+                "supported": true
+              },
+              {
+                "x": 3.5088363204264192,
+                "y": -39.34182252527338,
+                "id": "osm-128416902-0",
+                "z": 21.6738140240692,
+                "supported": true
+              },
+              {
+                "x": 6.347956384683237,
+                "y": -39.850617359400424,
+                "id": "osm-128416902-0",
+                "z": 22.186571815890552,
+                "supported": true
+              }
+            ]
+          }
+        },
+        {
+          "surface": "osm-124017679-1",
+          "route": "below",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 153,
+          "progress": 20.011877711863633,
+          "target": 20.71621943354473,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -44.27587593226872,
+          "visited": [
+            "osm-124017679-1"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-124017679-1",
+          "route": "below",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 153,
+          "progress": 4.700242108307981,
+          "target": 4,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -44.39978615214082,
+          "visited": [
+            "osm-124017679-1"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-124017679-1",
+          "route": "below",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 171,
+          "progress": 19.959222669209787,
+          "target": 20.71621943354473,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -44.276100577707666,
+          "visited": [
+            "osm-124017679-1"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-124017679-1",
+          "route": "below",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 178,
+          "progress": 4.705540866916369,
+          "target": 4,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -44.399207426812765,
+          "visited": [
+            "osm-124017679-1"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-124017679-1",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 161,
+          "progress": 19.996306408738757,
+          "target": 20.71621943354473,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -44.27594422720747,
+          "visited": [
+            "osm-124017679-1"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-124017679-1",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 164,
+          "progress": 4.702481902470654,
+          "target": 4,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -44.39982210566927,
+          "visited": [
+            "osm-124017679-1"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-124017679-1",
+          "route": "below",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 153,
+          "progress": 19.999556558726084,
+          "target": 20.71621943354473,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -44.27588023512236,
+          "visited": [
+            "osm-124017679-1"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-124017679-1",
+          "route": "below",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 153,
+          "progress": 4.6974139399630825,
+          "target": 4,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -44.399078467654554,
+          "visited": [
+            "osm-124017679-1"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-371693188-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 93,
+          "progress": 39.11291784142967,
+          "target": 39.893554161717,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -43.709117296609,
+          "visited": [
+            "osm-371693188-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-371693188-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 500,
+          "progress": 15.260041376703715,
+          "target": 14.495413437590976,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -41.83052996169779,
+          "visited": [
+            "osm-371693188-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-371693188-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 114,
+          "progress": 39.19961636911242,
+          "target": 39.893554161717,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -43.74160103935985,
+          "visited": [
+            "osm-371693188-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-371693188-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 2501,
+          "progress": 22.835799893298972,
+          "target": 14.495413437590976,
+          "reached": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -42.24663336197463,
+          "visited": [
+            "osm-371693188-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-371693188-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 231,
+          "progress": 39.121460272264706,
+          "target": 39.893554161717,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -43.70403193569426,
+          "visited": [
+            "osm-371693188-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-371693188-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 491,
+          "progress": 15.227900554289029,
+          "target": 14.495413437590976,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -41.82834810209888,
+          "visited": [
+            "osm-371693188-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-371693188-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 88,
+          "progress": 39.11623839300562,
+          "target": 39.893554161717,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -43.69649564180045,
+          "visited": [
+            "osm-371693188-0"
+          ],
+          "failure": null
+        },
+        {
+          "surface": "osm-371693188-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 1011,
+          "progress": 15.215615538410066,
+          "target": 14.495413437590976,
+          "reached": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -41.82738671087636,
+          "visited": [
+            "osm-371693188-0",
+            "terrain"
+          ],
+          "failure": null
+        }
+      ]
+    }
+  ]
+}

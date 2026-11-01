@@ -1,0 +1,87 @@
+{
+  "renderer": "bridges-v10.7",
+  "scope": "End-to-end generation gates; browser and visual review recorded separately",
+  "manual_crop_or_geometry_adjustments": false,
+  "cases": [
+    {
+      "id": "place-e1dace51729201e8",
+      "name": "Held-out: Santa Clara bridge - Coimbra",
+      "lat": 40.204,
+      "lon": -8.4295,
+      "actual_lat": 40.203178463277204,
+      "actual_lon": -8.430958926748026,
+      "automatic_road_snap_metres": 154.10777801299773,
+      "status": "built",
+      "error": null,
+      "total_seconds": 120.51600000000326,
+      "bridge_count": 1,
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 0,
+        "decoded_image_bytes": 150994944,
+        "bridges": 1,
+        "max_ground_plane_error_m": 1.2212453270876722e-14,
+        "content_identity": "fafa7d816f9fafa3b6fbef6759f7c404ff3f9250042f63493eb7c8342dea7581"
+      },
+      "cached_at_submission": false
+    },
+    {
+      "id": "place-d52a416546f0cc7c",
+      "name": "Held-out: Pont Wilson - Lyon",
+      "lat": 45.7581,
+      "lon": 4.8365,
+      "actual_lat": 45.758097736414044,
+      "actual_lon": 4.836851091210781,
+      "automatic_road_snap_metres": 27.269156464186537,
+      "status": "failed",
+      "error": "Tunnel driving is not supported (OSM way 18203568)",
+      "total_seconds": null,
+      "bridge_count": null,
+      "acceptance": null,
+      "cached_at_submission": false
+    },
+    {
+      "id": "place-eff4b27f32f21a1b",
+      "name": "Held-out: Deutzer bridge - Cologne",
+      "lat": 50.9361,
+      "lon": 6.9657,
+      "actual_lat": 50.93631793816436,
+      "actual_lon": 6.9656683218103135,
+      "automatic_road_snap_metres": 24.362333969196037,
+      "status": "failed",
+      "error": "Overlapping ground/bridge source lines: bridge-49601865",
+      "total_seconds": null,
+      "bridge_count": null,
+      "acceptance": null,
+      "cached_at_submission": false
+    },
+    {
+      "id": "place-7bfbf24811e9f522",
+      "name": "Held-out: Dom Luis bridge - Porto",
+      "lat": 41.1406,
+      "lon": -8.6099,
+      "actual_lat": 41.140643090407025,
+      "actual_lon": -8.609658142012677,
+      "automatic_road_snap_metres": 20.835701048264887,
+      "status": "built",
+      "error": null,
+      "total_seconds": 146.45300000000861,
+      "bridge_count": 0,
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 0,
+        "decoded_image_bytes": 150994944,
+        "bridges": 0,
+        "max_ground_plane_error_m": 1.0036416142611415e-13,
+        "content_identity": "62824f4f3e9a0642b5a592fae703c20f2f4b18d7c83eee84613a5741a172f0d5"
+      },
+      "cached_at_submission": false
+    }
+  ],
+  "counts": {
+    "built": 2,
+    "failed": 2
+  }
+}

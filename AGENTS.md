@@ -8,7 +8,8 @@ offline; the browser drives a dynamic car over baked tiles. This is a desktop
 visual-generation prototype, not a complete world simulator.
 
 Read `README.md` and the relevant edition's README before changing behavior.
-`batch_v9/` is the current street-details edition (localhost port 47851); read its README.
+`batch_v10/` is the current bridges/terrain edition (localhost port 47852); read its README.
+`batch_v9/` preserves the street-details edition (localhost port 47851).
 `batch_v8/` preserves the road-geometry/parking edition (localhost port 47850).
 `batch_v7/` preserves the road-markings/signals edition (localhost port 47849).
 `batch_v6/` preserves the sites/boundaries edition (localhost port 47848).
@@ -65,6 +66,9 @@ Do not introduce a new dependency stack merely to work around a missing local se
 
 ```powershell
 $earthPython = "$env:LOCALAPPDATA\Programs\BeamNG.Earth.Berlin.Realism\.venv\Scripts\python.exe"
+& $earthPython batch_v10/launch.py
+& $earthPython batch_v10/stop.py
+& $earthPython -m unittest discover -s batch_v10 -p 'test_*.py'
 & $earthPython batch_v9/launch.py
 & $earthPython batch_v9/stop.py
 & $earthPython batch_v9/test_streets.py
@@ -87,6 +91,12 @@ Choose verification that exercises the change:
   local evidence tool, not a dependency-free test for a fresh checkout.
 - For generation changes, wait for a terminal job status and verify all nine
   output tiles. Distinguish first-build time, cached reuse and browser loading.
+- V10 also requires every declared transparent bridge pass, shared ground-plane
+  validation, reciprocal surface connections and profile/clearance checks. Keep
+  deck/ground contact separate; OSM layer numbers are never heights in metres.
+  Check upper/lower routes, slopes, barrier filtering and recovery without a
+  moving-car physics-world rebuild. Keep the isolated v10 runtime separate from
+  the shared snapshot used by earlier editions.
 - For viewer changes, check actual driving, pause, recovery, scene switching,
   cache/reload and failure/retry where affected. Existing browser checks include
   `verify.cjs`, `study/verify.cjs`, `batch/verify.cjs` and `batch_v2/verify.cjs`;
@@ -100,7 +110,12 @@ Choose verification that exercises the change:
 Preserve source attribution and material licences. Keep mapped facts distinct
 from inferred roofs, pavement widths, trees, wear and regional defaults. Do not
 invent surveyed markings or street details from absent data. Current areas are
-192 m square with nine baked 2048-square tiles (about 144 MiB decoded); elevation,
-bridge layers, traffic, audio, live lighting and continuous streaming remain
-outside the current implementation. Do not claim worldwide visual acceptance
-from a material sheet or a single reviewed location.
+192 m square with nine baked 2048-square ground tiles (about 144 MiB decoded).
+V10 adds sparse bridge passes, relative terrain and constrained surface driving;
+its metric bridge profiles and structures are inferred. Earlier editions remain
+flat. V10 supports connected branches and fixed deck crossings with unambiguous mapped
+ordering and feasible inferred profiles. Full 3D suspension/falling, ambiguous or
+infeasible interchanges, tunnels, traffic,
+audio, live lighting and continuous streaming remain outside the implementation.
+Do not claim worldwide visual acceptance from a material sheet, a single reviewed
+location or source/network probes without rendered and driving acceptance.

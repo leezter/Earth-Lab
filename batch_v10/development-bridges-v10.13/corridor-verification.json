@@ -1,0 +1,2280 @@
+{
+  "renderer": "bridges-v10.13",
+  "method": "Guided keyboard inputs, deterministic frame clock; no pose changes after spawn",
+  "sites": [
+    {
+      "id": "place-00f26df685fc811f",
+      "name": "Halifax viaducts 53.726589, -1.860018",
+      "routes": [
+        {
+          "surface": "bridge-22817576-0",
+          "route": "deck",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 657,
+          "progress": 129.22969820737467,
+          "target": 130,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -1.546386935182808,
+          "visited": [
+            "bridge-22817576-0",
+            "osm-22817575-0"
+          ],
+          "position": [
+            10.531965488870156,
+            -35.6340029355472
+          ],
+          "angle": 1.9208762258085665,
+          "speed": 4.175502441472643,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-22817576-0",
+          "route": "deck",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 516,
+          "progress": 93.75754914004169,
+          "target": 93,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -5.536041632650434,
+          "visited": [
+            "osm-22817575-0",
+            "bridge-22817576-0"
+          ],
+          "position": [
+            23.345446694603016,
+            -68.70381671927728
+          ],
+          "angle": -1.2091797855245339,
+          "speed": 5.314204339098557,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-22817576-0",
+          "route": "deck",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 688,
+          "progress": 129.2188792745528,
+          "target": 130,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -1.547294240380883,
+          "visited": [
+            "bridge-22817576-0",
+            "osm-22817575-0"
+          ],
+          "position": [
+            10.756380545465575,
+            -35.56958812334513
+          ],
+          "angle": 1.9609693040536615,
+          "speed": 3.9917344721217227,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-22817576-0",
+          "route": "deck",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 533,
+          "progress": 93.77936287674066,
+          "target": 93,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -5.532551434778599,
+          "visited": [
+            "osm-22817575-0",
+            "bridge-22817576-0"
+          ],
+          "position": [
+            23.381742139047773,
+            -68.66615984138014
+          ],
+          "angle": -1.2182045548514309,
+          "speed": 5.410175151127009,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-22817576-0",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 670,
+          "progress": 129.22801517077002,
+          "target": 130,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -1.5468456364585732,
+          "visited": [
+            "bridge-22817576-0",
+            "osm-22817575-0"
+          ],
+          "position": [
+            10.481838014082815,
+            -35.65271864116056
+          ],
+          "angle": 1.9091839118379885,
+          "speed": 4.102639871466882,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-22817576-0",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 569,
+          "progress": 93.78364977556816,
+          "target": 93,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -5.531865530966198,
+          "visited": [
+            "osm-22817575-0",
+            "bridge-22817576-0"
+          ],
+          "position": [
+            23.200412243708083,
+            -68.73263341169728
+          ],
+          "angle": -1.1971179610715639,
+          "speed": 4.973514778962305,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-22817576-0",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 650,
+          "progress": 129.22018766695604,
+          "target": 130,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -1.547480380777416,
+          "visited": [
+            "bridge-22817576-0",
+            "osm-22817575-0"
+          ],
+          "position": [
+            10.650011175368174,
+            -35.604151587065225
+          ],
+          "angle": 1.9453293774486389,
+          "speed": 4.222985230831253,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-22817576-0",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 537,
+          "progress": 93.74487246254093,
+          "target": 93,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -5.538069901050557,
+          "visited": [
+            "osm-22817575-0",
+            "bridge-22817576-0"
+          ],
+          "position": [
+            23.19910322352175,
+            -68.77479649656567
+          ],
+          "angle": -1.1805042345248085,
+          "speed": 5.279822655517345,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-107714306-2",
+          "route": "below",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 342,
+          "progress": 43.950522292053456,
+          "target": 50.060946837457834,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -11.02841968145332,
+          "visited": [
+            "osm-107714306-2"
+          ],
+          "position": [
+            14.112989984479487,
+            -62.924683484472745
+          ],
+          "angle": -2.6666082159384117,
+          "speed": 4.1894409285109635,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-107714306-2",
+          "route": "below",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 337,
+          "progress": 31.256674728584162,
+          "target": 25.060946837457834,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -10.949151476699605,
+          "visited": [
+            "osm-107714306-2"
+          ],
+          "position": [
+            25.84017581062177,
+            -58.06523641073686
+          ],
+          "angle": 0.36456504248337324,
+          "speed": 4.034064095233654,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-107714306-2",
+          "route": "below",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 362,
+          "progress": 43.834692145172696,
+          "target": 50.060946837457834,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -11.026930294822538,
+          "visited": [
+            "osm-107714306-2"
+          ],
+          "position": [
+            14.256805294014052,
+            -62.96749539699762
+          ],
+          "angle": -2.7021134527455066,
+          "speed": 4.135250023971714,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-107714306-2",
+          "route": "below",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 358,
+          "progress": 31.31693110166958,
+          "target": 25.060946837457834,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -10.949521479472924,
+          "visited": [
+            "osm-107714306-2"
+          ],
+          "position": [
+            25.88921305301821,
+            -58.33623833267495
+          ],
+          "angle": 0.39488255092492985,
+          "speed": 4.015786372167234,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-107714306-2",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 345,
+          "progress": 43.610344744217144,
+          "target": 50.060946837457834,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -11.023756372338866,
+          "visited": [
+            "osm-107714306-2"
+          ],
+          "position": [
+            14.561784424019766,
+            -63.112996669979545
+          ],
+          "angle": -2.7404403577178087,
+          "speed": 4.114203153747755,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-107714306-2",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 345,
+          "progress": 31.519435051070534,
+          "target": 25.060946837457834,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -10.948974305520155,
+          "visited": [
+            "osm-107714306-2"
+          ],
+          "position": [
+            25.701969878925734,
+            -58.413381121128474
+          ],
+          "angle": 0.397862353421647,
+          "speed": 4.2371790242903264,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-107714306-2",
+          "route": "below",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 355,
+          "progress": 44.69521123457544,
+          "target": 50.060946837457834,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -11.038264313631542,
+          "visited": [
+            "osm-107714306-2"
+          ],
+          "position": [
+            13.436372960695934,
+            -63.236669993589416
+          ],
+          "angle": -2.699652992548122,
+          "speed": 4.353548360293601,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-107714306-2",
+          "route": "below",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 353,
+          "progress": 30.48001199568008,
+          "target": 25.060946837457834,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -10.951003419468586,
+          "visited": [
+            "osm-107714306-2"
+          ],
+          "position": [
+            26.497523568578583,
+            -57.6254350775346
+          ],
+          "angle": 0.32447952594283813,
+          "speed": 4.311741031642843,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-50846593-0",
+          "route": "deck",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 1547,
+          "progress": 235.21672070936688,
+          "target": 236,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 11.971466510591577,
+          "visited": [
+            "bridge-50846593-0",
+            "osm-21140868-0"
+          ],
+          "position": [
+            -69.08341543084717,
+            -1.4228826555472796
+          ],
+          "angle": 2.33005262733162,
+          "speed": 5.251187135470454,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-50846593-0",
+          "route": "deck",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 1296,
+          "progress": 148.79001247099063,
+          "target": 148,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 1.5090829328782982,
+          "visited": [
+            "osm-21140868-0",
+            "bridge-50846593-0"
+          ],
+          "position": [
+            -14.922562757196024,
+            -68.71270516197902
+          ],
+          "angle": -0.8824720284023712,
+          "speed": 5.292435707769746,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-50846593-0",
+          "route": "deck",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 1600,
+          "progress": 235.25864291697187,
+          "target": 236,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 11.964339735298733,
+          "visited": [
+            "bridge-50846593-0",
+            "osm-21140868-0"
+          ],
+          "position": [
+            -69.27089519331474,
+            -1.5599868287102112
+          ],
+          "angle": 2.3006674248944594,
+          "speed": 5.2525676292804295,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-50846593-0",
+          "route": "deck",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 1320,
+          "progress": 148.73968693918061,
+          "target": 148,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 1.5010308477886953,
+          "visited": [
+            "osm-21140868-0",
+            "bridge-50846593-0"
+          ],
+          "position": [
+            -15.015931598512736,
+            -68.85046574612488
+          ],
+          "angle": -0.8736269203622895,
+          "speed": 5.236345239978593,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-50846593-0",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 1589,
+          "progress": 235.2247682498446,
+          "target": 236,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 11.970098428710365,
+          "visited": [
+            "bridge-50846593-0",
+            "osm-21140868-0"
+          ],
+          "position": [
+            -69.0345237975848,
+            -1.3595159842376652
+          ],
+          "angle": 2.337323786210944,
+          "speed": 4.4757161860125505,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-50846593-0",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 1315,
+          "progress": 148.73460410093165,
+          "target": 148,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 1.5002175936688606,
+          "visited": [
+            "osm-21140868-0",
+            "bridge-50846593-0"
+          ],
+          "position": [
+            -14.825695402815324,
+            -68.70686063604744
+          ],
+          "angle": -0.9018245788085762,
+          "speed": 5.273647999014431,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-50846593-0",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 1541,
+          "progress": 235.24173240744304,
+          "target": 236,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 11.96721452191863,
+          "visited": [
+            "bridge-50846593-0",
+            "osm-21140868-0"
+          ],
+          "position": [
+            -69.15985878057948,
+            -1.4672663594408535
+          ],
+          "angle": 2.300504960452057,
+          "speed": 5.088278770606834,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-50846593-0",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 1317,
+          "progress": 148.76138129751345,
+          "target": 148,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 1.5045019451219495,
+          "visited": [
+            "osm-21140868-0",
+            "bridge-50846593-0"
+          ],
+          "position": [
+            -14.908449267485398,
+            -68.73803917120355
+          ],
+          "angle": -0.9133906130370893,
+          "speed": 5.474620712349162,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-45103816-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 290,
+          "progress": 105.425181526634,
+          "target": 111.46895559184777,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 6.642783060790848,
+          "visited": [
+            "osm-45103816-0"
+          ],
+          "position": [
+            -65.35265757329549,
+            -14.824100890130428
+          ],
+          "angle": -2.271805696172257,
+          "speed": 4.630771390097676,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-45103816-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 338,
+          "progress": 92.51032980686992,
+          "target": 87.46895559184777,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 6.8508393203710325,
+          "visited": [
+            "osm-45103816-0"
+          ],
+          "position": [
+            -57.51308720502207,
+            -5.358999157323948
+          ],
+          "angle": 1.1246603842802372,
+          "speed": 4.071762574232309,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-45103816-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 291,
+          "progress": 105.4279301306405,
+          "target": 111.46895559184777,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 6.645175846126464,
+          "visited": [
+            "osm-45103816-0"
+          ],
+          "position": [
+            -65.52951191800476,
+            -14.64057735695901
+          ],
+          "angle": -2.206415103350041,
+          "speed": 5.008242300479069,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-45103816-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 355,
+          "progress": 92.62170015631433,
+          "target": 87.46895559184777,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 6.848222179281119,
+          "visited": [
+            "osm-45103816-0"
+          ],
+          "position": [
+            -57.47786029966649,
+            -5.485898789542658
+          ],
+          "angle": 1.1187357686633592,
+          "speed": 4.09276139633525,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-45103816-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 321,
+          "progress": 105.05975496442205,
+          "target": 111.46895559184777,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 6.646261600151176,
+          "visited": [
+            "osm-45103816-0"
+          ],
+          "position": [
+            -64.82180339777697,
+            -14.854381666621885
+          ],
+          "angle": -2.338911354295384,
+          "speed": 4.073835613035569,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-45103816-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 337,
+          "progress": 93.0202173359485,
+          "target": 87.46895559184777,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 6.83892290852379,
+          "visited": [
+            "osm-45103816-0"
+          ],
+          "position": [
+            -57.63762950064613,
+            -5.853993623230769
+          ],
+          "angle": 1.1163754595797166,
+          "speed": 4.073484991578403,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-45103816-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 302,
+          "progress": 106.18394945538421,
+          "target": 111.46895559184777,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 6.625140294510794,
+          "visited": [
+            "osm-45103816-0"
+          ],
+          "position": [
+            -65.86366585514997,
+            -15.388167356953701
+          ],
+          "angle": -2.2890097446201825,
+          "speed": 4.714203858399459,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-45103816-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 355,
+          "progress": 91.4532910585626,
+          "target": 87.46895559184777,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 6.873983243292997,
+          "visited": [
+            "osm-45103816-0"
+          ],
+          "position": [
+            -57.36462246701908,
+            -4.2998246615604945
+          ],
+          "angle": 1.0745101978588067,
+          "speed": 4.355035761325094,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 292,
+          "progress": 133.76256079171804,
+          "target": 139.62192969082633,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.3972578614202242,
+          "visited": [
+            "osm-221747679-0"
+          ],
+          "position": [
+            -40.49355136205949,
+            -45.930137507140316
+          ],
+          "angle": -2.2620406599235836,
+          "speed": 4.865031957475252,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 329,
+          "progress": 121.4605209770926,
+          "target": 115.62192969082635,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.05688911593078,
+          "visited": [
+            "osm-221747679-0"
+          ],
+          "position": [
+            -32.943372618453125,
+            -36.217453025404666
+          ],
+          "angle": 0.9125656947625872,
+          "speed": 4.253792036730816,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 308,
+          "progress": 133.72235735121606,
+          "target": 139.62192969082633,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.396572157111629,
+          "visited": [
+            "osm-221747679-0"
+          ],
+          "position": [
+            -40.43553966023627,
+            -45.92446551237747
+          ],
+          "angle": -2.2765546020505636,
+          "speed": 4.894584553800387,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 347,
+          "progress": 121.59969313202397,
+          "target": 115.62192969082635,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.061395634215699,
+          "visited": [
+            "osm-221747679-0"
+          ],
+          "position": [
+            -32.578305053091825,
+            -36.67960149079372
+          ],
+          "angle": 1.0312573589717753,
+          "speed": 4.037478100024414,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 330,
+          "progress": 133.422222712063,
+          "target": 139.62192969082633,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.392645750170121,
+          "visited": [
+            "osm-221747679-0"
+          ],
+          "position": [
+            -40.36011712984016,
+            -45.60243941151941
+          ],
+          "angle": -2.2389328707594944,
+          "speed": 4.071986779661495,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 332,
+          "progress": 121.81567938572191,
+          "target": 115.62192969082635,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.0691076253408713,
+          "visited": [
+            "osm-221747679-0"
+          ],
+          "position": [
+            -33.194537233651275,
+            -36.47190157923183
+          ],
+          "angle": 0.9080905555352101,
+          "speed": 4.008875175069003,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 312,
+          "progress": 134.6036909667618,
+          "target": 139.62192969082633,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.4106842975248246,
+          "visited": [
+            "osm-221747679-0"
+          ],
+          "position": [
+            -40.795304604192225,
+            -46.76194238268379
+          ],
+          "angle": -2.3140046273053363,
+          "speed": 4.745497519443388,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 343,
+          "progress": 120.66278178643971,
+          "target": 115.62192969082635,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.029180772700628,
+          "visited": [
+            "osm-221747679-0"
+          ],
+          "position": [
+            -32.289141710020786,
+            -35.71636233296353
+          ],
+          "angle": 0.9346171537989523,
+          "speed": 4.158209533512668,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116129498-0",
+          "route": "deck",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 312,
+          "progress": 23.209501317364683,
+          "target": 24,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -8.436536320352408,
+          "visited": [
+            "osm-116135121-0",
+            "bridge-116129498-0"
+          ],
+          "position": [
+            63.34242195630897,
+            -69.24662649133236
+          ],
+          "angle": -1.2338164849610265,
+          "speed": 5.488050022693733,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116129498-0",
+          "route": "deck",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 346,
+          "progress": 4.760894573137778,
+          "target": 4,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -7.457916329219231,
+          "visited": [
+            "bridge-116129498-0",
+            "osm-116135121-0"
+          ],
+          "position": [
+            57.22085337410384,
+            -51.83734586964281
+          ],
+          "angle": 2.0010787740418072,
+          "speed": 4.615236325886352,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116129498-0",
+          "route": "deck",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 329,
+          "progress": 23.243938718062516,
+          "target": 24,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -8.439520057871247,
+          "visited": [
+            "osm-116135121-0",
+            "bridge-116129498-0"
+          ],
+          "position": [
+            63.18535009826256,
+            -69.34066748059058
+          ],
+          "angle": -1.1649778336116319,
+          "speed": 5.3292528577686715,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116129498-0",
+          "route": "deck",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 368,
+          "progress": 4.75094089529556,
+          "target": 4,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -7.463038745426778,
+          "visited": [
+            "bridge-116129498-0",
+            "osm-116135121-0"
+          ],
+          "position": [
+            57.004336654035754,
+            -51.90950403774865
+          ],
+          "angle": 1.9736000086040724,
+          "speed": 4.453245009612003,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116129498-0",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 343,
+          "progress": 23.252546413971512,
+          "target": 24,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -8.4402658489215,
+          "visited": [
+            "osm-116135121-0",
+            "bridge-116129498-0"
+          ],
+          "position": [
+            63.37459492106251,
+            -69.2807010092594
+          ],
+          "angle": -1.217941226803415,
+          "speed": 4.701193948746395,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116129498-0",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 358,
+          "progress": 4.79934090352993,
+          "target": 4,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -7.463198798539534,
+          "visited": [
+            "bridge-116129498-0",
+            "osm-116135121-0"
+          ],
+          "position": [
+            56.96994013481496,
+            -51.97447990275981
+          ],
+          "angle": 1.9238140389200264,
+          "speed": 4.077169816573537,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116129498-0",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 314,
+          "progress": 23.251304175595912,
+          "target": 24,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -8.440158218462363,
+          "visited": [
+            "osm-116135121-0",
+            "bridge-116129498-0"
+          ],
+          "position": [
+            63.402809653276336,
+            -69.26907173494986
+          ],
+          "angle": -1.23640018000449,
+          "speed": 5.5071780556339895,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116129498-0",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 347,
+          "progress": 4.77637074846997,
+          "target": 4,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -7.466030488136179,
+          "visited": [
+            "bridge-116129498-0",
+            "osm-116135121-0"
+          ],
+          "position": [
+            56.860157500620815,
+            -51.991877410801955
+          ],
+          "angle": 1.9013327598053222,
+          "speed": 4.435788957683394,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "concrete-oval"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116138293-0",
+          "route": "deck",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 875,
+          "progress": 82.20133821321424,
+          "target": 83,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.2894287117383927,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "position": [
+            -31.665982774541057,
+            -68.85547079029388
+          ],
+          "angle": -0.9406879546378781,
+          "speed": 5.382068455772771,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116138293-0",
+          "route": "deck",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 1108,
+          "progress": 21.746806513774217,
+          "target": 21,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 12.64178727646376,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "position": [
+            -69.11559740945185,
+            -21.399263618942015
+          ],
+          "angle": 2.263890271588319,
+          "speed": 4.278345391028713,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116138293-0",
+          "route": "deck",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 895,
+          "progress": 82.20390418754029,
+          "target": 83,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.2890181558462253,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "position": [
+            -31.55149303512697,
+            -68.77059233415721
+          ],
+          "angle": -0.9775140696822832,
+          "speed": 5.350036423685724,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116138293-0",
+          "route": "deck",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 1153,
+          "progress": 21.76298518869961,
+          "target": 21,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 12.64178727646376,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "position": [
+            -68.94266442137719,
+            -21.28049194618749
+          ],
+          "angle": 2.343992878894962,
+          "speed": 4.07041968204304,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116138293-0",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 891,
+          "progress": 82.2646500218906,
+          "target": 83,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.2792988223501753,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "position": [
+            -31.65947638860967,
+            -68.93035538637558
+          ],
+          "angle": -0.9150844792637698,
+          "speed": 5.249157596823032,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116138293-0",
+          "route": "deck",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 1128,
+          "progress": 21.771906279383344,
+          "target": 21,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 12.64178727646376,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "position": [
+            -69.16266980389278,
+            -21.469506211504342
+          ],
+          "angle": 2.250993216650185,
+          "speed": 4.11517167665614,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116138293-0",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 894,
+          "progress": 82.21735367876754,
+          "target": 83,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 3.286866237249866,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "position": [
+            -31.546633092498904,
+            -68.78382361206549
+          ],
+          "angle": -0.9534589441197121,
+          "speed": 5.067601821694849,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "bridge-116138293-0",
+          "route": "deck",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 1105,
+          "progress": 21.75630156645026,
+          "target": 21,
+          "reached": true,
+          "seenUnder": false,
+          "cleared": false,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": 12.64178727646376,
+          "visited": [
+            "bridge-116138293-0"
+          ],
+          "position": [
+            -69.06493167076579,
+            -21.37057636340348
+          ],
+          "angle": 2.284664522499894,
+          "speed": 4.019153517799141,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": 1,
+          "steps": 311,
+          "progress": 147.15917587037788,
+          "target": 153.0582468639819,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.542771003813883,
+          "visited": [
+            "osm-221747679-0"
+          ],
+          "position": [
+            -48.98480593637903,
+            -56.296422677878056
+          ],
+          "angle": -2.313372595854261,
+          "speed": 4.307555413966954,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "GT",
+          "direction": -1,
+          "steps": 327,
+          "progress": 134.82920245506656,
+          "target": 129.0582468639819,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.414861727133073,
+          "visited": [
+            "osm-39052615-0",
+            "osm-221747679-0"
+          ],
+          "position": [
+            -41.31169740867423,
+            -46.64440696844731
+          ],
+          "angle": 0.8537992814290363,
+          "speed": 4.199931298919341,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": 1,
+          "steps": 336,
+          "progress": 147.13262907583572,
+          "target": 153.0582468639819,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.542593911825058,
+          "visited": [
+            "osm-221747679-0"
+          ],
+          "position": [
+            -48.90058395961826,
+            -56.32858307515846
+          ],
+          "angle": -2.2987763110161588,
+          "speed": 4.1925747374414986,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "F1",
+          "direction": -1,
+          "steps": 345,
+          "progress": 134.93794921375542,
+          "target": 129.0582468639819,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.416210287927241,
+          "visited": [
+            "osm-39052615-0",
+            "osm-221747679-0"
+          ],
+          "position": [
+            -41.01373720949364,
+            -47.01545515302293
+          ],
+          "angle": 0.9661098029393446,
+          "speed": 4.101369588123495,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": 1,
+          "steps": 331,
+          "progress": 146.82908537797442,
+          "target": 153.0582468639819,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.540959506468828,
+          "visited": [
+            "osm-221747679-0"
+          ],
+          "position": [
+            -48.68544089174871,
+            -56.111488457904684
+          ],
+          "angle": -2.2909020301621017,
+          "speed": 4.152230687054873,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "Bubble",
+          "direction": -1,
+          "steps": 332,
+          "progress": 135.2039452853976,
+          "target": 129.0582468639819,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.420628134666796,
+          "visited": [
+            "osm-39052615-0",
+            "osm-221747679-0"
+          ],
+          "position": [
+            -41.410866010369,
+            -47.04257524369702
+          ],
+          "angle": 0.8996257148171792,
+          "speed": 4.058478094979203,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": 1,
+          "steps": 334,
+          "progress": 147.95124598219385,
+          "target": 153.0582468639819,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.5469779138684263,
+          "visited": [
+            "osm-221747679-0"
+          ],
+          "position": [
+            -49.549468266575495,
+            -56.860357889501685
+          ],
+          "angle": -2.312374964374149,
+          "speed": 4.178771659056969,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        },
+        {
+          "surface": "osm-221747679-0",
+          "route": "below",
+          "kind": "Truck",
+          "direction": -1,
+          "steps": 342,
+          "progress": 134.0299463819868,
+          "target": 129.0582468639819,
+          "reached": true,
+          "seenUnder": true,
+          "cleared": true,
+          "replacements": 0,
+          "wrongLevel": 0,
+          "recoveries": 0,
+          "height": -2.4020264872779395,
+          "visited": [
+            "osm-39052615-0",
+            "osm-221747679-0"
+          ],
+          "position": [
+            -40.93470866465283,
+            -45.924591972810035
+          ],
+          "angle": 0.8213828074539078,
+          "speed": 4.065035790073737,
+          "contact": {
+            "onRoad": true,
+            "surfaceType": "tarmac-pro"
+          },
+          "failure": null
+        }
+      ],
+      "croppedBelowRoutes": [
+        {
+          "id": "osm-22817358-0",
+          "under": "bridge-21140864-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-22817359-0",
+          "under": "bridge-21152367-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-2",
+          "under": "bridge-21152367-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964362-0",
+          "under": "bridge-21152367-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-21152370-0",
+          "under": "bridge-22727221-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-22817359-0",
+          "under": "bridge-22727221-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-2",
+          "under": "bridge-22727221-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-3",
+          "under": "bridge-22727221-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964362-0",
+          "under": "bridge-22727221-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-22817358-0",
+          "under": "bridge-22817355-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-191317809-0",
+          "under": "bridge-22817355-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-0",
+          "under": "bridge-22817576-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-4",
+          "under": "bridge-22817576-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-22817358-0",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-22817361-0",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "bridge-22817576-0",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-0",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-4",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-107714306-2",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-221747680-0",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-45103816-0",
+          "under": "bridge-116138293-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-221747680-0",
+          "under": "bridge-116138293-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-21140902-0",
+          "under": "bridge-116797534-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-514867466-0",
+          "under": "bridge-116797534-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-21152371-0",
+          "under": "bridge-408871937-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-22817359-0",
+          "under": "bridge-408871937-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-1",
+          "under": "bridge-1214629809-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-2",
+          "under": "bridge-1214629809-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964362-0",
+          "under": "bridge-1214629809-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        }
+      ]
+    },
+    {
+      "id": "place-2814bdbea44c9472",
+      "name": "Halifax viaducts 53.72558, -1.859568",
+      "routes": [],
+      "croppedBelowRoutes": [
+        {
+          "id": "osm-22817358-0",
+          "under": "bridge-21140864-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-22817359-0",
+          "under": "bridge-21152367-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-2",
+          "under": "bridge-21152367-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964362-0",
+          "under": "bridge-21152367-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-21152370-0",
+          "under": "bridge-22727221-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-22817359-0",
+          "under": "bridge-22727221-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-2",
+          "under": "bridge-22727221-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-3",
+          "under": "bridge-22727221-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964362-0",
+          "under": "bridge-22727221-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-22817358-0",
+          "under": "bridge-22817355-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-191317809-0",
+          "under": "bridge-22817355-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-0",
+          "under": "bridge-22817576-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-4",
+          "under": "bridge-22817576-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-107714306-2",
+          "under": "bridge-22817576-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-22817358-0",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-22817361-0",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "bridge-22817576-0",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-45103816-0",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-0",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-4",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-107714306-2",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-221747679-0",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-221747680-0",
+          "under": "bridge-50846593-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-45103816-0",
+          "under": "bridge-116138293-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-221747679-0",
+          "under": "bridge-116138293-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-221747680-0",
+          "under": "bridge-116138293-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-21140902-0",
+          "under": "bridge-116797534-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-514867466-0",
+          "under": "bridge-116797534-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-21152371-0",
+          "under": "bridge-408871937-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-22817359-0",
+          "under": "bridge-408871937-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-1",
+          "under": "bridge-1214629809-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964357-2",
+          "under": "bridge-1214629809-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        },
+        {
+          "id": "osm-81964362-0",
+          "under": "bridge-1214629809-0",
+          "reason": "Full vehicle entry/clearance extends outside this bounded test crop"
+        }
+      ]
+    }
+  ],
+  "finished_utc": "2026-11-01T16:44:53.581Z"
+}

@@ -1,0 +1,21 @@
+{
+  "renderer": "bridges-v10.14",
+  "baked_model_identity": "bridges-v10.13",
+  "reviewed_utc": "2026-11-01T16:57:35.132812+00:00",
+  "scope": "Manual prototype screen review, separate from survey accuracy and automated driving acceptance",
+  "images": [
+    "web/reviews/halifax-junction-v10.14.png",
+    "web/reviews/junctions-middle-bridges-v10.14.png",
+    "web/reviews/junctions-upper-bridges-v10.14.png"
+  ],
+  "observations": [
+    "Mapped Halifax fork has continuous inferred deck infill and open merge entrances.",
+    "Synthetic stacked crossing hides the middle car and lower rails beneath the upper deck.",
+    "Generic structures, simplified appearances and some sharp join-shadow shapes remain approximate."
+  ],
+  "limits": [
+    "No architectural reconstruction or survey comparison",
+    "Deck and approach heights, junction footprint and structures are inferred",
+    "Passing these examples is not worldwide bridge acceptance"
+  ]
+}

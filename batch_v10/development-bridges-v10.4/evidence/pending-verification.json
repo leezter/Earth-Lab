@@ -1,0 +1,9 @@
+{
+  "pendingJob": "place-0e7db53eace3eb42",
+  "statusBefore": "rendering",
+  "statusAfter": "rendering",
+  "submittedByCheck": false,
+  "continuedDrivingMetres": 11.864536065374114,
+  "renderer": "bridges-v10.4",
+  "errors": []
+}

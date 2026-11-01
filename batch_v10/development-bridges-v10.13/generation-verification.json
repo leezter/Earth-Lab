@@ -1,0 +1,500 @@
+{
+  "renderer": "bridges-v10.13",
+  "manual_crop_or_geometry_adjustments": false,
+  "builds": [
+    {
+      "id": "fixture-b17deee412ea180e",
+      "fixture": "junctions",
+      "name": "Synthetic junctions test",
+      "lat": 0,
+      "lon": 0.03,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.13",
+      "actual_lat": 0,
+      "actual_lon": 0,
+      "automatic_road_snap_metres": 0,
+      "total_seconds": 78.54699999999866,
+      "content_identity": "d92e8ee3fb38c374d8cbc9d2585c1f4eccf0b77641ae377a1f4a5939218ed416",
+      "bridge_count": 4,
+      "terrain_source": {
+        "status": "available",
+        "provider": "authored synthetic junctions",
+        "datum": "local zero"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 4,
+        "decoded_image_bytes": 189188712,
+        "bridges": 4,
+        "max_ground_plane_error_m": 4.551914400963142e-15,
+        "content_identity": "d92e8ee3fb38c374d8cbc9d2585c1f4eccf0b77641ae377a1f4a5939218ed416"
+      }
+    },
+    {
+      "id": "place-00f26df685fc811f",
+      "name": "Halifax viaducts 53.726589, -1.860018",
+      "lat": 53.726589,
+      "lon": -1.860018,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.13",
+      "actual_lat": 53.72658828438656,
+      "actual_lon": -1.86002047154149,
+      "automatic_road_snap_metres": 0.18122555612843014,
+      "total_seconds": 148.34400000000096,
+      "content_identity": "7bfabf14a8588100b10a97a347a6f5338339214ed5f9622d483ae07558c291b1",
+      "bridge_count": 14,
+      "terrain_source": {
+        "status": "available",
+        "policy": "installed-ground-v1:z15:grid6m:binomial3:relative-only",
+        "providers": [
+          "mapterhorn"
+        ],
+        "adapter_sha256": "ad1f2d8507bff3eaed8d235f22b95ea04918340118af04a53ca1fe7a18eb7066",
+        "adapter_decoded_version": 2,
+        "requested_zoom": 15,
+        "native_resolution": "Provider dependent; z15 can upsample coarser ground-filtered DSM",
+        "datum": "Provider-dependent orthometric heights; relative scene reference only",
+        "absolute_reference_m": 137.25296131425398,
+        "osm_ele_policy": "Retained, not fused without verified datum conversion",
+        "attribution": "Mapterhorn and upstream terrain providers; AWS Terrain Tiles where used",
+        "source_urls": [
+          "https://mapterhorn.com/attribution",
+          "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+        ],
+        "inputs": [
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16214,
+              10562
+            ],
+            "sha256": "6ad821dc4dcf250eff81058d4e1586e60654527658ba05da3b1e4426af4e2e22"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16214,
+              10563
+            ],
+            "sha256": "08d194fdd3cc6d0ec4ae8e583fd5103b7f4e2abab12ce6f2f28ecc6257feb9e7"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16215,
+              10562
+            ],
+            "sha256": "f63a2e19034aa10da79f6b7e91360228f08bd6c28d9a94d8baa60274fb1d10b1"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16215,
+              10563
+            ],
+            "sha256": "dec993091c208c00580a736a44171ae1f2299699442a9f289cda037b703a376c"
+          }
+        ],
+        "stats": {
+          "dem:mirror": 4
+        },
+        "sample_sha256": "7a0e313f4941c33f1f1146f815d5f07c295241323cfe8c8868de32dd2b0070c0"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 4,
+        "decoded_image_bytes": 177376960,
+        "bridges": 14,
+        "max_ground_plane_error_m": 5.1958437552457326e-14,
+        "content_identity": "7bfabf14a8588100b10a97a347a6f5338339214ed5f9622d483ae07558c291b1"
+      }
+    },
+    {
+      "id": "place-2814bdbea44c9472",
+      "name": "Halifax viaducts 53.72558, -1.859568",
+      "lat": 53.72558,
+      "lon": -1.859568,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.13",
+      "actual_lat": 53.72557085274305,
+      "actual_lon": -1.859635536167721,
+      "automatic_road_snap_metres": 4.563167530753127,
+      "total_seconds": 130.21899999999914,
+      "content_identity": "2cfb101deed41983d990d54c76874fb8409ee1af8dd56a7310e2ae7a0b62b908",
+      "bridge_count": 14,
+      "terrain_source": {
+        "status": "available",
+        "policy": "installed-ground-v1:z15:grid6m:binomial3:relative-only",
+        "providers": [
+          "mapterhorn"
+        ],
+        "adapter_sha256": "ad1f2d8507bff3eaed8d235f22b95ea04918340118af04a53ca1fe7a18eb7066",
+        "adapter_decoded_version": 2,
+        "requested_zoom": 15,
+        "native_resolution": "Provider dependent; z15 can upsample coarser ground-filtered DSM",
+        "datum": "Provider-dependent orthometric heights; relative scene reference only",
+        "absolute_reference_m": 139.8914693676905,
+        "osm_ele_policy": "Retained, not fused without verified datum conversion",
+        "attribution": "Mapterhorn and upstream terrain providers; AWS Terrain Tiles where used",
+        "source_urls": [
+          "https://mapterhorn.com/attribution",
+          "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+        ],
+        "inputs": [
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16214,
+              10562
+            ],
+            "sha256": "6ad821dc4dcf250eff81058d4e1586e60654527658ba05da3b1e4426af4e2e22"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16214,
+              10563
+            ],
+            "sha256": "08d194fdd3cc6d0ec4ae8e583fd5103b7f4e2abab12ce6f2f28ecc6257feb9e7"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16214,
+              10564
+            ],
+            "sha256": "b498b15c0d3cf750832be16024f73464f04ad9b4905196fe1c153754e710a8e4"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16215,
+              10562
+            ],
+            "sha256": "f63a2e19034aa10da79f6b7e91360228f08bd6c28d9a94d8baa60274fb1d10b1"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16215,
+              10563
+            ],
+            "sha256": "dec993091c208c00580a736a44171ae1f2299699442a9f289cda037b703a376c"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16215,
+              10564
+            ],
+            "sha256": "a1a9c70eedc112c623a2e643dd6b8916243dc7ebf7f2e4c69bc26cced66bd7fe"
+          }
+        ],
+        "stats": {
+          "dem:mirror": 6
+        },
+        "sample_sha256": "3115cbff0eba7898cf569407cb3403e758d9f5af7a46241300547b1b3a6c5ec2"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 1,
+        "decoded_image_bytes": 151047648,
+        "bridges": 14,
+        "max_ground_plane_error_m": 3.552713678800501e-14,
+        "content_identity": "2cfb101deed41983d990d54c76874fb8409ee1af8dd56a7310e2ae7a0b62b908"
+      }
+    },
+    {
+      "id": "place-364383385f7317bc",
+      "name": "Halifax viaducts 53.726006, -1.859824",
+      "lat": 53.726006,
+      "lon": -1.859824,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.13",
+      "actual_lat": 53.72600822610582,
+      "actual_lon": -1.859812088737755,
+      "automatic_road_snap_metres": 0.8227068434704142,
+      "total_seconds": 119.5,
+      "content_identity": "5351f96e59f9f05c650b2121162e9d36398d7d570e3b24615874ed415073d92d",
+      "bridge_count": 14,
+      "terrain_source": {
+        "status": "available",
+        "policy": "installed-ground-v1:z15:grid6m:binomial3:relative-only",
+        "providers": [
+          "mapterhorn"
+        ],
+        "adapter_sha256": "ad1f2d8507bff3eaed8d235f22b95ea04918340118af04a53ca1fe7a18eb7066",
+        "adapter_decoded_version": 2,
+        "requested_zoom": 15,
+        "native_resolution": "Provider dependent; z15 can upsample coarser ground-filtered DSM",
+        "datum": "Provider-dependent orthometric heights; relative scene reference only",
+        "absolute_reference_m": 139.7099857124266,
+        "osm_ele_policy": "Retained, not fused without verified datum conversion",
+        "attribution": "Mapterhorn and upstream terrain providers; AWS Terrain Tiles where used",
+        "source_urls": [
+          "https://mapterhorn.com/attribution",
+          "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+        ],
+        "inputs": [
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16214,
+              10562
+            ],
+            "sha256": "6ad821dc4dcf250eff81058d4e1586e60654527658ba05da3b1e4426af4e2e22"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16214,
+              10563
+            ],
+            "sha256": "08d194fdd3cc6d0ec4ae8e583fd5103b7f4e2abab12ce6f2f28ecc6257feb9e7"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16214,
+              10564
+            ],
+            "sha256": "b498b15c0d3cf750832be16024f73464f04ad9b4905196fe1c153754e710a8e4"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16215,
+              10562
+            ],
+            "sha256": "f63a2e19034aa10da79f6b7e91360228f08bd6c28d9a94d8baa60274fb1d10b1"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16215,
+              10563
+            ],
+            "sha256": "dec993091c208c00580a736a44171ae1f2299699442a9f289cda037b703a376c"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16215,
+              10564
+            ],
+            "sha256": "a1a9c70eedc112c623a2e643dd6b8916243dc7ebf7f2e4c69bc26cced66bd7fe"
+          }
+        ],
+        "stats": {
+          "dem:mirror": 6
+        },
+        "sample_sha256": "3e64dd284479323043f2815e13acf42f0c0bc50317e4ba767cb4475b9d6b0555"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 3,
+        "decoded_image_bytes": 157250092,
+        "bridges": 14,
+        "max_ground_plane_error_m": 3.197442310920451e-14,
+        "content_identity": "5351f96e59f9f05c650b2121162e9d36398d7d570e3b24615874ed415073d92d"
+      }
+    },
+    {
+      "id": "place-cb615ba18b40cd12",
+      "name": "Halifax viaducts 53.727338, -1.859579",
+      "lat": 53.727338,
+      "lon": -1.859579,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.13",
+      "actual_lat": 53.72733813735567,
+      "actual_lon": -1.859579592296451,
+      "automatic_road_snap_metres": 0.041898208845193484,
+      "total_seconds": 184.3130000000001,
+      "content_identity": "709e08dbbc13aec4e84d2ad1fcec0b0a724603c87422e0313e55394694fd5db8",
+      "bridge_count": 14,
+      "terrain_source": {
+        "status": "available",
+        "policy": "installed-ground-v1:z15:grid6m:binomial3:relative-only",
+        "providers": [
+          "mapterhorn"
+        ],
+        "adapter_sha256": "ad1f2d8507bff3eaed8d235f22b95ea04918340118af04a53ca1fe7a18eb7066",
+        "adapter_decoded_version": 2,
+        "requested_zoom": 15,
+        "native_resolution": "Provider dependent; z15 can upsample coarser ground-filtered DSM",
+        "datum": "Provider-dependent orthometric heights; relative scene reference only",
+        "absolute_reference_m": 120.69982399002696,
+        "osm_ele_policy": "Retained, not fused without verified datum conversion",
+        "attribution": "Mapterhorn and upstream terrain providers; AWS Terrain Tiles where used",
+        "source_urls": [
+          "https://mapterhorn.com/attribution",
+          "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+        ],
+        "inputs": [
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16214,
+              10562
+            ],
+            "sha256": "6ad821dc4dcf250eff81058d4e1586e60654527658ba05da3b1e4426af4e2e22"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16214,
+              10563
+            ],
+            "sha256": "08d194fdd3cc6d0ec4ae8e583fd5103b7f4e2abab12ce6f2f28ecc6257feb9e7"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16215,
+              10562
+            ],
+            "sha256": "f63a2e19034aa10da79f6b7e91360228f08bd6c28d9a94d8baa60274fb1d10b1"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16215,
+              10563
+            ],
+            "sha256": "dec993091c208c00580a736a44171ae1f2299699442a9f289cda037b703a376c"
+          }
+        ],
+        "stats": {
+          "dem:mirror": 4
+        },
+        "sample_sha256": "8e51da51e1ddefe492abef23b7c28a267163e70fd67490c8f53ce3f93ced14a2"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 10,
+        "decoded_image_bytes": 209858428,
+        "bridges": 14,
+        "max_ground_plane_error_m": 5.3290705182007514e-14,
+        "content_identity": "709e08dbbc13aec4e84d2ad1fcec0b0a724603c87422e0313e55394694fd5db8"
+      }
+    },
+    {
+      "id": "fixture-e632a4aba4b4b2e4",
+      "fixture": "overpass",
+      "name": "Synthetic overpass test",
+      "lat": 0,
+      "lon": 0,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.13",
+      "actual_lat": 0,
+      "actual_lon": 0,
+      "automatic_road_snap_metres": 0,
+      "total_seconds": 69.79699999999866,
+      "content_identity": "59fc7c6a22adad675f841fbd20eae6c3be90afd5723f0b5efb3c1201e69c6099",
+      "bridge_count": 1,
+      "terrain_source": {
+        "status": "available",
+        "provider": "authored synthetic fixture",
+        "datum": "arbitrary local metre reference",
+        "policy": "fixture-v1",
+        "warning": "Synthetic test scene, not a mapped location"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 1,
+        "decoded_image_bytes": 153495824,
+        "bridges": 1,
+        "max_ground_plane_error_m": 4.796163466380676e-14,
+        "content_identity": "59fc7c6a22adad675f841fbd20eae6c3be90afd5723f0b5efb3c1201e69c6099"
+      }
+    },
+    {
+      "id": "fixture-6c34e162b80dccf0",
+      "fixture": "flat",
+      "name": "Synthetic flat test",
+      "lat": 0,
+      "lon": 0.02,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.13",
+      "actual_lat": 0,
+      "actual_lon": 0,
+      "automatic_road_snap_metres": 0,
+      "total_seconds": 53.86000000000058,
+      "content_identity": "558afda0b251c49f817af200aa9b5ca419066bf04e63c7c2836ad05313404c43",
+      "bridge_count": 0,
+      "terrain_source": {
+        "status": "available",
+        "provider": "authored synthetic fixture",
+        "datum": "arbitrary local metre reference",
+        "policy": "fixture-v1",
+        "warning": "Synthetic test scene, not a mapped location"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 0,
+        "decoded_image_bytes": 150994944,
+        "bridges": 0,
+        "max_ground_plane_error_m": 0,
+        "content_identity": "558afda0b251c49f817af200aa9b5ca419066bf04e63c7c2836ad05313404c43"
+      }
+    },
+    {
+      "id": "fixture-702ac399494b664a",
+      "fixture": "hills",
+      "name": "Synthetic hills test",
+      "lat": 0,
+      "lon": 0.01,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.13",
+      "actual_lat": 0,
+      "actual_lon": 0,
+      "automatic_road_snap_metres": 0,
+      "total_seconds": 48.35899999999856,
+      "content_identity": "92787f6b01ac6c9a06c3778b3ee07fbc0bc8c0abc37f93fc56ab9adc4164edf4",
+      "bridge_count": 0,
+      "terrain_source": {
+        "status": "available",
+        "provider": "authored synthetic fixture",
+        "datum": "arbitrary local metre reference",
+        "policy": "fixture-v1",
+        "warning": "Synthetic test scene, not a mapped location"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 0,
+        "decoded_image_bytes": 150994944,
+        "bridges": 0,
+        "max_ground_plane_error_m": 5.329070518200751e-15,
+        "content_identity": "92787f6b01ac6c9a06c3778b3ee07fbc0bc8c0abc37f93fc56ab9adc4164edf4"
+      }
+    }
+  ]
+}

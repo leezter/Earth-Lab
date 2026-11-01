@@ -1,0 +1,26 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const{chromium}=require(process.env.EARTH_PLAYWRIGHT||'C:/Users/leezt/AppData/Local/npm-cache/_npx/420ff84f11983ee5/node_modules/playwright');
+(async()=>{const url='http://127.0.0.1:47852',freeze=JSON.parse(fs.readFileSync(path.join(__dirname,'freeze.json'))).id;
+const site=(await(await fetch(url+'/api/sites')).json()).find(s=>s.fixture==='junctions'&&s.status==='built'&&s.renderer_freeze===freeze);assert(site);
+const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
+try{const page=await browser.newPage({viewport:{width:1440,height:1000}});
+await page.addInitScript(()=>{window.testNow=1000;performance.now=()=>testNow;let id=0;const callbacks=new Map();requestAnimationFrame=cb=>{callbacks.set(++id,cb);return id;};cancelAnimationFrame=id=>callbacks.delete(id);window.testFrame=now=>{const batch=[...callbacks.values()];callbacks.clear();for(const cb of batch)cb(now);};});
+await page.goto(url+'/?site='+site.id);await page.waitForFunction(()=>window.earthLab?.car&&!earthLab.state.loading,null,{polling:50});await page.getByRole('button',{name:'Hide menu',exact:true}).click();
+const result=await page.evaluate(()=>{
+ document.querySelector('#zoom').value='16';
+ const capture=(kind,point,id)=>{document.querySelector('#vehicle').value=kind;earthLab.spawn(point,id);testNow+=17;testFrame(testNow);const c=document.querySelector('#world');return {pixels:c.getContext('2d').getImageData(c.width/2-48,c.height/2-48,96,96).data,surface:earthLab.car.surfaceId};};
+ const compare=(point,id)=>{const a=capture('GT',point,id),b=capture('Bubble',point,id);return {id,point,surfaces:[a.surface,b.surface],differentBytes:a.pixels.reduce((n,v,i)=>n+(v!==b.pixels[i]),0)};};
+ const levels={groundUnderDeck:compare([-30,0],'osm-4-0'),middleUnderUpper:compare([30,0],'bridge-1-1'),upperVisible:compare([30,0],'bridge-3-0')};
+ document.querySelector('#vehicle').value='GT';earthLab.spawn([30,0],'bridge-1-1');if(!earthLab.state.paused)document.querySelector('#pause').click();
+ const original=earthLab.district.drawRails,c=document.querySelector('#world'),captureRails=()=>{testNow+=17;testFrame(testNow);return c.getContext('2d').getImageData(c.width/2-48,c.height/2-128,96,256).data;};
+ const enabled=captureRails();earthLab.district.drawRails=()=>{};const disabled=captureRails();earthLab.district.drawRails=original;
+ levels.lowerRailDifferentBytes=enabled.reduce((n,v,i)=>n+(v!==disabled[i]),0);return levels;
+});
+assert.equal(result.groundUnderDeck.differentBytes,0);assert.equal(result.middleUnderUpper.differentBytes,0);assert(result.upperVisible.differentBytes>0);
+assert.equal(result.lowerRailDifferentBytes,0,'Lower rails must be occluded by the upper deck');
+for(const r of [result.groundUnderDeck,result.middleUnderUpper,result.upperVisible])assert(r.surfaces.every(id=>id===r.id));
+await page.screenshot({path:path.join(__dirname,'web/reviews/junctions-upper-'+freeze+'.png')});
+await page.evaluate(()=>{document.querySelector('#vehicle').value='GT';earthLab.spawn([30,0],'bridge-1-1');testNow+=17;testFrame(testNow);});
+await page.screenshot({path:path.join(__dirname,'web/reviews/junctions-middle-'+freeze+'.png')});
+fs.writeFileSync(path.join(__dirname,'layered-occlusion-verification.json'),JSON.stringify({renderer:freeze,...result,finished_utc:new Date().toISOString()},null,2));console.log(result);
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

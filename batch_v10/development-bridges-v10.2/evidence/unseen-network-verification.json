@@ -1,0 +1,41 @@
+{
+  "renderer": "bridges-v10.2",
+  "scope": "Source and surface-network checks only. No Blender, driving or visual acceptance.",
+  "per_location_geometry_changes": false,
+  "cases": [
+    {
+      "name": "Pont Neuf - Paris",
+      "lat": 48.857,
+      "lon": 2.3413,
+      "status": "rejected",
+      "reason": "Bridge approach needs one unambiguous road at endpoint 2734089715 (bridge-683347676)"
+    },
+    {
+      "name": "Puente de Piedra - Zaragoza",
+      "lat": 41.6589,
+      "lon": -0.875,
+      "status": "no eligible bridge",
+      "bridges": 0,
+      "crossings": 0
+    },
+    {
+      "name": "Wellington bridge - Leeds",
+      "lat": 53.7957,
+      "lon": -1.557,
+      "status": "rejected",
+      "reason": "Tunnel driving is not supported (OSM way 375109501)"
+    },
+    {
+      "name": "Burrard bridge - Vancouver",
+      "lat": 49.2727,
+      "lon": -123.1363,
+      "status": "rejected",
+      "reason": "Bridge width changes at a source join; unsupported design"
+    }
+  ],
+  "counts": {
+    "network passed": 0,
+    "no eligible bridge": 1,
+    "rejected": 3
+  }
+}

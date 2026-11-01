@@ -1,0 +1,39 @@
+{
+  "renderer": "bridges-v10.7",
+  "scope": "Visible bridge generation, not browser or visual acceptance",
+  "manual_crop_or_geometry_adjustments": false,
+  "requests": 4,
+  "visible_bridge_generation_count": 0,
+  "areas_without_visible_bridge": 2,
+  "generation_rejections": 2,
+  "cases": [
+    {
+      "id": "place-e1dace51729201e8",
+      "name": "Held-out: Santa Clara bridge - Coimbra",
+      "result": "area generated without a visible bridge",
+      "error": null,
+      "automatic_road_snap_metres": 154.10777801299773
+    },
+    {
+      "id": "place-d52a416546f0cc7c",
+      "name": "Held-out: Pont Wilson - Lyon",
+      "result": "generation rejected",
+      "error": "Tunnel driving is not supported (OSM way 18203568)",
+      "automatic_road_snap_metres": 27.269156464186537
+    },
+    {
+      "id": "place-eff4b27f32f21a1b",
+      "name": "Held-out: Deutzer bridge - Cologne",
+      "result": "generation rejected",
+      "error": "Overlapping ground/bridge source lines: bridge-49601865",
+      "automatic_road_snap_metres": 24.362333969196037
+    },
+    {
+      "id": "place-7bfbf24811e9f522",
+      "name": "Held-out: Dom Luis bridge - Porto",
+      "result": "area generated without a visible bridge",
+      "error": null,
+      "automatic_road_snap_metres": 20.835701048264887
+    }
+  ]
+}

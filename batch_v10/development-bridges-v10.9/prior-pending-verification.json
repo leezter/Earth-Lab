@@ -1,0 +1,9 @@
+{
+  "pendingJob": "place-eff4b27f32f21a1b",
+  "statusBefore": "fetching map and elevation",
+  "statusAfter": "fetching map and elevation",
+  "submittedByCheck": false,
+  "continuedDrivingMetres": 11.864536065374114,
+  "renderer": "bridges-v10.7",
+  "errors": []
+}

@@ -1,0 +1,57 @@
+{
+  "renderer": "bridges-v10.9",
+  "cases": [
+    {
+      "id": "place-08e3a3d02e06f7e1",
+      "name": "Halifax reported location",
+      "lat": 53.72558,
+      "lon": -1.859568,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.9",
+      "actual_lat": 53.72557085274305,
+      "actual_lon": -1.859635536167721,
+      "automatic_road_snap_metres": 4.563167530753127,
+      "error": "Branched elevated junction is not supported in this edition (OSM node 227406004). Choose a simpler bridge or another area.",
+      "retryable": false
+    },
+    {
+      "id": "place-cae40f99ece997ac",
+      "name": "Halifax reported location",
+      "lat": 53.726006,
+      "lon": -1.859824,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.9",
+      "actual_lat": 53.72600822610582,
+      "actual_lon": -1.859812088737755,
+      "automatic_road_snap_metres": 0.8227068434704142,
+      "error": "Branched elevated junction is not supported in this edition (OSM node 227406004). Choose a simpler bridge or another area.",
+      "retryable": false
+    },
+    {
+      "id": "place-8c55bf46dc5d4164",
+      "name": "Halifax reported location",
+      "lat": 53.726589,
+      "lon": -1.860018,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.9",
+      "actual_lat": 53.72658828438656,
+      "actual_lon": -1.86002047154149,
+      "automatic_road_snap_metres": 0.18122555612843014,
+      "error": "Branched elevated junction is not supported in this edition (OSM node 227406004). Choose a simpler bridge or another area.",
+      "retryable": false
+    },
+    {
+      "id": "place-e6c31e8e199908e1",
+      "name": "Halifax reported location",
+      "lat": 53.727338,
+      "lon": -1.859579,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.9",
+      "actual_lat": 53.72733813735567,
+      "actual_lon": -1.859579592296451,
+      "automatic_road_snap_metres": 0.041898208845193484,
+      "error": "Branched elevated junction is not supported in this edition (OSM node 227406004). Choose a simpler bridge or another area.",
+      "retryable": false
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "renderer": "bridges-v10.4",
+  "scope": "Source and surface-network checks only. No Blender, driving or visual acceptance.",
+  "per_location_geometry_changes": false,
+  "cases": [
+    {
+      "name": "Santa Clara bridge - Coimbra",
+      "lat": 40.204,
+      "lon": -8.4295,
+      "evidence_path": "cache/unseen-probes/bridges-v10.4/8c96106efb79a3cc",
+      "status": "network passed",
+      "bridges": 1,
+      "crossings": 0
+    },
+    {
+      "name": "Pont Wilson - Lyon",
+      "lat": 45.7581,
+      "lon": 4.8365,
+      "evidence_path": "cache/unseen-probes/bridges-v10.4/ff1c8286502594b7",
+      "status": "rejected",
+      "reason": "Tunnel driving is not supported (OSM way 18203568)"
+    },
+    {
+      "name": "Deutzer bridge - Cologne",
+      "lat": 50.9361,
+      "lon": 6.9657,
+      "evidence_path": "cache/unseen-probes/bridges-v10.4/b3a3b8604ea15d44",
+      "status": "rejected",
+      "reason": "Overlapping ground/bridge source lines: bridge-49601865"
+    },
+    {
+      "name": "Dom Luis bridge - Porto",
+      "lat": 41.1406,
+      "lon": -8.6099,
+      "evidence_path": "cache/unseen-probes/bridges-v10.4/f7c21acafb76ca1d",
+      "status": "rejected",
+      "reason": "Tunnel driving is not supported (OSM way 12544650)"
+    }
+  ],
+  "counts": {
+    "network passed": 1,
+    "no eligible bridge": 0,
+    "rejected": 3
+  }
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "fixture-2c1ce9ed9685be55",
+    "name": "Synthetic overpass test",
+    "fixture": "overpass",
+    "renderer_freeze": "bridges-v10.4",
+    "status": "built",
+    "error": null,
+    "total_seconds": 54.38999999999942,
+    "bridge_count": 1,
+    "acceptance": {
+      "status": "passed",
+      "tiles": 9,
+      "patches": 1,
+      "decoded_image_bytes": 153495824,
+      "bridges": 1,
+      "max_ground_plane_error_m": 4.796163466380676e-14,
+      "content_identity": "7fbff0408fb0b386d9b4b7b6ec3701ff5bef897a5aaecac5e2445927f514959e"
+    },
+    "cached_at_submission": false
+  },
+  {
+    "id": "place-46a7d296f1c8377a",
+    "name": "Schlesische bridge - Berlin",
+    "fixture": null,
+    "renderer_freeze": "bridges-v10.4",
+    "status": "built",
+    "error": null,
+    "total_seconds": 226.95300000000134,
+    "bridge_count": 2,
+    "acceptance": {
+      "status": "passed",
+      "tiles": 9,
+      "patches": 2,
+      "decoded_image_bytes": 153691768,
+      "bridges": 2,
+      "max_ground_plane_error_m": 1.6153745008296028e-14,
+      "content_identity": "20c23dbad869ce3d1e402065c5b10ce5a6cdac041818fb0e213c34d9c35ec0eb"
+    },
+    "cached_at_submission": false
+  },
+  {
+    "id": "place-0e7db53eace3eb42",
+    "name": "Hornsey Lane bridge - London",
+    "fixture": null,
+    "renderer_freeze": "bridges-v10.4",
+    "status": "built",
+    "error": null,
+    "total_seconds": 146.79699999999866,
+    "bridge_count": 1,
+    "acceptance": {
+      "status": "passed",
+      "tiles": 9,
+      "patches": 1,
+      "decoded_image_bytes": 156531904,
+      "bridges": 1,
+      "max_ground_plane_error_m": 7.460698725481052e-14,
+      "content_identity": "14d38d0870d16f5f826bb7b80c425a1ae459046cbc237d33d7a5aaf08d948865"
+    },
+    "cached_at_submission": false
+  },
+  {
+    "id": "place-11805767fac6f60d",
+    "name": "Gotteron bridge - Fribourg",
+    "fixture": null,
+    "renderer_freeze": "bridges-v10.4",
+    "status": "built",
+    "error": null,
+    "total_seconds": 150.45300000000134,
+    "bridge_count": 1,
+    "acceptance": {
+      "status": "passed",
+      "tiles": 9,
+      "patches": 1,
+      "decoded_image_bytes": 194196504,
+      "bridges": 1,
+      "max_ground_plane_error_m": 1.0658141036401503e-13,
+      "content_identity": "08a32ccc5e45f2481a765dbcff546fa946d4ea379ebf49997ac4685e5a617a6a"
+    },
+    "cached_at_submission": false
+  },
+  {
+    "id": "place-b84adaa2c5263388",
+    "name": "Dean Bridge - Edinburgh",
+    "fixture": null,
+    "renderer_freeze": "bridges-v10.4",
+    "status": "failed",
+    "error": "Pedestrian geometry overlaps carriageway",
+    "total_seconds": null,
+    "bridge_count": null,
+    "acceptance": null,
+    "cached_at_submission": false
+  },
+  {
+    "id": "place-ad9d12c29894f823",
+    "name": "Kreuzberg - ground regression",
+    "fixture": null,
+    "renderer_freeze": "bridges-v10.4",
+    "status": "failed",
+    "error": "TopologyException: side location conflict at -186.75843963277327 62.863739476875104. This can occur if the input geometry is invalid.",
+    "total_seconds": null,
+    "bridge_count": null,
+    "acceptance": null,
+    "cached_at_submission": false
+  },
+  {
+    "id": "fixture-f7ed9a591d2c7324",
+    "name": "Synthetic hills test",
+    "fixture": "hills",
+    "renderer_freeze": "bridges-v10.4",
+    "status": "built",
+    "error": null,
+    "total_seconds": 51.67199999999866,
+    "bridge_count": 0,
+    "acceptance": {
+      "status": "passed",
+      "tiles": 9,
+      "patches": 0,
+      "decoded_image_bytes": 150994944,
+      "bridges": 0,
+      "max_ground_plane_error_m": 5.329070518200751e-15,
+      "content_identity": "5480ce7b6248564f7a22017d14c058ddf039fb0badbeae57aa0e7c923a51c237"
+    },
+    "cached_at_submission": false
+  },
+  {
+    "id": "fixture-12dd67b98440f96c",
+    "name": "Synthetic flat test",
+    "fixture": "flat",
+    "renderer_freeze": "bridges-v10.4",
+    "status": "built",
+    "error": null,
+    "total_seconds": 51.0,
+    "bridge_count": 0,
+    "acceptance": {
+      "status": "passed",
+      "tiles": 9,
+      "patches": 0,
+      "decoded_image_bytes": 150994944,
+      "bridges": 0,
+      "max_ground_plane_error_m": 0,
+      "content_identity": "898dbda5e5fbe3fecfca5e30f329d1dfcd62b1b1bf2626ff04ebff021687c891"
+    },
+    "cached_at_submission": false
+  }
+]

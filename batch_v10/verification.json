@@ -1,0 +1,727 @@
+{
+  "started_utc": "2026-11-01T16:53:16.515Z",
+  "renderer": "bridges-v10.14",
+  "synthetic": [
+    {
+      "kind": "GT",
+      "direction": -1,
+      "route": "upper",
+      "frames": 198,
+      "replaced": 0,
+      "maxHeight": 5.05,
+      "visited": [
+        "approach-b",
+        "bridge-fixture",
+        "approach-a"
+      ],
+      "x": -60.33693764338089,
+      "recoveries": 0
+    },
+    {
+      "kind": "GT",
+      "direction": 1,
+      "route": "upper",
+      "frames": 198,
+      "replaced": 0,
+      "maxHeight": 5.05,
+      "visited": [
+        "approach-a",
+        "bridge-fixture",
+        "approach-b"
+      ],
+      "x": 60.33693764338089,
+      "recoveries": 0
+    },
+    {
+      "kind": "GT",
+      "direction": -1,
+      "route": "lower",
+      "frames": 178,
+      "min": 0,
+      "max": 0,
+      "replaced": 0,
+      "y": -50.0765853793441,
+      "surface": "lower"
+    },
+    {
+      "kind": "GT",
+      "direction": 1,
+      "route": "lower",
+      "frames": 178,
+      "min": 0,
+      "max": 0,
+      "replaced": 0,
+      "y": 50.0765853793441,
+      "surface": "lower"
+    },
+    {
+      "kind": "GT",
+      "route": "support-collision",
+      "hit": 2,
+      "y": -0.27306379533060127
+    },
+    {
+      "kind": "GT",
+      "route": "rail-collision",
+      "hit": 3,
+      "y": 3.659436918097856,
+      "surface": "bridge-fixture"
+    },
+    {
+      "kind": "GT",
+      "route": "above-support",
+      "hit": 0,
+      "x": -6.700698963967031,
+      "surface": "bridge-fixture"
+    },
+    {
+      "kind": "GT",
+      "route": "recovery",
+      "height": 5.05,
+      "surface": "bridge-fixture",
+      "originalHeight": 5.05
+    },
+    {
+      "kind": "GT",
+      "route": "pause",
+      "unchanged": true,
+      "paused": true
+    },
+    {
+      "kind": "F1",
+      "direction": -1,
+      "route": "upper",
+      "frames": 374,
+      "replaced": 0,
+      "maxHeight": 5.05,
+      "visited": [
+        "approach-b",
+        "bridge-fixture",
+        "approach-a"
+      ],
+      "x": -60.30052738473781,
+      "recoveries": 0
+    },
+    {
+      "kind": "F1",
+      "direction": 1,
+      "route": "upper",
+      "frames": 374,
+      "replaced": 0,
+      "maxHeight": 5.05,
+      "visited": [
+        "approach-a",
+        "bridge-fixture",
+        "approach-b"
+      ],
+      "x": 60.61529848617995,
+      "recoveries": 0
+    },
+    {
+      "kind": "F1",
+      "direction": -1,
+      "route": "lower",
+      "frames": 331,
+      "min": 0,
+      "max": 0,
+      "replaced": 0,
+      "y": -50.154999702565284,
+      "surface": "lower"
+    },
+    {
+      "kind": "F1",
+      "direction": 1,
+      "route": "lower",
+      "frames": 331,
+      "min": 0,
+      "max": 0,
+      "replaced": 0,
+      "y": 50.154999702565284,
+      "surface": "lower"
+    },
+    {
+      "kind": "F1",
+      "route": "support-collision",
+      "hit": 1,
+      "y": -0.2879344085171519
+    },
+    {
+      "kind": "F1",
+      "route": "rail-collision",
+      "hit": 2,
+      "y": 3.555916998247322,
+      "surface": "bridge-fixture"
+    },
+    {
+      "kind": "F1",
+      "route": "above-support",
+      "hit": 0,
+      "x": -6.875353550277315,
+      "surface": "bridge-fixture"
+    },
+    {
+      "kind": "F1",
+      "route": "recovery",
+      "height": 5.05,
+      "surface": "bridge-fixture",
+      "originalHeight": 5.05
+    },
+    {
+      "kind": "F1",
+      "route": "pause",
+      "unchanged": true,
+      "paused": true
+    },
+    {
+      "kind": "Bubble",
+      "direction": -1,
+      "route": "upper",
+      "frames": 279,
+      "replaced": 0,
+      "maxHeight": 5.05,
+      "visited": [
+        "approach-b",
+        "bridge-fixture",
+        "approach-a"
+      ],
+      "x": -60.73201840557296,
+      "recoveries": 0
+    },
+    {
+      "kind": "Bubble",
+      "direction": 1,
+      "route": "upper",
+      "frames": 280,
+      "replaced": 0,
+      "maxHeight": 5.05,
+      "visited": [
+        "approach-a",
+        "bridge-fixture",
+        "approach-b"
+      ],
+      "x": 60.619087380680284,
+      "recoveries": 0
+    },
+    {
+      "kind": "Bubble",
+      "direction": -1,
+      "route": "lower",
+      "frames": 249,
+      "min": 0,
+      "max": 0,
+      "replaced": 0,
+      "y": -50.71172113051801,
+      "surface": "lower"
+    },
+    {
+      "kind": "Bubble",
+      "direction": 1,
+      "route": "lower",
+      "frames": 249,
+      "min": 0,
+      "max": 0,
+      "replaced": 0,
+      "y": 50.71172113051801,
+      "surface": "lower"
+    },
+    {
+      "kind": "Bubble",
+      "route": "support-collision",
+      "hit": 1,
+      "y": -0.045928067782391765
+    },
+    {
+      "kind": "Bubble",
+      "route": "rail-collision",
+      "hit": 2,
+      "y": 3.830510618501999,
+      "surface": "bridge-fixture"
+    },
+    {
+      "kind": "Bubble",
+      "route": "above-support",
+      "hit": 0,
+      "x": -6.959551417433758,
+      "surface": "bridge-fixture"
+    },
+    {
+      "kind": "Bubble",
+      "route": "recovery",
+      "height": 5.05,
+      "surface": "bridge-fixture",
+      "originalHeight": 5.05
+    },
+    {
+      "kind": "Bubble",
+      "route": "pause",
+      "unchanged": true,
+      "paused": true
+    },
+    {
+      "kind": "Truck",
+      "direction": -1,
+      "route": "upper",
+      "frames": 189,
+      "replaced": 0,
+      "maxHeight": 5.05,
+      "visited": [
+        "approach-b",
+        "bridge-fixture",
+        "approach-a"
+      ],
+      "x": -60.455250888721004,
+      "recoveries": 0
+    },
+    {
+      "kind": "Truck",
+      "direction": 1,
+      "route": "upper",
+      "frames": 189,
+      "replaced": 0,
+      "maxHeight": 5.05,
+      "visited": [
+        "approach-a",
+        "bridge-fixture",
+        "approach-b"
+      ],
+      "x": 60.455250888721004,
+      "recoveries": 0
+    },
+    {
+      "kind": "Truck",
+      "direction": -1,
+      "route": "lower",
+      "frames": 170,
+      "min": 0,
+      "max": 0,
+      "replaced": 0,
+      "y": -50.53461648438419,
+      "surface": "lower"
+    },
+    {
+      "kind": "Truck",
+      "direction": 1,
+      "route": "lower",
+      "frames": 170,
+      "min": 0,
+      "max": 0,
+      "replaced": 0,
+      "y": 50.53461648438419,
+      "surface": "lower"
+    },
+    {
+      "kind": "Truck",
+      "route": "support-collision",
+      "hit": 2,
+      "y": -1.0767575149817907
+    },
+    {
+      "kind": "Truck",
+      "route": "rail-collision",
+      "hit": 3,
+      "y": 2.8527226530477185,
+      "surface": "bridge-fixture"
+    },
+    {
+      "kind": "Truck",
+      "route": "above-support",
+      "hit": 0,
+      "x": -6.913061934255159,
+      "surface": "bridge-fixture"
+    },
+    {
+      "kind": "Truck",
+      "route": "recovery",
+      "height": 5.05,
+      "surface": "bridge-fixture",
+      "originalHeight": 5.05
+    },
+    {
+      "kind": "Truck",
+      "route": "pause",
+      "unchanged": true,
+      "paused": true
+    }
+  ],
+  "mapped": [
+    {
+      "id": "fixture-2f616729f599387d",
+      "name": "Synthetic overpass test",
+      "synthetic": true,
+      "ordinaryDriveMetres": 16.994512008767636,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 0,
+        "epoch": 1,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 4,
+        "decodedBytes": 153495824,
+        "bridgeCount": 1,
+        "collisionFixtures": 396,
+        "recoveries": 0,
+        "activeSurface": "bridge-fixture",
+        "height": 5.05,
+        "grade": 0,
+        "origin": [
+          0,
+          0
+        ]
+      },
+      "image": "site-fixture-2f616729f599387d.png"
+    },
+    {
+      "id": "fixture-dec22d686495f634",
+      "name": "Synthetic hills test",
+      "synthetic": true,
+      "ordinaryDriveMetres": 17.00986292526087,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 0,
+        "epoch": 1,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 0,
+        "decodedBytes": 150994944,
+        "bridgeCount": 0,
+        "collisionFixtures": 0,
+        "recoveries": 0,
+        "activeSurface": "hill-road",
+        "height": -5.200011086832716,
+        "grade": 0.08000000000000007,
+        "origin": [
+          0,
+          0
+        ]
+      },
+      "image": "site-fixture-dec22d686495f634.png"
+    },
+    {
+      "id": "fixture-64eabf42fbc15735",
+      "name": "Synthetic flat test",
+      "synthetic": true,
+      "ordinaryDriveMetres": 16.99451200876765,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 0,
+        "epoch": 1,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 0,
+        "decodedBytes": 150994944,
+        "bridgeCount": 0,
+        "collisionFixtures": 0,
+        "recoveries": 0,
+        "activeSurface": "hill-road",
+        "height": 0,
+        "grade": 0,
+        "origin": [
+          0,
+          0
+        ]
+      },
+      "image": "site-fixture-64eabf42fbc15735.png"
+    },
+    {
+      "id": "fixture-d7917bf3f06829b0",
+      "name": "Synthetic junctions test",
+      "synthetic": true,
+      "ordinaryDriveMetres": 15.998776819845933,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 0,
+        "epoch": 1,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 35,
+        "decodedBytes": 189188712,
+        "bridgeCount": 4,
+        "collisionFixtures": 912,
+        "recoveries": 0,
+        "activeSurface": "bridge-1-0",
+        "height": 1.6664408183471986,
+        "grade": 0.16,
+        "origin": [
+          0,
+          0
+        ]
+      },
+      "image": "site-fixture-d7917bf3f06829b0.png"
+    },
+    {
+      "id": "place-89f229ffb29986bd",
+      "name": "Halifax viaducts 53.726589, -1.860018",
+      "synthetic": false,
+      "ordinaryDriveMetres": 16.71074422040216,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 60.3817686013927,
+        "epoch": 1,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 19,
+        "decodedBytes": 177376960,
+        "bridgeCount": 4,
+        "collisionFixtures": 1023,
+        "recoveries": 0,
+        "activeSurface": "bridge-22817576-0",
+        "height": -2.111195916356106,
+        "grade": 0,
+        "origin": [
+          53.72658828438656,
+          -1.86002047154149
+        ]
+      },
+      "image": "site-place-89f229ffb29986bd.png"
+    },
+    {
+      "id": "place-816268416cb633f5",
+      "name": "Halifax viaducts 53.726006, -1.859824",
+      "synthetic": false,
+      "ordinaryDriveMetres": 17.688841799168586,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 60.582372483877265,
+        "epoch": 1,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 4,
+        "decodedBytes": 157250092,
+        "bridgeCount": 3,
+        "collisionFixtures": 392,
+        "recoveries": 0,
+        "activeSurface": "osm-107554913-3",
+        "height": -0.005562000000303342,
+        "grade": 0.0422774117887455,
+        "origin": [
+          53.72600822610582,
+          -1.859812088737755
+        ]
+      },
+      "image": "site-place-816268416cb633f5.png"
+    },
+    {
+      "id": "place-9730cda9e56cf479",
+      "name": "Halifax viaducts 53.72558, -1.859568",
+      "synthetic": false,
+      "ordinaryDriveMetres": 17.000567372699305,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 59.464816650016935,
+        "epoch": 1,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 1,
+        "decodedBytes": 151047648,
+        "bridgeCount": 1,
+        "collisionFixtures": 135,
+        "recoveries": 0,
+        "activeSurface": "osm-107554913-0",
+        "height": 0.0016789999995230197,
+        "grade": 0.002654290454760355,
+        "origin": [
+          53.72557085274305,
+          -1.859635536167721
+        ]
+      },
+      "image": "site-place-9730cda9e56cf479.png"
+    },
+    {
+      "id": "place-80fb5b75f55cf2af",
+      "name": "Halifax viaducts 53.727338, -1.859579",
+      "synthetic": false,
+      "ordinaryDriveMetres": 17.732258123787748,
+      "state": {
+        "loading": false,
+        "paused": false,
+        "fps": 61.5690168817361,
+        "epoch": 1,
+        "surface": {
+          "onRoad": true,
+          "surfaceType": "tarmac-pro"
+        },
+        "rendererFreeze": "bridges-v10.14",
+        "renderedTiles": 9,
+        "bridgePatches": 45,
+        "decodedBytes": 209858428,
+        "bridgeCount": 10,
+        "collisionFixtures": 1507,
+        "recoveries": 0,
+        "activeSurface": "bridge-22817576-0",
+        "height": 10.417241626619623,
+        "grade": 0.15999999999999967,
+        "origin": [
+          53.72733813735567,
+          -1.859579592296451
+        ]
+      },
+      "image": "site-place-80fb5b75f55cf2af.png"
+    }
+  ],
+  "errors": [],
+  "occlusion": {
+    "lowerDifferentBytes": 0,
+    "upperDifferentBytes": 2461
+  },
+  "overpassState": {
+    "loading": false,
+    "paused": false,
+    "fps": 59.9999996399798,
+    "epoch": 1,
+    "surface": {
+      "onRoad": true,
+      "surfaceType": "tarmac-pro"
+    },
+    "rendererFreeze": "bridges-v10.14",
+    "renderedTiles": 9,
+    "bridgePatches": 4,
+    "decodedBytes": 153495824,
+    "bridgeCount": 1,
+    "collisionFixtures": 396,
+    "recoveries": 0,
+    "activeSurface": "lower",
+    "height": 0,
+    "grade": 0,
+    "origin": [
+      0,
+      0
+    ]
+  },
+  "slopes": [
+    {
+      "kind": "GT",
+      "flat": {
+        "distance": 27.850765009056254,
+        "speed": 50.50307702331817,
+        "grade": 0
+      },
+      "uphill": {
+        "distance": 27.13586899353262,
+        "speed": 49.52162484897666,
+        "grade": 0.07999999999999999
+      },
+      "downhill": {
+        "distance": 28.55598999204771,
+        "speed": 51.45162165550464,
+        "grade": 0.08000000000000002
+      }
+    },
+    {
+      "kind": "F1",
+      "flat": {
+        "distance": 7.482133456899942,
+        "speed": 12.196552140703723,
+        "grade": 0
+      },
+      "uphill": {
+        "distance": 6.9254748840754505,
+        "speed": 11.34360757795913,
+        "grade": 0.08000000000000007
+      },
+      "downhill": {
+        "distance": 7.9300324280505325,
+        "speed": 12.939137551752001,
+        "grade": 0.08000000000000007
+      }
+    },
+    {
+      "kind": "Bubble",
+      "flat": {
+        "distance": 13.34280935507689,
+        "speed": 22.100019717193952,
+        "grade": 0
+      },
+      "uphill": {
+        "distance": 12.769398227203624,
+        "speed": 21.113705399753037,
+        "grade": 0.07999999999999985
+      },
+      "downhill": {
+        "distance": 14.017736372232013,
+        "speed": 23.475538034246124,
+        "grade": 0.08000000000000007
+      }
+    },
+    {
+      "kind": "Truck",
+      "flat": {
+        "distance": 31.418619741188355,
+        "speed": 51.46509851843713,
+        "grade": 0
+      },
+      "uphill": {
+        "distance": 30.791445006452456,
+        "speed": 51.16695464170527,
+        "grade": 0.08
+      },
+      "downhill": {
+        "distance": 32.03634631456405,
+        "speed": 52.41010634693472,
+        "grade": 0.08000000000000002
+      }
+    }
+  ],
+  "flatBaseline": [
+    {
+      "kind": "GT",
+      "checks": 255,
+      "maxError": 0,
+      "bodyReplacements": 0
+    },
+    {
+      "kind": "F1",
+      "checks": 255,
+      "maxError": 0,
+      "bodyReplacements": 0
+    },
+    {
+      "kind": "Bubble",
+      "checks": 255,
+      "maxError": 0,
+      "bodyReplacements": 0
+    },
+    {
+      "kind": "Truck",
+      "checks": 255,
+      "maxError": 0,
+      "bodyReplacements": 0
+    }
+  ],
+  "patchRetry": true,
+  "finished_utc": "2026-11-01T16:53:48.802Z"
+}

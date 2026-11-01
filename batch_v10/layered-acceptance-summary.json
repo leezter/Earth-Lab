@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "renderer": "bridges-v10.14",
+  "baked_model": "bridges-v10.13",
+  "checked_utc": "2026-11-01T17:04:26.821831+00:00",
+  "python_tests_passed": 128,
+  "javascript_contact_tests_passed": true,
+  "fresh_original_builds": 8,
+  "reported_halifax_requests_built": 4,
+  "current_builds_revalidated": 8,
+  "viewer_only_image_reuse": true,
+  "layered_vehicle_traversals": 144,
+  "mapped_vehicle_traversals": 240,
+  "ordinary_playable_scene_checks": 8,
+  "browser_errors": [],
+  "flat_runtime_max_deviation": 0,
+  "lower_car_and_rail_occlusion_passed": true,
+  "max_height_step_m": 0.0179609349931642,
+  "desktop_mean_fps_range": [
+    60.08980454303117,
+    60.25492468134415
+  ],
+  "desktop_p99_frame_ms_range": [
+    16.80000000000109,
+    17
+  ],
+  "local_scene_load_ms_range": [
+    417.3811999999998,
+    1617.177300000003
+  ],
+  "decoded_image_mib_range": [
+    144.0,
+    200.13659286499023
+  ],
+  "frozen_editions_audited": 10,
+  "retained_source_snapshots_verified": 14,
+  "scope_limits": [
+    "Reported locations were development/acceptance examples, not held-out worldwide coverage",
+    "Metric heights and junction structures are inferred",
+    "Some test routes are cropped or only overlap carriageway edges and are reported explicitly",
+    "No Android or surveyed visual/clearance acceptance"
+  ]
+}

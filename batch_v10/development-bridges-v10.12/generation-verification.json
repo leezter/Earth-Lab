@@ -1,0 +1,167 @@
+{
+  "renderer": "bridges-v10.12",
+  "manual_crop_or_geometry_adjustments": false,
+  "builds": [
+    {
+      "id": "place-c1e57ff7f382c1ea",
+      "name": "Halifax layered bridge acceptance",
+      "lat": 53.726589,
+      "lon": -1.860018,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.12",
+      "actual_lat": 53.72658828438656,
+      "actual_lon": -1.86002047154149,
+      "automatic_road_snap_metres": 0.18122555612843014,
+      "total_seconds": 149.70299999999952,
+      "content_identity": "00ccafc411116f059545b236cf83f5f03a11a356217c528a56c96850baa9a0e3",
+      "bridge_count": 14,
+      "terrain_source": {
+        "status": "available",
+        "policy": "installed-ground-v1:z15:grid6m:binomial3:relative-only",
+        "providers": [
+          "mapterhorn"
+        ],
+        "adapter_sha256": "ad1f2d8507bff3eaed8d235f22b95ea04918340118af04a53ca1fe7a18eb7066",
+        "adapter_decoded_version": 2,
+        "requested_zoom": 15,
+        "native_resolution": "Provider dependent; z15 can upsample coarser ground-filtered DSM",
+        "datum": "Provider-dependent orthometric heights; relative scene reference only",
+        "absolute_reference_m": 137.25296131425398,
+        "osm_ele_policy": "Retained, not fused without verified datum conversion",
+        "attribution": "Mapterhorn and upstream terrain providers; AWS Terrain Tiles where used",
+        "source_urls": [
+          "https://mapterhorn.com/attribution",
+          "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+        ],
+        "inputs": [
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16214,
+              10562
+            ],
+            "sha256": "6ad821dc4dcf250eff81058d4e1586e60654527658ba05da3b1e4426af4e2e22"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16214,
+              10563
+            ],
+            "sha256": "08d194fdd3cc6d0ec4ae8e583fd5103b7f4e2abab12ce6f2f28ecc6257feb9e7"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16215,
+              10562
+            ],
+            "sha256": "f63a2e19034aa10da79f6b7e91360228f08bd6c28d9a94d8baa60274fb1d10b1"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              16215,
+              10563
+            ],
+            "sha256": "dec993091c208c00580a736a44171ae1f2299699442a9f289cda037b703a376c"
+          }
+        ],
+        "stats": {
+          "dem:mirror": 4
+        },
+        "sample_sha256": "7a0e313f4941c33f1f1146f815d5f07c295241323cfe8c8868de32dd2b0070c0"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 4,
+        "decoded_image_bytes": 177979992,
+        "bridges": 14,
+        "max_ground_plane_error_m": 5.1958437552457326e-14,
+        "content_identity": "00ccafc411116f059545b236cf83f5f03a11a356217c528a56c96850baa9a0e3"
+      }
+    },
+    {
+      "id": "fixture-c869e4ad42da7a1b",
+      "fixture": "junctions",
+      "name": "Synthetic junctions test",
+      "lat": 0,
+      "lon": 0.03,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.12",
+      "actual_lat": 0,
+      "actual_lon": 0,
+      "automatic_road_snap_metres": 0,
+      "error": "Frozen input changed during generation: batch_v10/bridge_geometry.py",
+      "retryable": true
+    },
+    {
+      "id": "place-d0c33ea370be4e09",
+      "name": "Halifax layered bridge acceptance",
+      "lat": 53.72558,
+      "lon": -1.859568,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.12",
+      "error": "Frozen renderer input changed: batch_v10/bridge_geometry.py",
+      "retryable": true
+    },
+    {
+      "id": "place-570148e030d1295d",
+      "name": "Halifax layered bridge acceptance",
+      "lat": 53.726006,
+      "lon": -1.859824,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.12",
+      "error": "Frozen renderer input changed: batch_v10/bridge_geometry.py",
+      "retryable": true
+    },
+    {
+      "id": "place-9a3a09e2f04601fc",
+      "name": "Halifax layered bridge acceptance",
+      "lat": 53.727338,
+      "lon": -1.859579,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.12",
+      "error": "Frozen renderer input changed: batch_v10/bridge_geometry.py",
+      "retryable": true
+    },
+    {
+      "id": "fixture-0856676c805f8062",
+      "fixture": "overpass",
+      "name": "Synthetic overpass test",
+      "lat": 0,
+      "lon": 0,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.12",
+      "error": "Frozen renderer input changed: batch_v10/bridge_geometry.py",
+      "retryable": true
+    },
+    {
+      "id": "fixture-414088fe3339a701",
+      "fixture": "flat",
+      "name": "Synthetic flat test",
+      "lat": 0,
+      "lon": 0.02,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.12",
+      "error": "Frozen renderer input changed: batch_v10/bridge_geometry.py",
+      "retryable": true
+    },
+    {
+      "id": "fixture-91b5670e0a2614a1",
+      "fixture": "hills",
+      "name": "Synthetic hills test",
+      "lat": 0,
+      "lon": 0.01,
+      "status": "failed",
+      "renderer_freeze": "bridges-v10.12",
+      "error": "Frozen renderer input changed: batch_v10/bridge_geometry.py",
+      "retryable": true
+    }
+  ]
+}

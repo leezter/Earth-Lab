@@ -49,3 +49,6 @@ node_modules/
 
 /batch_v9/custom/
 /batch_v9/scene-summary.json
+
+/batch_v10/custom/
+/batch_v10/scene-summary.json

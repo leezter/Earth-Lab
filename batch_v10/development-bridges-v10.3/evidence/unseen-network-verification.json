@@ -1,0 +1,44 @@
+{
+  "renderer": "bridges-v10.3",
+  "scope": "Source and surface-network checks only. No Blender, driving or visual acceptance.",
+  "per_location_geometry_changes": false,
+  "cases": [
+    {
+      "name": "Pont George V - Orleans",
+      "lat": 47.8979,
+      "lon": 1.9047,
+      "status": "network passed",
+      "bridges": 1,
+      "crossings": 0
+    },
+    {
+      "name": "Alte Bruecke - Frankfurt",
+      "lat": 50.107,
+      "lon": 8.6853,
+      "status": "network passed",
+      "bridges": 1,
+      "crossings": 0
+    },
+    {
+      "name": "Monbijou bridge - Bern",
+      "lat": 46.9401,
+      "lon": 7.4449,
+      "status": "network passed",
+      "bridges": 1,
+      "crossings": 3
+    },
+    {
+      "name": "Charles Bridge - Prague",
+      "lat": 50.0865,
+      "lon": 14.4114,
+      "status": "no eligible bridge",
+      "bridges": 0,
+      "crossings": 0
+    }
+  ],
+  "counts": {
+    "network passed": 3,
+    "no eligible bridge": 1,
+    "rejected": 0
+  }
+}
