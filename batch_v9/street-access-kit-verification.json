@@ -1,0 +1,11 @@
+{
+  "rendered_counts": {
+    "bollard": 1,
+    "bike_rack": 1,
+    "bus_stop": 1,
+    "shelter": 1,
+    "bench": 1,
+    "bin": 1
+  },
+  "dimensions_and_style": "Generic inferred prefabs at mapped or labelled inferred positions."
+}

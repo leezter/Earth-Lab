@@ -1,0 +1,78 @@
+{
+  "viewer_source_hashes": {
+    "app.js": "7d1cc82b3ddf27b8a030cdc907bc0a362e5d3411a3d8c0f79d86ee8b3e3c2d5f",
+    "driving.js": "a28a8d319068f616cc86b4fbc289bc63f9a47a887bd8c21d90b92cd93e66b9ab",
+    "spawn.js": "cf6e5ac83db3be8eacb03436bb54a802eee70eab3e0b833d0757d42ce832ce22",
+    "ground.js": "b18bf8c76cd5ef5f9d6cd2856a4d67d4d5f1f465a82e8c198ee9818dddb787e5",
+    "signals.js": "aadb6834af58407228930ef0bde4d51b32580bd5e074d870d48d34be5eb36ad8"
+  },
+  "checked_utc": "2026-11-01T02:53:58.699Z",
+  "desktopBrowser": "Edge headless",
+  "results": [
+    {
+      "id": "place-1b3c937c3b29e147",
+      "name": "New York - Broadway",
+      "sceneReadySeconds": 1.058,
+      "cachedReuseSeconds": 0.026,
+      "load_and_checks_seconds": 4.854,
+      "distanceDrivenMetres": 41.25283506547002,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-794e37132707b3cb",
+      "name": "London - Trafalgar Square",
+      "sceneReadySeconds": 0.692,
+      "cachedReuseSeconds": 0.016,
+      "load_and_checks_seconds": 4.215,
+      "distanceDrivenMetres": 20.972227994817963,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-ae0e5bfe0a91c1d8",
+      "name": "Kreuzberg",
+      "sceneReadySeconds": 0.518,
+      "cachedReuseSeconds": 0.017,
+      "load_and_checks_seconds": 4.051,
+      "distanceDrivenMetres": 26.900339253840723,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-a5db62647e738a52",
+      "name": "Berlin - Schlesische Straße cycle lanes",
+      "sceneReadySeconds": 0.594,
+      "cachedReuseSeconds": 0.011,
+      "load_and_checks_seconds": 4.207,
+      "distanceDrivenMetres": 41.25283506547001,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    }
+  ],
+  "errors": [],
+  "aerialRequests": 0,
+  "livePlaceSearch": true,
+  "sceneSwitching": true,
+  "missingTileFailureRetry": true,
+  "pickerPendingKeepsScene": true,
+  "pickerFailureRetry": true,
+  "pickerLifecycleUsesMockJob": true,
+  "gallery": true
+}

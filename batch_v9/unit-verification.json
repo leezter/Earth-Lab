@@ -1,0 +1,44 @@
+{
+  "renderer": "mobility-v9.3",
+  "checked_utc": "2026-11-01T03:04:37.045197+00:00",
+  "results": [
+    {
+      "command": [
+        "C:\\Users\\leezt\\AppData\\Local\\Programs\\BeamNG.Earth.Berlin.Realism\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "batch_v9",
+        "-p",
+        "test_*.py"
+      ],
+      "returncode": 0,
+      "output": "..........................................................................................\n----------------------------------------------------------------------\nRan 90 tests in 0.188s\n\nOK\n"
+    },
+    {
+      "command": [
+        "node",
+        "batch_v9/test_signals.cjs"
+      ],
+      "returncode": 0,
+      "output": "PASS signal phase conflicts, transitions, pause and reset\n"
+    },
+    {
+      "command": [
+        "node",
+        "batch_v9/test_spawn.cjs"
+      ],
+      "returncode": 0,
+      "output": "PASS 4 spawn/clearance checks\n"
+    },
+    {
+      "command": [
+        "node",
+        "batch_v9/test_ground.cjs"
+      ],
+      "returncode": 0,
+      "output": "PASS 6 site grip/hole checks\n"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "renderer": "mobility-v9.3",
+  "before_components": 1,
+  "after_components": 3,
+  "minimum_letter_gap_metres": 0.10750000000000003,
+  "word_width_metres": 2.0375,
+  "supported_min_lane_metres": 2.2,
+  "source_sha256": "99692d5c5db186d5031eabc7118cf5e4a3c8a6445d78cb717d6af3d991eee537"
+}

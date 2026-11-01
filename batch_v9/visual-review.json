@@ -1,0 +1,25 @@
+{
+  "renderer": "mobility-v9.3",
+  "reviewed": [
+    "web/reviews/kreuzberg-furniture.png",
+    "web/reviews/schlesische-cycle-lanes.png",
+    "web/reviews/schlesische-crossing-approach.png",
+    "web/reviews/broadway-bus-lane.png",
+    "web/reviews/london-ramp-tactile.png",
+    "web/reviews/london-shelter.png",
+    "street-access-kit.png"
+  ],
+  "observations": {
+    "Kreuzberg": "Mapped bicycle stands, bins and bollards visible. No dedicated lane or crossing-access additions in its centre without supporting evidence.",
+    "Schlesische": "Cycle symbols/boundaries and lowered/tactile approaches visible. Source corner geometry remains approximate.",
+    "Broadway": "BUS glyphs separated and legible in mapped lane travel direction. The free-driving car is not constrained to that direction.",
+    "Trafalgar": "Mapped island outlines and tagged crossing approaches/tactile pads visible. Existing islands count in coverage metrics; not all refuge area is new.",
+    "London shelter": "Mapped shelter lies inside playable centre. Generic roof/panels and nearby stop pole render."
+  },
+  "limitations": [
+    "Furniture dimensions, heading and materials are inferred generic prefabs.",
+    "Physical symbols and boundaries can be inferred from lane permissions rather than surveyed paint.",
+    "Existing footprint/corner approximations remain. This is not surveyed street accuracy.",
+    "Targeted desktop integration review, not Android or worldwide visual acceptance."
+  ]
+}

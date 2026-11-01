@@ -1,0 +1,7 @@
+{
+  "location": "Broadway",
+  "check": "pavement material outside exported source footprint",
+  "material": "ramp_concrete",
+  "outside_m2": 0.013561079199238883,
+  "resolution": "Align derived ramp ownership with canonical exported pavement polygons before preparation."
+}

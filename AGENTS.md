@@ -8,7 +8,8 @@ offline; the browser drives a dynamic car over baked tiles. This is a desktop
 visual-generation prototype, not a complete world simulator.
 
 Read `README.md` and the relevant edition's README before changing behavior.
-`batch_v8/` is the current road-geometry/parking edition (localhost port 47850); read its README.
+`batch_v9/` is the current street-details edition (localhost port 47851); read its README.
+`batch_v8/` preserves the road-geometry/parking edition (localhost port 47850).
 `batch_v7/` preserves the road-markings/signals edition (localhost port 47849).
 `batch_v6/` preserves the sites/boundaries edition (localhost port 47848).
 `batch_v5/` preserves the pavement edition (localhost port 47847).
@@ -64,12 +65,12 @@ Do not introduce a new dependency stack merely to work around a missing local se
 
 ```powershell
 $earthPython = "$env:LOCALAPPDATA\Programs\BeamNG.Earth.Berlin.Realism\.venv\Scripts\python.exe"
-& $earthPython batch_v8/launch.py
-& $earthPython batch_v8/stop.py
-& $earthPython batch_v8/test_streets.py
-& $earthPython batch_v8/test_sites.py
-& $earthPython batch_v8/test_pavements.py
-& $earthPython batch_v8/test_road_types.py
+& $earthPython batch_v9/launch.py
+& $earthPython batch_v9/stop.py
+& $earthPython batch_v9/test_streets.py
+& $earthPython batch_v9/test_sites.py
+& $earthPython batch_v9/test_pavements.py
+& $earthPython batch_v9/test_road_types.py
 & $earthPython batch_v3/test_roof_styles.py
 ```
 

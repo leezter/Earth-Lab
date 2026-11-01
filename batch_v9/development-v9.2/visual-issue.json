@@ -1,0 +1,5 @@
+{
+  "renderer": "mobility-v9.2",
+  "geometry_and_browser_checks_passed": true,
+  "issue": "BUS letter strokes touched after horizontal scaling, reducing legibility. V9.3 separates glyph components."
+}

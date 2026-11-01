@@ -1,0 +1,39 @@
+{
+  "checked_utc": "2026-11-01T03:32:33.144Z",
+  "serverStopRelaunch": true,
+  "results": [
+    {
+      "id": "place-12b63ab6878ef827",
+      "name": "London - Trafalgar Square",
+      "tiles": 9,
+      "renderer": "mobility-v9.3"
+    },
+    {
+      "id": "place-d9faf70905fba234",
+      "name": "New York - Broadway",
+      "tiles": 9,
+      "renderer": "mobility-v9.3"
+    },
+    {
+      "id": "place-1edfa7fe19ec6fc8",
+      "name": "London - mapped bus-stop shelter",
+      "tiles": 9,
+      "renderer": "mobility-v9.3"
+    },
+    {
+      "id": "place-e0c095f2789f0156",
+      "name": "Kreuzberg",
+      "tiles": 9,
+      "renderer": "mobility-v9.3"
+    },
+    {
+      "id": "place-e255bce2f95b6b63",
+      "name": "Berlin - Schlesische Straße cycle lanes",
+      "tiles": 9,
+      "renderer": "mobility-v9.3"
+    }
+  ],
+  "oldLinksSelectCurrentBuild": true,
+  "galleryImages": 6,
+  "errors": []
+}
