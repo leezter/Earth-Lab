@@ -22,7 +22,7 @@ Ground-level mapped bollards, bicycle parking stands, bus stops/platforms, publi
 
 ## Reproducibility and checks
 
-`mobility-v9.3` has separate frozen inputs, output IDs and cache. Earlier editions and their generated scenes remain untouched. Jobs retain the existing source/provenance, geometry, mesh-coverage reports, material reports and nine hashed tiles, plus `mobility-report.json`, `access-report.json`, `furniture-report.json` and `furniture-assets.json`. Source-probe folders are diagnostics, not accepted builds.
+`mobility-v9.4` has separate frozen inputs, output IDs and cache. Earlier editions and their generated scenes remain untouched. Jobs retain the existing source/provenance, geometry, mesh-coverage reports, material reports and nine hashed tiles, plus `mobility-report.json`, `access-report.json`, `furniture-report.json` and `furniture-assets.json`. Source-probe folders are diagnostics, not accepted builds.
 
 90 Python tests pass before scene builds, including lane direction/count/parking reservation, mapped-colour/paint containment, actual v8 road-hole regression fixtures, refuge/ramp/tactile evidence, parser retention, furniture placement and collision-footprint cases. `street-access-kit.blend` and `street-access-kit.png` are an editable Blender construction reference. Its successful build/render checks prefab construction and symbols, not geographic accuracy. Generation acceptance and the audit retain actual surface/roof mesh coverage gates.
 
@@ -63,3 +63,21 @@ The five-location Edge tour passes actual keyboard driving, all four vehicles, p
 After a real stop/relaunch, all five v9.3 scenes load nine tiles again, old location links select their current replacement and all six gallery images load (`restart-verification.json`). The server remains available on port 47851. These are local cached-source builds, not cold worldwide download timings or Android acceptance.
 
 Start with Schlesische Straße for cycle lanes, Broadway for BUS markings, Trafalgar Square for crossing approaches, Kreuzberg for furniture, or the separate London shelter sample. The gallery includes actual examples and the authored model kit. Missing or ambiguous evidence remains omitted or explicitly inferred. Current survey-source and corner-layout limitations remain. `visual-review.json` records the targeted review.
+
+## World map location picker
+
+The driving page at http://127.0.0.1:47851/ includes a collapsible world map. Pan and zoom to a street, click to select a point, then press **Generate 192 m area**. Keyboard users can focus the map, pan with arrow keys, zoom with +/−, and press **Select map centre**. Search results and latitude, longitude input also place the selection on the map. **World view** returns to the global overview.
+
+The marker and approximate 192 m outline show the requested location; the existing worker snaps the centre to a nearby driving road. Generation supports latitudes within ±84 degrees and needs usable mapped roads and source data. It runs in the existing serial job queue, keeps the current scene playable, exposes failures for retry, and offers **Drive generated area** only after the job is built. Selecting another point does not cancel an already submitted job.
+
+Leaflet 1.9.4 is bundled under `web/vendor/leaflet/` with its BSD licence. Visible map tiles are requested directly from OpenStreetMap, with attribution and normal browser caching; internet is required for the basemap. Search/coordinate entry remains available if tiles fail. Tile usage policy: https://operations.osmfoundation.org/policies/tiles/ . This picker does not change the frozen renderer or generated scene identity.
+
+## Enclosed parking fix (v9.4)
+
+The v9.3 parking compiler could interpret a mapped multi-storey car park as a ground parking surface when its source lacked explicit layer/location tags. The independent publication check then correctly rejected the entire location. This happened for the Leeds map selection at 53.797419, -1.543827: the surrounding source query includes Q-Park Criterion Place (OSM way 155224833, tagged `parking=multi-storey`, `building=yes`). Retrying the same v9.3 job cannot repair that classification.
+
+Version 9.4 applies the existing site-surface eligibility rules to parking polygons before producing surface or paint geometry. Enclosed and non-ground parking is omitted, with source IDs, tags and reasons in `parking-report.json` (`omitted` and `skipped`). Ordinary surface parking is retained. The independent rejection check remains unchanged; this does not add underground driving or multi-storey parking simulation. Mapped building geometry continues through the existing building pipeline.
+
+`development-v9.3/` preserves the previous freeze, changed source and prior reports. Existing jobs and tiles retain their original identities; resubmitting a failed location creates a v9.4 job. The 93-test Python suite includes enclosed parking kinds, building tags, non-ground tags, mixed surface/enclosed cases, paint exclusion and retained publication rejection.
+
+The exact Leeds selection now reaches `built` as `place-68589f850de63256` in 225 seconds using retained map sources. It keeps the original road snap (about 97 m). The independent audit verifies all nine 2048-square tiles, meshes/materials and all eight earlier edition freezes (`audit.json`). A fresh Edge check confirms the old failed link resolves to the replacement, map submission reuses the completed build, all nine tiles load, and driving/pause/recovery/reload work without page errors (`parking-fix-verification.json`). This is one local regression build, not worldwide visual acceptance. Prior v9.3 reports remain in `development-v9.3/`.

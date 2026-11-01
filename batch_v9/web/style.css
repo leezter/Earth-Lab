@@ -5,3 +5,17 @@ label[hidden]{display:none}header{width:min(550px,calc(100% - 32px))}
 form[hidden]{display:none}
 
 #generation{font-size:12px;line-height:1.5;color:#b7cbd5;margin:8px 0}#generation:empty{display:none}button:disabled{opacity:.55;cursor:wait}
+
+/* Keep the picker usable on short windows without covering driving controls. */
+header{max-height:calc(100dvh - 115px);overflow-y:auto;z-index:2}
+#map-picker{margin:10px 0;border:1px solid #73808a66;border-radius:8px;overflow:hidden}
+#map-picker summary{padding:10px;cursor:pointer;font-size:13px;font-weight:650;color:#8de9e0}
+#map-picker summary:focus-visible,button:focus-visible{outline:2px solid #71ddd2;outline-offset:2px}
+#location-map{height:250px;width:100%;background:#c9dfe7;color:#172932;isolation:isolate}
+#location-map:focus-visible{outline:3px solid #00bfa9;outline-offset:-3px}
+#location-map .leaflet-control-zoom a{color:#172932;background:#fff}
+#location-map .leaflet-control-attribution{color:#333;background:#ffffffe6;font-size:10px}
+#location-map .leaflet-control-attribution a{color:#006d80}
+.map-help{font-size:11px;line-height:1.5;margin:6px 10px;color:#b7cbd5}
+.map-actions{margin:8px 10px;flex-wrap:wrap}.map-actions button{font-size:12px;padding:6px 9px}
+@media(max-height:800px){#location-map{height:190px}}

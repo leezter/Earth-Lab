@@ -4,7 +4,7 @@ from collections import Counter
 from shapely.geometry import Polygon, LineString, Point
 from shapely.ops import unary_union, substring
 from pavements import metres, osm_shape
-from site_features import ground_level
+from site_features import ground_level, area_role
 from street_features import DRIVE, tangent
 from road_types import family
 
@@ -37,7 +37,7 @@ def side_spec(tags, side):
 
 
 def compile_parking(osm, xy, driving, solid, pedestrian, driveways, road_paint):
-    surfaces={};records=[];skipped=Counter();paint=[];occupied=Polygon()
+    surfaces={};records=[];skipped=Counter();omitted=[];paint=[];occupied=Polygon()
     ways=[];nodes={};connections={}
     for e in osm.get('elements',[]):
         t=e.get('tags',{})
@@ -57,7 +57,17 @@ def compile_parking(osm, xy, driving, solid, pedestrian, driveways, road_paint):
     # offset parking lanes. A space polygon does not establish painted borders.
     for e in osm.get('elements',[]):
         t=e.get('tags',{})
-        if t.get('amenity') not in {'parking_space','parking'} or not ground_level(t):continue
+        if t.get('amenity') not in {'parking_space','parking'}:continue
+        # Match site-surface eligibility: a building or enclosed parking kind
+        # is not evidence of a ground-level parking surface. Keep its source
+        # in the report, without inventing an asphalt footprint or bay paint.
+        reason=None
+        if area_role(t)!='parking':reason='enclosed or layered parking'
+        elif not ground_level(t):reason='non-ground parking'
+        if reason:
+            skipped[reason]+=1
+            omitted.append({'id':str(e['id']),'type':e['type'],'reason':reason,'source_tags':t})
+            continue
         if e.get('geometry_complete') is False:continue
         g=osm_shape(e,xy).difference(exclusion).buffer(0)
         if g.is_empty:continue
@@ -120,7 +130,7 @@ def compile_parking(osm, xy, driving, solid, pedestrian, driveways, road_paint):
             records.append({'id':str(e['id']),'side':side,**spec,'geometry_inferred':True,'source_tags':tags,
                             'paint_evidence':spec['marked'],'area_m2':round(g.area,3)})
     return {k:unary_union(v) for k,v in surfaces.items()},unary_union(paint),{
-        'records':records,'skipped':dict(skipped),'area_m2':round(occupied.area,3),
+        'records':records,'skipped':dict(skipped),'omitted':omitted,'area_m2':round(occupied.area,3),
         'paint_area_m2':round(unary_union(paint).area,3),
         'limitations':['Parking presence does not prove painted bays. Repeated bay dimensions are inferred.',
                        'Conditional restrictions are retained as source tags, not simulated.',

@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-11-01T04:20:22.105Z",
+  "renderer": "mobility-v9.4",
+  "job_id": "place-68589f850de63256",
+  "original_failed_job": "place-727070433ffe97ed",
+  "job_status": "built",
+  "build_seconds": 225.31300000000192,
+  "requested": [
+    53.797419,
+    -1.543827
+  ],
+  "actual": [
+    53.7981599,
+    -1.544601
+  ],
+  "road_snap_metres": 96.9135276505074,
+  "omitted_parking": 13,
+  "retained_ground_parking": 24,
+  "offending_feature_omitted": true,
+  "old_link_resolves_replacement": true,
+  "map_cached_reuse": true,
+  "rendered_tiles": 9,
+  "distance_driven_metres": 17.221460878646866,
+  "pause": true,
+  "recovery": true,
+  "reload": true,
+  "screenshot": "C:\\Users\\leezt\\source\\repos\\Earth-Lab\\batch_v9\\custom\\place-68589f850de63256\\browser-verification.png",
+  "errors": []
+}

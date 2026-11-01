@@ -14,6 +14,40 @@ def parking(elements, walk=Polygon(), solids=Polygon(), paints=None):
     return compile_parking({'elements':elements},lambda p:p,box(0,-6,60,6),solids,walk,Polygon(),paints or {})
 
 class GeometryParkingTests(unittest.TestCase):
+    def test_enclosed_parking_is_omitted_without_rejecting_scene(self):
+        pts=((10,1),(16,1),(16,3),(10,3),(10,1))
+        cases=[{'parking':kind}for kind in ('underground','multi-storey','rooftop','garage_boxes','sheds')]
+        cases.extend([{'building':'yes'},{'building':'parking'}])
+        for amenity in ('parking','parking_space'):
+            for tags in cases:
+                with self.subTest(amenity=amenity,tags=tags):
+                    surfaces,paint,report=parking([way({'amenity':amenity,'markings':'yes',**tags},pts)])
+                    self.assertFalse(surfaces)
+                    self.assertTrue(paint.is_empty)
+                    self.assertEqual(report['records'],[])
+                    self.assertEqual(report['skipped']['enclosed or layered parking'],1)
+                    self.assertEqual(report['omitted'][0]['source_tags']['amenity'],amenity)
+                    validate_parking({'parking_report':report})
+
+    def test_omission_preserves_surface_parking_and_source_evidence(self):
+        pts=((10,1),(16,1),(16,3),(10,3),(10,1))
+        garage=way({'amenity':'parking','parking':'multi-storey','building':'yes'},pts,fid=155224833)
+        surface=way({'amenity':'parking_space','parking':'surface','building':'no','markings':'yes'},pts,fid=2)
+        surfaces,paint,report=parking([garage,surface])
+        self.assertGreater(unary_union(list(surfaces.values())).area,0)
+        self.assertGreater(paint.area,0)
+        self.assertEqual([r['id']for r in report['records']],['2'])
+        self.assertEqual(report['omitted'][0]['id'],'155224833')
+        validate_parking({'parking_report':report})
+
+    def test_non_ground_parking_is_omitted_with_provenance(self):
+        pts=((10,1),(16,1),(16,3),(10,3),(10,1))
+        for tags in ({'location':'underground'},{'level':'1'},{'layer':'-1'},{'bridge':'yes'}):
+            surfaces,paint,report=parking([way({'amenity':'parking',**tags},pts)])
+            self.assertFalse(surfaces)
+            self.assertTrue(paint.is_empty)
+            self.assertEqual(report['omitted'][0]['reason'],'non-ground parking')
+
     def test_enclosed_parking_cannot_be_accepted_as_ground(self):
         for kind in ('underground','multi-storey','rooftop','garage_boxes','sheds'):
             with self.assertRaises(ValueError):

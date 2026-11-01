@@ -1,0 +1,92 @@
+{
+  "viewer_source_hashes": {
+    "app.js": "7d1cc82b3ddf27b8a030cdc907bc0a362e5d3411a3d8c0f79d86ee8b3e3c2d5f",
+    "driving.js": "a28a8d319068f616cc86b4fbc289bc63f9a47a887bd8c21d90b92cd93e66b9ab",
+    "spawn.js": "cf6e5ac83db3be8eacb03436bb54a802eee70eab3e0b833d0757d42ce832ce22",
+    "ground.js": "b18bf8c76cd5ef5f9d6cd2856a4d67d4d5f1f465a82e8c198ee9818dddb787e5",
+    "signals.js": "aadb6834af58407228930ef0bde4d51b32580bd5e074d870d48d34be5eb36ad8"
+  },
+  "checked_utc": "2026-11-01T03:28:44.755Z",
+  "desktopBrowser": "Edge headless",
+  "results": [
+    {
+      "id": "place-12b63ab6878ef827",
+      "name": "London - Trafalgar Square",
+      "sceneReadySeconds": 1.16,
+      "cachedReuseSeconds": 0.013,
+      "load_and_checks_seconds": 4.808,
+      "distanceDrivenMetres": 20.972227994817963,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-d9faf70905fba234",
+      "name": "New York - Broadway",
+      "sceneReadySeconds": 0.596,
+      "cachedReuseSeconds": 0.012,
+      "load_and_checks_seconds": 4.291,
+      "distanceDrivenMetres": 41.25283506547002,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-1edfa7fe19ec6fc8",
+      "name": "London - mapped bus-stop shelter",
+      "sceneReadySeconds": 0.439,
+      "cachedReuseSeconds": 0.016,
+      "load_and_checks_seconds": 3.87,
+      "distanceDrivenMetres": 40.49780749912288,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-e0c095f2789f0156",
+      "name": "Kreuzberg",
+      "sceneReadySeconds": 0.561,
+      "cachedReuseSeconds": 0.01,
+      "load_and_checks_seconds": 4.204,
+      "distanceDrivenMetres": 27.117341554738886,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-e255bce2f95b6b63",
+      "name": "Berlin - Schlesische Straße cycle lanes",
+      "sceneReadySeconds": 0.691,
+      "cachedReuseSeconds": 0.016,
+      "load_and_checks_seconds": 4.454,
+      "distanceDrivenMetres": 40.497807499122885,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    }
+  ],
+  "errors": [],
+  "aerialRequests": 0,
+  "livePlaceSearch": true,
+  "sceneSwitching": true,
+  "missingTileFailureRetry": true,
+  "pickerPendingKeepsScene": true,
+  "pickerFailureRetry": true,
+  "pickerLifecycleUsesMockJob": true,
+  "gallery": true
+}
