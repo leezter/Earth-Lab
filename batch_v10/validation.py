@@ -10,6 +10,8 @@ from terrain import height_at
 
 def outputs(folder):
     folder=Path(folder);data=json.loads((folder/'district-data.json').read_text());s=data['scene']
+    from parked_cars import validate_cars
+    validate_cars(s)
     validate(s['surface_network'],s['terrain'])
     geometry=json.loads((folder/'geometry.json').read_text());clip=box(-155,-155,155,155)
     max_height_error=0

@@ -5,11 +5,12 @@ import {SignalLayer} from './signals.js';
 import {DistrictRenderer} from './baked.js';
 import {ElevationSystem,profileAt,projectLine,vehicleHeights} from './elevation.js';
 import {installCollision,obstacleInterval,verticalOverlap} from './bridge-collision.js';
+import {ParkedCars} from './parked-cars.js';
 import './rv/physics.js';
 
 const $=id=>document.getElementById(id),P=window.RacerPhysics,C=$('world'),ctx=C.getContext('2d'),U=10;
 const rad=Math.PI/180,R=6378137,sites=window.EARTH_BATCH_SITES;
-let car=null,scene=null,elevation=null,district=null,signals=null,collisions=null,origin=null;
+let car=null,scene=null,elevation=null,district=null,signals=null,collisions=null,origin=null,parked=null;
 let paused=false,loading=false,epoch=0,aborter=null,previous=null,acc=0,last=performance.now(),clock=last,frames=0,fps=0;
 let surface={onRoad:false,surfaceType:'gravel-rally'},keys=new Set(),zoom=9,autoPaused=false;
 const sprites={};
@@ -67,6 +68,10 @@ function spawn(at=null,requestedSurface=null){
    const z=current?profileAt(current,x,y).z:elevation.ground(x,y).z,[lo,hi]=obstacleInterval(obstacle,x,y,elevation.terrain);
    if(verticalOverlap(z,z+vehicleHeights[kind],lo,hi))solids.push({parts:obstacle.parts});
   }
+  for(const obstacle of scene.parked_cars||[]){
+   const z=current?profileAt(current,x,y).z:elevation.ground(x,y).z;
+   if(verticalOverlap(z,z+vehicleHeights[kind],obstacle.zmin,obstacle.zmax))solids.push({parts:obstacle.parts});
+  }
   const candidate=clearSpawn(roads,solids,x,y,profile.length/U,profile.width/U,candidate=>{
    const probe={...profile,x:candidate.x*U,y:candidate.y*U,angle:candidate.angle,surfaceId:candidate.road.surfaceId};
    return elevation.supportFootprint(probe,U);
@@ -79,30 +84,30 @@ function spawn(at=null,requestedSurface=null){
  car={kind,steeringMode:'touch',...profile,x:n.x*U,y:n.y*U,angle:n.angle,speed:0,vx:0,vy:0,surfaceId:n.road.surfaceId};
  window.RacingVibesVehicleColliders?.apply(car);P.initCar(car,kind);
  P.configureTrackCollision([],{ppm:30});P.configureDecorCollision([],[]);P.rebuildPlanckWorld({cars:[car]});
- collisions=installCollision(car,elevation,scene.buildings||[],(scene.boundary_solids||[]).map(part=>({parts:[part]})),U);
+ collisions=installCollision(car,elevation,scene.buildings||[],(scene.boundary_solids||[]).map(part=>({parts:[part]})),U,scene.parked_cars||[]);
  elevation.sample(car,U);car.safePose={x:car.x,y:car.y,angle:car.angle,surfaceId:car.surfaceId,z:car.z};
  previous={...car.safePose};sample();acc=0;last=performance.now();
 }
 async function json(url,signal){const r=await fetch(url,{signal});const d=await r.json();if(!r.ok)throw Error(d.error||r.statusText);return d;}
 async function open(lat,lon,label){
  aborter?.abort();aborter=new AbortController();const mine=++epoch;loading=true;keys.clear();status('Loading '+(label||'area')+'…');
- let next=null;
+ let next=null,nextParked=null;
  try{
   const data=await json('/api/data?id='+encodeURIComponent($('presets').value),aborter.signal);
   if(mine!==epoch)return;
-  next=new DistrictRenderer(data.scene);await next.ready;
-  if(mine!==epoch){next.dispose();return;}
-  const old={scene,elevation,district,signals,car,origin};
+  next=new DistrictRenderer(data.scene);nextParked=new ParkedCars(data.scene);await Promise.all([next.ready,nextParked.ready]);
+  if(mine!==epoch){next.dispose();nextParked.dispose();return;}
+  const old={scene,elevation,district,signals,car,origin,parked};
   scene=data.scene;elevation=new ElevationSystem(scene);signals=new SignalLayer(scene.traffic_hardware||[]);district=next;origin=scene.origin;car=null;
   try{spawn();}catch(e){scene=old.scene;elevation=old.elevation;district=old.district;signals=old.signals;car=old.car;origin=old.origin;next.dispose();throw e;}
-  old.district?.dispose();loading=false;routeOptions();
+  parked=nextParked;old.parked?.dispose();old.district?.dispose();loading=false;routeOptions();
   const count=new Set(scene.bake.patches.map(p=>p.surface_id||p.id)).size;
   status(`${label||'Area'} · 192 m · ${count} fixed bridge${count===1?'':'s'} · ${scene.terrain.source.status==='available'?'relative terrain heights':'flat terrain fallback'}`);
-  $('pavement-source').textContent='Mapped bridge topology; inferred deck heights, approaches and generic structures. Signal phases are illustrative.';
+  $('pavement-source').textContent=`Mapped parking · ${scene.parked_cars?.length||0} parked cars with inferred occupancy. Bridge heights and signal phases are illustrative.`;
   $('credit').textContent='Map: Overture / OSM · Terrain: Mapterhorn / upstream providers · Materials: Poly Haven';
   history.replaceState(null,'','?site='+encodeURIComponent($('presets').value));
  }catch(e){
-  if(mine!==epoch)return;next?.dispose();loading=false;
+  next?.dispose();nextParked?.dispose();if(mine!==epoch)return;loading=false;
   status('Area unavailable: '+e.message+' — press Explore to retry.');
  }
 }
@@ -148,7 +153,7 @@ function render(now){
  let cx=pose?pose.x/U:0,cy=pose?pose.y/U:0;
  cx=Math.max(-96+innerWidth/zoom/2,Math.min(96-innerWidth/zoom/2,cx));cy=Math.max(-96+innerHeight/zoom/2,Math.min(96-innerHeight/zoom/2,cy));
  ctx.translate(innerWidth/2,innerHeight/2);ctx.scale(zoom,zoom);ctx.translate(-cx,-cy);
- district?.draw(ctx);if($('signals').checked)signals?.draw(ctx);
+ district?.draw(ctx);parked?.draw(ctx);if($('signals').checked)signals?.draw(ctx);
  if(pose){district.drawDecks(ctx,car,false);drawCar(pose);district.drawRails(ctx,car);district.drawDecks(ctx,car,true);}
  frames++;
  if(now-clock>500){
@@ -179,6 +184,7 @@ window.earthLab={get car(){return car;},get elevation(){return elevation;},get s
  async addSite(s){const old=sites.findIndex(d=>d.id===s.id);if(old<0)sites.push(s);else sites[old]=s;addOption(s);$('presets').value=s.id;await open(s.actual_lat,s.actual_lon,s.name);},
  get boundarySolids(){return scene?.boundary_solids||[];},
  get state(){return {loading,paused,fps,epoch,surface,rendererFreeze:scene?.renderer_freeze,renderedTiles:district?.cache.size||0,
+  parkedCars:parked?.cars.length||0,parkedDecodedBytes:parked?.decodedBytes||0,
   bridgePatches:district?.patches.size||0,decodedBytes:district?.decodedBytes||0,bridgeCount:scene?new Set(scene.bake.patches.map(p=>p.surface_id||p.id)).size:0,
   collisionFixtures:collisions?.fixtures||0,recoveries:elevation?.recoveries||0,activeSurface:car?.surfaceId,height:car?.z,grade:car?.grade,origin};}};
 const preferred=new URLSearchParams(location.search).get('site'),first=sites.find(s=>s.id===preferred&&s.status==='built')||sites.find(s=>!s.fixture&&s.status==='built'&&s.acceptance?.patches>0)||sites.find(s=>s.status==='built');

@@ -55,7 +55,6 @@ def enrich(data,osm,xy):
                 centre=shape.centroid
                 from terrain import profile_at
                 if height_at(terrain,centre.x,centre.y)+building['height']>=profile_at(deck,centre.x,centre.y)[0]-.45:
-                    if network.get('schema',1)<2:raise ValueError('Bridge intersects a mapped building: '+bridge['id'])
                     from surface_mesh import source_shape
                     before=source_shape(deck['parts']);blocked=before.intersection(shape.buffer(.15))
                     deck['parts']=export(before.difference(shape.buffer(.15)));deck['blocked_parts']=export(source_shape(deck.get('blocked_parts',[])).union(shape.buffer(.15)))

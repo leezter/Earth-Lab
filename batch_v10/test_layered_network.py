@@ -1,9 +1,13 @@
 import unittest,copy
+from unittest.mock import patch
 from shapely.geometry import Point,LineString
 from fixtures import scene,junction_scene
 from terrain import profile_at
 from surface_mesh import source_shape
 from surface_network import validate
+from surface_network import road_width,UnsupportedLayout
+from layered_network import required,compile_layered
+from terrain_sources import flat
 
 
 class LayeredNetworkTests(unittest.TestCase):
@@ -59,6 +63,56 @@ class LayeredNetworkTests(unittest.TestCase):
         s=copy.deepcopy(self.s);g=next(g for g in s['surface_network']['surfaces']if g['id']=='bridge-3-0')
         for row in g['profile']:row[1]-=4
         with self.assertRaises(ValueError):validate(s['surface_network'],s['terrain'])
+
+    def test_oneway_lane_width_preserves_explicit_measurements(self):
+        tags={'highway':'secondary','oneway':'yes','lanes':'1'}
+        self.assertEqual(road_width(tags),3.25)
+        self.assertEqual(road_width({**tags,'lanes':'2'}),6.5)
+        self.assertEqual(road_width({**tags,'highway':'motorway'}),3.5)
+        self.assertEqual(road_width({**tags,'width':'8'}),8)
+        self.assertEqual(road_width({**tags,'width':'8','width:carriageway':'4'}),4)
+        self.assertEqual(road_width({**tags,'oneway':'no'}),9)
+        self.assertEqual(road_width({**tags,'lanes':'unknown'}),9)
+
+    def test_parallel_divided_bridge_carriageways_do_not_invent_crossing(self):
+        for lanes,separation in [('1',7.8),('2',6.83)]:
+            with self.subTest(lanes=lanes):
+                tags={'highway':'secondary','oneway':'yes','lanes':lanes,'bridge':'yes','layer':'1','dual_carriageway':'yes'}
+                roads=[]
+                for i,y in enumerate((0,separation)):
+                    points=[[-60,y],[60,y]]
+                    roads.append(dict(id=str(i),tags=tags,points=points,nodes=[str(i)+'a',str(i)+'b'],
+                                      line=LineString(points),width=road_width(tags)))
+                self.assertFalse(required(roads))
+                terrain=flat();terrain['source']['status']='available'
+                n=compile_layered(roads,terrain,None,None,[])
+                self.assertEqual(len(n['surfaces']),2)
+                self.assertTrue(all(not r['crossings'] for r in n['report']['records']))
+                self.assertTrue(all(not s['connections'] for s in n['surfaces']))
+
+    def test_genuine_equal_layer_crossing_still_rejected(self):
+        tags={'highway':'secondary','oneway':'yes','lanes':'1','bridge':'yes','layer':'1'}
+        roads=[]
+        for i,points in enumerate(([[-60,0],[60,0]],[[0,-60],[0,60]])):
+            roads.append(dict(id=str(i),tags=tags,points=points,nodes=[str(i)+'a',str(i)+'b'],
+                              line=LineString(points),width=road_width(tags)))
+        self.assertTrue(required(roads));terrain=flat();terrain['source']['status']='available'
+        with self.assertRaisesRegex(UnsupportedLayout,'ambiguous equal ordering'):
+            compile_layered(roads,terrain,None,None,[])
+
+    def test_simple_bridge_building_passage_is_blocked_without_rejecting_area(self):
+        from bridge_system import enrich
+        from surface_network import export
+        from shapely.geometry import box
+        d=scene('overpass');s=d['scene'];network=copy.deepcopy(s['surface_network']);terrain=copy.deepcopy(s['terrain'])
+        building=box(-1,-7,1,7);s['buildings']=[{'parts':export(building),'height':12}]
+        with patch('bridge_system.terrain_sources.read',return_value=terrain),patch('bridge_system.compile_network',return_value=network):
+            enrich(d,{},lambda p:p)
+        deck=next(g for g in s['surface_network']['surfaces']if g['kind']=='deck')
+        self.assertLess(source_shape(deck['parts']).intersection(building).area,.001)
+        self.assertGreater(source_shape(deck['blocked_parts']).intersection(building).area,1)
+        self.assertTrue(any('remains blocked' in item['reason'] for item in s['bridge_report']['omitted']))
+        self.assertEqual(len(s['buildings']),1)
 
 
 if __name__=='__main__':unittest.main()

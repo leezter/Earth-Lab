@@ -5,7 +5,7 @@ connectivity, relative terrain height, constrained road profiles and slope
 forces to the top-down driving prototype. The previous
 [street-details edition](../batch_v9/README.md) remains on port 47851.
 
-Current renderer identity: **bridges-v10.18**. Frozen inputs include the viewer
+Current renderer identity: **bridges-v10.23**. Frozen inputs include the viewer
 and isolated driving runtime. Development identities and their evidence remain
 under `development-bridges-v10.*`; their results do not substitute for current
 acceptance.
@@ -15,6 +15,85 @@ WASD/arrows drive, P pauses, R recovers on the current connected surface.
 The existing map picker/search and serial generation queue remain available.
 An area becomes playable only after geometry checks, nine 2048-square ground
 tiles and every declared transparent bridge pass have been verified.
+
+## Divided carriageway bridge repair (v10.21-v10.23)
+
+One-way OSM ways with an explicit lane count now infer their motor carriageway
+width from that count (3.25 m per urban lane; 3.5 m for motorway/trunk lanes), rather than applying a generic two-way
+road-class width to each direction. Explicit `width:carriageway` and `width` still
+take priority; missing or ambiguous lane counts retain the class fallback.
+Separate cycle tracks and pavements do not count as motor lanes. These dimensions
+remain inferred, not surveyed.
+
+This fixes Oberbaumbruecke's two separately mapped one-lane carriageways being
+inflated to 9 m apiece. Their invented overlap caused an ambiguous bridge-order
+error even for nearby selections where the bridge was only in the surrounding
+generation context. The carriageways keep their separate topology and supporting
+surfaces; genuinely overlapping disconnected decks with equal ordering still
+fail. Earlier failed requests remain recorded, and their cached failure does not
+apply to this changed generation model. V10.22 also avoids a marginal overlap
+between the inferred two-lane widths at Warschauer Bruecke in the wider context.
+The existing nearby fallback remains for
+actual failures.
+
+V10.23 also applies the established building-overlap handling to simple bridges:
+retain the building collision and remove its footprint from the supporting deck,
+instead of rejecting the entire area. Oberbaumbruecke's mapped central structure
+therefore remains blocked. There is no invented building passage or full-span
+driving acceptance through that structure.
+
+`verify_oberbaum.cjs` requires completed current builds at the originally reported
+52.500576, 13.440578 selection and at the bridge. It checks the actual generate/drive
+flow without mocked job responses or a nearby fallback, ordinary driving,
+pause/recovery/reload, and the separate accessible stretches on both sides of the
+mapped obstruction, on both carriageways with all four vehicles in both
+directions. These are not full bridge traversals. `oberbaum-generation-verification.json` and
+`oberbaum-verification.json` record the actual run and its limits.
+
+## Parked vehicles (v10.20)
+
+Mapped individual ground parking spaces, supported narrow single-row parking
+areas and evidence-gated roadside parking lanes can contain static parked cars.
+Roadside placement still requires explicit carriageway width and parking tags;
+cars do not establish permission to park on an otherwise untagged road. The
+existing exclusions for crossings, driveways, junctions, pavements, buildings,
+reserved lanes and enclosed/layered parking remain. Unknown multi-row layouts,
+reserved spaces, ambiguous conditional loading restrictions, steep ground and
+bridge/approach footprints are omitted. Full car footprints must fit, with gaps;
+the maximum is 80 cars per 192 m scene. About 65% of candidate slots are considered
+for occupancy, with further omissions when no vehicle safely fits.
+
+All **151 RacingVibes liveries across 21 vehicle kinds** are snapshotted from its
+actual race-sprite registry, with original asset hashes and crop metadata in
+`web/parked-assets/manifest.json`. Buggy types DuneraX1 and RavikR each have 0.01
+selection weight compared with 1 for every other type (roughly 0.1% combined
+before footprint filtering). Variants are uniform within each eligible kind.
+Sprites preserve aspect ratio; their physical parking dimensions, occupancy,
+vehicle choice and heading are inferred. They are not live or surveyed vehicles.
+The RacingVibes checkout and the earlier shared driving snapshot are unchanged.
+`import_parked_assets.py <RacingVibes checkout>` reproduces the sprite snapshot;
+changing those assets requires another explicit renderer identity.
+
+Parked cars load with the scene, render below bridge passes and have static,
+height-filtered collision footprints. Recovery avoids them; driving does not
+rebuild the physics world. Scene replacement and failure/retry use the existing
+loading lifecycle. Only sprites needed by the selected scene are decoded.
+
+For retained baked scenes, the server computes a cached, read-only occupancy
+overlay from their saved OSM and eligible parking geometry. The API labels that
+overlay with its own current renderer and the original source renderer/job.
+Original job files, source evidence, tiles, hashes and acceptance reports are
+preserved. New builds include parked placements in their content identity and
+write `parked-cars-report.json`. This overlay does not claim a fresh Blender bake
+for an older scene. V10.19's failed Simplonstrasse attempt is retained; v10.20
+applies the shared 1 mm precision rule to parking overlays before retrying.
+
+Checks: `test_parked_cars.py` covers occupancy determinism, complete catalog and
+asset hashes, rare Buggy selection, footprint fit, exclusions and roadside
+clearance. `verify_parked_cars.cjs` exercises a completed mapped build, sprite
+loading, ordinary-throttle static contacts with all four driving vehicles,
+pause/recovery, scene replacement, reload and failed-artwork retry. Its saved
+report records the particular run; it is not worldwide parking acceptance.
 
 ## Nearby-area fallback (v10.17; drive-button feedback v10.18)
 

@@ -1,0 +1,258 @@
+{
+  "renderer": "bridges-v10.23",
+  "fresh_builds": [
+    {
+      "id": "place-8a594721f96a5dc1",
+      "name": "Oberbaumbruecke - divided bridge repair",
+      "lat": 52.50175,
+      "lon": 13.44563,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.23",
+      "actual_lat": 52.50177162362605,
+      "actual_lon": 13.445584004620905,
+      "automatic_road_snap_metres": 3.9381473784419083,
+      "total_seconds": 181.03099999999904,
+      "content_identity": "f57e288cfb829644ba7d2380708d6ad2ce1873d504b61c8cd8607435cf8b75cf",
+      "bridge_count": 2,
+      "terrain_source": {
+        "status": "available",
+        "policy": "installed-ground-v1:z15:grid6m:binomial3:relative-only",
+        "providers": [
+          "mapterhorn"
+        ],
+        "adapter_sha256": "ad1f2d8507bff3eaed8d235f22b95ea04918340118af04a53ca1fe7a18eb7066",
+        "adapter_decoded_version": 2,
+        "requested_zoom": 15,
+        "native_resolution": "Provider dependent; z15 can upsample coarser ground-filtered DSM",
+        "datum": "Provider-dependent orthometric heights; relative scene reference only",
+        "absolute_reference_m": 32.25,
+        "osm_ele_policy": "Retained, not fused without verified datum conversion",
+        "attribution": "Mapterhorn and upstream terrain providers; AWS Terrain Tiles where used",
+        "source_urls": [
+          "https://mapterhorn.com/attribution",
+          "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+        ],
+        "inputs": [
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17607,
+              10748
+            ],
+            "sha256": "9d2279ba026fd829bdb9357f90598701e1bfcdcdb0ad8577fbacfa41540bfe59"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17607,
+              10749
+            ],
+            "sha256": "7d00c0804d774cef50b4a2d1121fcdee2b564479d292a2883919e348ff4b5d41"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17608,
+              10748
+            ],
+            "sha256": "04a6c085630d3ee3bf839078c3507a8d6c1c51fc9063865d78bb97843fa52ef1"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17608,
+              10749
+            ],
+            "sha256": "662519cab8170b4cc20adc6b46e0841f09c2d9e14e7a6bc749d2eecbe30e97c9"
+          }
+        ],
+        "stats": {
+          "dem:mirror": 4
+        },
+        "sample_sha256": "ebd5c1ac95a39b9d57db07f469b9e300422d2ca6f00e0f9864bfb706aebe11ee"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 2,
+        "decoded_image_bytes": 172947820,
+        "bridges": 2,
+        "max_ground_plane_error_m": 1.687538997430238e-14,
+        "content_identity": "f57e288cfb829644ba7d2380708d6ad2ce1873d504b61c8cd8607435cf8b75cf"
+      }
+    },
+    {
+      "id": "place-61e02761a111f922",
+      "name": "Map location 52.500576, 13.440578 - repaired",
+      "lat": 52.500576,
+      "lon": 13.440578,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.23",
+      "actual_lat": 52.50057407424625,
+      "actual_lon": 13.440578757400248,
+      "automatic_road_snap_metres": 0.22043263585389447,
+      "total_seconds": 329.28099999999904,
+      "content_identity": "b0b45dc664d2bc899d07084c7f6c320f3bab370a2dbc8234e0e9b2742f8a9545",
+      "bridge_count": 0,
+      "terrain_source": {
+        "status": "available",
+        "policy": "installed-ground-v1:z15:grid6m:binomial3:relative-only",
+        "providers": [
+          "mapterhorn"
+        ],
+        "adapter_sha256": "ad1f2d8507bff3eaed8d235f22b95ea04918340118af04a53ca1fe7a18eb7066",
+        "adapter_decoded_version": 2,
+        "requested_zoom": 15,
+        "native_resolution": "Provider dependent; z15 can upsample coarser ground-filtered DSM",
+        "datum": "Provider-dependent orthometric heights; relative scene reference only",
+        "absolute_reference_m": 34.90491236293484,
+        "osm_ele_policy": "Retained, not fused without verified datum conversion",
+        "attribution": "Mapterhorn and upstream terrain providers; AWS Terrain Tiles where used",
+        "source_urls": [
+          "https://mapterhorn.com/attribution",
+          "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+        ],
+        "inputs": [
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17606,
+              10748
+            ],
+            "sha256": "efc646fc9066b27ec90ebbea0514d0018bd2315bb52b3a2c953f69c37777382e"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17606,
+              10749
+            ],
+            "sha256": "42402430368136e775a508f971eaa1bc705be66495c3a61454c8a3f0870df05c"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17607,
+              10748
+            ],
+            "sha256": "9d2279ba026fd829bdb9357f90598701e1bfcdcdb0ad8577fbacfa41540bfe59"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17607,
+              10749
+            ],
+            "sha256": "7d00c0804d774cef50b4a2d1121fcdee2b564479d292a2883919e348ff4b5d41"
+          }
+        ],
+        "stats": {
+          "dem:mirror": 4
+        },
+        "sample_sha256": "0ed8bdd2d26bf32bfba40da7749ec1681b4370950dba19e1126737ddec08cce2"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 0,
+        "decoded_image_bytes": 150994944,
+        "bridges": 0,
+        "max_ground_plane_error_m": 5.10702591327572e-15,
+        "content_identity": "b0b45dc664d2bc899d07084c7f6c320f3bab370a2dbc8234e0e9b2742f8a9545"
+      }
+    },
+    {
+      "id": "place-63827fb33a50c6a1",
+      "name": "Map location 52.495585, 13.436612 - repaired",
+      "lat": 52.495585,
+      "lon": 13.436612,
+      "status": "built",
+      "renderer_freeze": "bridges-v10.23",
+      "actual_lat": 52.49556760416594,
+      "actual_lon": 13.436659970501697,
+      "automatic_road_snap_metres": 3.7841712223342254,
+      "total_seconds": 266.9370000000017,
+      "content_identity": "b0d3b3b2e7701079f6ccb73d414b7375bae5651aacd0b3d82b45907c6e85d221",
+      "bridge_count": 0,
+      "terrain_source": {
+        "status": "available",
+        "policy": "installed-ground-v1:z15:grid6m:binomial3:relative-only",
+        "providers": [
+          "mapterhorn"
+        ],
+        "adapter_sha256": "ad1f2d8507bff3eaed8d235f22b95ea04918340118af04a53ca1fe7a18eb7066",
+        "adapter_decoded_version": 2,
+        "requested_zoom": 15,
+        "native_resolution": "Provider dependent; z15 can upsample coarser ground-filtered DSM",
+        "datum": "Provider-dependent orthometric heights; relative scene reference only",
+        "absolute_reference_m": 35.46099374735127,
+        "osm_ele_policy": "Retained, not fused without verified datum conversion",
+        "attribution": "Mapterhorn and upstream terrain providers; AWS Terrain Tiles where used",
+        "source_urls": [
+          "https://mapterhorn.com/attribution",
+          "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+        ],
+        "inputs": [
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17606,
+              10749
+            ],
+            "sha256": "42402430368136e775a508f971eaa1bc705be66495c3a61454c8a3f0870df05c"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17606,
+              10750
+            ],
+            "sha256": "02c225cbb44d594d9389c089e9f77ac1f6696e34082bfba3f388178d7c453e7d"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17607,
+              10749
+            ],
+            "sha256": "7d00c0804d774cef50b4a2d1121fcdee2b564479d292a2883919e348ff4b5d41"
+          },
+          {
+            "provider": "mapterhorn",
+            "tile": [
+              15,
+              17607,
+              10750
+            ],
+            "sha256": "e07605199e7dab2a3b476b6241147350173c8375246c1f07487a72424402c679"
+          }
+        ],
+        "stats": {
+          "dem:mirror": 4
+        },
+        "sample_sha256": "ede9c09e0acd00fad771392642e9a71cdf0d183452c7d5c9a97b79dddb05ff89"
+      },
+      "acceptance": {
+        "status": "passed",
+        "tiles": 9,
+        "patches": 0,
+        "decoded_image_bytes": 150994944,
+        "bridges": 0,
+        "max_ground_plane_error_m": 1.199040866595169e-14,
+        "content_identity": "b0d3b3b2e7701079f6ccb73d414b7375bae5651aacd0b3d82b45907c6e85d221"
+      }
+    }
+  ],
+  "complete": true
+}

@@ -7,6 +7,8 @@ from pavements import metres, osm_shape
 from site_features import ground_level, area_role
 from street_features import DRIVE, tangent
 from road_types import family
+from surface_network import export
+from shapely import set_precision
 
 
 def side_spec(tags, side):
@@ -51,8 +53,9 @@ def compile_parking(osm, xy, driving, solid, pedestrian, driveways, road_paint):
             if i:connections[ref].add(refs[i-1])
             if i+1<len(refs):connections[ref].add(refs[i+1])
     junctions=unary_union([nodes[n].buffer(10) for n,v in connections.items() if len(v)>=3])
-    exclusion=unary_union([solid.buffer(.15),pedestrian,driveways.buffer(.5),junctions,
-                          unary_union(list(road_paint.values())).buffer(.5)])
+    driving=set_precision(driving,.001)
+    exclusion=set_precision(unary_union([solid.buffer(.15),pedestrian,driveways.buffer(.5),junctions,
+                          unary_union(list(road_paint.values())).buffer(.5)]),.001)
     # Individually mapped spaces have stronger location/shape evidence than
     # offset parking lanes. A space polygon does not establish painted borders.
     for e in osm.get('elements',[]):
@@ -69,7 +72,7 @@ def compile_parking(osm, xy, driving, solid, pedestrian, driveways, road_paint):
             omitted.append({'id':str(e['id']),'type':e['type'],'reason':reason,'source_tags':t})
             continue
         if e.get('geometry_complete') is False:continue
-        g=osm_shape(e,xy).difference(exclusion).buffer(0)
+        g=set_precision(osm_shape(e,xy),.001).difference(exclusion).buffer(0)
         if g.is_empty:continue
         surfaces.setdefault(family(t.get('surface')),[]).append(g);occupied=occupied.union(g)
         marked=t.get('markings')=='yes'
@@ -93,7 +96,7 @@ def compile_parking(osm, xy, driving, solid, pedestrian, driveways, road_paint):
                     points=[(cx+tx*(along+shift*f)+nx*depth*f,cy+ty*(along+shift*f)+ny*depth*f) for f in (-1,1)]
                     paint.append(LineString(points).buffer(.06,cap_style=2).intersection(g))
             else:skipped['multi-row or ambiguous marked parking polygon']+=1
-        records.append({'id':str(e['id']),'presence':'mapped parking polygon','geometry_inferred':False,
+        records.append({'id':str(e['id']),'parts':export(g),'presence':'mapped parking polygon','geometry_inferred':False,
                         'source_tags':t,'bay_layout_inferred':marked and t.get('amenity')=='parking',
                         'paint_evidence':marked,'area_m2':round(g.area,3)})
     for e,line in ways:
@@ -114,7 +117,7 @@ def compile_parking(osm, xy, driving, solid, pedestrian, driveways, road_paint):
             # never extend an inferred strip into a pavement or private yard.
             if spec['position']=='street_side':
                 skipped['street-side parking needs mapped area']+=1;continue
-            g=g.intersection(driving).difference(exclusion).difference(occupied).buffer(0)
+            g=set_precision(g,.001).intersection(driving).difference(exclusion).difference(set_precision(occupied,.001)).buffer(0)
             if g.area<1:continue
             surfaces.setdefault(family(spec['surface'] or tags.get('surface')),[]).append(g);occupied=occupied.union(g)
             if spec['marked']:
@@ -127,7 +130,7 @@ def compile_parking(osm, xy, driving, solid, pedestrian, driveways, road_paint):
                     b=(p.x+nx*outer+tx*shift,p.y+ny*outer+ty*shift)
                     stroke=LineString([a,b]).buffer(.06,cap_style=2)
                     if g.buffer(.02).covers(LineString([a,b])):paint.append(stroke.intersection(g))
-            records.append({'id':str(e['id']),'side':side,**spec,'geometry_inferred':True,'source_tags':tags,
+            records.append({'id':str(e['id']),'parts':export(g),'line':list(line.coords),'side':side,**spec,'geometry_inferred':True,'source_tags':tags,
                             'paint_evidence':spec['marked'],'area_m2':round(g.area,3)})
     return {k:unary_union(v) for k,v in surfaces.items()},unary_union(paint),{
         'records':records,'skipped':dict(skipped),'omitted':omitted,'area_m2':round(occupied.area,3),

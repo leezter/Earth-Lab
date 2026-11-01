@@ -40,6 +40,21 @@ def make_surface(sid,kind,line,width,tags,nodes,profile):
             'structure_inferred':kind!='ground'}
 
 
+def road_width(tags):
+    """Mapped widths win; one-way lane counts describe one carriageway."""
+    explicit=metres(tags.get('width:carriageway')) or metres(tags.get('width'))
+    if explicit:return max(3,min(30,explicit))
+    # A divided road has a separate OSM way for each direction. Applying the
+    # ordinary two-way class default to both ways can invent overlapping decks.
+    # Separate cycle tracks/sidepaths are not motor carriageway lanes.
+    try:lanes=int(tags.get('lanes',''))
+    except (ValueError,TypeError):lanes=0
+    if tags.get('oneway') in {'yes','1','true','-1'} and 1<=lanes<=8:
+        lane_width=3.5 if tags['highway'] in {'motorway','motorway_link','trunk','trunk_link'} else 3.25
+        return max(3,min(30,lanes*lane_width))
+    return {'motorway':12,'primary':10,'secondary':9,'tertiary':8,'service':4}.get(tags['highway'],7)
+
+
 def compile_network(osm,xy,terrain,water_parts=()):
     roads=[];omitted=[]
     local=Polygon([[-96,-96],[96,-96],[96,96],[-96,96]])
@@ -75,8 +90,7 @@ def compile_network(osm,xy,terrain,water_parts=()):
                 raise ValueError(reason+' (OSM way '+str(e['id'])+')')
             continue
         roads.append({'id':str(e['id']),'tags':t,'points':points,'nodes':[str(n)for n in e['nodes']],
-                      'line':line,'width':max(3,min(30,metres(t.get('width:carriageway'))or metres(t.get('width'))or
-                          {'motorway':12,'primary':10,'secondary':9,'tertiary':8,'service':4}.get(t['highway'],7)))})
+                      'line':line,'width':road_width(t)})
     counts=Counter(n for r in roads for n in r['nodes'])
     ground=[];bridge_ways=[r for r in roads if is_bridge(r['tags'])]
     from layered_network import required,compile_layered

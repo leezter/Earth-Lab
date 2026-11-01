@@ -1,0 +1,116 @@
+{
+  "renderer": "bridges-v10.20",
+  "site": "place-93119e68f0e402b3",
+  "synthetic": false,
+  "errors": [],
+  "contacts": [
+    {
+      "kind": "GT",
+      "minimumCentreGap": 4.213132812678047,
+      "moved": 4.79693745695263,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "kind": "F1",
+      "minimumCentreGap": 4.177185867739213,
+      "moved": 4.820541056802039,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "kind": "Bubble",
+      "minimumCentreGap": 4.040114929306129,
+      "moved": 4.95452137876388,
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "kind": "Truck",
+      "minimumCentreGap": 5.008273565215701,
+      "moved": 3.9591026521254067,
+      "bodyPreserved": true,
+      "recoveries": 0
+    }
+  ],
+  "bridgeRegressionFixture": {
+    "id": "fixture-2f616729f599387d",
+    "renderer": "bridges-v10.14",
+    "synthetic": true,
+    "imagesRerendered": false
+  },
+  "parked": {
+    "count": 24,
+    "decodedBytes": 6515712,
+    "report": {
+      "policy": "parked-cars-v1",
+      "occupancy_inferred": true,
+      "candidate_slots": 89,
+      "count": 24,
+      "skipped": {
+        "left empty": 38,
+        "no safe vehicle-sized footprint": 27,
+        "reserved or restricted space": 1
+      },
+      "catalog_variants": 151,
+      "source_renderer": null,
+      "limitations": [
+        "Occupancy and vehicles are decorative inference, not live or surveyed parking.",
+        "Unknown multi-row lots, elevated parking and approaches are omitted."
+      ]
+    }
+  },
+  "pause": true,
+  "recover": true,
+  "sceneDisposal": true,
+  "bridgeRegression": [
+    {
+      "elevated": true,
+      "direction": -1,
+      "completed": true,
+      "surfaces": [
+        "approach-b",
+        "bridge-fixture",
+        "approach-a"
+      ],
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "elevated": true,
+      "direction": 1,
+      "completed": true,
+      "surfaces": [
+        "approach-a",
+        "bridge-fixture",
+        "approach-b"
+      ],
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "elevated": false,
+      "direction": -1,
+      "completed": true,
+      "surfaces": [
+        "lower"
+      ],
+      "bodyPreserved": true,
+      "recoveries": 0
+    },
+    {
+      "elevated": false,
+      "direction": 1,
+      "completed": true,
+      "surfaces": [
+        "lower"
+      ],
+      "bodyPreserved": true,
+      "recoveries": 0
+    }
+  ],
+  "failedSpritePreservesScene": true,
+  "retry": true,
+  "reloadDeterministic": true,
+  "finished_utc": "2026-11-01T18:18:05.703Z"
+}

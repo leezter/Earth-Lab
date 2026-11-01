@@ -8,8 +8,8 @@
     },
     {
       "edition": "batch_v10",
-      "id": "bridges-v10.18",
-      "source_hashes": 74
+      "id": "bridges-v10.23",
+      "source_hashes": 229
     },
     {
       "edition": "batch_v2",
@@ -52,5 +52,39 @@
       "source_hashes": 29
     }
   ],
-  "current_builds": []
+  "current_builds": [
+    {
+      "id": "place-61e02761a111f922",
+      "name": "Map location 52.500576, 13.440578 - repaired",
+      "status": "passed",
+      "tiles": 9,
+      "patches": 0,
+      "decoded_image_bytes": 150994944,
+      "bridges": 0,
+      "max_ground_plane_error_m": 5.10702591327572e-15,
+      "content_identity": "b0b45dc664d2bc899d07084c7f6c320f3bab370a2dbc8234e0e9b2742f8a9545"
+    },
+    {
+      "id": "place-63827fb33a50c6a1",
+      "name": "Map location 52.495585, 13.436612 - repaired",
+      "status": "passed",
+      "tiles": 9,
+      "patches": 0,
+      "decoded_image_bytes": 150994944,
+      "bridges": 0,
+      "max_ground_plane_error_m": 1.199040866595169e-14,
+      "content_identity": "b0d3b3b2e7701079f6ccb73d414b7375bae5651aacd0b3d82b45907c6e85d221"
+    },
+    {
+      "id": "place-8a594721f96a5dc1",
+      "name": "Oberbaumbruecke - divided bridge repair",
+      "status": "passed",
+      "tiles": 9,
+      "patches": 2,
+      "decoded_image_bytes": 172947820,
+      "bridges": 2,
+      "max_ground_plane_error_m": 1.687538997430238e-14,
+      "content_identity": "f57e288cfb829644ba7d2380708d6ad2ce1873d504b61c8cd8607435cf8b75cf"
+    }
+  ]
 }

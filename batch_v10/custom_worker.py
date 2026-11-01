@@ -48,8 +48,10 @@ try:
         d.update(actual_lat=lat,actual_lon=lon,automatic_road_snap_metres=best[0]);phase('fetching map and elevation')
         data=scene_builder.scene(lat,lon)
     s=data['scene'];validate_parking(s);validate_spatial(s);validate(s['surface_network'],s['terrain'])
+    from parked_cars import attach
+    attach(s)
     inputs=data.pop('pavement_inputs')
-    content={'freeze':freeze['id'],'sources':inputs,'terrain':s['terrain'],'network':s['surface_network']}
+    content={'freeze':freeze['id'],'sources':inputs,'terrain':s['terrain'],'network':s['surface_network'],'parked_cars':s['parked_cars']}
     data['content_identity']=hashlib.sha256(json.dumps(content,sort_keys=True,separators=(',',':')).encode()).hexdigest()
     data['renderer_freeze']=s['renderer_freeze']=freeze['id']
     s['bake']={'tile_url':'/baked/'+d['id']+'/','origin':[lat,lon],'patches':[],'content_identity':data['content_identity']}
@@ -57,6 +59,7 @@ try:
     for key in ('pavement_report','site_report','street_report','parking_report','geometry_report','mobility_report','access_report','furniture_report','bridge_report','bridge_checks','surface_network'):
         (folder/(key.replace('_','-')+'.json')).write_text(json.dumps(s[key],indent=2),encoding='utf-8')
     (folder/'terrain-report.json').write_text(json.dumps(s['terrain']['source'],indent=2))
+    jobs.save(folder/'parked-cars-report.json',s['parked_cars_report'])
     jobs.save(folder/'district-data.json',data)
     step([sys.executable,str(ROOT/'prepare.py'),str(folder)],'preparing geometry')
     step([str(ROOT.parent/'tools/blender-4.5.14-windows-x64/blender.exe'),'--background','--factory-startup','--python-exit-code','1','--python',str(ROOT/'bake.py'),'--','--work-dir',str(folder)],'rendering')

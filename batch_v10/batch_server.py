@@ -6,6 +6,7 @@ ROOT=Path(__file__).resolve().parent;REPO=ROOT.parent;sys.path.insert(0,str(REPO
 import earth_backend as baseline
 import custom_places
 import place_search
+from functools import lru_cache
 from site_labels import labelled
 from site_catalog import displayed
 def report():return {'edition':'bridges-v10','sites':sites(),'verification':json.loads((ROOT/'verification.json').read_text())if(ROOT/'verification.json').exists()else None}
@@ -22,6 +23,17 @@ def sites():
  places=displayed([d for d in entries if not d.get('fixture')],custom_places.identifier,lambda d:(custom_places.directory(d['id'])/'job.json').stat().st_mtime)
  return [labelled(d)for d in fixtures+places]
 def folder(sid):return custom_places.directory(sid)
+@lru_cache(maxsize=4)
+def playable_data(sid, data_stamp, input_stamp, overlay_identity):
+ data=json.loads((folder(sid)/'district-data.json').read_text())
+ if 'parked_cars' not in data['scene']:
+  from parked_cars import attach
+  source=folder(sid)/'pavement-inputs.json'
+  osm=json.loads(source.read_text()).get('osm') if source.exists() else None
+  attach(data['scene'],osm)
+  data['parked_cars_overlay']={'renderer':overlay_identity,'source_renderer':data['scene'].get('renderer_freeze'),
+    'baked_images_changed':False,'source_job':sid,'occupancy':'inferred deterministic static scenery'}
+ return data
 class Handler(baseline.Handler):
  def __init__(self,*a,**kw):SimpleHTTPRequestHandler.__init__(self,*a,directory=str(ROOT/'web'),**kw)
  def translate_path(self,path):
@@ -95,7 +107,10 @@ class Handler(baseline.Handler):
   if u.path=='/api/data':
    sid=q.get('id',['berlin'])[0];entry=next((s for s in available_sites()if s['id']==sid),None)
    if not entry or entry['status']!='built':return self.reply({'error':'Scene unavailable: '+str(entry.get('error',entry['status'])if entry else sid)},503)
-   data=json.loads((folder(sid)/'district-data.json').read_text());data['renderer_freeze']=entry['renderer_freeze'];return self.reply(data)
+   source=folder(sid)/'pavement-inputs.json'
+   data=playable_data(sid,(folder(sid)/'district-data.json').stat().st_mtime_ns,
+       source.stat().st_mtime_ns if source.exists() else 0,custom_places.read(ROOT/'freeze.json')['id'])
+   return self.reply(data)
   if u.path=='/gallery.html':return self.raw((ROOT/'web/gallery.html').read_text(encoding='utf-8')if(ROOT/'web/gallery.html').exists()else '<a href="/">Drive sites edition</a>')
   return super().do_GET()
 if __name__=='__main__':
