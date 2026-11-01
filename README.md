@@ -1,6 +1,8 @@
 # RacingVibes rendered district study
 
-Latest road markings/signals edition: **Play Earth Lab - streets update.lnk**, or http://127.0.0.1:47849/ . Lane/control evidence drives paint and roadside hardware, with labelled inferred layouts and optional illustrative signal indicators. See [batch_v7/README.md](batch_v7/README.md).
+Latest road geometry/parking edition: **Play Earth Lab - geometry update.lnk**, or http://127.0.0.1:47850/ . Mapped carriageway footprints and explicit width tags guide roads and junctions, with evidence-gated parking lanes and bay markings. Renderer v8.4 repairs missing road/ground/roof mesh triangles and checks actual mesh coverage. See [batch_v8/README.md](batch_v8/README.md).
+
+Previous road markings/signals edition: **Play Earth Lab - streets update.lnk**, or http://127.0.0.1:47849/ . Lane/control evidence drives paint and roadside hardware, with labelled inferred layouts and optional illustrative signal indicators. See [batch_v7/README.md](batch_v7/README.md).
 
 Latest sites and boundaries edition: **Play Earth Lab - sites update.lnk**, or http://127.0.0.1:47848/ . Mapped parking/yard surfaces and property boundaries retain the pavement improvements in an independent renderer/cache. See [batch_v6/README.md](batch_v6/README.md).
 

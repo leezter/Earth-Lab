@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-11-01T00:29:16.974Z",
+  "serverStopRelaunch": true,
+  "results": [
+    {
+      "id": "place-1bde235b294a11d6",
+      "name": "Kreuzberg",
+      "tiles": 9,
+      "origin": [
+        52.4970790178281,
+        13.445586694114322
+      ]
+    },
+    {
+      "id": "place-5699e992b757f2b9",
+      "name": "New York - Broadway",
+      "tiles": 9,
+      "origin": [
+        40.7130076099823,
+        -74.00725766529995
+      ]
+    },
+    {
+      "id": "place-b349e22ed3207b62",
+      "name": "London - Trafalgar Square",
+      "tiles": 9,
+      "origin": [
+        51.50747630357576,
+        -0.12796723356632778
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-11-01T00:29:52.468112+00:00",
+  "renderer": "geometry-v8.3",
+  "reviewed": [
+    "web/reviews/kreuzberg-v7.png",
+    "web/reviews/kreuzberg-v8.png",
+    "web/reviews/london-close.png",
+    "web/reviews/new-york-close.png"
+  ],
+  "observations": {
+    "Kreuzberg": "Visible junction wedge closed, mapped sett coverage retained, adjacent parking bay lines visible. Candidate improvement, not surveyed acceptance.",
+    "London": "Unchanged playable road footprint. Existing ribbon/junction gaps and approximate paint remain; no unsupported correction claimed.",
+    "Broadway": "Unchanged playable road footprint; mapped parking surfaces are supported without invented bay lines."
+  },
+  "limitations": [
+    "Sources are separate edition snapshots, not byte-identical OSM inputs.",
+    "White bay lines approximate unspecified marking designs.",
+    "No blind worldwide or Android visual acceptance."
+  ]
+}

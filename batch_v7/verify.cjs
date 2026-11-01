@@ -63,7 +63,7 @@ const url='http://127.0.0.1:47849',out=path.join(__dirname,'web/reviews');
   await page.goto(url+'/gallery.html',{waitUntil:'networkidle'});assert.equal(await page.locator('#sites li').count(),sites.length);
   for(const image of await page.locator('img').all())assert(await image.evaluate(im=>im.complete&&im.naturalWidth>0));
   await page.screenshot({path:path.join(out,'gallery.png')});assert.equal(aerial,0);assert.deepEqual(errors,[]);
-  const viewerHashes=Object.fromEntries(['app.js','spawn.js','ground.js','signals.js'].map(name=>[name,require('crypto').createHash('sha256').update(fs.readFileSync(path.join(__dirname,'web',name))).digest('hex')]));
+  const viewerHashes=Object.fromEntries(['app.js','driving.js','spawn.js','ground.js','signals.js'].map(name=>[name,require('crypto').createHash('sha256').update(fs.readFileSync(path.join(__dirname,'web',name))).digest('hex')]));
   const report={viewer_source_hashes:viewerHashes,checked_utc:new Date().toISOString(),desktopBrowser:'Edge headless',results,errors,aerialRequests:aerial,livePlaceSearch:true,sceneSwitching:true,missingTileFailureRetry:true,pickerPendingKeepsScene:true,pickerFailureRetry:true,pickerLifecycleUsesMockJob:true,gallery:true};
   fs.writeFileSync(path.join(__dirname,'verification.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
  }finally{await browser.close();}

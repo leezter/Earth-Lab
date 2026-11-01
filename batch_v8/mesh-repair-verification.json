@@ -1,0 +1,1863 @@
+{
+  "checked_utc": "2026-11-01T00:59:26.809589+00:00",
+  "renderer": "geometry-v8.4",
+  "cases": [
+    {
+      "name": "New York - Broadway",
+      "old_id": "place-5699e992b757f2b9",
+      "new_id": "place-33ebe8fa1758e5a3",
+      "identical_source_footprints": true,
+      "surfaces": {
+        "roads": {
+          "before": {
+            "source_m2": 6499.3773836724,
+            "missing_m2": 1434.8239084644686,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 6499.3773836724,
+            "mesh_m2": 6499.377383672399,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "pavements": {
+          "before": {
+            "source_m2": 6887.449055439203,
+            "missing_m2": 1392.9103181387804,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 6887.449055439203,
+            "mesh_m2": 6887.449055439205,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "green": {
+          "before": {
+            "source_m2": 216.6164903014808,
+            "missing_m2": 0.5224540000000015,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 216.6164903014808,
+            "mesh_m2": 216.61649030148078,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "gardens": {
+          "before": {
+            "source_m2": 108.39679711648067,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 108.39679711648067,
+            "mesh_m2": 108.39679711648067,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "water": {
+          "before": {
+            "source_m2": 91.42662212161017,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 91.42662212161017,
+            "mesh_m2": 91.42662212161017,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "asphalt": {
+          "before": {
+            "source_m2": 6111.9745351724,
+            "missing_m2": 1434.8239084644686,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 6111.9745351724,
+            "mesh_m2": 6111.9745351724,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "concrete": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "concrete_slabs": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "paving_blocks": {
+          "before": {
+            "source_m2": 148.37594549999997,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 148.37594549999997,
+            "mesh_m2": 148.37594549999994,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "sett": {
+          "before": {
+            "source_m2": 239.0268920000002,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 239.0268920000002,
+            "mesh_m2": 239.02689200000015,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "cobble": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "compacted": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "gravel": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "earth": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "sand": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "grass": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "wood": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "metal": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_forest": {
+          "before": {
+            "source_m2": 8953.766963531887,
+            "missing_m2": 1399.315720809773,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 8953.766963531887,
+            "mesh_m2": 8953.766963531889,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_grass": {
+          "before": {
+            "source_m2": 114.59126099999997,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 114.59126099999997,
+            "mesh_m2": 114.59126099999997,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_crop": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_bare": {
+          "before": {
+            "source_m2": 39.35451100000002,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 39.35451100000002,
+            "mesh_m2": 39.35451100000001,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_shrub": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_wetland": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_snow": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_paving_blocks": {
+          "before": {
+            "source_m2": 4430.260322349541,
+            "missing_m2": 663.5648286983738,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 4430.260322349541,
+            "mesh_m2": 4430.260322349542,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_concrete": {
+          "before": {
+            "source_m2": 2229.6696363848914,
+            "missing_m2": 467.6023178640831,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 2229.6696363848914,
+            "mesh_m2": 2229.6696363848923,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_asphalt": {
+          "before": {
+            "source_m2": 1.4621474999999955,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 1.4621474999999955,
+            "mesh_m2": 1.4621474999999957,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_walk_slabs": {
+          "before": {
+            "source_m2": 226.06845338691554,
+            "missing_m2": 9.341261999999993,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 226.06845338691554,
+            "mesh_m2": 226.06845338691556,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_wood": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_gravel": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_metal": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "site_asphalt": {
+          "before": {
+            "source_m2": 1048.103714,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 1048.103714,
+            "mesh_m2": 1048.1037139999999,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "parking_asphalt": {
+          "before": {
+            "source_m2": 1300.0154415000002,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 1300.0154415000002,
+            "mesh_m2": 1300.0154414999997,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "paint_white": {
+          "before": {
+            "source_m2": 76.64413013330487,
+            "missing_m2": 10.517473500000026,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 76.64413013330487,
+            "mesh_m2": 76.64413013330491,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "paint_yellow": {
+          "before": {
+            "source_m2": 1.9404414999999835,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 1.9404414999999835,
+            "mesh_m2": 1.9404414999999833,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "bay_white": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "tree_pits": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        }
+      }
+    },
+    {
+      "name": "London - Trafalgar Square",
+      "old_id": "place-b349e22ed3207b62",
+      "new_id": "place-c77aab930a9f7a6c",
+      "identical_source_footprints": true,
+      "surfaces": {
+        "roads": {
+          "before": {
+            "source_m2": 11087.05205575877,
+            "missing_m2": 1303.2268078394484,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 11087.05205575877,
+            "mesh_m2": 11087.05205575877,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "pavements": {
+          "before": {
+            "source_m2": 7741.876984145585,
+            "missing_m2": 914.5108679951908,
+            "outside_m2": 4.000000003744473e-06
+          },
+          "after": {
+            "source_m2": 7741.876984145585,
+            "mesh_m2": 7741.876984145582,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "green": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "gardens": {
+          "before": {
+            "source_m2": 11.185928964835401,
+            "missing_m2": 0.7830871903720782,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 11.185928964835401,
+            "mesh_m2": 11.185928964835403,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "water": {
+          "before": {
+            "source_m2": 932.6450285000002,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 932.6450285000002,
+            "mesh_m2": 932.6450284999999,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "asphalt": {
+          "before": {
+            "source_m2": 10283.669845861508,
+            "missing_m2": 1272.712709056364,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 10283.669845861508,
+            "mesh_m2": 10283.669845861508,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "concrete": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "concrete_slabs": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "paving_blocks": {
+          "before": {
+            "source_m2": 803.3807198972538,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 803.3807198972538,
+            "mesh_m2": 803.380719897254,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "sett": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "cobble": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "compacted": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "gravel": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "earth": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "sand": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "grass": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "wood": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "metal": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_forest": {
+          "before": {
+            "source_m2": 218.45677871343088,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 218.45677871343088,
+            "mesh_m2": 218.45677871343085,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_grass": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_crop": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_bare": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_shrub": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_wetland": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_snow": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_paving_blocks": {
+          "before": {
+            "source_m2": 6957.495874132507,
+            "missing_m2": 670.3757175039574,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 6957.495874132507,
+            "mesh_m2": 6957.495874132507,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_walk_slabs": {
+          "before": {
+            "source_m2": 528.7373942533945,
+            "missing_m2": 30.917750863577737,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 528.7373942533945,
+            "mesh_m2": 528.7373942533945,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_asphalt": {
+          "before": {
+            "source_m2": 9.011313207045415,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 9.011313207045415,
+            "mesh_m2": 9.011313207045417,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_compacted": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_sett": {
+          "before": {
+            "source_m2": 73.05074900000001,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 73.05074900000001,
+            "mesh_m2": 73.05074899999998,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_concrete": {
+          "before": {
+            "source_m2": 173.58070021281972,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 173.58070021281972,
+            "mesh_m2": 173.58070021281972,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_gravel": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_metal": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "site_asphalt": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "parking_asphalt": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "paint_white": {
+          "before": {
+            "source_m2": 157.46891480024817,
+            "missing_m2": 0.9857075000000037,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 157.46891480024817,
+            "mesh_m2": 157.4689148002482,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "paint_yellow": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "bay_white": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "tree_pits": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        }
+      }
+    },
+    {
+      "name": "Kreuzberg",
+      "old_id": "place-1bde235b294a11d6",
+      "new_id": "place-ec822d324f6e52cc",
+      "identical_source_footprints": true,
+      "surfaces": {
+        "roads": {
+          "before": {
+            "source_m2": 3903.1280461553306,
+            "missing_m2": 5.812974648344593,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 3903.1280461553306,
+            "mesh_m2": 3903.1280461553306,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "pavements": {
+          "before": {
+            "source_m2": 3881.356858482151,
+            "missing_m2": 200.92995846394038,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 3881.356858482151,
+            "mesh_m2": 3881.356858482145,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "green": {
+          "before": {
+            "source_m2": 937.9785972144662,
+            "missing_m2": 61.99159024858049,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 937.9785972144662,
+            "mesh_m2": 937.9785972144663,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "gardens": {
+          "before": {
+            "source_m2": 4513.6480315009085,
+            "missing_m2": 261.5408434255311,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 4513.6480315009085,
+            "mesh_m2": 4513.648031500908,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "water": {
+          "before": {
+            "source_m2": 76.23636094368756,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 76.23636094368756,
+            "mesh_m2": 76.23636094368756,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "asphalt": {
+          "before": {
+            "source_m2": 3034.4402311939957,
+            "missing_m2": 24.461189114624666,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 3034.4402311939957,
+            "mesh_m2": 3034.4402311939953,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "concrete": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "concrete_slabs": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "paving_blocks": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "sett": {
+          "before": {
+            "source_m2": 868.6877869613377,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 868.6877869613377,
+            "mesh_m2": 868.6877869613377,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "cobble": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "compacted": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "gravel": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "earth": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "sand": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "grass": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "wood": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "metal": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_forest": {
+          "before": {
+            "source_m2": 3413.208929867942,
+            "missing_m2": 101.80313149999995,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 3413.208929867942,
+            "mesh_m2": 3413.208929867943,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_grass": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_crop": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_bare": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_shrub": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_wetland": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "landcover_snow": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_sett_0p18_driveway": {
+          "before": {
+            "source_m2": 39.00835200000002,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 39.00835200000002,
+            "mesh_m2": 39.00835200000002,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_asphalt_driveway": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_mosaic_0p05_driveway": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_small_sett_0p09_driveway": {
+          "before": {
+            "source_m2": 77.4180705,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 77.4180705,
+            "mesh_m2": 77.4180705,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_concrete_driveway": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_paving_blocks_0p2_driveway": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_concrete": {
+          "before": {
+            "source_m2": 205.23533361387237,
+            "missing_m2": 30.34326849999998,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 205.23533361387237,
+            "mesh_m2": 205.23533361387243,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_paving_blocks_0p2": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_walk_slabs_0p35": {
+          "before": {
+            "source_m2": 1717.5388499414714,
+            "missing_m2": 128.23536498477333,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 1717.5388499414714,
+            "mesh_m2": 1717.5388499414692,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_small_sett_0p09": {
+          "before": {
+            "source_m2": 131.73118640204427,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 131.73118640204427,
+            "mesh_m2": 131.73118640204427,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_mosaic_0p05": {
+          "before": {
+            "source_m2": 1205.9319942302018,
+            "missing_m2": 59.434318558258184,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 1205.9319942302018,
+            "mesh_m2": 1205.931994230201,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_sett_0p18": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_compacted": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_sand": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_grass": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_walk_slabs": {
+          "before": {
+            "source_m2": 10.941628747915399,
+            "missing_m2": 0.05104964674904525,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 10.941628747915399,
+            "mesh_m2": 10.9416287479154,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_stone_slabs_0p8": {
+          "before": {
+            "source_m2": 143.08967185744422,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 143.08967185744422,
+            "mesh_m2": 143.0896718574443,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_asphalt": {
+          "before": {
+            "source_m2": 60.49467372947036,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 60.49467372947036,
+            "mesh_m2": 60.49467372947036,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_walk_slabs_0p6": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_sett": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_cobble": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_paving_blocks": {
+          "before": {
+            "source_m2": 289.96131530334173,
+            "missing_m2": 0.5200405000000146,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 289.96131530334173,
+            "mesh_m2": 289.9613153033418,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_gravel": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_earth": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_metal": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_concrete_slabs": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "walk_wood": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "site_small_sett_0p09": {
+          "before": {
+            "source_m2": 20.925243999999978,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 20.925243999999978,
+            "mesh_m2": 20.925243999999964,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "site_sett_0p18": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "site_asphalt": {
+          "before": {
+            "source_m2": 166.0117002267509,
+            "missing_m2": 159.86254409898663,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 166.0117002267509,
+            "mesh_m2": 166.0117002267509,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "site_paving_blocks_0p2": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "site_paving_blocks": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "parking_asphalt": {
+          "before": {
+            "source_m2": 654.8601668431678,
+            "missing_m2": 1.2764507303915629,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 654.8601668431678,
+            "mesh_m2": 654.860166843168,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "parking_sett": {
+          "before": {
+            "source_m2": 28.70288850000002,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 28.70288850000002,
+            "mesh_m2": 28.70288849999999,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "parking_paving_blocks": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "paint_white": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "paint_yellow": {
+          "before": {
+            "source_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 0.0,
+            "mesh_m2": 0.0,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "bay_white": {
+          "before": {
+            "source_m2": 7.432769481978745,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 7.432769481978745,
+            "mesh_m2": 7.4327694819787435,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        },
+        "tree_pits": {
+          "before": {
+            "source_m2": 311.8933654171929,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          },
+          "after": {
+            "source_m2": 311.8933654171929,
+            "mesh_m2": 311.89336541719297,
+            "missing_m2": 0.0,
+            "outside_m2": 0.0
+          }
+        }
+      }
+    }
+  ]
+}

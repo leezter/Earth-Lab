@@ -1,0 +1,29 @@
+{
+  "id": "geometry-v8.4",
+  "source_hashes": {
+    "batch_v8/scene_builder.py": "3511e3c1242876e6fbf25f25b06952f576838c71f1872fd1bd3d1c7f61a88324",
+    "batch_v8/road_data.py": "f2f53ec738ae9c8cfb973545d7f978bf8896b20085e7ca9a6e2aaa477e44f1d6",
+    "batch_v8/road_types.py": "6a8b3606b35da8ccce0352799d12e15987f0a6d43210ebf845b5f6fef3786a82",
+    "batch_v8/road_materials.py": "7f32d6d4085563c12738ce217942aa214eedc971ee22f91a9f10b2ee85cf5d2b",
+    "batch_v8/roof_styles.py": "15f36e208894d0a0387d678e2d310bf70cf1f107b7d68f2da734f4df5619eacd",
+    "batch_v8/landcover.py": "b97c806be0fd945c573e3d919da395cb33e4515961b00701de4645d1fecdbd6d",
+    "batch_v8/prepare.py": "7ed24367e81027d248efdd1427a170e6be74244d0b41e5f95a72a2ac5c447702",
+    "batch_v8/bake.py": "86601e1c64304efa6371787046f5960f42b3bff6af8d030a1260f9a650e1e0f7",
+    "batch_v8/tiles.py": "ee9598a57e7b98231dae84c26885cf59988a9da94888a89ce852c753e44e74dc",
+    "batch_v8/pavement_sources.py": "8dd449a8f7ce34dcf55ce0e9331ec2257b845b2b591c3cdf17a6d7880f9e23e6",
+    "batch_v8/pavements.py": "ca3d21d3ae7d41c4a1abd78feb429ddf6e87fa520af8d93d4ce15ad355c2dc06",
+    "batch_v8/pavement_materials.py": "ddea7da0d56bd45ee2490d1933d7415f73d64f24406c20b48d277cf531365ee1",
+    "batch_v8/site_features.py": "5724dcd8f00a19ff05b8e58a1ce46293079a1ccd4aa3c0f6215371b2ebd782bc",
+    "batch_v8/boundary_assets.py": "4edada939f3f207698dd31e2839b49b6fd15892be53cde8d91302e21db15f2a9",
+    "earth_backend.py": "397b796b9abf7fea5c5fa81e5949a35184a2b225f82d66995f7cd46468c019f2",
+    "assets/materials/batch-manifest.json": "32b1603c9cc1608d7759af81a4ea947abec693a6e7527c58ebc4b8176afd8bf0",
+    "batch_v8/boundary_geometry.py": "d319a5b875b2c0a7e2c4f27f89a4b3cb07f5242edd7c4faeb0c73ef6f3dd88aa",
+    "batch_v8/street_features.py": "b65680f762b6007c575f826f6b469f5ea443345c0dfc51117b60001e82062ad3",
+    "batch_v8/traffic_assets.py": "59b26173cf7c75b378818f2a2f56dd854bf738da1d50be99524cfd7eb4da54b6",
+    "batch_v8/road_geometry.py": "9947e58b83cebd94ac54804c38e87075e43d87544ff0e09c9ce393b14136e9a6",
+    "batch_v8/parking_features.py": "f1c8207b64aa3c128de76f5ba5776eedb3548133abf52d49831f3b207c984d06",
+    "batch_v8/surface_mesh.py": "b6d439318a21c336c054d4d00f9a4446fc02ed6fcc29ea6946835ec7c2e2d32d",
+    "batch_v8/job_validation.py": "74053c36c4e5935be4bfaf2e8b85ca64ad076ae1225bdeb24e1e1aaf29261a7c",
+    "batch_v8/custom_worker.py": "d00194ccc48d47f5cc541b0b98532292d7ec9957b40638bac5339c685645aa7e"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "viewer_source_hashes": {
+    "app.js": "c69d568e40ca90b1142c961f20597adfea2024112b5b89bc02681fd046776d1c",
+    "driving.js": "a28a8d319068f616cc86b4fbc289bc63f9a47a887bd8c21d90b92cd93e66b9ab",
+    "spawn.js": "cf6e5ac83db3be8eacb03436bb54a802eee70eab3e0b833d0757d42ce832ce22",
+    "ground.js": "b18bf8c76cd5ef5f9d6cd2856a4d67d4d5f1f465a82e8c198ee9818dddb787e5",
+    "signals.js": "aadb6834af58407228930ef0bde4d51b32580bd5e074d870d48d34be5eb36ad8"
+  },
+  "checked_utc": "2026-11-01T00:59:10.652Z",
+  "desktopBrowser": "Edge headless",
+  "results": [
+    {
+      "id": "place-c77aab930a9f7a6c",
+      "name": "London - Trafalgar Square",
+      "sceneReadySeconds": 0.78,
+      "cachedReuseSeconds": 0.016,
+      "load_and_checks_seconds": 4.693,
+      "distanceDrivenMetres": 21.114019796581168,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-ec822d324f6e52cc",
+      "name": "Kreuzberg",
+      "sceneReadySeconds": 0.57,
+      "cachedReuseSeconds": 0.026,
+      "load_and_checks_seconds": 4.227,
+      "distanceDrivenMetres": 27.117341554738886,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    },
+    {
+      "id": "place-33ebe8fa1758e5a3",
+      "name": "New York - Broadway",
+      "sceneReadySeconds": 0.5,
+      "cachedReuseSeconds": 0.01,
+      "load_and_checks_seconds": 4.082,
+      "distanceDrivenMetres": 41.25283506547002,
+      "pause": true,
+      "recovery": true,
+      "vehicles": 4,
+      "reload": true,
+      "cachedReuse": true,
+      "screenshots": 2
+    }
+  ],
+  "errors": [],
+  "aerialRequests": 0,
+  "livePlaceSearch": true,
+  "sceneSwitching": true,
+  "missingTileFailureRetry": true,
+  "pickerPendingKeepsScene": true,
+  "pickerFailureRetry": true,
+  "pickerLifecycleUsesMockJob": true,
+  "gallery": true
+}

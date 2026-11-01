@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-11-01T01:02:55.098340+00:00",
+  "renderer": "geometry-v8.4",
+  "reviewed": [
+    "web/reviews/repair-london-before.png",
+    "web/reviews/repair-london-after.png",
+    "web/reviews/repair-broadway-before.png",
+    "web/reviews/repair-broadway-after.png",
+    "web/reviews/repair-kreuzberg-after.png"
+  ],
+  "observations": {
+    "London": "The large triangular road voids are removed in the matched camera view. Existing source-footprint islands and approximated junction layout remain.",
+    "Broadway": "The large asphalt wedge from the supplied screenshot is filled; the road surface is continuous in the matched view.",
+    "Kreuzberg": "Rebuilt with constrained surface and roof triangulation; actual mesh coverage passes."
+  },
+  "viewer": "Nine tiles are stitched at exact pixel positions into one atlas before viewport sampling; decoded tile bitmaps are released. Transient composition adds an atlas allocation, steady-state raster storage remains about 144 MiB.",
+  "limitations": [
+    "This repairs rendering coverage against the supplied source footprints, not surveyed real-world street accuracy.",
+    "Matched inspection images hide the viewer controls to expose the geometry.",
+    "Original user uploads and earlier renderer outputs are retained unchanged."
+  ]
+}

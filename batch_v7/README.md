@@ -36,6 +36,7 @@ node batch_v7/test_signals.cjs
 & $earthPython batch_v7/audit.py
 node batch_v7/verify.cjs
 node batch_v7/verify_signals.cjs
+node batch_v7/verify_driving.cjs
 & $earthPython batch_v7/stop.py
 ```
 
@@ -44,6 +45,10 @@ Use the pinned portable Blender with `--background --factory-startup --python-ex
 The audit verifies earlier frozen inputs, completed-scene tiles/dimensions, paint containment and inferred pole exclusion from buildings/carriageways, plus inherited ground/collision checks. It needs completed local scenes and reports zero scene checks without them. It records the inherited millimetre ring-rounding and small-island export tolerances.
 
 The real browser tour checks driving, pause/recovery, vehicles, switching, cache/reload and controlled tile failure/retry. Picker lifecycle uses a mock job; `verify_pending.cjs` separately checks an actual pending generation. Signal tests cover the real illustration clock, pause, phases, toggle and reset. Stationary desktop FPS readings are not driving benchmarks or Android acceptance.
+
+The driving viewer retains one physics world across the bounded scene instead of rebuilding it at 60 m grid crossings, which discarded car velocity. Keyboard/touch buttons use RacingVibes' `touch` steering mode, and all four base vehicle dimensions match `racer.html`, including Bubble's driving inertia. Ground contact samples the four visual corners and centre on every physics tick using RacingVibes' majority rule. Off-road response uses the copied engine's grass settings. The original 60 wall-clock ticks/second with a 1/75-second physics step matches RacingVibes' default Realistic pace; map scale and the explicit 85 m edge return remain unchanged.
+
+`verify_driving.cjs` requires the running viewer, one completed local scene and the read-only sibling `RacingVibes` checkout (override with `RACINGVIBES_REFERENCE`). It checks copied runtime bytes and base geometry against that checkout, compares all four vehicles' browser trajectories on a controlled road through acceleration, steering, braking and road exit, and exercises real-scene keyboard driving, pause, recovery and reload. `EARTH_DRIVING_BASELINE=1` loads the committed viewer to reproduce the regression. It submits no generation and prints fresh results without replacing the historical verification reports. This checks default vehicle behavior, not optional RacingVibes driving assists or real-world handling accuracy.
 
 ## Attribution and interpretation
 

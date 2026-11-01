@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-11-01T01:01:16.304Z",
+  "serverStopRelaunch": true,
+  "results": [
+    {
+      "name": "london",
+      "id": "place-c77aab930a9f7a6c",
+      "tiles": 9,
+      "oldLinkSelectsReplacement": true,
+      "renderer": "geometry-v8.4"
+    },
+    {
+      "name": "broadway",
+      "id": "place-33ebe8fa1758e5a3",
+      "tiles": 9,
+      "oldLinkSelectsReplacement": true,
+      "renderer": "geometry-v8.4"
+    },
+    {
+      "name": "kreuzberg",
+      "id": "place-ec822d324f6e52cc",
+      "tiles": 9,
+      "oldLinkSelectsReplacement": true,
+      "renderer": "geometry-v8.4"
+    }
+  ],
+  "galleryComparisonsLoaded": true,
+  "errors": []
+}

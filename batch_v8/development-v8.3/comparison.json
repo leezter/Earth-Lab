@@ -1,0 +1,60 @@
+{
+  "renderer": "geometry-v8.3",
+  "comparisons": [
+    {
+      "name": "Kreuzberg",
+      "id": "place-1bde235b294a11d6",
+      "previous_id": "place-63c74eec94fdffba",
+      "origin": [
+        52.4970790178281,
+        13.445586694114322
+      ],
+      "road_before_m2": 3712.487,
+      "road_after_m2": 3903.128,
+      "road_changed_m2": 232.498,
+      "pavement_before_m2": 3881.351,
+      "pavement_after_m2": 3881.357,
+      "parking_after_m2": 683.563,
+      "bay_paint_after_m2": 7.433,
+      "same_osm_snapshot": false
+    },
+    {
+      "name": "New York - Broadway",
+      "id": "place-5699e992b757f2b9",
+      "previous_id": "place-9ebdf0a98d854349",
+      "origin": [
+        40.7130076099823,
+        -74.00725766529995
+      ],
+      "road_before_m2": 6499.377,
+      "road_after_m2": 6499.377,
+      "road_changed_m2": 0.0,
+      "pavement_before_m2": 6887.449,
+      "pavement_after_m2": 6887.449,
+      "parking_after_m2": 1300.015,
+      "bay_paint_after_m2": 0.0,
+      "same_osm_snapshot": false
+    },
+    {
+      "name": "London - Trafalgar Square",
+      "id": "place-b349e22ed3207b62",
+      "previous_id": "place-2d44bdfc7e1e0614",
+      "origin": [
+        51.50747630357576,
+        -0.12796723356632778
+      ],
+      "road_before_m2": 11087.052,
+      "road_after_m2": 11087.052,
+      "road_changed_m2": 0.0,
+      "pavement_before_m2": 7741.868,
+      "pavement_after_m2": 7741.877,
+      "parking_after_m2": 0.0,
+      "bay_paint_after_m2": 0.0,
+      "same_osm_snapshot": false
+    }
+  ],
+  "limitations": [
+    "Matching origins do not guarantee identical source snapshots; snapshot equality is reported.",
+    "Geometry changes and paint areas are measurements, not surveyed visual accuracy."
+  ]
+}
