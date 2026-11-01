@@ -5,7 +5,7 @@ connectivity, relative terrain height, constrained road profiles and slope
 forces to the top-down driving prototype. The previous
 [street-details edition](../batch_v9/README.md) remains on port 47851.
 
-Current renderer identity: **bridges-v10.29**. Frozen inputs include the viewer
+Current renderer identity: **bridges-v10.33**. Frozen inputs include the viewer
 and isolated driving runtime. Development identities and their evidence remain
 under `development-bridges-v10.*`; their results do not substitute for current
 acceptance.
@@ -15,6 +15,25 @@ WASD/arrows drive, P pauses, R recovers on the current connected surface.
 The existing map picker/search and serial generation queue remain available.
 An area becomes playable only after geometry checks, nine 2048-square ground
 tiles and every declared transparent bridge pass have been verified.
+
+## Driving units (v10.33)
+
+Player positions and velocities now use the engine's 30 units per metre, including
+map collisions, slopes and the speed display. The old ten-unit conversion made
+geographic motion three times too fast. RacingVibes' authored vehicle dimensions
+and inertia are restored independently of parked-catalog artwork and collision
+sizes. The 60 Hz wall-clock / 1/75-second engine step remains unchanged.
+
+## Player vehicle scale (v10.30-v10.32)
+
+V10.32 versions changed module URLs to avoid mixed cached sprite paths and waits
+for player artwork decoding before making a scene playable.
+
+All four player vehicles use the matching parked catalog's cropped artwork and
+metre dimensions, including Bubble and Truck sprite-sheet crops. Visual size,
+spawn clearance, surface support and collision dimensions follow the corrected
+scale. This viewer-only identity reuses existing baked scenery with explicit
+new cache identities; earlier jobs and renderer snapshots remain preserved.
 
 ## Surface rendering and bank portals (v10.27-v10.29)
 

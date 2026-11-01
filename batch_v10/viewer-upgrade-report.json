@@ -1,15 +1,17 @@
 {
-  "from": "bridges-v10.25",
-  "to": "bridges-v10.26",
+  "from": "bridges-v10.32",
+  "to": "bridges-v10.33",
   "changed_viewer_files": [
-    "batch_v10/web/elevation.js"
+    "batch_v10/web/app.js",
+    "batch_v10/web/driving.js",
+    "batch_v10/web/index.html"
   ],
   "renderer_inputs_unchanged": true,
   "builds": [
     {
-      "id": "place-84808edd0e2db624",
-      "original_job": "place-0aba67bd8c5aa0d0",
-      "name": "Hornsey Lane - structural regression",
+      "id": "place-9ce5381b18808ef1",
+      "original_job": "place-67c39e5f2989dc44",
+      "name": "Hornsey Lane - deck portals and surface rendering",
       "acceptance": {
         "status": "passed",
         "tiles": 9,
@@ -17,35 +19,35 @@
         "decoded_image_bytes": 155352280,
         "bridges": 1,
         "max_ground_plane_error_m": 7.460698725481052e-14,
-        "content_identity": "acf6240d7473f90480393e3eaa01e81fd028c6977dec2f7efbc2d69a4e956545"
+        "content_identity": "430352ef6af9a6f903053d7b4ea987755e9fa98014a4f61fbeffe22c07bd3af0"
       }
     },
     {
-      "id": "place-395c14ee8255f3ae",
-      "original_job": "place-6f66774d6e2887c6",
-      "name": "Oberbaum - structural decks and arch passage",
+      "id": "place-107346b8129cdb82",
+      "original_job": "place-c42dc19ca89bcd4b",
+      "name": "Oberbaum - deck portals and surface rendering",
       "acceptance": {
         "status": "passed",
         "tiles": 9,
-        "patches": 3,
-        "decoded_image_bytes": 198728148,
+        "patches": 5,
+        "decoded_image_bytes": 218334260,
         "bridges": 2,
         "max_ground_plane_error_m": 1.687538997430238e-14,
-        "content_identity": "861eaf7fd9abce402ee43748869052caee16ae1a5d8f1b76a43a57eb26d5fcc7"
+        "content_identity": "0b15a0d6ea5247c917ade3f655702385865d3edb8db310a4703e7733be2c8ba3"
       }
     },
     {
-      "id": "place-855b21b17ab5b6d2",
-      "original_job": "place-bc72f5dfd390430d",
-      "name": "Nearby Map location 52.493650, 13.321845",
+      "id": "place-dfeb3af282ceb556",
+      "original_job": "place-e47824b9a9cade90",
+      "name": "Map location 51.488199, -0.128426",
       "acceptance": {
         "status": "passed",
         "tiles": 9,
-        "patches": 0,
-        "decoded_image_bytes": 150994944,
-        "bridges": 0,
-        "max_ground_plane_error_m": 4.621303340002214e-15,
-        "content_identity": "bc21111689806619879826b91727b1b7b9ad0b4cf533d56efc06f45348e3c155"
+        "patches": 1,
+        "decoded_image_bytes": 174202052,
+        "bridges": 1,
+        "max_ground_plane_error_m": 1.2101430968414206e-14,
+        "content_identity": "69820b6bef1864024353e31286f4a199e53d91e407d95e8fc0dfb1af182fee10"
       }
     }
   ]

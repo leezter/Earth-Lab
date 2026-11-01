@@ -1,4 +1,4 @@
-import {profiles,sampleContact} from './driving.js';
+import {profiles,sampleContact} from './driving.js?v=10.33';
 import {clearSpawn} from './spawn.js';
 import {containsPart,siteGroundAt} from './ground.js';
 import {SignalLayer} from './signals.js';
@@ -8,22 +8,20 @@ import {installCollision,obstacleInterval,verticalOverlap} from './bridge-collis
 import {ParkedCars} from './parked-cars.js';
 import './rv/physics.js';
 
-const $=id=>document.getElementById(id),P=window.RacerPhysics,C=$('world'),ctx=C.getContext('2d'),U=10;
+const $=id=>document.getElementById(id),P=window.RacerPhysics,C=$('world'),ctx=C.getContext('2d'),U=30;
 const rad=Math.PI/180,R=6378137,sites=window.EARTH_BATCH_SITES;
 let car=null,scene=null,elevation=null,district=null,signals=null,collisions=null,origin=null,parked=null;
 let paused=false,loading=false,epoch=0,aborter=null,previous=null,acc=0,last=performance.now(),clock=last,frames=0,fps=0;
 let surface={onRoad:false,surfaceType:'gravel-rally'},keys=new Set(),zoom=9,autoPaused=false;
-const sprites={};
+const sprites={},spriteLoads=[];
 for(const [k,p]of Object.entries(profiles)){
- const im=new Image();im.src='rv/assets/vehicles/'+p.asset;sprites[k]=im;
- im.onload=()=>{
-  const c=document.createElement('canvas');c.width=im.naturalWidth;c.height=im.naturalHeight;
-  const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(im,0,0);const data=g.getImageData(0,0,c.width,c.height).data;
-  let x0=c.width,y0=c.height,x1=0,y1=0;
-  for(let y=0;y<c.height;y++)for(let x=0;x<c.width;x++)if(data[(y*c.width+x)*4+3]>80){x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y);}
-  im.crop=[x0,y0,x1-x0+1,y1-y0+1];
- };
+ const im=new Image();im.src=p.asset;sprites[k]=im;
+ spriteLoads.push(im.decode());
+
 }
+const spritesReady=Promise.all(spriteLoads);
+// Keep early failures handled until a scene can report them in the loading UI.
+spritesReady.catch(()=>{});
 const status=t=>$('status').textContent=t;
 const route=document.createElement('select');route.id='start-route';route.setAttribute('aria-label','Start on bridge or road below');route.hidden=true;
 $('vehicle').after(route);
@@ -72,7 +70,7 @@ function spawn(at=null,requestedSurface=null){
    const z=current?profileAt(current,x,y).z:elevation.ground(x,y).z;
    if(verticalOverlap(z,z+vehicleHeights[kind],obstacle.zmin,obstacle.zmax))solids.push({parts:obstacle.parts});
   }
-  const candidate=clearSpawn(roads,solids,x,y,profile.length/U,profile.width/U,candidate=>{
+  const candidate=clearSpawn(roads,solids,x,y,profile.visualLength,profile.visualWidth,candidate=>{
    const probe={...profile,x:candidate.x*U,y:candidate.y*U,angle:candidate.angle,surfaceId:candidate.road.surfaceId};
    return elevation.supportFootprint(probe,U);
   });
@@ -82,7 +80,14 @@ function spawn(at=null,requestedSurface=null){
  }
  if(!n)throw Error('No safe car-sized spawn on this connected level. Select another area or vehicle.');
  car={kind,steeringMode:'touch',...profile,x:n.x*U,y:n.y*U,angle:n.angle,speed:0,vx:0,vy:0,surfaceId:n.road.surfaceId};
- window.RacingVibesVehicleColliders?.apply(car);P.initCar(car,kind);
+ window.RacingVibesVehicleColliders?.apply(car);
+ // Preserve authored driving inertia while fitting collision hulls to the artwork.
+ const hull=window.RacingVibesVehicleColliders.get(kind);
+ const sx=car.visualLength*U/(hull.length*car.length/hull.baseLength);
+ const sy=car.visualWidth*U/(hull.width*car.length/hull.baseLength);
+ car.colliderPolygons=car.colliderPolygons.map(p=>p.map(v=>({x:v.x*sx,y:v.y*sy})));
+ car.colliderLength=car.visualLength*U;car.colliderWidth=car.visualWidth*U;
+ P.initCar(car,kind);
  P.configureTrackCollision([],{ppm:30});P.configureDecorCollision([],[]);P.rebuildPlanckWorld({cars:[car]});
  collisions=installCollision(car,elevation,scene.buildings||[],(scene.boundary_solids||[]).map(part=>({parts:[part]})),U,scene.parked_cars||[]);
  elevation.sample(car,U);car.safePose={x:car.x,y:car.y,angle:car.angle,surfaceId:car.surfaceId,z:car.z};
@@ -95,7 +100,7 @@ async function open(lat,lon,label){
  try{
   const data=await json('/api/data?id='+encodeURIComponent($('presets').value),aborter.signal);
   if(mine!==epoch)return;
-  next=new DistrictRenderer(data.scene);nextParked=new ParkedCars(data.scene);await Promise.all([next.ready,nextParked.ready]);
+  next=new DistrictRenderer(data.scene);nextParked=new ParkedCars(data.scene);await Promise.all([next.ready,nextParked.ready,spritesReady.catch(()=>{throw Error('Player vehicle artwork unavailable — reload to retry.');})]);
   if(mine!==epoch){next.dispose();nextParked.dispose();return;}
   const old={scene,elevation,district,signals,car,origin,parked};
   scene=data.scene;elevation=new ElevationSystem(scene);signals=new SignalLayer(scene.traffic_hardware||[]);district=next;origin=scene.origin;car=null;
@@ -125,8 +130,8 @@ function sample(hud=false){
 }
 function drawCar(pose){
  ctx.save();ctx.translate(pose.x/U,pose.y/U);ctx.rotate(pose.angle+Math.PI/2);
- ctx.save();ctx.translate(.2,.4);ctx.fillStyle='#0b221d55';ctx.fillRect(-car.width/U/2,-car.length/U/2,car.width/U,car.length/U);ctx.restore();
- const im=sprites[car.kind];if(im.complete&&im.naturalWidth)ctx.drawImage(im,...(im.crop||[0,0,im.naturalWidth,im.naturalHeight]),-car.width/U/2,-car.length/U/2,car.width/U,car.length/U);
+ ctx.save();ctx.translate(.2,.4);ctx.fillStyle='#0b221d55';ctx.fillRect(-car.visualWidth/2,-car.visualLength/2,car.visualWidth,car.visualLength);ctx.restore();
+ const im=sprites[car.kind];if(im.complete&&im.naturalWidth)ctx.drawImage(im,...(im.crop||[0,0,im.naturalWidth,im.naturalHeight]),-car.visualWidth/2,-car.visualLength/2,car.visualWidth,car.visualLength);
  ctx.restore();
 }
 function render(now){

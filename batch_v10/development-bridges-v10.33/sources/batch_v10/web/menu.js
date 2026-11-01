@@ -1,0 +1,11 @@
+const panel=document.querySelector('header');
+panel.id='menu-panel';
+const hide=document.createElement('button');
+hide.type='button';hide.id='hide-menu';hide.textContent='Hide menu';
+const reopen=document.createElement('button');
+reopen.type='button';reopen.id='reopen-menu';reopen.textContent='Open menu';
+reopen.hidden=true;reopen.setAttribute('aria-controls',panel.id);
+reopen.setAttribute('aria-expanded','true');
+panel.prepend(hide);document.body.append(reopen);
+hide.onclick=()=>{panel.hidden=true;reopen.hidden=false;reopen.setAttribute('aria-expanded','false');reopen.focus();};
+reopen.onclick=()=>{panel.hidden=false;reopen.hidden=true;reopen.setAttribute('aria-expanded','true');hide.focus();};
